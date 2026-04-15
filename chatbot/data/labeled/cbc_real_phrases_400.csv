@@ -1,0 +1,401 @@
+text,intent,lang
+What is RBC?,cbc_info,en
+What is WBC?,cbc_info,en
+What is hemoglobin?,cbc_info,en
+What is hematocrit?,cbc_info,en
+What is platelet count?,cbc_info,en
+What is MCV?,cbc_info,en
+What is MCH?,cbc_info,en
+What is MCHC?,cbc_info,en
+What is RDW?,cbc_info,en
+What is MPV?,cbc_info,en
+Can you explain RBC?,cbc_info,en
+Can you explain WBC?,cbc_info,en
+Can you explain hemoglobin?,cbc_info,en
+Can you explain hematocrit?,cbc_info,en
+Can you explain platelet count?,cbc_info,en
+Can you explain MCV?,cbc_info,en
+Can you explain MCH?,cbc_info,en
+Can you explain MCHC?,cbc_info,en
+Can you explain RDW?,cbc_info,en
+Can you explain MPV?,cbc_info,en
+Please explain RBC.,cbc_info,en
+Please explain WBC.,cbc_info,en
+Please explain hemoglobin.,cbc_info,en
+Please explain hematocrit.,cbc_info,en
+Please explain platelet count.,cbc_info,en
+Please explain MCV.,cbc_info,en
+Please explain MCH.,cbc_info,en
+Please explain MCHC.,cbc_info,en
+Please explain RDW.,cbc_info,en
+Please explain MPV.,cbc_info,en
+Define RBC.,cbc_info,en
+Define WBC.,cbc_info,en
+Define hemoglobin.,cbc_info,en
+Define hematocrit.,cbc_info,en
+Define platelet count.,cbc_info,en
+Define MCV.,cbc_info,en
+Define MCH.,cbc_info,en
+Define MCHC.,cbc_info,en
+Define RDW.,cbc_info,en
+Define MPV.,cbc_info,en
+What does RBC mean?,cbc_info,en
+What does WBC mean?,cbc_info,en
+What does hemoglobin mean?,cbc_info,en
+What does hematocrit mean?,cbc_info,en
+What does platelet count mean?,cbc_info,en
+What does MCV mean?,cbc_info,en
+What does MCH mean?,cbc_info,en
+What does MCHC mean?,cbc_info,en
+What does RDW mean?,cbc_info,en
+What does MPV mean?,cbc_info,en
+How do you explain RBC?,cbc_info,en
+How do you explain WBC?,cbc_info,en
+How do you explain hemoglobin?,cbc_info,en
+How do you explain hematocrit?,cbc_info,en
+How do you explain platelet count?,cbc_info,en
+How do you explain MCV?,cbc_info,en
+How do you explain MCH?,cbc_info,en
+How do you explain MCHC?,cbc_info,en
+How do you explain RDW?,cbc_info,en
+How do you explain MPV?,cbc_info,en
+I need an explanation of RBC.,cbc_info,en
+I need an explanation of WBC.,cbc_info,en
+I need an explanation of hemoglobin.,cbc_info,en
+I need an explanation of hematocrit.,cbc_info,en
+I need an explanation of platelet count.,cbc_info,en
+I need an explanation of MCV.,cbc_info,en
+I need an explanation of MCH.,cbc_info,en
+I need an explanation of MCHC.,cbc_info,en
+I need an explanation of RDW.,cbc_info,en
+I need an explanation of MPV.,cbc_info,en
+Tell me about RBC.,cbc_info,en
+Tell me about WBC.,cbc_info,en
+Tell me about hemoglobin.,cbc_info,en
+Tell me about hematocrit.,cbc_info,en
+Tell me about platelet count.,cbc_info,en
+Tell me about MCV.,cbc_info,en
+Tell me about MCH.,cbc_info,en
+Tell me about MCHC.,cbc_info,en
+Tell me about RDW.,cbc_info,en
+Tell me about MPV.,cbc_info,en
+Give me a simple explanation of RBC.,cbc_info,en
+Give me a simple explanation of WBC.,cbc_info,en
+Give me a simple explanation of hemoglobin.,cbc_info,en
+Give me a simple explanation of hematocrit.,cbc_info,en
+Give me a simple explanation of platelet count.,cbc_info,en
+Give me a simple explanation of MCV.,cbc_info,en
+Give me a simple explanation of MCH.,cbc_info,en
+Give me a simple explanation of MCHC.,cbc_info,en
+Give me a simple explanation of RDW.,cbc_info,en
+Give me a simple explanation of MPV.,cbc_info,en
+What should I know about RBC?,cbc_info,en
+What should I know about WBC?,cbc_info,en
+What should I know about hemoglobin?,cbc_info,en
+What should I know about hematocrit?,cbc_info,en
+What should I know about platelet count?,cbc_info,en
+What should I know about MCV?,cbc_info,en
+What should I know about MCH?,cbc_info,en
+What should I know about MCHC?,cbc_info,en
+What should I know about RDW?,cbc_info,en
+What should I know about MPV?,cbc_info,en
+What does a CBC include?,cbc_info,en
+What does a complete blood count include?,cbc_info,en
+What does a full blood count include?,cbc_info,en
+What does a CBC test include?,cbc_info,en
+What does a CBC report include?,cbc_info,en
+What parameters are included in a CBC?,cbc_info,en
+What parameters are included in a complete blood count?,cbc_info,en
+What parameters are included in a full blood count?,cbc_info,en
+What parameters are included in a CBC test?,cbc_info,en
+What parameters are included in a CBC report?,cbc_info,en
+Why is a CBC ordered?,cbc_info,en
+Why is a complete blood count ordered?,cbc_info,en
+Why is a full blood count ordered?,cbc_info,en
+Why is a CBC test ordered?,cbc_info,en
+Why is a CBC report ordered?,cbc_info,en
+What does a CBC measure?,cbc_info,en
+What does a complete blood count measure?,cbc_info,en
+What does a full blood count measure?,cbc_info,en
+What does a CBC test measure?,cbc_info,en
+What does a CBC report measure?,cbc_info,en
+How is a CBC used in hematology?,cbc_info,en
+How is a complete blood count used in hematology?,cbc_info,en
+How is a full blood count used in hematology?,cbc_info,en
+How is a CBC test used in hematology?,cbc_info,en
+How is a CBC report used in hematology?,cbc_info,en
+What information does a CBC provide?,cbc_info,en
+What information does a complete blood count provide?,cbc_info,en
+What information does a full blood count provide?,cbc_info,en
+What information does a CBC test provide?,cbc_info,en
+What information does a CBC report provide?,cbc_info,en
+How do I understand a CBC?,cbc_info,en
+How do I understand a complete blood count?,cbc_info,en
+How do I understand a full blood count?,cbc_info,en
+How do I understand a CBC test?,cbc_info,en
+How do I understand a CBC report?,cbc_info,en
+What can a CBC tell us?,cbc_info,en
+What can a complete blood count tell us?,cbc_info,en
+What can a full blood count tell us?,cbc_info,en
+What can a CBC test tell us?,cbc_info,en
+What can a CBC report tell us?,cbc_info,en
+What is the purpose of a CBC?,cbc_info,en
+What is the purpose of a complete blood count?,cbc_info,en
+What is the purpose of a full blood count?,cbc_info,en
+What is the purpose of a CBC test?,cbc_info,en
+What is the purpose of a CBC report?,cbc_info,en
+When is a CBC useful?,cbc_info,en
+When is a complete blood count useful?,cbc_info,en
+When is a full blood count useful?,cbc_info,en
+When is a CBC test useful?,cbc_info,en
+When is a CBC report useful?,cbc_info,en
+What is the normal range for RBC?,cbc_info,en
+What is the normal range for WBC?,cbc_info,en
+What is the normal range for hemoglobin?,cbc_info,en
+What is the normal range for hematocrit?,cbc_info,en
+What is the normal range for platelet count?,cbc_info,en
+What is the normal range for MCV?,cbc_info,en
+What is the normal range for MCH?,cbc_info,en
+What is the normal range for MCHC?,cbc_info,en
+What is the normal range for RDW?,cbc_info,en
+What is the normal range for MPV?,cbc_info,en
+What does low RBC suggest?,cbc_info,en
+What does low WBC suggest?,cbc_info,en
+What does low hemoglobin suggest?,cbc_info,en
+What does low hematocrit suggest?,cbc_info,en
+What does low platelet count suggest?,cbc_info,en
+What does low MCV suggest?,cbc_info,en
+What does low MCH suggest?,cbc_info,en
+What does low MCHC suggest?,cbc_info,en
+What does low RDW suggest?,cbc_info,en
+What does low MPV suggest?,cbc_info,en
+What does high RBC suggest?,cbc_info,en
+What does high WBC suggest?,cbc_info,en
+What does high hemoglobin suggest?,cbc_info,en
+What does high hematocrit suggest?,cbc_info,en
+What does high platelet count suggest?,cbc_info,en
+What does high MCV suggest?,cbc_info,en
+What does high MCH suggest?,cbc_info,en
+What does high MCHC suggest?,cbc_info,en
+What does high RDW suggest?,cbc_info,en
+What does high MPV suggest?,cbc_info,en
+How should I interpret low RBC?,cbc_info,en
+How should I interpret low WBC?,cbc_info,en
+How should I interpret low hemoglobin?,cbc_info,en
+How should I interpret low hematocrit?,cbc_info,en
+How should I interpret low platelet count?,cbc_info,en
+How should I interpret low MCV?,cbc_info,en
+How should I interpret low MCH?,cbc_info,en
+How should I interpret low MCHC?,cbc_info,en
+How should I interpret low RDW?,cbc_info,en
+How should I interpret low MPV?,cbc_info,en
+How should I interpret high RBC?,cbc_info,en
+How should I interpret high WBC?,cbc_info,en
+How should I interpret high hemoglobin?,cbc_info,en
+How should I interpret high hematocrit?,cbc_info,en
+How should I interpret high platelet count?,cbc_info,en
+How should I interpret high MCV?,cbc_info,en
+How should I interpret high MCH?,cbc_info,en
+How should I interpret high MCHC?,cbc_info,en
+How should I interpret high RDW?,cbc_info,en
+How should I interpret high MPV?,cbc_info,en
+Which tube is used for CBC?,sample_collection,en
+What tube color is used for CBC?,sample_collection,en
+Is a lavender top tube used for CBC?,sample_collection,en
+How many inversions are needed for an EDTA tube?,sample_collection,en
+How should I collect blood for CBC?,sample_collection,en
+What is the correct fill volume for an EDTA tube?,sample_collection,en
+How should I label a CBC specimen?,sample_collection,en
+How can I prevent hemolysis during CBC collection?,sample_collection,en
+What is the order of draw for CBC?,sample_collection,en
+What anticoagulant is used for CBC?,sample_collection,en
+How long is a CBC sample stable?,sample_collection,en
+How should a CBC sample be stored?,sample_collection,en
+How should CBC samples be transported?,sample_collection,en
+What are the rejection criteria for a CBC sample?,sample_collection,en
+What should I do with a clotted EDTA sample?,sample_collection,en
+What happens if an EDTA tube is underfilled?,sample_collection,en
+What happens if an EDTA tube is overfilled?,sample_collection,en
+What is the minimum sample volume for CBC?,sample_collection,en
+Should a CBC sample be refrigerated?,sample_collection,en
+What is the maximum hold time for CBC?,sample_collection,en
+How soon should CBC be run after blood draw?,sample_collection,en
+Can I use a citrate tube for CBC?,sample_collection,en
+Can I use a heparin tube for CBC?,sample_collection,en
+How should I mix an EDTA tube after collection?,sample_collection,en
+How should I handle pediatric CBC samples?,sample_collection,en
+How should I handle neonatal CBC samples?,sample_collection,en
+Can I use a microtainer for CBC?,sample_collection,en
+How do I avoid platelet clumping in a CBC sample?,sample_collection,en
+How do I avoid short draw in an EDTA tube?,sample_collection,en
+What is the correct barcode placement on a CBC tube?,sample_collection,en
+What PPE is needed for CBC blood draw?,sample_collection,en
+How should I dispose sharps after CBC collection?,sample_collection,en
+How should I document CBC collection time?,sample_collection,en
+What sample type is required for CBC?,sample_collection,en
+Which anticoagulant should be avoided for CBC?,sample_collection,en
+Can I reuse a tube for CBC?,sample_collection,en
+How should I transport CBC in a cold chain workflow?,sample_collection,en
+How should I handle a CBC redraw request?,sample_collection,en
+What is the difference between K2 EDTA and K3 EDTA for CBC?,sample_collection,en
+What is an acceptable sample appearance for CBC?,sample_collection,en
+What is the correct tourniquet time for CBC collection?,sample_collection,en
+How should I prepare the collection site for CBC?,sample_collection,en
+How do I avoid hemoconcentration during CBC draw?,sample_collection,en
+How should I handle a fainting patient during CBC draw?,sample_collection,en
+When should I mix the EDTA tube after collection?,sample_collection,en
+How do I prevent clotting in a lavender top tube?,sample_collection,en
+What should I do if the CBC sample is too old?,sample_collection,en
+What transport temperature is acceptable for CBC?,sample_collection,en
+How should I handle a broken CBC tube during transport?,sample_collection,en
+How do I avoid contamination of a CBC sample?,sample_collection,en
+Can CBC be performed on capillary blood?,sample_collection,en
+Can CBC be collected from a line draw?,sample_collection,en
+What is the acceptable time from CBC draw to analysis?,sample_collection,en
+How do I handle CBC transport through a pneumatic tube?,sample_collection,en
+What storage condition is recommended for EDTA blood?,sample_collection,en
+What is the correct pediatric volume for CBC?,sample_collection,en
+How do I avoid sample dilution for CBC?,sample_collection,en
+How do I handle an EDTA sample with visible clots?,sample_collection,en
+What needle gauge is appropriate for CBC collection?,sample_collection,en
+How do I handle lipemic CBC samples?,sample_collection,en
+"For CBC collection, what mixing step is required?",sample_collection,en
+"For CBC collection, what labeling step matters most?",sample_collection,en
+"For CBC collection, what transport condition must be checked?",sample_collection,en
+"For CBC collection, what storage rule should I follow?",sample_collection,en
+"For CBC collection, when should I reject the sample?",sample_collection,en
+"For CBC collection, how do I reduce hemolysis risk?",sample_collection,en
+"For CBC collection, how do I prevent clotting?",sample_collection,en
+"For CBC collection, what should I do for low volume?",sample_collection,en
+"For CBC collection, what should I do if transport is delayed?",sample_collection,en
+"For CBC collection, what should I document after the draw?",sample_collection,en
+"During CBC specimen handling, what mixing step is required?",sample_collection,en
+"During CBC specimen handling, what labeling step matters most?",sample_collection,en
+"During CBC specimen handling, what transport condition must be checked?",sample_collection,en
+"During CBC specimen handling, what storage rule should I follow?",sample_collection,en
+"During CBC specimen handling, when should I reject the sample?",sample_collection,en
+"During CBC specimen handling, how do I reduce hemolysis risk?",sample_collection,en
+"During CBC specimen handling, how do I prevent clotting?",sample_collection,en
+"During CBC specimen handling, what should I do for low volume?",sample_collection,en
+"During CBC specimen handling, what should I do if transport is delayed?",sample_collection,en
+"During CBC specimen handling, what should I document after the draw?",sample_collection,en
+"In EDTA specimen processing, what mixing step is required?",sample_collection,en
+"In EDTA specimen processing, what labeling step matters most?",sample_collection,en
+"In EDTA specimen processing, what transport condition must be checked?",sample_collection,en
+"In EDTA specimen processing, what storage rule should I follow?",sample_collection,en
+"In EDTA specimen processing, when should I reject the sample?",sample_collection,en
+"In EDTA specimen processing, how do I reduce hemolysis risk?",sample_collection,en
+"In EDTA specimen processing, how do I prevent clotting?",sample_collection,en
+"In EDTA specimen processing, what should I do for low volume?",sample_collection,en
+"In EDTA specimen processing, what should I do if transport is delayed?",sample_collection,en
+"In EDTA specimen processing, what should I document after the draw?",sample_collection,en
+"For a lavender top tube, what mixing step is required?",sample_collection,en
+"For a lavender top tube, what labeling step matters most?",sample_collection,en
+"For a lavender top tube, what transport condition must be checked?",sample_collection,en
+"For a lavender top tube, what storage rule should I follow?",sample_collection,en
+"For a lavender top tube, when should I reject the sample?",sample_collection,en
+"For a lavender top tube, how do I reduce hemolysis risk?",sample_collection,en
+"For a lavender top tube, how do I prevent clotting?",sample_collection,en
+"For a lavender top tube, what should I do for low volume?",sample_collection,en
+"For a lavender top tube, what should I do if transport is delayed?",sample_collection,en
+"For a lavender top tube, what should I document after the draw?",sample_collection,en
+"In hematology sample preparation, what mixing step is required?",sample_collection,en
+"In hematology sample preparation, what labeling step matters most?",sample_collection,en
+"In hematology sample preparation, what transport condition must be checked?",sample_collection,en
+"In hematology sample preparation, what storage rule should I follow?",sample_collection,en
+"In hematology sample preparation, when should I reject the sample?",sample_collection,en
+"In hematology sample preparation, how do I reduce hemolysis risk?",sample_collection,en
+"In hematology sample preparation, how do I prevent clotting?",sample_collection,en
+"In hematology sample preparation, what should I do for low volume?",sample_collection,en
+"In hematology sample preparation, what should I do if transport is delayed?",sample_collection,en
+"In hematology sample preparation, what should I document after the draw?",sample_collection,en
+How should I handle a CBC sample from a difficult draw?,sample_collection,en
+How should I manage a redraw for CBC?,sample_collection,en
+What should I check before sending a CBC sample to the analyzer?,sample_collection,en
+How should I prepare an EDTA tube before transport?,sample_collection,en
+What should I verify on the label before processing CBC?,sample_collection,en
+How should I manage CBC sample stability during a shift change?,sample_collection,en
+What collection issue most often causes CBC rejection?,sample_collection,en
+How do I handle CBC collection for a pediatric patient?,sample_collection,en
+How do I handle CBC collection for a neonatal patient?,sample_collection,en
+What should I review when the CBC specimen volume looks low?,sample_collection,en
+How do I process a CBC sample that arrives late?,sample_collection,en
+How do I document a CBC sample recollection?,sample_collection,en
+What should I do when the EDTA sample shows clots?,sample_collection,en
+How should I transport CBC after collection in a busy ward?,sample_collection,en
+How do I keep CBC sample quality during transport?,sample_collection,en
+How should I handle a CBC sample with possible hemolysis?,sample_collection,en
+What should I do if the tube cap is loose after collection?,sample_collection,en
+How do I manage CBC sample handoff between shifts?,sample_collection,en
+What should I check before accepting a CBC sample into the lab?,sample_collection,en
+How do I reduce pre-analytical errors for CBC?,sample_collection,en
+I need help with CBC testing.,help,en
+Can you assist me with a CBC question?,help,en
+Help me understand CBC.,help,en
+I need guidance on hematology.,help,en
+Can you guide me on sample collection?,help,en
+I need help with EDTA tube handling.,help,en
+Please help with CBC basics.,help,en
+I need assistance with hematology workflow.,help,en
+Can you explain how this works in hematology?,help,en
+I need help interpreting CBC parameters.,help,en
+I need help with specimen handling.,help,en
+Please assist with CBC lab steps.,help,en
+I have a question about CBC testing.,help,en
+Can you help me with tube selection?,help,en
+I need support with CBC sample stability.,help,en
+I need help with CBC reference ranges.,help,en
+Help me with RBC indices.,help,en
+Please guide me with platelet count information.,help,en
+I need help with laboratory workflow for CBC.,help,en
+Can you walk me through CBC collection steps?,help,en
+I need help understanding hematology lab questions.,help,en
+Can you support me with CBC specimen handling?,help,en
+I need a quick explanation of CBC basics.,help,en
+Please help me with CBC reporting terms.,help,en
+I need help with pre-analytical CBC issues.,help,en
+Can you help me understand EDTA sample requirements?,help,en
+Please guide me through CBC sample transport.,help,en
+I need assistance with CBC sample rejection rules.,help,en
+Can you help me with hematology sample workflow?,help,en
+I need help with CBC collection quality checks.,help,en
+hello,greeting,en
+hi,greeting,en
+good morning,greeting,en
+good evening,greeting,en
+hey there,greeting,en
+hello lab assistant,greeting,en
+"hi, I have a CBC question",greeting,en
+greetings,greeting,en
+hello there,greeting,en
+hey,greeting,en
+good afternoon,greeting,en
+hi assistant,greeting,en
+hello bot,greeting,en
+hi lab bot,greeting,en
+morning,greeting,en
+evening,greeting,en
+can you help me,greeting,en
+"hello, can you assist?",greeting,en
+hi there,greeting,en
+hey assistant,greeting,en
+asdf qwerty,fallback,en
+blorp blorp,fallback,en
+random text 123,fallback,en
+nonsense input,fallback,en
+???,fallback,en
+lorem ipsum,fallback,en
+blue sandwich,fallback,en
+n/a,fallback,en
+not sure,fallback,en
+no idea,fallback,en
+zxcv qwer,fallback,en
+test noise,fallback,en
+unknown words,fallback,en
+sample gibberish,fallback,en
+empty meaning,fallback,en
+not related,fallback,en
+banana cloud,fallback,en
+silent number,fallback,en
+strange phrase,fallback,en
+irrelevant text,fallback,en

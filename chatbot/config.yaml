@@ -1,0 +1,49 @@
+﻿project_name: multilingual-chatbot
+
+data:
+  dataset_path: data/train/intent_dataset.jsonl
+  test_size: 0.2
+
+model:
+  type: sequential
+  architecture: bilstm
+  max_length: 64
+  embedding_dim: 128
+  hidden_dim: 128
+  num_layers: 1
+  dropout: 0.2
+  min_freq: 1
+  max_vocab_size: 10000
+  num_labels: 16
+model_default_key: default
+model_registry:
+  default:
+    path: models/intent
+    version: bilstm-v3
+
+training:
+  batch_size: 32
+  eval_batch_size: 64
+  epochs: 8
+  learning_rate: 1.0e-3
+  weight_decay: 1.0e-5
+  warmup_steps: 0
+  warmup_ratio: 0.0
+  output_dir: models/intent
+  seed: 42
+
+inference:
+  threshold: 0.45
+  device: auto
+
+logging:
+  log_file: logs/app.log
+  level: INFO
+
+responses:
+  default_lang: en
+  knowledge_path: data/knowledge/hematology_responses.jsonl
+  retrieval_threshold: 0.18
+
+storage:
+  chat_db_path: data/reports/chat_history.db

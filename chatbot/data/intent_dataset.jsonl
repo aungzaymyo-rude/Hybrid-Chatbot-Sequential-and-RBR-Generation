@@ -1,0 +1,316 @@
+{"text": "please help", "intent": "help", "lang": "en"}
+{"text": "What is a CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "Explain complete blood count", "intent": "cbc_info", "lang": "en"}
+{"text": "What does a CBC include?", "intent": "cbc_info", "lang": "en"}
+{"text": "What parameters are in a CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "Which tests are part of a CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does CBC measure?", "intent": "cbc_info", "lang": "en"}
+{"text": "Why is a CBC ordered?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is hemoglobin in a CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is hematocrit?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is RBC count?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is WBC count?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is platelet count?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is MCV?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is MCH?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is MCHC?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is RDW?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is MPV?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the differential in CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "CBC vs differential ? what is the difference?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does the CBC report show?", "intent": "cbc_info", "lang": "en"}
+{"text": "How do I read a CBC report?", "intent": "cbc_info", "lang": "en"}
+{"text": "Explain CBC reference ranges", "intent": "cbc_info", "lang": "en"}
+{"text": "What are normal CBC ranges?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does low hemoglobin mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does high WBC mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does low platelet mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does high hematocrit indicate?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does a low MCV suggest?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is anisocytosis and RDW?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is leukocytosis?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is leukopenia?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is anemia in CBC terms?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is thrombocytopenia?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is thrombocytosis?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is neutrophil count?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is lymphocyte count?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is eosinophil count?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is basophil count?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is monocyte count?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the absolute neutrophil count?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does RBC indices mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is a CBC with differential?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the purpose of CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "Can you explain CBC results?", "intent": "cbc_info", "lang": "en"}
+{"text": "Give a simple explanation of CBC", "intent": "cbc_info", "lang": "en"}
+{"text": "What does a normal CBC look like?", "intent": "cbc_info", "lang": "en"}
+{"text": "How is a CBC performed?", "intent": "cbc_info", "lang": "en"}
+{"text": "What sample is needed for CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does CBC stand for?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does RBC stand for?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does WBC stand for?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does HGB mean in CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does HCT mean in CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does PLT mean in CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "Explain RDW on a CBC", "intent": "cbc_info", "lang": "en"}
+{"text": "Explain MCV on a CBC", "intent": "cbc_info", "lang": "en"}
+{"text": "Explain MCHC on a CBC", "intent": "cbc_info", "lang": "en"}
+{"text": "Explain MCH on a CBC", "intent": "cbc_info", "lang": "en"}
+{"text": "Explain MPV on a CBC", "intent": "cbc_info", "lang": "en"}
+{"text": "What is a CBC panel?", "intent": "cbc_info", "lang": "en"}
+{"text": "Is CBC the same as full blood count?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is FBC vs CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "When should a CBC be repeated?", "intent": "cbc_info", "lang": "en"}
+{"text": "How long does CBC take?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does CBC mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "Explain CBC", "intent": "cbc_info", "lang": "en"}
+{"text": "How is CBC measured?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does RBC mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "Explain RBC", "intent": "cbc_info", "lang": "en"}
+{"text": "How is RBC measured?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does WBC mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "Explain WBC", "intent": "cbc_info", "lang": "en"}
+{"text": "How is WBC measured?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does HGB mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "Explain HGB", "intent": "cbc_info", "lang": "en"}
+{"text": "How is HGB measured?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does HCT mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "Explain HCT", "intent": "cbc_info", "lang": "en"}
+{"text": "How is HCT measured?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does PLT mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "Explain PLT", "intent": "cbc_info", "lang": "en"}
+{"text": "How is PLT measured?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does MCV mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "Explain MCV", "intent": "cbc_info", "lang": "en"}
+{"text": "How is MCV measured?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does MCH mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "Explain MCH", "intent": "cbc_info", "lang": "en"}
+{"text": "How is MCH measured?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does MCHC mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "Explain MCHC", "intent": "cbc_info", "lang": "en"}
+{"text": "How is MCHC measured?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does RDW mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "Explain RDW", "intent": "cbc_info", "lang": "en"}
+{"text": "How is RDW measured?", "intent": "cbc_info", "lang": "en"}
+{"text": "Which tube is used for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "What tube for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "EDTA tube for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "Is lavender top used for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "How many inversions for EDTA tube?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to collect blood for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the correct fill volume for EDTA?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to label a CBC specimen?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to prevent hemolysis during collection?", "intent": "sample_collection", "lang": "en"}
+{"text": "Order of draw for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "Can I use heparin tube for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "What anticoagulant is used for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the proper mixing for EDTA?", "intent": "sample_collection", "lang": "en"}
+{"text": "How long is CBC sample stable?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to store a CBC sample?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to transport CBC samples?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is specimen rejection criteria for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "What to do with clotted EDTA sample?", "intent": "sample_collection", "lang": "en"}
+{"text": "What if EDTA tube is underfilled?", "intent": "sample_collection", "lang": "en"}
+{"text": "What if EDTA tube is overfilled?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the minimum volume for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "Should CBC sample be refrigerated?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the maximum hold time for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "How many times to invert lavender tube?", "intent": "sample_collection", "lang": "en"}
+{"text": "Can I centrifuge EDTA for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the correct patient ID labeling?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to avoid platelet clumping?", "intent": "sample_collection", "lang": "en"}
+{"text": "What causes hemolysis in CBC samples?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to handle difficult draw for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "Can I draw CBC from IV line?", "intent": "sample_collection", "lang": "en"}
+{"text": "Can I use capillary sample for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the required tube type for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to handle lipemic samples for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the proper needle gauge for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to mix EDTA tube gently?", "intent": "sample_collection", "lang": "en"}
+{"text": "What does EDTA do in CBC tube?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the stability of CBC at room temp?", "intent": "sample_collection", "lang": "en"}
+{"text": "When should CBC sample be rejected?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the tube additive for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the correct draw volume for lavender top?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to avoid clotting in CBC sample?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to handle pediatric CBC samples?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to handle neonatal CBC samples?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to handle microtainer for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the correct capillary collection method?", "intent": "sample_collection", "lang": "en"}
+{"text": "Can I use citrate tube for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is EDTA concentration in CBC tube?", "intent": "sample_collection", "lang": "en"}
+{"text": "How soon should CBC be run after draw?", "intent": "sample_collection", "lang": "en"}
+{"text": "What to do if sample is hemolyzed?", "intent": "sample_collection", "lang": "en"}
+{"text": "What if sample is delayed in transport?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to mix tube after collection?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to collect CBC from fingerstick?", "intent": "sample_collection", "lang": "en"}
+{"text": "What if patient is on anticoagulant?", "intent": "sample_collection", "lang": "en"}
+{"text": "Can I recollect CBC if clotted?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to avoid short draw in EDTA tube?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the correct order of draw?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the tube color for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to handle QC for sample collection?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the correct barcode placement?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the proper PPE for blood draw?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to dispose sharps after CBC draw?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to document collection time?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the sample type for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "What anticoagulant to avoid for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "Can I reuse a tube?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to transport CBC in cold chain?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to handle redraw requests?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is EDTA K2 vs K3 difference for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is acceptable sample appearance for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "I need help with CBC testing", "intent": "help", "lang": "en"}
+{"text": "Can you assist me with a CBC question", "intent": "help", "lang": "en"}
+{"text": "Help me understand CBC", "intent": "help", "lang": "en"}
+{"text": "I need guidance on hematology", "intent": "help", "lang": "en"}
+{"text": "Can you guide me on sample collection", "intent": "help", "lang": "en"}
+{"text": "I need help with EDTA tube handling", "intent": "help", "lang": "en"}
+{"text": "Please help with CBC basics", "intent": "help", "lang": "en"}
+{"text": "I need assistance with hematology workflow", "intent": "help", "lang": "en"}
+{"text": "Can you explain how this works in hematology", "intent": "help", "lang": "en"}
+{"text": "I need help interpreting CBC parameters", "intent": "help", "lang": "en"}
+{"text": "I need help with specimen handling", "intent": "help", "lang": "en"}
+{"text": "Please assist with CBC lab steps", "intent": "help", "lang": "en"}
+{"text": "Need help with lab SOP for CBC", "intent": "help", "lang": "en"}
+{"text": "I have a question about CBC testing", "intent": "help", "lang": "en"}
+{"text": "Can you help me with tube selection?", "intent": "help", "lang": "en"}
+{"text": "I need help with collection order of draw", "intent": "help", "lang": "en"}
+{"text": "I need support with CBC sample stability", "intent": "help", "lang": "en"}
+{"text": "I need help with CBC reference ranges", "intent": "help", "lang": "en"}
+{"text": "Help me with RBC indices", "intent": "help", "lang": "en"}
+{"text": "Please guide me with platelet count info", "intent": "help", "lang": "en"}
+{"text": "hello", "intent": "greeting", "lang": "en"}
+{"text": "hi", "intent": "greeting", "lang": "en"}
+{"text": "good morning", "intent": "greeting", "lang": "en"}
+{"text": "good evening", "intent": "greeting", "lang": "en"}
+{"text": "hey there", "intent": "greeting", "lang": "en"}
+{"text": "hello, can you help?", "intent": "greeting", "lang": "en"}
+{"text": "hi, I have a CBC question", "intent": "greeting", "lang": "en"}
+{"text": "greetings", "intent": "greeting", "lang": "en"}
+{"text": "hello lab assistant", "intent": "greeting", "lang": "en"}
+{"text": "hi, need help with CBC", "intent": "greeting", "lang": "en"}
+{"text": "asdf qwerty", "intent": "fallback", "lang": "en"}
+{"text": "blorp blorp", "intent": "fallback", "lang": "en"}
+{"text": "random text 123", "intent": "fallback", "lang": "en"}
+{"text": "nonsense input", "intent": "fallback", "lang": "en"}
+{"text": "???", "intent": "fallback", "lang": "en"}
+{"text": "lorem ipsum", "intent": "fallback", "lang": "en"}
+{"text": "What does a low WBC mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does a high RBC mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does a low RBC mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does a high platelet mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does a low hematocrit mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the RBC morphology in CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is WBC differential?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the neutrophil percentage?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the lymphocyte percentage?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the monocyte percentage?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the eosinophil percentage?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the basophil percentage?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does CBC stand for in lab?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does RDW measure?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does MCV measure?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does MCH measure?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does MCHC measure?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does MPV measure?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is hematology CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "Explain CBC in simple terms", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the difference between CBC and full blood count?", "intent": "cbc_info", "lang": "en"}
+{"text": "Is CBC a routine test?", "intent": "cbc_info", "lang": "en"}
+{"text": "Why is CBC important?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does CBC tell you?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the normal range for hemoglobin?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the normal range for WBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the normal range for platelets?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the normal range for hematocrit?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the normal range for RBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the normal range for MCV?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the normal range for RDW?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the normal range for MCH?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the normal range for MCHC?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the normal CBC range?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is low CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is high CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the normal RBC range?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is low RBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is high RBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the normal WBC range?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is low WBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is high WBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the normal HGB range?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is low HGB?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is high HGB?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the normal HCT range?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is low HCT?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is high HCT?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the normal PLT range?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is low PLT?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is high PLT?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the normal MCV range?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is low MCV?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is high MCV?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the normal MCH range?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is low MCH?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is high MCH?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the normal MCHC range?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is low MCHC?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is high MCHC?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the normal RDW range?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is low RDW?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is high RDW?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does MPV mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "Explain MPV", "intent": "cbc_info", "lang": "en"}
+{"text": "How is MPV measured?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the normal MPV range?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is low MPV?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is high MPV?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the correct tourniquet time for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the correct site prep for CBC draw?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to avoid hemoconcentration in CBC draw?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to handle fainting patient during draw?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the best time to mix EDTA tube?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to prevent clots in lavender tube?", "intent": "sample_collection", "lang": "en"}
+{"text": "What to do if sample is too old for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the acceptable transport temperature for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to handle broken tube during transport?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to label specimens with barcode?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the proper hand hygiene before draw?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to handle biohazard waste after draw?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the collection order if drawing multiple tubes?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to avoid contamination of CBC sample?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to handle EDTA sample with clots?", "intent": "sample_collection", "lang": "en"}
+{"text": "Can I use EDTA plasma for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the correct mixing technique for EDTA tube?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to handle patient with difficult veins?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the acceptable time from draw to analysis?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to handle CBC sample in pneumatic tube?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the recommended storage for EDTA blood?", "intent": "sample_collection", "lang": "en"}
+{"text": "Can CBC be performed on a microtainer?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the correct volume for pediatric CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the acceptable fill for EDTA microtainer?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to avoid sample dilution for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to handle line draw for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the correct tube inversion count for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to avoid platelet satellitism?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to handle clotted sample rejection?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the appropriate collection needle for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the minimum acceptable volume for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "Need help with hematology procedures", "intent": "help", "lang": "en"}
+{"text": "Can you explain hematology workflow?", "intent": "help", "lang": "en"}
+{"text": "Please help me with CBC lab process", "intent": "help", "lang": "en"}
+{"text": "I need guidance on EDTA sample handling", "intent": "help", "lang": "en"}
+{"text": "Can you assist with blood draw steps?", "intent": "help", "lang": "en"}
+{"text": "I need help with hematology questions", "intent": "help", "lang": "en"}
+{"text": "hello there", "intent": "greeting", "lang": "en"}
+{"text": "hey lab bot", "intent": "greeting", "lang": "en"}
+{"text": "hi assistant", "intent": "greeting", "lang": "en"}
+{"text": "good afternoon", "intent": "greeting", "lang": "en"}
+{"text": "hey", "intent": "greeting", "lang": "en"}
+{"text": "blue sandwich", "intent": "fallback", "lang": "en"}
+{"text": "n/a", "intent": "fallback", "lang": "en"}
+{"text": "not sure", "intent": "fallback", "lang": "en"}
+{"text": "no idea", "intent": "fallback", "lang": "en"}

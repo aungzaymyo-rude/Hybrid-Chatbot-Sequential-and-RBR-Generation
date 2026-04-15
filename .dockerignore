@@ -1,0 +1,14 @@
+﻿__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+.venv/
+.env
+.git/
+.gitignore
+chatbot/models/
+chatbot/logs/
+chatbot/evaluation/runs/
+issues/issue_log.jsonl

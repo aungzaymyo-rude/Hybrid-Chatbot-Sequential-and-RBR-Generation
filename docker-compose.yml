@@ -1,0 +1,17 @@
+﻿services:
+  chatbot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: multilingual-chatbot
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/app
+      - hf_cache:/root/.cache/huggingface
+    environment:
+      - HF_HOME=/root/.cache/huggingface
+    command: ["uvicorn", "chatbot.api.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+
+volumes:
+  hf_cache:

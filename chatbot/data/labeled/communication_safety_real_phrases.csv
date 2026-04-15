@@ -1,0 +1,85 @@
+text,intent,lang
+what kinds of hematology questions can you answer,capability_query,en
+can you tell me what this lab assistant covers,capability_query,en
+which hematology topics are you trained for,capability_query,en
+are you able to explain coagulation terms,capability_query,en
+can you help with blood smear questions too,capability_query,en
+what sort of CBC questions should I ask you,capability_query,en
+do you only handle lab workflow questions,capability_query,en
+can you explain your scope before I ask,capability_query,en
+what are you meant to help with in this chat,capability_query,en
+are you for sample handling or result explanation,capability_query,en
+what can this hematology bot actually do,capability_query,en
+before we start what do you support,capability_query,en
+thanks that answered my question,thanks,en
+okay thanks for clearing that up,thanks,en
+got it thank you,thanks,en
+that makes sense thanks,thanks,en
+thanks for the quick explanation,thanks,en
+appreciate the help on that one,thanks,en
+thanks i understand it now,thanks,en
+perfect thank you for that,thanks,en
+thank you that was clear,thanks,en
+thanks for walking me through it,thanks,en
+many thanks for the clarification,thanks,en
+thanks that is enough for now,thanks,en
+alright bye for now,goodbye,en
+thanks im done here,goodbye,en
+we can stop the chat now,goodbye,en
+okay see you later,goodbye,en
+that is all i needed goodbye,goodbye,en
+bye i will come back if i have more lab questions,goodbye,en
+talk later thanks again,goodbye,en
+ending the conversation now,goodbye,en
+have a good day goodbye,goodbye,en
+see you next time,goodbye,en
+goodbye and thanks for the help,goodbye,en
+im leaving the chat now,goodbye,en
+can you explain that more simply,clarification,en
+i still dont follow what you mean,clarification,en
+could you say that in plain language,clarification,en
+please explain that one more time,clarification,en
+im not sure i understood your answer,clarification,en
+can you break that down a bit more,clarification,en
+what exactly are you saying there,clarification,en
+could you rephrase that for me,clarification,en
+please make that easier to understand,clarification,en
+can you clarify the term you just used,clarification,en
+im confused can you explain again,clarification,en
+say that another way please,clarification,en
+can you tell me a joke,out_of_scope,en
+who won the football game tonight,out_of_scope,en
+what is the weather in yangon right now,out_of_scope,en
+help me choose a laptop,out_of_scope,en
+can you recommend a movie for tonight,out_of_scope,en
+what is the latest bitcoin price,out_of_scope,en
+write a short poem for me,out_of_scope,en
+how do i cook fried rice,out_of_scope,en
+what is the capital city of japan,out_of_scope,en
+can you help me plan a vacation,out_of_scope,en
+who is the best singer right now,out_of_scope,en
+tell me about today's stock market,out_of_scope,en
+what dose should i inject into this patient,unsafe_medical_request,en
+which drug should i prescribe for this case,unsafe_medical_request,en
+tell me how to treat this patient right now,unsafe_medical_request,en
+what medication should i give for anemia,unsafe_medical_request,en
+can you diagnose this patient's condition,unsafe_medical_request,en
+how should i start treatment for leukemia,unsafe_medical_request,en
+what antibiotic should i order for this patient,unsafe_medical_request,en
+please tell me the injection dose,unsafe_medical_request,en
+which medicine should i use for this person,unsafe_medical_request,en
+how do i manage this patient medically,unsafe_medical_request,en
+what therapy should i begin today,unsafe_medical_request,en
+can you decide the treatment plan for me,unsafe_medical_request,en
+what do you mean,incomplete_query,en
+how does that work,incomplete_query,en
+which one do you mean,incomplete_query,en
+can you explain this,incomplete_query,en
+what about that one,incomplete_query,en
+how about the other one,incomplete_query,en
+why is that,incomplete_query,en
+what next then,incomplete_query,en
+can you help with this,incomplete_query,en
+which test do you mean,incomplete_query,en
+what does that refer to,incomplete_query,en
+i dont get it,incomplete_query,en
