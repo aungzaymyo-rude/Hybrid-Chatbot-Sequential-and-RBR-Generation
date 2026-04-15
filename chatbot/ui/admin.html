@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hematology Chatbot Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/ui/admin.css">
+</head>
+<body>
+  <main class="admin-shell">
+    <header class="admin-header">
+      <div>
+        <p class="eyebrow">Admin Panel</p>
+        <h1>Production Monitoring</h1>
+        <p class="subtitle">Track fallback drift, guardrails, confidence, and reviewed user phrases.</p>
+      </div>
+      <div class="header-actions">
+        <a class="secondary-button" href="/">Open Chat UI</a>
+        <a id="export-logs" class="secondary-button" href="/admin/api/export-logs">Export current logs</a>
+        <a id="export-reviewed" class="secondary-button" href="/admin/api/export-reviewed">Export reviewed CSV</a>
+        <button id="refresh-dashboard" class="primary-button" type="button">Refresh</button>
+      </div>
+    </header>
+
+    <section class="metrics-grid" id="metrics-grid"></section>
+
+<section class="panel-grid visual-grid">
+      <article class="panel">
+        <div class="panel-head">
+          <h2>Monitoring Rates</h2>
+        </div>
+        <div id="rates-chart" class="chart-stack"></div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-head">
+          <h2>Review Workflow</h2>
+        </div>
+        <div id="review-chart" class="chart-stack"></div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-head">
+          <h2>Top Intents</h2>
+        </div>
+        <div id="intent-chart" class="chart-stack"></div>
+      </article>
+    </section>
+
+    <section class="panel-grid">
+      <article class="panel">
+        <div class="panel-head">
+          <h2>Intent Breakdown</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Intent</th><th>Count</th><th>Avg confidence</th></tr>
+            </thead>
+            <tbody id="intent-table"></tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-head">
+          <h2>Flagged Phrases</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Phrase</th><th>Hits</th><th>Intent</th><th>Avg confidence</th></tr>
+            </thead>
+            <tbody id="flagged-table"></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Recent Conversations</h2>
+          <p class="panel-copy">Review fallback, guardrail, and low-confidence traffic for retraining.</p>
+        </div>
+        <div class="filters">
+          <label><input id="flagged-only" type="checkbox"> Flagged only</label>
+          <select id="review-status">
+            <option value="">All review states</option>
+            <option value="unreviewed">Unreviewed</option>
+            <option value="accepted">Accepted</option>
+            <option value="rejected">Rejected</option>
+          </select>
+          <button id="reload-logs" class="secondary-button" type="button">Reload logs</button>
+          <button id="run-retrain-help" class="secondary-button" type="button">Show retrain command</button>
+        </div>
+      </div>
+      <div id="logs-list" class="logs-list"></div>
+    </section>
+  </main>
+
+  <script src="/ui/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+text,intent,lang
+what is red blood cell count in a CBC report,rbc_term,en
+how should i explain hemoglobin to a trainee,rbc_term,en
+what does hematocrit represent in hematology,rbc_term,en
+what is the meaning of erythrocyte count,rbc_term,en
+how is MCV used during anemia review,rbc_term,en
+what is the role of MCH in red cell interpretation,rbc_term,en
+what does MCHC help identify in a report,rbc_term,en
+why is RDW reviewed with MCV,rbc_term,en
+what does a low hemoglobin value usually mean in broad terms,rbc_term,en
+what does a high hematocrit suggest in general,rbc_term,en
+how do red cell indices work together,rbc_term,en
+what is the difference between hemoglobin and hematocrit,rbc_term,en
+what does microcytic anemia pattern mean,rbc_term,en
+what does macrocytic pattern mean in CBC review,rbc_term,en
+how is RBC count interpreted with hematocrit,rbc_term,en
+what should i know about red cell indices,rbc_term,en
+what does anisocytosis relate to in CBC review,rbc_term,en
+how should i understand hypochromia in basic terms,rbc_term,en
+what does low RBC count indicate in general screening,rbc_term,en
+what does elevated hemoglobin suggest generally,rbc_term,en
+how is red cell morphology linked to RBC indices,rbc_term,en
+what does normocytic mean in hematology review,rbc_term,en
+can you define hematocrit simply,rbc_term,en
+can you define hemoglobin simply,rbc_term,en
+how do i read MCHC on a report,rbc_term,en
+how do i read RDW on a report,rbc_term,en
+what is packed cell volume compared with hematocrit,rbc_term,en
+why is MCV important in CBC interpretation,rbc_term,en
+what does low MCH suggest in broad terms,rbc_term,en
+what does high RDW mean in general review,rbc_term,en
+what does red cell count show in screening,rbc_term,en
+which red cell measurements are most important in anemia workup,rbc_term,en
+what is the basic purpose of hemoglobin testing,rbc_term,en
+how should a student understand erythrocytes in CBC,rbc_term,en
+what does low hematocrit suggest generally,rbc_term,en
+what is the meaning of red cell distribution width,rbc_term,en
+how can MCV guide red cell pattern classification,rbc_term,en
+how should i summarize RBC parameters for training,rbc_term,en
+why are red cell indices reported together,rbc_term,en
+what is the relationship between RBC count and hemoglobin,rbc_term,en
+what is total white cell count in hematology,wbc_term,en
+how do you explain leukocytosis to a student,wbc_term,en
+how do you explain leukopenia to a student,wbc_term,en
+what does a differential white count measure,wbc_term,en
+what does neutrophilia mean in broad terms,wbc_term,en
+what does neutropenia mean in broad terms,wbc_term,en
+what does lymphocytosis mean in broad terms,wbc_term,en
+what does eosinophilia indicate in a general explanation,wbc_term,en
+what does monocytosis mean in a general explanation,wbc_term,en
+what does basophilia mean in a general explanation,wbc_term,en
+what is the use of a white cell differential,wbc_term,en
+why would a CBC trigger differential review,wbc_term,en
+how do you read a raised WBC count at a basic level,wbc_term,en
+how do you read a low WBC count at a basic level,wbc_term,en
+what are the main parts of the white cell differential,wbc_term,en
+what does a left shift mean in simple terms,wbc_term,en
+what does bandemia mean in simple terms,wbc_term,en
+how is WBC count interpreted with differential pattern,wbc_term,en
+what does leukocyte count tell us generally,wbc_term,en
+what is the difference between WBC count and differential count,wbc_term,en
+what should be reviewed when white cell flags appear,wbc_term,en
+how can infection affect white blood cell count generally,wbc_term,en
+how can inflammation affect white blood cell count generally,wbc_term,en
+what does a high neutrophil count suggest in general,wbc_term,en
+what does a low neutrophil count suggest in general,wbc_term,en
+what does lymphopenia mean in basic hematology language,wbc_term,en
+why is a manual differential sometimes needed,wbc_term,en
+how do i summarize white cell review for new staff,wbc_term,en
+what is the purpose of leukocyte review in CBC,wbc_term,en
+what does abnormal white cell morphology lead to in workflow,wbc_term,en
+what does WBC count represent on the report,wbc_term,en
+how is the differential used after an abnormal CBC,wbc_term,en
+what does a broad high white count mean before clinical review,wbc_term,en
+what does a broad low white count mean before clinical review,wbc_term,en
+why is the white cell differential important,wbc_term,en
+what is the meaning of leukocyte differential,wbc_term,en
+how should i explain white blood cells to a trainee,wbc_term,en
+what does toxic granulation relate to in white cell review,wbc_term,en
+how do abnormal lymphocytes fit into differential review,wbc_term,en
+what can a differential add beyond total WBC count,wbc_term,en
+what is the purpose of PT in coagulation testing,coag_test,en
+what is the purpose of aPTT in coagulation testing,coag_test,en
+how should i explain INR to a trainee,coag_test,en
+what does prolonged prothrombin time suggest generally,coag_test,en
+what does prolonged activated partial thromboplastin time suggest generally,coag_test,en
+why must coagulation tubes be filled completely,coag_test,en
+what happens when a citrate specimen is underfilled,coag_test,en
+why is the citrate ratio important in coagulation testing,coag_test,en
+what tube is standard for PT and aPTT testing,coag_test,en
+how should citrate samples be mixed after collection,coag_test,en
+how should coagulation samples be transported to the lab,coag_test,en
+what are the common screening coagulation assays,coag_test,en
+what is the difference between PT and aPTT,coag_test,en
+which pathway does PT assess,coag_test,en
+which pathway does aPTT assess,coag_test,en
+what does INR standardize in reporting,coag_test,en
+what is the role of INR in warfarin monitoring,coag_test,en
+why are clotted citrate specimens rejected,coag_test,en
+what preanalytical errors affect coagulation tests,coag_test,en
+what should i know about light blue tube handling,coag_test,en
+why can delayed transport change coagulation results,coag_test,en
+how do i summarize PT aPTT and INR for students,coag_test,en
+what is a screening coagulation profile,coag_test,en
+how do coagulation assays fit into hematology workflow,coag_test,en
+what does abnormal clotting time mean before clinical interpretation,coag_test,en
+what is the purpose of sodium citrate in coagulation collection,coag_test,en
+what can happen if the coagulation tube is overfilled,coag_test,en
+what sample handling step matters most for coagulation tests,coag_test,en
+how does heparin monitoring differ from PT INR review,coag_test,en
+what should be checked before accepting a citrate sample,coag_test,en
+why does hematocrit matter for citrate adjustment in some cases,coag_test,en
+what is the broad meaning of prolonged clotting time,coag_test,en
+how do i explain coagulation screen basics simply,coag_test,en
+why is prompt centrifugation important for coag testing,coag_test,en
+what causes preanalytical error in PT and aPTT testing,coag_test,en
+how should i explain coagulation specimen requirements,coag_test,en
+what does PT INR report tell the lab team,coag_test,en
+why is coagulation sample integrity important,coag_test,en
+what tube handling problems can invalidate coag testing,coag_test,en
+how can i describe citrate tube requirements for training,coag_test,en

@@ -1,5 +1,6 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
+import os
 from pathlib import Path
 from typing import Any, Dict
 
@@ -11,6 +12,10 @@ def _resolve_path(base_dir: Path, value: str) -> str:
     if not path.is_absolute():
         path = base_dir / path
     return str(path.resolve())
+
+
+def _env_override(current: Any, env_name: str) -> Any:
+    return os.getenv(env_name, current)
 
 
 def load_config(path: str | Path) -> Dict[str, Any]:
@@ -37,8 +42,23 @@ def load_config(path: str | Path) -> Dict[str, Any]:
         responses_cfg['knowledge_path'] = _resolve_path(base_dir, responses_cfg['knowledge_path'])
 
     storage_cfg = cfg.get('storage', {})
+    storage_cfg['backend'] = _env_override(storage_cfg.get('backend', 'postgresql'), 'CHATBOT_DB_BACKEND')
+
+    postgres_cfg = dict(storage_cfg.get('postgres', {}))
+    postgres_cfg['host'] = _env_override(postgres_cfg.get('host', 'localhost'), 'POSTGRES_HOST')
+    postgres_cfg['port'] = int(_env_override(postgres_cfg.get('port', 5432), 'POSTGRES_PORT'))
+    postgres_cfg['database'] = _env_override(postgres_cfg.get('database', 'chatbot'), 'POSTGRES_DB')
+    postgres_cfg['user'] = _env_override(postgres_cfg.get('user', 'postgres'), 'POSTGRES_USER')
+    postgres_cfg['password'] = _env_override(postgres_cfg.get('password', 'P@ssw0rd'), 'POSTGRES_PASSWORD')
+    postgres_cfg['sslmode'] = _env_override(postgres_cfg.get('sslmode', 'prefer'), 'POSTGRES_SSLMODE')
+    storage_cfg['postgres'] = postgres_cfg
+
     if 'chat_db_path' in storage_cfg:
         storage_cfg['chat_db_path'] = _resolve_path(base_dir, storage_cfg['chat_db_path'])
+
+    admin_cfg = cfg.get('admin', {})
+    admin_cfg['default_recent_limit'] = int(_env_override(admin_cfg.get('default_recent_limit', 50), 'ADMIN_RECENT_LIMIT'))
+    admin_cfg['low_confidence_threshold'] = float(_env_override(admin_cfg.get('low_confidence_threshold', 0.55), 'ADMIN_LOW_CONFIDENCE_THRESHOLD'))
 
     model_registry = cfg.get('model_registry', {})
     if isinstance(model_registry, dict):
@@ -61,5 +81,6 @@ def load_config(path: str | Path) -> Dict[str, Any]:
     cfg['logging'] = logging_cfg
     cfg['responses'] = responses_cfg
     cfg['storage'] = storage_cfg
+    cfg['admin'] = admin_cfg
 
     return cfg

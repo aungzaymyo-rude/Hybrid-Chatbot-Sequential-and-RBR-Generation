@@ -1,6 +1,6 @@
-﻿# Hematology Lab Assistant (English-Only)
+# Hematology Lab Assistant (English-Only)
 
-Hybrid chatbot system using a BiLSTM sequential intent classifier, medical term detection, response retrieval, and safety rules for hematology lab workflows. Current intents:
+Hybrid chatbot system using a BiLSTM sequential intent classifier, medical term detection, response retrieval, safety rules, PostgreSQL logging, and an admin monitoring panel for hematology lab workflows. Current intents:
 - `greeting`
 - `help`
 - `cbc_info`
@@ -26,6 +26,15 @@ python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 ```
+
+PostgreSQL defaults used by the application:
+- host: `localhost`
+- port: `5432`
+- database: `chatbot`
+- user: `postgres`
+- password: `P@ssw0rd`
+
+These values can be overridden with `POSTGRES_HOST`, `POSTGRES_PORT`, `POSTGRES_DB`, `POSTGRES_USER`, and `POSTGRES_PASSWORD`.
 
 ## Data Framework (Reusable)
 Data moves through stable stages so you can grow the model over time:
@@ -96,6 +105,14 @@ Artifacts are saved in `chatbot/models/intent/` as `model.pt`, `vocab.json`, `la
 python chatbot/evaluation/evaluate.py --config chatbot/config.yaml
 streamlit run chatbot/evaluation/dashboard.py
 ```
+Each evaluation run now exports paper-ready artifacts inside `chatbot/evaluation/runs/<run_name>/`:
+- `metrics.json`
+- `dataset_profile.json`
+- `paper_summary.json`
+- `paper_summary.csv`
+- `intent_distribution.csv`
+- `misclassifications.csv`
+- `confusion_matrix.csv`
 
 ## Inference (CLI)
 ```bash
@@ -112,6 +129,18 @@ Communication and safety intents such as `capability_query`, `thanks`, `goodbye`
 
 That means you can widen answer scope by adding curated question-answer entries for medical intents without retraining the classifier, while still keeping non-medical and unsafe requests under strict control.
 
+## Chatbot Features
+- Hematology-focused assistant UI with scope and safety panels
+- Quick prompt shortcuts for common hematology questions
+- Local browser conversation persistence
+- Export chat transcript as JSON
+- Structured answer cards for CBC, coagulation, smear, and QC replies
+- Suggested next-question chips after each assistant answer
+- Per-message intent, confidence, and category display
+- Controlled guardrail responses for unsafe or out-of-scope requests
+- Query logging to PostgreSQL for future tuning and monitoring
+- Admin monitoring panel for fallback, guardrail, confidence, and review workflow
+
 ## API
 ```bash
 uvicorn chatbot.api.main:app --host 0.0.0.0 --port 8000
@@ -122,8 +151,43 @@ Open the chat UI:
 http://localhost:8000/
 ```
 
-User questions are logged for future tuning in:
-`chatbot/data/reports/chat_history.db`
+Open the admin monitoring panel:
+```text
+http://localhost:8000/admin
+```
+
+User questions, fallback traffic, review status, and model metadata are logged in PostgreSQL.
+
+## Production Retraining Loop
+1. Open `http://localhost:8000/admin` and review fallback, guardrail, and low-confidence phrases.
+2. Set `review_status` to `accepted` for phrases you want to use in retraining.
+3. If the predicted intent is wrong, set `corrected_intent` in the admin panel before saving the review.
+4. Use `Export current logs` in the admin panel when you want raw production traffic, or `Export reviewed CSV` when you only want accepted retraining samples.
+5. Retrain from accepted reviews:
+```bash
+.\chatbot\.venv\Scripts\python.exe chatbot/training/retrain_from_reviews.py --config chatbot/config.yaml
+```
+This script will:
+- export accepted reviewed queries to `chatbot/data/labeled/reviewed_queries_<timestamp>.csv`
+- merge labeled data into `chatbot/data/train/intent_dataset.jsonl`
+- retrain the BiLSTM model
+- run evaluation unless `--skip-eval` is passed
+
+Useful options:
+```bash
+.\chatbot\.venv\Scripts\python.exe chatbot/training/retrain_from_reviews.py --config chatbot/config.yaml --export-only
+.\chatbot\.venv\Scripts\python.exe chatbot/training/retrain_from_reviews.py --config chatbot/config.yaml --skip-eval
+```
+
+## Production Redeploy
+After retraining, rebuild and restart the production containers so the new model artifacts are loaded:
+```bash
+docker compose up --build -d
+```
+Use this after any change to:
+- model artifacts in `chatbot/models/intent/`
+- Python application code
+- admin/review workflow code
 
 ## Model Selection
 Configure models in `chatbot/config.yaml` and choose at runtime:
@@ -148,10 +212,14 @@ API:
 curl -X POST http://localhost:8000/chat -H "Content-Type: application/json" -d "{\"text\": \"What is a CBC?\", \"model_key\": \"v2_large\"}"
 ```
 
-## Docker (Dev)
+## Docker (Production-Oriented Local Deployment)
 ```bash
 docker compose up --build
 ```
+
+This starts:
+- the chatbot API on `http://localhost:8000`
+- PostgreSQL on `localhost:5432` with database `chatbot`
 
 Open API docs:
 ```

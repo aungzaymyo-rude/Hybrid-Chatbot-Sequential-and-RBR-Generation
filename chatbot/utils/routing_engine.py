@@ -1,9 +1,20 @@
 from __future__ import annotations
 
+from dataclasses import dataclass
+
 from chatbot.utils.config import load_config
-from chatbot.utils.entity_detection import detect_medical_entity
+from chatbot.utils.entity_detection import EntityRule, detect_medical_entity
 from chatbot.utils.response import render_response
 from chatbot.utils.response_retriever import get_response_retriever
+
+
+@dataclass(frozen=True)
+class RouteResult:
+    response: str
+    source: str
+    retrieval_intent: str | None = None
+    retrieval_question: str | None = None
+    entity_label: str | None = None
 
 
 STATIC_INTENTS = {
@@ -23,22 +34,26 @@ RETRIEVAL_INTENTS = {
     'help',
     'rbc_term',
     'wbc_term',
+    'platelet_term',
+    'differential_review',
     'coag_test',
     'blood_smear',
+    'quality_control',
+    'critical_value_reporting',
 }
 
 
-def route_intent(
+def resolve_route(
     intent: str,
     lang: str,
     *,
     text: str | None = None,
     config_path: str | None = None,
-) -> str:
+) -> RouteResult:
     if intent in STATIC_INTENTS:
-        return render_response(intent, lang)
+        return RouteResult(response=render_response(intent, lang), source='static')
 
-    entity = detect_medical_entity(text or '') if text else None
+    entity: EntityRule | None = detect_medical_entity(text or '') if text else None
     retrieval_intent = intent
     retrieval_question = text
 
@@ -54,6 +69,28 @@ def route_intent(
         )
         retrieved = retriever.retrieve(question=retrieval_question, intent=retrieval_intent)
         if retrieved:
-            return retrieved
+            return RouteResult(
+                response=retrieved,
+                source='retrieval',
+                retrieval_intent=retrieval_intent,
+                retrieval_question=retrieval_question,
+                entity_label=entity.label if entity else None,
+            )
 
-    return render_response(intent, lang)
+    return RouteResult(
+        response=render_response(intent, lang),
+        source='static',
+        retrieval_intent=retrieval_intent if retrieval_intent != intent else None,
+        retrieval_question=retrieval_question if retrieval_question != text else None,
+        entity_label=entity.label if entity else None,
+    )
+
+
+def route_intent(
+    intent: str,
+    lang: str,
+    *,
+    text: str | None = None,
+    config_path: str | None = None,
+) -> str:
+    return resolve_route(intent, lang, text=text, config_path=config_path).response

@@ -1,18 +1,18 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 from functools import lru_cache
 from pathlib import Path
 
-from fastapi import Depends, FastAPI, HTTPException
+from fastapi import Depends, FastAPI, HTTPException, Query
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
-from chatbot.api.schemas import ChatRequest, ChatResponse
+from chatbot.api.schemas import AdminReviewRequest, ChatRequest, ChatResponse
 from chatbot.inference.registry import ModelRegistry
 from chatbot.utils.chat_store import ChatHistoryStore
 from chatbot.utils.config import load_config
 from chatbot.utils.logging import setup_logging
-from chatbot.utils.routing_engine import route_intent
+from chatbot.utils.routing_engine import STATIC_INTENTS, resolve_route
 
 CONFIG_PATH = str(Path(__file__).resolve().parents[1] / 'config.yaml')
 UI_DIR = Path(__file__).resolve().parents[1] / 'ui'
@@ -22,26 +22,38 @@ app.mount('/ui', StaticFiles(directory=str(UI_DIR)), name='ui')
 
 
 @lru_cache
+def get_config() -> dict:
+    return load_config(CONFIG_PATH)
+
+
+@lru_cache
 def get_registry() -> ModelRegistry:
-    cfg = load_config(CONFIG_PATH)
+    cfg = get_config()
     setup_logging(cfg['logging']['log_file'], cfg['logging'].get('level', 'INFO'))
     return ModelRegistry(CONFIG_PATH)
 
 
 @lru_cache
 def get_chat_store() -> ChatHistoryStore:
-    cfg = load_config(CONFIG_PATH)
-    return ChatHistoryStore(cfg['storage']['chat_db_path'])
+    cfg = get_config()
+    return ChatHistoryStore(cfg['storage']['postgres'])
 
 
 @app.get('/health')
 def health() -> dict:
-    return {'status': 'ok'}
+    cfg = get_config()
+    return {'status': 'ok', 'database_backend': cfg['storage'].get('backend', 'postgresql')}
 
 
 @app.get('/')
 def index() -> FileResponse:
     return FileResponse(UI_DIR / 'index.html')
+
+
+@app.get('/admin')
+def admin_index() -> FileResponse:
+    return FileResponse(UI_DIR / 'admin.html')
+
 
 @app.get('/models')
 def list_models(registry: ModelRegistry = Depends(get_registry)) -> dict:
@@ -49,6 +61,65 @@ def list_models(registry: ModelRegistry = Depends(get_registry)) -> dict:
         'default': registry.config.get('model_default_key'),
         'models': registry.list_models(),
     }
+
+
+@app.get('/admin/api/summary')
+def admin_summary(chat_store: ChatHistoryStore = Depends(get_chat_store)) -> dict:
+    cfg = get_config()
+    threshold = float(cfg['admin'].get('low_confidence_threshold', 0.55))
+    return {
+        'summary': chat_store.fetch_summary(low_confidence_threshold=threshold),
+        'intent_breakdown': chat_store.fetch_intent_breakdown(limit=20),
+        'flagged_phrases': chat_store.fetch_flagged_phrases(low_confidence_threshold=threshold, limit=15),
+    }
+
+
+@app.get('/admin/api/logs')
+def admin_logs(
+    limit: int = Query(default=50, ge=1, le=200),
+    flagged_only: bool = Query(default=False),
+    review_status: str | None = Query(default=None),
+    chat_store: ChatHistoryStore = Depends(get_chat_store),
+) -> dict:
+    cfg = get_config()
+    threshold = float(cfg['admin'].get('low_confidence_threshold', 0.55))
+    return {
+        'logs': chat_store.fetch_recent_logs(
+            limit=limit,
+            flagged_only=flagged_only,
+            review_status=review_status,
+            low_confidence_threshold=threshold,
+        )
+    }
+
+
+@app.post('/admin/api/logs/{log_id}/review')
+def admin_review_log(
+    log_id: int,
+    request: AdminReviewRequest,
+    chat_store: ChatHistoryStore = Depends(get_chat_store),
+) -> dict:
+    chat_store.update_review(
+        log_id=log_id,
+        review_status=request.review_status,
+        corrected_intent=request.corrected_intent,
+        admin_notes=request.admin_notes,
+    )
+    return {'status': 'updated', 'log_id': log_id}
+
+
+@app.get('/admin/api/export-reviewed')
+def admin_export_reviewed(chat_store: ChatHistoryStore = Depends(get_chat_store)) -> FileResponse:
+    export_path = Path(get_config()['logging']['log_file']).resolve().parents[1] / 'review_exports' / 'reviewed_queries.csv'
+    written = chat_store.export_reviewed_to_csv(export_path)
+    return FileResponse(written, media_type='text/csv', filename=written.name)
+
+
+@app.get('/admin/api/export-logs')
+def admin_export_logs(chat_store: ChatHistoryStore = Depends(get_chat_store)) -> FileResponse:
+    export_path = Path(get_config()['logging']['log_file']).resolve().parents[1] / 'review_exports' / 'recent_logs.csv'
+    written = chat_store.export_logs_to_csv(export_path)
+    return FileResponse(written, media_type='text/csv', filename=written.name)
 
 
 @app.post('/chat', response_model=ChatResponse)
@@ -62,7 +133,7 @@ def chat(
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
     prediction = predictor.predict(request.text, lang=request.lang)
-    response_text = route_intent(
+    route = resolve_route(
         prediction.intent,
         prediction.language,
         text=prediction.text,
@@ -71,22 +142,28 @@ def chat(
     model_info = registry.resolve_model_info(request.model_key, request.model_dir)
     try:
         chat_store.log_chat(
+            session_id=request.session_id,
             user_text=prediction.text,
             detected_lang=prediction.language,
             intent=prediction.intent,
             confidence=prediction.confidence,
-            response=response_text,
+            response=route.response,
+            response_source=route.source,
+            retrieval_intent=route.retrieval_intent,
+            retrieval_question=route.retrieval_question,
+            entity_label=route.entity_label,
+            is_fallback=prediction.intent == 'fallback',
+            is_guardrail=prediction.intent in STATIC_INTENTS,
             model_key=model_info.get('model_key') or None,
             model_path=model_info['path'],
             model_version=model_info.get('version') or None,
         )
     except Exception:
-        # Logging should not break the user-facing chat path.
         pass
     return ChatResponse(
         text=prediction.text,
         lang=prediction.language,
         intent=prediction.intent,
         confidence=prediction.confidence,
-        response=response_text,
+        response=route.response,
     )

@@ -1,0 +1,201 @@
+text,intent,lang
+what is platelet count,platelet_term,en
+explain platelet count in hematology,platelet_term,en
+what does a low platelet count mean,platelet_term,en
+what does a high platelet count mean,platelet_term,en
+what is thrombocytopenia,platelet_term,en
+what is thrombocytosis,platelet_term,en
+what does MPV mean,platelet_term,en
+what is platelet clumping,platelet_term,en
+how is platelet count interpreted,platelet_term,en
+what does platelet count show in CBC,platelet_term,en
+why is platelet count important,platelet_term,en
+what can cause thrombocytopenia in broad terms,platelet_term,en
+what can cause thrombocytosis in broad terms,platelet_term,en
+how do you explain platelets to a trainee,platelet_term,en
+what is the role of MPV in platelet review,platelet_term,en
+what does a platelet flag mean,platelet_term,en
+how should I understand platelet parameters,platelet_term,en
+what is the difference between platelet count and MPV,platelet_term,en
+what does low MPV suggest generally,platelet_term,en
+what does high MPV suggest generally,platelet_term,en
+how do platelets relate to bleeding risk,platelet_term,en
+what does platelet aggregation mean,platelet_term,en
+what should be reviewed when platelet count is low,platelet_term,en
+what should be reviewed when platelet count is high,platelet_term,en
+how can platelet clumps affect CBC results,platelet_term,en
+what is platelet morphology review,platelet_term,en
+how do you summarize platelet basics,platelet_term,en
+what is a normal platelet concept in CBC review,platelet_term,en
+how should students learn platelet count interpretation,platelet_term,en
+what is the broad meaning of thrombocytopenia,platelet_term,en
+what is the broad meaning of thrombocytosis,platelet_term,en
+why would a smear be reviewed for platelets,platelet_term,en
+what does platelet estimate on smear mean,platelet_term,en
+how is platelet count reported,platelet_term,en
+what do giant platelets suggest in broad review,platelet_term,en
+how do you explain platelet indices simply,platelet_term,en
+what is platelet distribution width,platelet_term,en
+what does platelet count indicate in lab screening,platelet_term,en
+why can clumping cause a false low platelet count,platelet_term,en
+how are platelet abnormalities followed up in the lab,platelet_term,en
+what should i know about platelet review in CBC,platelet_term,en
+what does an elevated platelet count suggest generally,platelet_term,en
+what does a reduced platelet count suggest generally,platelet_term,en
+how can EDTA affect platelet clumping,platelet_term,en
+what is pseudothrombocytopenia,platelet_term,en
+how is platelet count connected to smear findings,platelet_term,en
+what does platelet satellitism mean,platelet_term,en
+what are common platelet-related CBC questions,platelet_term,en
+how do you explain platelet count during training,platelet_term,en
+what does abnormal platelet size suggest generally,platelet_term,en
+what is a differential count,differential_review,en
+explain white cell differential review,differential_review,en
+what are neutrophils,differential_review,en
+what are lymphocytes,differential_review,en
+what are monocytes,differential_review,en
+what are eosinophils,differential_review,en
+what are basophils,differential_review,en
+what does neutrophilia mean,differential_review,en
+what does neutropenia mean,differential_review,en
+what does lymphocytosis mean,differential_review,en
+what does lymphopenia mean,differential_review,en
+what does monocytosis mean,differential_review,en
+what does eosinophilia mean,differential_review,en
+what does basophilia mean,differential_review,en
+how is a manual differential performed,differential_review,en
+when should a manual differential be done,differential_review,en
+what is the purpose of a differential count,differential_review,en
+how is differential review used after CBC,differential_review,en
+why would abnormal cells trigger differential review,differential_review,en
+how do you explain neutrophils to a trainee,differential_review,en
+how do you explain lymphocytes to a trainee,differential_review,en
+what does an absolute neutrophil count mean,differential_review,en
+what does an absolute lymphocyte count mean,differential_review,en
+why is differential review important in hematology,differential_review,en
+what is the difference between total WBC and differential,differential_review,en
+how should i read a differential report,differential_review,en
+what does left shift mean in differential review,differential_review,en
+what are band neutrophils,differential_review,en
+what does atypical lymphocyte mean,differential_review,en
+what does blast flag mean before smear review,differential_review,en
+how can differential count help in lab workflow,differential_review,en
+what does immature granulocyte mean,differential_review,en
+how do you summarize differential count basics,differential_review,en
+what is neutrophil predominance in broad terms,differential_review,en
+what is lymphocyte predominance in broad terms,differential_review,en
+how is eosinophilia reported,differential_review,en
+what does basophil increase suggest generally,differential_review,en
+what is a five part differential,differential_review,en
+what is a three part differential,differential_review,en
+how do analyzer flags relate to differential review,differential_review,en
+what cells are counted in white cell differential,differential_review,en
+how do you explain monocyte increase simply,differential_review,en
+what does low neutrophil count suggest generally,differential_review,en
+what does high neutrophil count suggest generally,differential_review,en
+how is differential review linked to smear examination,differential_review,en
+what should be checked when differential is abnormal,differential_review,en
+how do new staff learn differential interpretation,differential_review,en
+what is the role of differential count in infection screening,differential_review,en
+what is the role of differential count in leukemia screening,differential_review,en
+why is manual verification needed for some differential results,differential_review,en
+what is hematology analyzer quality control,quality_control,en
+why is internal quality control important in hematology,quality_control,en
+how often should hematology QC be run,quality_control,en
+what does out of control QC mean,quality_control,en
+how do you review QC before patient reporting,quality_control,en
+what is Levy Jennings chart in lab QC,quality_control,en
+what is Westgard rule in simple terms,quality_control,en
+what should be done if QC fails,quality_control,en
+how do you troubleshoot failed hematology QC,quality_control,en
+why should patient samples wait when QC is out,quality_control,en
+what is calibration in a hematology analyzer,quality_control,en
+how is analyzer maintenance linked to QC,quality_control,en
+what is daily maintenance for hematology analyzer,quality_control,en
+what is background check on a hematology instrument,quality_control,en
+how do you explain QC to a trainee,quality_control,en
+what is the difference between QC and calibration,quality_control,en
+what records should be kept for hematology QC,quality_control,en
+why is lot-to-lot QC review important,quality_control,en
+how should abnormal QC trends be documented,quality_control,en
+what is mean and SD in QC review,quality_control,en
+what is coefficient of variation in lab QC,quality_control,en
+how do you interpret a QC shift,quality_control,en
+how do you interpret a QC trend,quality_control,en
+when should a hematology analyzer be recalibrated,quality_control,en
+what is peer comparison in quality control,quality_control,en
+what does QC target range mean,quality_control,en
+how can reagent issues affect hematology QC,quality_control,en
+how can clogging affect QC performance,quality_control,en
+why must controls be mixed properly before running,quality_control,en
+what should be checked before rerunning failed QC,quality_control,en
+how is temperature linked to analyzer quality control,quality_control,en
+what is carryover check in hematology analyzer monitoring,quality_control,en
+how do control levels differ in hematology QC,quality_control,en
+what is commercial control material,quality_control,en
+why is preventive maintenance important for QC stability,quality_control,en
+how do you summarize analyzer QC basics,quality_control,en
+what happens if QC is ignored before reporting,quality_control,en
+what is precision in hematology quality control,quality_control,en
+what is accuracy in hematology quality control,quality_control,en
+how do you teach Westgard rules to new staff,quality_control,en
+what does repeated QC failure suggest,quality_control,en
+how are QC charts used in the hematology lab,quality_control,en
+what is instrument drift in QC review,quality_control,en
+why should maintenance actions be documented,quality_control,en
+how should QC be handled after reagent replacement,quality_control,en
+what is startup QC workflow for hematology analyzer,quality_control,en
+what is shutdown maintenance workflow for hematology analyzer,quality_control,en
+how do analyzer flags relate to QC troubleshooting,quality_control,en
+what is the role of controls in result reliability,quality_control,en
+what should be done before releasing results after QC trouble,quality_control,en
+what is a critical value in hematology,critical_value_reporting,en
+how are critical hematology results reported,critical_value_reporting,en
+what is the policy for critical WBC results,critical_value_reporting,en
+what is the policy for critical hemoglobin results,critical_value_reporting,en
+what is the policy for critical platelet results,critical_value_reporting,en
+who should be notified for a critical result,critical_value_reporting,en
+how quickly should critical results be communicated,critical_value_reporting,en
+why must critical values be documented,critical_value_reporting,en
+what details should be recorded after critical call,critical_value_reporting,en
+how do you verify a critical result before reporting,critical_value_reporting,en
+when should a critical result be repeated,critical_value_reporting,en
+what is read back policy for critical values,critical_value_reporting,en
+how do you explain critical reporting to a trainee,critical_value_reporting,en
+what is escalation procedure for unacknowledged critical values,critical_value_reporting,en
+why is time stamping important in critical result reporting,critical_value_reporting,en
+what should be done if a critical result seems inconsistent,critical_value_reporting,en
+how is specimen integrity checked before critical value release,critical_value_reporting,en
+what is the role of smear review in critical result verification,critical_value_reporting,en
+what is a panic value in hematology,critical_value_reporting,en
+how do critical alerts support patient safety,critical_value_reporting,en
+what is the difference between abnormal and critical result,critical_value_reporting,en
+how should night shift handle critical values,critical_value_reporting,en
+what should be communicated with a critical platelet count,critical_value_reporting,en
+what should be communicated with a very low hemoglobin result,critical_value_reporting,en
+what should be communicated with a very high white count,critical_value_reporting,en
+how are critical coagulation values usually escalated,critical_value_reporting,en
+what is mandatory documentation for critical reporting,critical_value_reporting,en
+how should failed contact attempts be recorded,critical_value_reporting,en
+what is the importance of result verification before calling,critical_value_reporting,en
+why is patient identification essential during critical call,critical_value_reporting,en
+how do you summarize critical value workflow,critical_value_reporting,en
+what should happen after a critical result is acknowledged,critical_value_reporting,en
+how should repeat analysis be documented for critical results,critical_value_reporting,en
+what is the role of supervisor notification in critical reporting,critical_value_reporting,en
+why should the caller name be documented for critical values,critical_value_reporting,en
+how is critical result communication audited,critical_value_reporting,en
+what is the broad workflow for panic value handling,critical_value_reporting,en
+how do you train staff on critical result reporting,critical_value_reporting,en
+what is a critical hemoglobin threshold concept,critical_value_reporting,en
+what is a critical platelet threshold concept,critical_value_reporting,en
+what is a critical WBC threshold concept,critical_value_reporting,en
+how should analyzer error be ruled out before critical reporting,critical_value_reporting,en
+what should be checked before releasing a critical CBC result,critical_value_reporting,en
+how do you explain read back verification simply,critical_value_reporting,en
+why are local SOPs important for critical values,critical_value_reporting,en
+how should communication delay be documented for critical results,critical_value_reporting,en
+what happens if the clinician cannot be reached for a critical result,critical_value_reporting,en
+how does critical result workflow differ from routine reporting,critical_value_reporting,en
+what is the safest way to communicate a critical lab result,critical_value_reporting,en
+how should critical reporting be monitored for quality improvement,critical_value_reporting,en

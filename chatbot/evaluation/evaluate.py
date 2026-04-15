@@ -1,12 +1,15 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import json
+import statistics
 import sys
+from collections import Counter
 from datetime import datetime, timezone
 from functools import partial
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict, List, Sequence
 
 import numpy as np
 import torch
@@ -49,10 +52,80 @@ def _load_metadata(model_dir: Path) -> Dict[str, object]:
         return json.load(handle)
 
 
-def evaluate(
+def _token_lengths(records: Sequence[Dict[str, str]]) -> List[int]:
+    return [len(normalize_text(row['text']).split()) for row in records]
+
+
+def _dataset_profile(
+    full_records: Sequence[Dict[str, str]],
+    eval_records: Sequence[Dict[str, str]],
+) -> Dict[str, object]:
+    full_intent_counts = Counter(row['intent'] for row in full_records)
+    eval_intent_counts = Counter(row['intent'] for row in eval_records)
+    normalized_pairs = [(normalize_text(row['text']), row['intent']) for row in full_records]
+    duplicate_count = len(normalized_pairs) - len(set(normalized_pairs))
+
+    token_lengths = _token_lengths(full_records)
+    char_lengths = [len(normalize_text(row['text'])) for row in full_records]
+    vocab = set()
+    for row in full_records:
+        vocab.update(normalize_text(row['text']).split())
+
+    counts = list(full_intent_counts.values()) or [0]
+    min_count = min(counts) if counts else 0
+    max_count = max(counts) if counts else 0
+    imbalance_ratio = float(max_count / min_count) if min_count else 0.0
+
+    return {
+        'total_samples': len(full_records),
+        'eval_samples': len(eval_records),
+        'num_intents': len(full_intent_counts),
+        'intent_counts': dict(sorted(full_intent_counts.items())),
+        'eval_intent_counts': dict(sorted(eval_intent_counts.items())),
+        'vocabulary_size': len(vocab),
+        'duplicate_rows': duplicate_count,
+        'duplicate_ratio': float(duplicate_count / len(full_records)) if full_records else 0.0,
+        'avg_tokens': float(np.mean(token_lengths)) if token_lengths else 0.0,
+        'median_tokens': float(statistics.median(token_lengths)) if token_lengths else 0.0,
+        'max_tokens': max(token_lengths) if token_lengths else 0,
+        'avg_chars': float(np.mean(char_lengths)) if char_lengths else 0.0,
+        'median_chars': float(statistics.median(char_lengths)) if char_lengths else 0.0,
+        'imbalance_ratio': imbalance_ratio,
+    }
+
+
+def _paper_table_row(
+    metadata: Dict[str, object],
+    metrics: Dict[str, object],
+    dataset_profile: Dict[str, object],
+) -> Dict[str, object]:
+    return {
+        'run_name': metadata['run_name'],
+        'timestamp': metadata['timestamp'],
+        'architecture': metadata['model_architecture'],
+        'dataset_samples': dataset_profile['total_samples'],
+        'eval_samples': dataset_profile['eval_samples'],
+        'num_intents': dataset_profile['num_intents'],
+        'vocabulary_size': dataset_profile['vocabulary_size'],
+        'imbalance_ratio': dataset_profile['imbalance_ratio'],
+        'accuracy': metrics['accuracy'],
+        'f1_macro': metrics['f1_macro'],
+        'f1_weighted': metrics['f1_weighted'],
+        'precision_macro': metrics['precision_macro'],
+        'recall_macro': metrics['recall_macro'],
+        'avg_confidence': metrics['avg_confidence'],
+        'batch_size': metadata['batch_size'],
+        'epochs': metadata['epochs'],
+        'learning_rate': metadata['learning_rate'],
+        'weight_decay': metadata['weight_decay'],
+    }
+
+
+def _evaluate_model(
     model_dir: Path,
     records: List[Dict[str, str]],
     label2id: Dict[str, int],
+    id2label: Dict[int, str],
     batch_size: int,
     device: torch.device,
 ) -> Dict[str, object]:
@@ -81,9 +154,14 @@ def evaluate(
     all_preds: List[int] = []
     all_labels: List[int] = []
     all_conf: List[float] = []
+    all_texts: List[str] = []
 
     with torch.no_grad():
+        offset = 0
         for input_ids, lengths, labels in loader:
+            batch_texts = [normalized[idx]['text'] for idx in range(offset, offset + labels.size(0))]
+            offset += labels.size(0)
+
             input_ids = input_ids.to(device)
             lengths = lengths.to(device)
             labels = labels.to(device)
@@ -92,9 +170,18 @@ def evaluate(
             all_preds.extend(preds.cpu().tolist())
             all_labels.extend(labels.cpu().tolist())
             all_conf.extend(_compute_confidence(logits).tolist())
+            all_texts.extend(batch_texts)
 
-    report = classification_report(all_labels, all_preds, output_dict=True, zero_division=0)
-    cm = confusion_matrix(all_labels, all_preds)
+    target_names = [id2label[idx] for idx in range(len(id2label))]
+    report = classification_report(
+        all_labels,
+        all_preds,
+        labels=list(range(len(target_names))),
+        target_names=target_names,
+        output_dict=True,
+        zero_division=0,
+    )
+    cm = confusion_matrix(all_labels, all_preds, labels=list(range(len(target_names))))
 
     metrics = {
         'accuracy': accuracy_score(all_labels, all_preds),
@@ -105,16 +192,41 @@ def evaluate(
         'precision_weighted': report['weighted avg']['precision'],
         'recall_weighted': report['weighted avg']['recall'],
         'avg_confidence': float(np.mean(all_conf)) if all_conf else 0.0,
+        'median_confidence': float(statistics.median(all_conf)) if all_conf else 0.0,
+        'min_confidence': float(min(all_conf)) if all_conf else 0.0,
+        'max_confidence': float(max(all_conf)) if all_conf else 0.0,
     }
 
-    per_class = {k: v for k, v in report.items() if k.isdigit()}
+    misclassifications = []
+    for text, true_id, pred_id, conf in zip(all_texts, all_labels, all_preds, all_conf):
+        if true_id == pred_id:
+            continue
+        misclassifications.append(
+            {
+                'text': text,
+                'true_intent': id2label[true_id],
+                'predicted_intent': id2label[pred_id],
+                'confidence': conf,
+            }
+        )
+
+    per_class = {label: report[label] for label in target_names}
     return {
         'metrics': metrics,
         'report': report,
         'per_class': per_class,
         'confusion_matrix': cm.tolist(),
         'model_metadata': metadata,
+        'misclassifications': misclassifications,
     }
+
+
+def _write_csv(path: Path, fieldnames: Sequence[str], rows: Sequence[Dict[str, object]]) -> None:
+    with path.open('w', newline='', encoding='utf-8') as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer.writeheader()
+        for row in rows:
+            writer.writerow(row)
 
 
 def main() -> None:
@@ -131,12 +243,21 @@ def main() -> None:
     dataset = load_intent_dataset(cfg['data']['dataset_path'])
     label2id, id2label = build_label_maps(dataset)
     split = dataset.train_test_split(test_size=cfg['data']['test_size'], seed=cfg['training'].get('seed', 42))
+    full_records = [dict(row) for row in dataset]
     eval_records = [dict(row) for row in split['test']]
 
     batch_size = args.batch_size or cfg['training'].get('eval_batch_size', 32)
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-    result = evaluate(model_dir=model_dir, records=eval_records, label2id=label2id, batch_size=batch_size, device=device)
+    result = _evaluate_model(
+        model_dir=model_dir,
+        records=eval_records,
+        label2id=label2id,
+        id2label=id2label,
+        batch_size=batch_size,
+        device=device,
+    )
+    dataset_profile = _dataset_profile(full_records=full_records, eval_records=eval_records)
 
     run_name = args.run_name or _timestamp()
     run_dir = Path(__file__).resolve().parent / 'runs' / run_name
@@ -155,17 +276,59 @@ def main() -> None:
         'learning_rate': cfg['training']['learning_rate'],
         'weight_decay': cfg['training']['weight_decay'],
     }
+    paper_row = _paper_table_row(metadata=metadata, metrics=result['metrics'], dataset_profile=dataset_profile)
 
     with (run_dir / 'metrics.json').open('w', encoding='utf-8') as handle:
-        json.dump({'metadata': metadata, **result}, handle, ensure_ascii=False, indent=2)
+        json.dump(
+            {
+                'metadata': metadata,
+                'dataset_profile': dataset_profile,
+                'paper_summary': paper_row,
+                **result,
+            },
+            handle,
+            ensure_ascii=False,
+            indent=2,
+        )
 
-    with (run_dir / 'confusion_matrix.csv').open('w', encoding='utf-8') as handle:
-        handle.write(','.join([id2label[i] for i in range(len(id2label))]) + '\n')
-        for row in result['confusion_matrix']:
-            handle.write(','.join(str(value) for value in row) + '\n')
+    labels = [id2label[i] for i in range(len(id2label))]
+    with (run_dir / 'confusion_matrix.csv').open('w', newline='', encoding='utf-8') as handle:
+        writer = csv.writer(handle)
+        writer.writerow(['label', *labels])
+        for label, row in zip(labels, result['confusion_matrix']):
+            writer.writerow([label, *row])
 
     with (run_dir / 'per_class.json').open('w', encoding='utf-8') as handle:
         json.dump(result['per_class'], handle, ensure_ascii=False, indent=2)
+
+    with (run_dir / 'dataset_profile.json').open('w', encoding='utf-8') as handle:
+        json.dump(dataset_profile, handle, ensure_ascii=False, indent=2)
+
+    with (run_dir / 'paper_summary.json').open('w', encoding='utf-8') as handle:
+        json.dump(paper_row, handle, ensure_ascii=False, indent=2)
+
+    _write_csv(
+        run_dir / 'paper_summary.csv',
+        list(paper_row.keys()),
+        [paper_row],
+    )
+    _write_csv(
+        run_dir / 'misclassifications.csv',
+        ['text', 'true_intent', 'predicted_intent', 'confidence'],
+        result['misclassifications'],
+    )
+    _write_csv(
+        run_dir / 'intent_distribution.csv',
+        ['intent', 'train_total', 'eval_total'],
+        [
+            {
+                'intent': intent,
+                'train_total': dataset_profile['intent_counts'].get(intent, 0),
+                'eval_total': dataset_profile['eval_intent_counts'].get(intent, 0),
+            }
+            for intent in sorted(dataset_profile['intent_counts'])
+        ],
+    )
 
     print(f'Evaluation saved to: {run_dir}')
 

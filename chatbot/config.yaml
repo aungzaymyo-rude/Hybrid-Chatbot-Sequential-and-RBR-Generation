@@ -46,4 +46,16 @@ responses:
   retrieval_threshold: 0.18
 
 storage:
+  backend: postgresql
   chat_db_path: data/reports/chat_history.db
+  postgres:
+    host: localhost
+    port: 5432
+    database: chatbot
+    user: postgres
+    password: P@ssw0rd
+    sslmode: prefer
+
+admin:
+  default_recent_limit: 50
+  low_confidence_threshold: 0.55

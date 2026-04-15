@@ -1,0 +1,177 @@
+text,intent,lang
+can you explain a CBC,cbc_info,en
+can you explain a complete blood count,cbc_info,en
+can you explain platelet count,cbc_info,en
+can you explain mean platelet volume,cbc_info,en
+please explain a CBC,cbc_info,en
+please explain a complete blood count,cbc_info,en
+please explain platelet count,cbc_info,en
+please explain mean platelet volume,cbc_info,en
+help me understand a CBC,cbc_info,en
+help me understand a complete blood count,cbc_info,en
+help me understand platelet count,cbc_info,en
+help me understand mean platelet volume,cbc_info,en
+what does a CBC,cbc_info,en
+what does a complete blood count,cbc_info,en
+what does platelet count,cbc_info,en
+what does mean platelet volume,cbc_info,en
+tell me about a CBC,cbc_info,en
+tell me about a complete blood count,cbc_info,en
+tell me about platelet count,cbc_info,en
+tell me about mean platelet volume,cbc_info,en
+what does a CBC panel measure exactly,cbc_info,en
+when would a lab request a CBC review,cbc_info,en
+what CBC parameters are usually reported together,cbc_info,en
+what is the purpose of CBC screening in hematology,cbc_info,en
+how should I describe a CBC to a trainee,cbc_info,en
+what does platelet count tell us in hematology,cbc_info,en
+what is MPV in a CBC report,cbc_info,en
+why are red cell indices included in a CBC,cbc_info,en
+what is the difference between CBC and CBC with differential,cbc_info,en
+which CBC values are checked in routine hematology work,cbc_info,en
+what does a CBC help monitor over time,cbc_info,en
+how do you summarize CBC basics for new staff,cbc_info,en
+which tube should be selected for a routine CBC,sample_collection,en
+what is the correct tube for full blood count collection,sample_collection,en
+how should EDTA samples be mixed after venipuncture,sample_collection,en
+what is the right way to label a hematology specimen,sample_collection,en
+how should CBC specimens be transported to the analyzer,sample_collection,en
+what happens if the EDTA tube is underfilled,sample_collection,en
+when should a clotted CBC sample be rejected,sample_collection,en
+how do i avoid sample dilution in hematology collection,sample_collection,en
+what should be checked before accepting a CBC specimen,sample_collection,en
+how long can an EDTA specimen wait before analysis,sample_collection,en
+what are common preanalytical errors in CBC collection,sample_collection,en
+can you outline the CBC collection workflow step by step,sample_collection,en
+what should i do if the lavender tube is mislabeled,sample_collection,en
+how do i manage a short draw in an EDTA tube,sample_collection,en
+what collection step matters most for sample integrity,sample_collection,en
+how should a bedside collector identify a CBC sample,sample_collection,en
+what should be documented on a hematology label,sample_collection,en
+how should CBC samples be stored before processing,sample_collection,en
+what does hemoglobin indicate in a red cell review,rbc_term,en
+how do you explain hematocrit to a student,rbc_term,en
+what is the meaning of RBC count on a report,rbc_term,en
+what does a raised hematocrit suggest in general,rbc_term,en
+what does a low hemoglobin result usually point to,rbc_term,en
+how is RDW used in anemia pattern review,rbc_term,en
+can you define MCH in simple hematology terms,rbc_term,en
+what is MCHC used for in red cell interpretation,rbc_term,en
+how should I understand erythrocyte count,rbc_term,en
+what does macrocytic pattern mean when MCV is high,rbc_term,en
+what does microcytic pattern mean when MCV is low,rbc_term,en
+how are red cell indices reviewed together,rbc_term,en
+what does low hematocrit mean in general screening,rbc_term,en
+what does a high hemoglobin value suggest generally,rbc_term,en
+why is RDW important next to MCV,rbc_term,en
+how do you explain RBC indices during training,rbc_term,en
+what does anisocytosis have to do with RDW,rbc_term,en
+what does hypochromia relate to in red cell indices,rbc_term,en
+what does an elevated white count mean in general,wbc_term,en
+how do you explain leukopenia to a trainee,wbc_term,en
+what is the role of differential count in hematology,wbc_term,en
+what does neutrophilia usually suggest in lab review,wbc_term,en
+what does lymphocytosis usually suggest in lab review,wbc_term,en
+how should i understand total leukocyte count,wbc_term,en
+what is the difference between WBC count and differential,wbc_term,en
+why would a differential be added after a CBC,wbc_term,en
+what does monocytosis mean in a basic explanation,wbc_term,en
+what does eosinophilia refer to in a report,wbc_term,en
+how do you summarize leukocytosis for new staff,wbc_term,en
+what does low white blood cell count indicate generally,wbc_term,en
+what can cause a very high WBC count in broad terms,wbc_term,en
+how is basophilia described in a differential report,wbc_term,en
+what is neutropenia in simple terms,wbc_term,en
+what does band form increase suggest generally,wbc_term,en
+how do you explain abnormal white cell patterns,wbc_term,en
+what should be reviewed when the WBC is flagged,wbc_term,en
+what is the purpose of prothrombin time testing,coag_test,en
+how do you explain a prolonged aPTT result in broad terms,coag_test,en
+what does a prolonged PT indicate generally,coag_test,en
+why is the citrate tube fill line critical for coagulation,coag_test,en
+how should a coag sample be mixed after draw,coag_test,en
+what is the main use of INR in routine testing,coag_test,en
+what happens if a citrate tube is not completely filled,coag_test,en
+what coagulation pathway is reflected by PT,coag_test,en
+what coagulation pathway is reflected by aPTT,coag_test,en
+how should coagulation specimens be transported,coag_test,en
+what are the common screening coagulation tests,coag_test,en
+why can clotted citrate samples not be used,coag_test,en
+what does abnormal clotting time mean in general terms,coag_test,en
+how do you summarize PT and aPTT for students,coag_test,en
+what tube top is standard for coagulation studies,coag_test,en
+how quickly should coag samples reach the lab bench,coag_test,en
+what does INR standardize in coagulation reporting,coag_test,en
+why does anticoagulant ratio matter in citrate tubes,coag_test,en
+what is the purpose of a peripheral film review,blood_smear,en
+how do you explain the feathered edge on a smear,blood_smear,en
+what can poor smear preparation affect,blood_smear,en
+why would morphology review be requested after CBC,blood_smear,en
+what does a blood film help confirm,blood_smear,en
+how should a smear slide be dried before staining,blood_smear,en
+what does a good wedge smear look like,blood_smear,en
+why are romanowsky stains used in hematology,blood_smear,en
+how does a blood smear help when analyzer flags appear,blood_smear,en
+what is the value of a manual blood film review,blood_smear,en
+how do you prepare a smear for morphology work,blood_smear,en
+what can platelet clumping look like on a smear,blood_smear,en
+what can schistocytes indicate on a smear review,blood_smear,en
+how is anisopoikilocytosis seen on a blood film,blood_smear,en
+what is examined first during blood smear review,blood_smear,en
+why can delayed smear preparation affect morphology,blood_smear,en
+how do you explain blood smear workflow to new staff,blood_smear,en
+what is the role of smear review in abnormal CBC follow up,blood_smear,en
+can you answer questions about CBC and coagulation together,capability_query,en
+what hematology workflow topics are inside your scope,capability_query,en
+do you explain lab terms as well as specimen handling,capability_query,en
+are you built for hematology only,capability_query,en
+can you handle red cell and white cell term questions,capability_query,en
+what parts of hematology can this assistant support,capability_query,en
+do you help with smear and coagulation questions too,capability_query,en
+what sort of lab assistant support do you provide,capability_query,en
+can you explain what this chatbot is designed to do,capability_query,en
+which hematology areas are available in this assistant,capability_query,en
+can i ask about CBC workflow and terminology here,capability_query,en
+do you support both sample handling and term explanations,capability_query,en
+thanks that explanation was enough,thanks,en
+thank you for the hematology guidance,thanks,en
+thanks i can continue now,thanks,en
+appreciate the clarification on that,thanks,en
+thank you for keeping it simple,thanks,en
+thanks that answered the lab question,thanks,en
+goodbye i will return if another CBC question appears,goodbye,en
+bye thanks for the lab help,goodbye,en
+that closes the chat for now,goodbye,en
+i am done with my hematology questions goodbye,goodbye,en
+see you later after the next shift,goodbye,en
+ending this session now thanks,goodbye,en
+can you simplify that hematology explanation,clarification,en
+please clarify that term once more,clarification,en
+i need that answer in easier words,clarification,en
+can you explain the result term more clearly,clarification,en
+that answer is still confusing can you restate it,clarification,en
+please say the same thing more simply,clarification,en
+can you help me with calculus homework,out_of_scope,en
+what is the best football team this year,out_of_scope,en
+tell me a story about space travel,out_of_scope,en
+which mobile phone should i buy now,out_of_scope,en
+what is today's exchange rate,out_of_scope,en
+recommend a restaurant in yangon,out_of_scope,en
+how do i bake a cake,out_of_scope,en
+what movie should i watch tonight,out_of_scope,en
+what treatment should i start for this blood disorder,unsafe_medical_request,en
+how much medicine should this patient receive,unsafe_medical_request,en
+which injection is correct for this patient,unsafe_medical_request,en
+can you prescribe a drug for this case,unsafe_medical_request,en
+tell me the dosage to use for this patient,unsafe_medical_request,en
+how do i treat severe anemia right now,unsafe_medical_request,en
+what therapy should i give immediately,unsafe_medical_request,en
+can you diagnose this report for me,unsafe_medical_request,en
+what does that value mean,incomplete_query,en
+which one are you talking about,incomplete_query,en
+how should i read that,incomplete_query,en
+what about the other result,incomplete_query,en
+can you explain that result,incomplete_query,en
+what should i look at next,incomplete_query,en
+why is that important,incomplete_query,en
+how does this fit together,incomplete_query,en

@@ -10,3 +10,5 @@ pytest
 streamlit
 pandas
 plotly
+psycopg[binary]
+accelerate>=1.1.0 

@@ -13,6 +13,11 @@ chatbot/evaluation/runs/<timestamp>/
 
 Artifacts:
 - `metrics.json` (all metrics + metadata)
+- `dataset_profile.json`
+- `paper_summary.json`
+- `paper_summary.csv`
+- `intent_distribution.csv`
+- `misclassifications.csv`
 - `confusion_matrix.csv`
 - `per_class.json`
 
@@ -22,8 +27,10 @@ streamlit run chatbot/evaluation/dashboard.py
 ```
 The dashboard shows:
 - Accuracy, F1 (macro/weighted), avg confidence
+- Dataset profile and intent balance
 - Per-class precision/recall/F1
 - Confusion matrix heatmap
+- Misclassification review table
 - Run history with hyperparameters (batch size, lr, warmup)
 
 ## Tips

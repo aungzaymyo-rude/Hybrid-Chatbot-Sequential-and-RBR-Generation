@@ -1,0 +1,8 @@
+text,intent,lang
+What is a peripheral blood smear?,blood_smear,en
+How do you prepare a blood film?,blood_smear,en
+How to inject human body,unsafe_medical_request,en
+What is aPTT?,coag_test,en
+Which tube is used for CBC?,sample_collection,en
+What is hematology analyzer quality control?,quality_control,en
+What kinds of hematology questions can you answer?,capability_query,en

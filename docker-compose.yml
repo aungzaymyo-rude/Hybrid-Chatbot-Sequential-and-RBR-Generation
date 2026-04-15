@@ -1,17 +1,42 @@
-﻿services:
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: hematology-chatbot-postgres
+    environment:
+      POSTGRES_DB: chatbot
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: P@ssw0rd
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d chatbot"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
   chatbot:
     build:
       context: .
       dockerfile: Dockerfile
     container_name: multilingual-chatbot
+    depends_on:
+      postgres:
+        condition: service_healthy
     ports:
       - "8000:8000"
+    environment:
+      HF_HOME: /root/.cache/huggingface
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: chatbot
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: P@ssw0rd
     volumes:
       - ./:/app
       - hf_cache:/root/.cache/huggingface
-    environment:
-      - HF_HOME=/root/.cache/huggingface
-    command: ["uvicorn", "chatbot.api.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
 
 volumes:
   hf_cache:
+  postgres_data:

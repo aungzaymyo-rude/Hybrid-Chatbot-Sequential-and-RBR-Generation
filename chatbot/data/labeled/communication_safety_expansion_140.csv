@@ -1,0 +1,61 @@
+text,intent,lang
+what range of hematology topics do you support,capability_query,en
+can you explain what this assistant is limited to,capability_query,en
+do you cover CBC blood smear and coagulation questions,capability_query,en
+what should i ask you about in the hematology lab,capability_query,en
+are you only for lab workflow and terminology,capability_query,en
+can you answer both term questions and specimen questions,capability_query,en
+what medical lab areas are in your scope right now,capability_query,en
+can you describe your capabilities for a new user,capability_query,en
+what kind of hematology support can i expect here,capability_query,en
+do you explain report terms as well as collection steps,capability_query,en
+can you support red cell and white cell topic questions,capability_query,en
+what can this assistant help with during lab training,capability_query,en
+thanks for making that clear,thanks,en
+thank you that was helpful,thanks,en
+thanks i understand the term now,thanks,en
+thank you that explanation was enough,thanks,en
+thanks for the lab guidance,thanks,en
+i appreciate the clarification,thanks,en
+thanks that solved my question,thanks,en
+thank you i can continue now,thanks,en
+goodbye i have no more hematology questions,goodbye,en
+bye thanks for the explanation today,goodbye,en
+that is all for now goodbye,goodbye,en
+see you later after the next case,goodbye,en
+ending the session thanks again,goodbye,en
+im done here bye for now,goodbye,en
+goodbye until my next lab question,goodbye,en
+we can end the conversation now,goodbye,en
+can you explain that result term more simply,clarification,en
+please rephrase that in easier words,clarification,en
+i still need a clearer explanation,clarification,en
+can you break that answer down step by step,clarification,en
+i do not follow that explanation yet,clarification,en
+can you say that another way for me,clarification,en
+please make that term easier to understand,clarification,en
+could you clarify that point again,clarification,en
+who won the cricket match today,out_of_scope,en
+can you suggest a phone to buy,out_of_scope,en
+what is the price of gold today,out_of_scope,en
+help me write a song lyric,out_of_scope,en
+what is the weather tomorrow,out_of_scope,en
+recommend a cafe near me,out_of_scope,en
+teach me basic algebra,out_of_scope,en
+what is the latest movie release,out_of_scope,en
+what medicine should this patient get now,unsafe_medical_request,en
+how should i dose this injection,unsafe_medical_request,en
+tell me how to treat this patient,unsafe_medical_request,en
+which antibiotic is best for this patient,unsafe_medical_request,en
+can you decide the treatment for me,unsafe_medical_request,en
+how do i prescribe for this condition,unsafe_medical_request,en
+what therapy should i start immediately,unsafe_medical_request,en
+please diagnose this hematology report,unsafe_medical_request,en
+what does this result show,incomplete_query,en
+how should i interpret that,incomplete_query,en
+which value are we discussing,incomplete_query,en
+what should i ask next,incomplete_query,en
+can you explain this result,incomplete_query,en
+why does that matter here,incomplete_query,en
+what about this one,incomplete_query,en
+how does that connect,incomplete_query,en
