@@ -3,45 +3,6 @@ const SESSION_KEY = "hematology_chat_session_id_v1";
 const DEFAULT_BOT_MESSAGE =
   "I can help with CBC basics, coagulation tests, blood smear workflow, platelet and white-cell terms, quality control, and critical-value reporting. Ask in English.";
 
-const CARD_MAP = {
-  cbc_info: {
-    kicker: "Structured Answer Card",
-    title: "CBC / Core Hematology",
-    points: [
-      "Use for CBC overview, indices, and high-level term explanation.",
-      "Best for non-patient-specific hematology concepts.",
-      "Reference ranges and interpretation should follow your local SOP.",
-    ],
-  },
-  coag_test: {
-    kicker: "Structured Answer Card",
-    title: "Coagulation Workflow",
-    points: [
-      "Use for PT, aPTT, INR, citrate tube handling, and coag specimen rules.",
-      "Collection quality strongly affects coagulation validity.",
-      "Do not use this assistant for treatment or anticoagulation prescribing decisions.",
-    ],
-  },
-  blood_smear: {
-    kicker: "Structured Answer Card",
-    title: "Blood Smear Review",
-    points: [
-      "Use for smear purpose, preparation, staining, and morphology workflow.",
-      "Smear review supports analyzer verification and morphology assessment.",
-      "Microscopic findings should be reported under laboratory SOP.",
-    ],
-  },
-  quality_control: {
-    kicker: "Structured Answer Card",
-    title: "Quality Control",
-    points: [
-      "Use for analyzer QC, Westgard rules, Levy-Jennings charts, and troubleshooting.",
-      "QC must be acceptable before patient results are released.",
-      "Document corrective actions and rerun QC per SOP.",
-    ],
-  },
-};
-
 const SUGGESTED_QUESTIONS = {
   cbc_info: [
     "What does MCV mean?",
@@ -139,10 +100,6 @@ function getSessionId() {
   return generated;
 }
 
-function getCardConfig(intent) {
-  return CARD_MAP[intent] || null;
-}
-
 function getSuggestedQuestions(intent) {
   return SUGGESTED_QUESTIONS[intent] || SUGGESTED_QUESTIONS.fallback;
 }
@@ -156,27 +113,6 @@ function saveConversation() {
     category: node.dataset.category || "",
   }));
   window.localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
-}
-
-function populateCard(node, intent) {
-  const cardConfig = getCardConfig(intent);
-  const cardEl = node.querySelector(".answer-card");
-  const pointsEl = cardEl.querySelector(".card-points");
-  pointsEl.innerHTML = "";
-
-  if (!cardConfig) {
-    cardEl.hidden = true;
-    return;
-  }
-
-  cardEl.querySelector(".card-kicker").textContent = cardConfig.kicker;
-  cardEl.querySelector(".card-title").textContent = cardConfig.title;
-  cardConfig.points.forEach((point) => {
-    const li = document.createElement("li");
-    li.textContent = point;
-    pointsEl.appendChild(li);
-  });
-  cardEl.hidden = false;
 }
 
 function populateSuggestions(node, intent) {
@@ -232,10 +168,8 @@ function createMessageNode(role, text, options = {}) {
   }
 
   if (role === "bot") {
-    populateCard(node, intent);
     populateSuggestions(node, intent);
   } else {
-    node.querySelector(".answer-card").hidden = true;
     node.querySelector(".followup-block").hidden = true;
   }
 
@@ -323,7 +257,6 @@ async function sendMessage(text) {
       pendingNode.dataset.category = "system";
       pendingNode.querySelector(".intent-tag").textContent = "error | system";
       pendingNode.querySelector(".intent-tag").hidden = false;
-      pendingNode.querySelector(".answer-card").hidden = true;
       pendingNode.querySelector(".followup-block").hidden = true;
       saveConversation();
       return;
@@ -336,7 +269,6 @@ async function sendMessage(text) {
     pendingNode.dataset.category = category;
     pendingNode.querySelector(".intent-tag").textContent = `${payload.intent} | ${category}`;
     pendingNode.querySelector(".intent-tag").hidden = false;
-    populateCard(pendingNode, payload.intent);
     populateSuggestions(pendingNode, payload.intent);
 
     const metaEl = pendingNode.querySelector(".meta");
@@ -349,7 +281,6 @@ async function sendMessage(text) {
     pendingNode.dataset.category = "system";
     pendingNode.querySelector(".intent-tag").textContent = "network_error | system";
     pendingNode.querySelector(".intent-tag").hidden = false;
-    pendingNode.querySelector(".answer-card").hidden = true;
     pendingNode.querySelector(".followup-block").hidden = true;
     const metaEl = pendingNode.querySelector(".meta");
     metaEl.hidden = false;

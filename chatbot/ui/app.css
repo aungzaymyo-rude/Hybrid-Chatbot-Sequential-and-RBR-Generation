@@ -231,34 +231,6 @@ body {
   border-color: transparent;
 }
 
-.answer-card {
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.86);
-  border-radius: 16px;
-  padding: 12px 14px;
-}
-
-.card-kicker {
-  margin: 0 0 6px;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-.card-title {
-  margin: 0 0 8px;
-  font-size: 15px;
-}
-
-.card-points {
-  margin: 0;
-  padding-left: 18px;
-  color: var(--muted);
-  line-height: 1.55;
-}
-
 .followup-block {
   display: grid;
   gap: 8px;

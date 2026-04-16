@@ -1951,3 +1951,583 @@
 {"text": "how does differential review support routine hematology verification", "intent": "differential_review", "lang": "en"}
 {"text": "how do daily QC checks support hematology result reliability", "intent": "quality_control", "lang": "en"}
 {"text": "how does critical value communication support laboratory patient safety", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "What is hemoglobin?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is hemoglobin in a blood report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is hemoglobin on a CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is hemoglobin in hematology?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is hemoglobin in a lab result?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is hemoglobin in this report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is hemoglobin in complete blood count?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is hemoglobin in blood count interpretation?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is hemoglobin for a hematology assistant?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is hemoglobin in this hematology report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is HGB?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is HGB in a blood report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is HGB on a CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is HGB in hematology?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is HGB in a lab result?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is HGB in this report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is HGB in complete blood count?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is HGB in blood count interpretation?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is HGB for a hematology assistant?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is HGB in this hematology report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is hematocrit?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is hematocrit in a blood report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is hematocrit on a CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is hematocrit in hematology?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is hematocrit in a lab result?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is hematocrit in this report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is hematocrit in complete blood count?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is hematocrit in blood count interpretation?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is hematocrit for a hematology assistant?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is hematocrit in this hematology report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is HCT?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is HCT in a blood report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is HCT on a CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is HCT in hematology?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is HCT in a lab result?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is HCT in this report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is HCT in complete blood count?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is HCT in blood count interpretation?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is HCT for a hematology assistant?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is HCT in this hematology report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RBC count?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RBC count in a blood report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RBC count on a CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RBC count in hematology?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RBC count in a lab result?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RBC count in this report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RBC count in complete blood count?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RBC count in blood count interpretation?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RBC count for a hematology assistant?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RBC count in this hematology report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCV?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCV in a blood report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCV on a CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCV in hematology?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCV in a lab result?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCV in this report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCV in complete blood count?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCV in blood count interpretation?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCV for a hematology assistant?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCV in this hematology report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCH?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCH in a blood report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCH on a CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCH in hematology?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCH in a lab result?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCH in this report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCH in complete blood count?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCH in blood count interpretation?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCH for a hematology assistant?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCH in this hematology report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCHC?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCHC in a blood report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCHC on a CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCHC in hematology?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCHC in a lab result?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCHC in this report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCHC in complete blood count?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCHC in blood count interpretation?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCHC for a hematology assistant?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is MCHC in this hematology report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RDW-CV?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RDW-CV in a blood report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RDW-CV on a CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RDW-CV in hematology?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RDW-CV in a lab result?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RDW-CV in this report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RDW-CV in complete blood count?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RDW-CV in blood count interpretation?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RDW-CV for a hematology assistant?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RDW-CV in this hematology report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RDW-SD?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RDW-SD in a blood report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RDW-SD on a CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RDW-SD in hematology?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RDW-SD in a lab result?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RDW-SD in this report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RDW-SD in complete blood count?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RDW-SD in blood count interpretation?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RDW-SD for a hematology assistant?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is RDW-SD in this hematology report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is neutrophilia?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is neutrophilia in a blood report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is neutrophilia on a CBC report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is neutrophilia in hematology?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is neutrophilia in a lab result?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is neutrophilia in this report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is neutrophilia in complete blood count?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is neutrophilia in blood count interpretation?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is neutrophilia for a hematology assistant?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is neutrophilia in this hematology report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is leucocytosis?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is leucocytosis in a blood report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is leucocytosis on a CBC report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is leucocytosis in hematology?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is leucocytosis in a lab result?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is leucocytosis in this report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is leucocytosis in complete blood count?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is leucocytosis in blood count interpretation?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is leucocytosis for a hematology assistant?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is leucocytosis in this hematology report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is RBC abnormal distribution?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is RBC abnormal distribution in a blood report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is RBC abnormal distribution on a CBC report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is RBC abnormal distribution in hematology?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is RBC abnormal distribution in a lab result?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is RBC abnormal distribution in this report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is RBC abnormal distribution in complete blood count?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is RBC abnormal distribution in blood count interpretation?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is RBC abnormal distribution for a hematology assistant?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is RBC abnormal distribution in this hematology report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is PLT abnormal distribution?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is PLT abnormal distribution in a blood report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is PLT abnormal distribution on a CBC report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is PLT abnormal distribution in hematology?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is PLT abnormal distribution in a lab result?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is PLT abnormal distribution in this report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is PLT abnormal distribution in complete blood count?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is PLT abnormal distribution in blood count interpretation?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is PLT abnormal distribution for a hematology assistant?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is PLT abnormal distribution in this hematology report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is anemia flag?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is anemia flag in a blood report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is anemia flag on a CBC report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is anemia flag in hematology?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is anemia flag in a lab result?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is anemia flag in this report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is anemia flag in complete blood count?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is anemia flag in blood count interpretation?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is anemia flag for a hematology assistant?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is anemia flag in this hematology report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is high WBC flag?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is high WBC flag in a blood report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is high WBC flag on a CBC report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is high WBC flag in hematology?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is high WBC flag in a lab result?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is high WBC flag in this report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is high WBC flag in complete blood count?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is high WBC flag in blood count interpretation?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is high WBC flag for a hematology assistant?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is high WBC flag in this hematology report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is low RBC flag?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is low RBC flag in a blood report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is low RBC flag on a CBC report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is low RBC flag in hematology?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is low RBC flag in a lab result?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is low RBC flag in this report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is low RBC flag in complete blood count?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is low RBC flag in blood count interpretation?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is low RBC flag for a hematology assistant?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is low RBC flag in this hematology report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is high RDW flag?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is high RDW flag in a blood report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is high RDW flag on a CBC report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is high RDW flag in hematology?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is high RDW flag in a lab result?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is high RDW flag in this report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is high RDW flag in complete blood count?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is high RDW flag in blood count interpretation?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is high RDW flag for a hematology assistant?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is high RDW flag in this hematology report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is CBC analyzer flag?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is CBC analyzer flag in a blood report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is CBC analyzer flag on a CBC report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is CBC analyzer flag in hematology?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is CBC analyzer flag in a lab result?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is CBC analyzer flag in this report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is CBC analyzer flag in complete blood count?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is CBC analyzer flag in blood count interpretation?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is CBC analyzer flag for a hematology assistant?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is CBC analyzer flag in this hematology report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is abnormal distribution flag?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is abnormal distribution flag in a blood report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is abnormal distribution flag on a CBC report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is abnormal distribution flag in hematology?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is abnormal distribution flag in a lab result?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is abnormal distribution flag in this report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is abnormal distribution flag in complete blood count?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is abnormal distribution flag in blood count interpretation?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is abnormal distribution flag for a hematology assistant?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is abnormal distribution flag in this hematology report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is anemia?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia in a blood report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia on a CBC report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia in hematology?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia in a lab result?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia in this report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia in complete blood count?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia in blood count interpretation?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia for a hematology assistant?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia in this hematology report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low hemoglobin?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low hemoglobin in a blood report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low hemoglobin on a CBC report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low hemoglobin in hematology?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low hemoglobin in a lab result?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low hemoglobin in this report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low hemoglobin in complete blood count?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low hemoglobin in blood count interpretation?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low hemoglobin for a hematology assistant?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low hemoglobin in this hematology report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low hematocrit?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low hematocrit in a blood report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low hematocrit on a CBC report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low hematocrit in hematology?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low hematocrit in a lab result?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low hematocrit in this report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low hematocrit in complete blood count?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low hematocrit in blood count interpretation?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low hematocrit for a hematology assistant?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low hematocrit in this hematology report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low RBC?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low RBC in a blood report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low RBC on a CBC report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low RBC in hematology?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low RBC in a lab result?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low RBC in this report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low RBC in complete blood count?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low RBC in blood count interpretation?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low RBC for a hematology assistant?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low RBC in this hematology report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia in CBC?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia in CBC in a blood report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia in CBC on a CBC report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia in CBC in hematology?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia in CBC in a lab result?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia in CBC in this report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia in CBC in complete blood count?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia in CBC in blood count interpretation?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia in CBC for a hematology assistant?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia in CBC in this hematology report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia pattern?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia pattern in a blood report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia pattern on a CBC report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia pattern in hematology?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia pattern in a lab result?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia pattern in this report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia pattern in complete blood count?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia pattern in blood count interpretation?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia pattern for a hematology assistant?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia pattern in this hematology report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is reduced HGB?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is reduced HGB in a blood report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is reduced HGB on a CBC report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is reduced HGB in hematology?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is reduced HGB in a lab result?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is reduced HGB in this report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is reduced HGB in complete blood count?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is reduced HGB in blood count interpretation?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is reduced HGB for a hematology assistant?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is reduced HGB in this hematology report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is reduced HCT?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is reduced HCT in a blood report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is reduced HCT on a CBC report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is reduced HCT in hematology?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is reduced HCT in a lab result?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is reduced HCT in this report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is reduced HCT in complete blood count?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is reduced HCT in blood count interpretation?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is reduced HCT for a hematology assistant?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is reduced HCT in this hematology report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is red cell deficiency?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is red cell deficiency in a blood report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is red cell deficiency on a CBC report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is red cell deficiency in hematology?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is red cell deficiency in a lab result?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is red cell deficiency in this report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is red cell deficiency in complete blood count?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is red cell deficiency in blood count interpretation?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is red cell deficiency for a hematology assistant?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is red cell deficiency in this hematology report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia finding?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia finding in a blood report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia finding on a CBC report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia finding in hematology?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia finding in a lab result?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia finding in this report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia finding in complete blood count?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia finding in blood count interpretation?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia finding for a hematology assistant?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia finding in this hematology report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is thrombocytopenia?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is thrombocytopenia in a blood report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is thrombocytopenia on a CBC report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is thrombocytopenia in hematology?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is thrombocytopenia in a lab result?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is thrombocytopenia in this report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is thrombocytopenia in complete blood count?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is thrombocytopenia in blood count interpretation?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is thrombocytopenia for a hematology assistant?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is thrombocytopenia in this hematology report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is low platelet count?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is low platelet count in a blood report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is low platelet count on a CBC report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is low platelet count in hematology?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is low platelet count in a lab result?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is low platelet count in this report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is low platelet count in complete blood count?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is low platelet count in blood count interpretation?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is low platelet count for a hematology assistant?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is low platelet count in this hematology report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet abnormal distribution?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet abnormal distribution in a blood report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet abnormal distribution on a CBC report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet abnormal distribution in hematology?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet abnormal distribution in a lab result?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet abnormal distribution in this report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet abnormal distribution in complete blood count?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet abnormal distribution in blood count interpretation?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet abnormal distribution for a hematology assistant?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet abnormal distribution in this hematology report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is low PLT?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is low PLT in a blood report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is low PLT on a CBC report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is low PLT in hematology?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is low PLT in a lab result?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is low PLT in this report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is low PLT in complete blood count?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is low PLT in blood count interpretation?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is low PLT for a hematology assistant?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is low PLT in this hematology report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is reduced MPV?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is reduced MPV in a blood report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is reduced MPV on a CBC report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is reduced MPV in hematology?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is reduced MPV in a lab result?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is reduced MPV in this report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is reduced MPV in complete blood count?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is reduced MPV in blood count interpretation?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is reduced MPV for a hematology assistant?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is reduced MPV in this hematology report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet flag?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet flag in a blood report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet flag on a CBC report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet flag in hematology?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet flag in a lab result?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet flag in this report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet flag in complete blood count?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet flag in blood count interpretation?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet flag for a hematology assistant?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet flag in this hematology report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet count low?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet count low in a blood report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet count low on a CBC report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet count low in hematology?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet count low in a lab result?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet count low in this report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet count low in complete blood count?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet count low in blood count interpretation?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet count low for a hematology assistant?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet count low in this hematology report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is PLT flag?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is PLT flag in a blood report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is PLT flag on a CBC report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is PLT flag in hematology?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is PLT flag in a lab result?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is PLT flag in this report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is PLT flag in complete blood count?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is PLT flag in blood count interpretation?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is PLT flag for a hematology assistant?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is PLT flag in this hematology report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is abnormal platelet result?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is abnormal platelet result in a blood report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is abnormal platelet result on a CBC report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is abnormal platelet result in hematology?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is abnormal platelet result in a lab result?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is abnormal platelet result in this report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is abnormal platelet result in complete blood count?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is abnormal platelet result in blood count interpretation?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is abnormal platelet result for a hematology assistant?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is abnormal platelet result in this hematology report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet abnormality?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet abnormality in a blood report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet abnormality on a CBC report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet abnormality in hematology?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet abnormality in a lab result?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet abnormality in this report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet abnormality in complete blood count?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet abnormality in blood count interpretation?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet abnormality for a hematology assistant?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet abnormality in this hematology report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is Neu#?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Explain Neu# in CBC.", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does Neu# mean in blood report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How should I understand Neu# on hematology report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Why is Neu# listed on a CBC report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does a high Neu# suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does a low Neu# suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How do I read Neu# in a blood count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does Neu# represent in differential count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Is Neu# an absolute count or percentage?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What is Neu%?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Explain Neu% in CBC.", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does Neu% mean in blood report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How should I understand Neu% on hematology report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Why is Neu% listed on a CBC report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does a high Neu% suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does a low Neu% suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How do I read Neu% in a blood count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does Neu% represent in differential count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Is Neu% an absolute count or percentage?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What is Lym#?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Explain Lym# in CBC.", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does Lym# mean in blood report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How should I understand Lym# on hematology report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Why is Lym# listed on a CBC report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does a high Lym# suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does a low Lym# suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How do I read Lym# in a blood count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does Lym# represent in differential count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Is Lym# an absolute count or percentage?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What is Lym%?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Explain Lym% in CBC.", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does Lym% mean in blood report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How should I understand Lym% on hematology report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Why is Lym% listed on a CBC report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does a high Lym% suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does a low Lym% suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How do I read Lym% in a blood count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does Lym% represent in differential count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Is Lym% an absolute count or percentage?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What is Mon#?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Explain Mon# in CBC.", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does Mon# mean in blood report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How should I understand Mon# on hematology report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Why is Mon# listed on a CBC report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does a high Mon# suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does a low Mon# suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How do I read Mon# in a blood count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does Mon# represent in differential count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Is Mon# an absolute count or percentage?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What is Mon%?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Explain Mon% in CBC.", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does Mon% mean in blood report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How should I understand Mon% on hematology report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Why is Mon% listed on a CBC report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does a high Mon% suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does a low Mon% suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How do I read Mon% in a blood count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does Mon% represent in differential count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Is Mon% an absolute count or percentage?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What is Eos#?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Explain Eos# in CBC.", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does Eos# mean in blood report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How should I understand Eos# on hematology report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Why is Eos# listed on a CBC report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does a high Eos# suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does a low Eos# suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How do I read Eos# in a blood count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does Eos# represent in differential count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Is Eos# an absolute count or percentage?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What is Eos%?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Explain Eos% in CBC.", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does Eos% mean in blood report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How should I understand Eos% on hematology report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Why is Eos% listed on a CBC report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does a high Eos% suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does a low Eos% suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How do I read Eos% in a blood count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does Eos% represent in differential count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Is Eos% an absolute count or percentage?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What is Bas#?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Explain Bas# in CBC.", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does Bas# mean in blood report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How should I understand Bas# on hematology report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Why is Bas# listed on a CBC report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does a high Bas# suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does a low Bas# suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How do I read Bas# in a blood count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does Bas# represent in differential count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Is Bas# an absolute count or percentage?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What is Bas%?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Explain Bas% in CBC.", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does Bas% mean in blood report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How should I understand Bas% on hematology report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Why is Bas% listed on a CBC report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does a high Bas% suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does a low Bas% suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How do I read Bas% in a blood count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does Bas% represent in differential count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Is Bas% an absolute count or percentage?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How do I read this CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read this CBC report in this report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read this CBC report on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read this CBC report in a hematology report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read this CBC report for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read this hematology blood report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read this hematology blood report in this report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read this hematology blood report on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read this hematology blood report in a hematology report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read this hematology blood report for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read a complete blood count report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read a complete blood count report in this report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read a complete blood count report on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read a complete blood count report in a hematology report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read a complete blood count report for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read a hematology analyzer report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read a hematology analyzer report in this report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read a hematology analyzer report on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read a hematology analyzer report in a hematology report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read a hematology analyzer report for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the blood report layout?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the blood report layout in this report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the blood report layout on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the blood report layout in a hematology report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the blood report layout for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the result, unit, and reference range columns?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the result, unit, and reference range columns in this report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the result, unit, and reference range columns on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the result, unit, and reference range columns in a hematology report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the result, unit, and reference range columns for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read H and L markers?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read H and L markers in this report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read H and L markers on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read H and L markers in a hematology report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read H and L markers for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read absolute counts and percentages?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read absolute counts and percentages in this report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read absolute counts and percentages on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read absolute counts and percentages in a hematology report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read absolute counts and percentages for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the WBC section?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the WBC section in this report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the WBC section on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the WBC section in a hematology report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the WBC section for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the RBC section?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the RBC section in this report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the RBC section on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the RBC section in a hematology report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the RBC section for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the platelet section?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the platelet section in this report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the platelet section on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the platelet section in a hematology report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read the platelet section for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read analyzer flags?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read analyzer flags in this report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read analyzer flags on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read analyzer flags in a hematology report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read analyzer flags for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read reference ranges?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read reference ranges in this report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read reference ranges on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read reference ranges in a hematology report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read reference ranges for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read CBC report structure?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read CBC report structure in this report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read CBC report structure on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read CBC report structure in a hematology report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read CBC report structure for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read hematology report format?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read hematology report format in this report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read hematology report format on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read hematology report format in a hematology report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read hematology report format for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read report columns?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read report columns in this report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read report columns on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read report columns in a hematology report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How do I read report columns for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}

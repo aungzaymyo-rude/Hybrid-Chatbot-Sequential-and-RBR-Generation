@@ -40,6 +40,12 @@ RETRIEVAL_INTENTS = {
     'blood_smear',
     'quality_control',
     'critical_value_reporting',
+    'cbc_result_parameter',
+    'cbc_flag_explanation',
+    'anemia_related_term',
+    'platelet_abnormality',
+    'differential_result_explanation',
+    'report_structure_help',
 }
 
 

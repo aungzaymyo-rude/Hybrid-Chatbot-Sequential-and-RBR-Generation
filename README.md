@@ -1,14 +1,18 @@
 # Hematology Lab Assistant (English-Only)
 
-Hybrid chatbot system using a BiLSTM sequential intent classifier, medical term detection, response retrieval, safety rules, PostgreSQL logging, and an admin monitoring panel for hematology lab workflows. Current intents:
+Hybrid chatbot system using a BiLSTM sequential intent classifier, medical term detection, retrieval-based response generation, safety rules, PostgreSQL logging, and an admin monitoring panel for hematology lab workflows. Current trained intents:
 - `greeting`
 - `help`
 - `cbc_info`
 - `sample_collection`
 - `rbc_term`
 - `wbc_term`
+- `platelet_term`
+- `differential_review`
 - `coag_test`
 - `blood_smear`
+- `quality_control`
+- `critical_value_reporting`
 - `capability_query`
 - `thanks`
 - `goodbye`
@@ -17,6 +21,14 @@ Hybrid chatbot system using a BiLSTM sequential intent classifier, medical term 
 - `unsafe_medical_request`
 - `incomplete_query`
 - `fallback`
+
+Prepared next report-scope intents (labeled, not merged or retrained yet):
+- `cbc_result_parameter`
+- `cbc_flag_explanation`
+- `anemia_related_term`
+- `platelet_abnormality`
+- `differential_result_explanation`
+- `report_structure_help`
 
 Non-English input returns: "Only English is supported. Please ask in English."
 
@@ -47,6 +59,18 @@ Labeled file format (CSV/JSONL):
 - `text` or `utterance`
 - `intent` or `label`
 - `lang` (optional, defaults to `en`)
+
+Current dataset snapshot (`chatbot/data/train/intent_dataset.jsonl`):
+- Total samples: `1953`
+- Total intents: `20`
+- Largest classes: `cbc_info=312`, `sample_collection=214`, `wbc_term=140`, `rbc_term=140`, `coag_test=140`
+- Balanced domain classes at `100` each: `blood_smear`, `platelet_term`, `differential_review`, `quality_control`, `critical_value_reporting`
+- Communication/safety examples include: `capability_query=66`, `unsafe_medical_request=108`, `clarification=50`, `goodbye=48`, `out_of_scope=48`, `thanks=48`, `incomplete_query=47`, `greeting=22`, `fallback=20`
+
+Prepared report-expansion dataset (`chatbot/data/labeled/hematology_report_scope_expansion_580.csv`):
+- New labeled samples ready to merge: `580`
+- New staged intents: `6`
+- If merged, next training dataset size becomes approximately: `2533` samples with `26` intents
 
 ## Build Training Dataset
 Training uses one final file:
@@ -129,12 +153,44 @@ Communication and safety intents such as `capability_query`, `thanks`, `goodbye`
 
 That means you can widen answer scope by adding curated question-answer entries for medical intents without retraining the classifier, while still keeping non-medical and unsafe requests under strict control.
 
+## Retrieval-Based Generation Knowledge
+The chatbot uses retrieval-based response generation rather than free-text generation for medical answers.
+
+Knowledge source:
+- `chatbot/data/knowledge/hematology_responses.jsonl`
+
+Knowledge record format:
+```json
+{
+  "intent": "rbc_term",
+  "question": "What is MCV?",
+  "answer": "MCV is mean corpuscular volume, the average size of red blood cells..."
+}
+```
+
+How retrieval works:
+1. The BiLSTM predicts an intent.
+2. The entity detector looks for specific hematology terms such as `HGB`, `HCT`, `RDW`, `Neu#`, `aPTT`, or `thrombocytopenia`.
+3. The routing layer may refine the broad intent into a more specific retrieval intent.
+4. The retriever searches the knowledge base within that intent and returns the closest curated answer.
+5. If no strong retrieval match exists, the chatbot falls back to the static response template for that intent.
+
+Why this is used:
+- safer than unrestricted generative output for medical content
+- easy to audit and update without retraining the classifier
+- supports controlled expansion by adding new curated Q/A entries
+
+How to extend it:
+1. Add new JSONL rows to `chatbot/data/knowledge/hematology_responses.jsonl`.
+2. Keep the `intent` aligned with your trained intent taxonomy.
+3. Add several natural question variants for each concept.
+4. Retrain the classifier only when you add new intents, not when you only add more answer knowledge for existing intents.
+
 ## Chatbot Features
 - Hematology-focused assistant UI with scope and safety panels
 - Quick prompt shortcuts for common hematology questions
 - Local browser conversation persistence
 - Export chat transcript as JSON
-- Structured answer cards for CBC, coagulation, smear, and QC replies
 - Suggested next-question chips after each assistant answer
 - Per-message intent, confidence, and category display
 - Controlled guardrail responses for unsafe or out-of-scope requests

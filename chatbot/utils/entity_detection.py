@@ -17,6 +17,78 @@ class EntityRule:
 
 _RULES: tuple[EntityRule, ...] = (
     EntityRule(
+        label='cbc_columns',
+        intent='report_structure_help',
+        canonical_question='How do I read the result, unit, and reference range columns?',
+        patterns=(r'\bresult column\b', r'\bunit column\b', r'\breference range\b', r'\bh and l markers?\b'),
+    ),
+    EntityRule(
+        label='cbc_report_layout',
+        intent='report_structure_help',
+        canonical_question='How do I read this CBC report?',
+        patterns=(r'\bcbc report\b', r'\bhematology report\b', r'\bblood report\b', r'\breport layout\b'),
+    ),
+    EntityRule(
+        label='hemoglobin_parameter',
+        intent='cbc_result_parameter',
+        canonical_question='What is hemoglobin?',
+        patterns=(r'\bhgb\b', r'\bhemoglobin\b'),
+    ),
+    EntityRule(
+        label='hematocrit_parameter',
+        intent='cbc_result_parameter',
+        canonical_question='What is hematocrit?',
+        patterns=(r'\bhct\b', r'\bhematocrit\b'),
+    ),
+    EntityRule(
+        label='rdw_parameter',
+        intent='cbc_result_parameter',
+        canonical_question='What is RDW?',
+        patterns=(r'\brdw(?:-cv|-sd)?\b', r'\bred cell distribution width\b'),
+    ),
+    EntityRule(
+        label='neutrophilia_flag',
+        intent='cbc_flag_explanation',
+        canonical_question='What is neutrophilia?',
+        patterns=(r'\bneutrophilia\b',),
+    ),
+    EntityRule(
+        label='leucocytosis_flag',
+        intent='cbc_flag_explanation',
+        canonical_question='What is leucocytosis?',
+        patterns=(r'\bleucocytosis\b', r'\bleukocytosis\b'),
+    ),
+    EntityRule(
+        label='abn_distribution_flag',
+        intent='cbc_flag_explanation',
+        canonical_question='What is RBC abnormal distribution?',
+        patterns=(r'\brbc abn distribution\b', r'\babnormal distribution\b', r'\bplt abn distribution\b'),
+    ),
+    EntityRule(
+        label='anemia_term',
+        intent='anemia_related_term',
+        canonical_question='What is anemia?',
+        patterns=(r'\banemia\b', r'\blow hemoglobin\b', r'\blow hematocrit\b'),
+    ),
+    EntityRule(
+        label='thrombocytopenia_term',
+        intent='platelet_abnormality',
+        canonical_question='What is thrombocytopenia?',
+        patterns=(r'\bthrombocytopenia\b', r'\blow platelet\b', r'\blow plt\b'),
+    ),
+    EntityRule(
+        label='diff_absolute',
+        intent='differential_result_explanation',
+        canonical_question='What is Neu#?',
+        patterns=(r'\bneu#\b', r'\blym#\b', r'\bmon#\b', r'\beos#\b', r'\bbas#\b'),
+    ),
+    EntityRule(
+        label='diff_percent',
+        intent='differential_result_explanation',
+        canonical_question='What is Neu%?',
+        patterns=(r'\bneu%\b', r'\blym%\b', r'\bmon%\b', r'\beos%\b', r'\bbas%\b'),
+    ),
+    EntityRule(
         label='aptt',
         intent='coag_test',
         canonical_question='What is aPTT?',
