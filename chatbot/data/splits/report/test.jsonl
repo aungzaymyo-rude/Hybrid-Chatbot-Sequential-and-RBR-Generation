@@ -1,0 +1,396 @@
+{"text": "tell me a joke", "intent": "out_of_scope", "lang": "en"}
+{"text": "What is MCV in this report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "what does a high platelet count mean", "intent": "platelet_term", "lang": "en"}
+{"text": "everything going okay now", "intent": "small_talk", "lang": "en"}
+{"text": "What does high MCHC suggest?", "intent": "cbc_info", "lang": "en"}
+{"text": "morning friend", "intent": "greeting", "lang": "en"}
+{"text": "I need help with specimen handling.", "intent": "help", "lang": "en"}
+{"text": "What does a low Mon% suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "who won the movie award", "intent": "out_of_scope", "lang": "en"}
+{"text": "what does basophilia mean", "intent": "differential_review", "lang": "en"}
+{"text": "What is the normal range for RDW?", "intent": "cbc_info", "lang": "en"}
+{"text": "what is red blood cell count in a CBC report", "intent": "rbc_term", "lang": "en"}
+{"text": "thanks that helped really", "intent": "thanks", "lang": "en"}
+{"text": "what medicine should i prescribe to Alex", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "I need an explanation of RBC.", "intent": "cbc_info", "lang": "en"}
+{"text": "you doing fine today", "intent": "small_talk", "lang": "en"}
+{"text": "What is leucocytosis in a lab result?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "how does MCHC support hypochromia review", "intent": "rbc_term", "lang": "en"}
+{"text": "what is the meaning of red cell distribution width", "intent": "rbc_term", "lang": "en"}
+{"text": "Please guide me with platelet count information.", "intent": "help", "lang": "en"}
+{"text": "how do you explain leukopenia to a trainee", "intent": "wbc_term", "lang": "en"}
+{"text": "what are you built to assist with", "intent": "capability_query", "lang": "en"}
+{"text": "good evening", "intent": "greeting", "lang": "en"}
+{"text": "whats up", "intent": "small_talk", "lang": "en"}
+{"text": "When should a CBC be repeated?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the normal range for RBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "i will come back later then", "intent": "goodbye", "lang": "en"}
+{"text": "appreciate the explanation really", "intent": "thanks", "lang": "en"}
+{"text": "nice to meet you there", "intent": "greeting", "lang": "en"}
+{"text": "what WBC term should I know for CBC review", "intent": "wbc_term", "lang": "en"}
+{"text": "What is RDW-CV in complete blood count?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is a CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "which hematology areas are available in this assistant", "intent": "capability_query", "lang": "en"}
+{"text": "please explain a CBC", "intent": "cbc_info", "lang": "en"}
+{"text": "why are romanowsky stains used in hematology", "intent": "blood_smear", "lang": "en"}
+{"text": "what is the importance of result verification before calling", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "Explain RDW", "intent": "cbc_info", "lang": "en"}
+{"text": "what broad information does total WBC count provide", "intent": "wbc_term", "lang": "en"}
+{"text": "What is PLT flag for a hematology assistant?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "Why is Lym# listed on a CBC report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Why is Lym% listed on a CBC report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "i still dont follow what you mean", "intent": "clarification", "lang": "en"}
+{"text": "can you define hematocrit simply", "intent": "rbc_term", "lang": "en"}
+{"text": "what hematology tasks can you support", "intent": "capability_query", "lang": "en"}
+{"text": "how should learners interpret leukocyte terminology", "intent": "wbc_term", "lang": "en"}
+{"text": "how is it going", "intent": "small_talk", "lang": "en"}
+{"text": "how are unresolved critical notifications escalated", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "What is PLT abnormal distribution in this report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "write me a poem", "intent": "out_of_scope", "lang": "en"}
+{"text": "what should i look at next", "intent": "incomplete_query", "lang": "en"}
+{"text": "What is hemoglobin in a CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "can you explain your scope before I ask", "intent": "capability_query", "lang": "en"}
+{"text": "that helps a lot", "intent": "thanks", "lang": "en"}
+{"text": "explain it step by step", "intent": "clarification", "lang": "en"}
+{"text": "how should repeat analysis be documented for critical results", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "what can this chatbot answer in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "how do i treat leukocytosis in this patient", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "what hematology questions can i ask right now", "intent": "capability_query", "lang": "en"}
+{"text": "that is all for now goodbye", "intent": "goodbye", "lang": "en"}
+{"text": "what broad clues come from monocyte increase", "intent": "differential_review", "lang": "en"}
+{"text": "what does that mean exactly", "intent": "clarification", "lang": "en"}
+{"text": "Tell me about WBC.", "intent": "cbc_info", "lang": "en"}
+{"text": "How do I read Lym% in a blood count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What is anemia finding in a blood report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low hematocrit in this hematology report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "what does RBC tell us for Liam", "intent": "rbc_term", "lang": "en"}
+{"text": "what clinical treatment is required here", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "What is anemia on a CBC report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "thank you Liam", "intent": "thanks", "lang": "en"}
+{"text": "test noise", "intent": "fallback", "lang": "en"}
+{"text": "what is the difference between total count and cell distribution", "intent": "wbc_term", "lang": "en"}
+{"text": "how is polychromasia described on a smear review", "intent": "blood_smear", "lang": "en"}
+{"text": "What is low RBC flag in a lab result?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "can you explain your scope", "intent": "capability_query", "lang": "en"}
+{"text": "help me write a song lyric", "intent": "out_of_scope", "lang": "en"}
+{"text": "What is reduced HCT in a lab result?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "talk later then", "intent": "goodbye", "lang": "en"}
+{"text": "help me understand mean platelet volume", "intent": "cbc_info", "lang": "en"}
+{"text": "thanks today", "intent": "thanks", "lang": "en"}
+{"text": "what therapy should i give immediately", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "i didnt understand that", "intent": "clarification", "lang": "en"}
+{"text": "how do you explain the feathered edge on a smear", "intent": "blood_smear", "lang": "en"}
+{"text": "how do you explain critical value reporting in simple language", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "how should new staff summarize red cell review", "intent": "rbc_term", "lang": "en"}
+{"text": "Please explain MCV.", "intent": "cbc_info", "lang": "en"}
+{"text": "can you say that in simple words please", "intent": "clarification", "lang": "en"}
+{"text": "What is platelet abnormality in a lab result?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is hemoglobin in blood count interpretation?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "what does MPV mean", "intent": "platelet_term", "lang": "en"}
+{"text": "What is reduced MPV in hematology?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What does a low Neu# suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "what do you mean by that please", "intent": "clarification", "lang": "en"}
+{"text": "which medicine is needed for this blood smear finding", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "see you later after the next case", "intent": "goodbye", "lang": "en"}
+{"text": "what happens if a clinician cannot be reached for a critical result", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "How do I read hematology report format in a hematology report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "What is RDW-SD?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "what broad information does neutrophil predominance provide", "intent": "wbc_term", "lang": "en"}
+{"text": "everything going okay my friend", "intent": "small_talk", "lang": "en"}
+{"text": "see you later after the next shift", "intent": "goodbye", "lang": "en"}
+{"text": "What is hemoglobin in hematology?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "can you help with this", "intent": "incomplete_query", "lang": "en"}
+{"text": "Explain Bas# in CBC.", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "what broad clues come from neutrophil increase", "intent": "differential_review", "lang": "en"}
+{"text": "How do I read report columns on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "can you explain your scope exactly", "intent": "capability_query", "lang": "en"}
+{"text": "what is mandatory documentation for critical reporting", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "Can you explain MCH?", "intent": "cbc_info", "lang": "en"}
+{"text": "can you simplify that answer", "intent": "clarification", "lang": "en"}
+{"text": "What is leucocytosis in this hematology report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "which lab topics are supported exactly", "intent": "capability_query", "lang": "en"}
+{"text": "thanks i got it", "intent": "thanks", "lang": "en"}
+{"text": "How do I read a complete blood count report for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
+{"text": "how does that work", "intent": "incomplete_query", "lang": "en"}
+{"text": "how do you read a low WBC count at a basic level", "intent": "wbc_term", "lang": "en"}
+{"text": "can you simplify that answer now", "intent": "clarification", "lang": "en"}
+{"text": "what are common smear preparation errors", "intent": "blood_smear", "lang": "en"}
+{"text": "alright thanks again", "intent": "thanks", "lang": "en"}
+{"text": "how should trainees understand panic values in hematology", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "How do I read the platelet section in a hematology report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "what should i know about platelet review in CBC", "intent": "platelet_term", "lang": "en"}
+{"text": "Define hemoglobin.", "intent": "cbc_info", "lang": "en"}
+{"text": "What does a normal CBC look like?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is high RDW flag in this report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is neutrophilia in blood count interpretation?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "how is microcytosis described in simple hematology language", "intent": "rbc_term", "lang": "en"}
+{"text": "what morphology findings are commonly communicated to clinicians", "intent": "blood_smear", "lang": "en"}
+{"text": "what does WBC count represent on the report", "intent": "wbc_term", "lang": "en"}
+{"text": "what therapy should be initiated immediately", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "i didnt understand that again", "intent": "clarification", "lang": "en"}
+{"text": "do you support blood smear questions", "intent": "capability_query", "lang": "en"}
+{"text": "How should I interpret high hematocrit?", "intent": "cbc_info", "lang": "en"}
+{"text": "How do I read a hematology analyzer report in a hematology report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "can you clarify the result term", "intent": "clarification", "lang": "en"}
+{"text": "How do I read a complete blood count report on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "What can a full blood count tell us?", "intent": "cbc_info", "lang": "en"}
+{"text": "how should platelet review be summarized for routine CBC verification", "intent": "platelet_term", "lang": "en"}
+{"text": "who won the cricket match today", "intent": "out_of_scope", "lang": "en"}
+{"text": "goodbye friend", "intent": "goodbye", "lang": "en"}
+{"text": "say that another way again", "intent": "clarification", "lang": "en"}
+{"text": "What does low hemoglobin suggest?", "intent": "cbc_info", "lang": "en"}
+{"text": "what sort of questions should i ask here in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "How do you explain MCV?", "intent": "cbc_info", "lang": "en"}
+{"text": "how should Emma understand RBC count", "intent": "rbc_term", "lang": "en"}
+{"text": "What is red cell deficiency in blood count interpretation?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "what does an absolute lymphocyte count mean", "intent": "differential_review", "lang": "en"}
+{"text": "say that another way", "intent": "clarification", "lang": "en"}
+{"text": "can you restate that again", "intent": "clarification", "lang": "en"}
+{"text": "What is red cell deficiency in complete blood count?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low platelet count in this hematology report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is low hematocrit in a blood report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "thanks for your support again", "intent": "thanks", "lang": "en"}
+{"text": "what broad clues come from lymphocyte increase", "intent": "wbc_term", "lang": "en"}
+{"text": "can you help with cbc questions", "intent": "capability_query", "lang": "en"}
+{"text": "What is anemia pattern in this hematology report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "how does specimen age affect differential review", "intent": "differential_review", "lang": "en"}
+{"text": "i do not understand please", "intent": "clarification", "lang": "en"}
+{"text": "see you", "intent": "goodbye", "lang": "en"}
+{"text": "What is low RBC flag on a CBC report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "how do you train staff on critical result reporting", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "what does a left shift mean in simple terms", "intent": "wbc_term", "lang": "en"}
+{"text": "I need support with CBC sample stability", "intent": "help", "lang": "en"}
+{"text": "What does CBC stand for?", "intent": "cbc_info", "lang": "en"}
+{"text": "what broad significance does high neutrophil count have in differential review", "intent": "differential_review", "lang": "en"}
+{"text": "what is the broad use of absolute neutrophil count", "intent": "wbc_term", "lang": "en"}
+{"text": "What is reduced MPV in this hematology report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "can you tell me your scope exactly", "intent": "capability_query", "lang": "en"}
+{"text": "what does a low hemoglobin result usually point to", "intent": "rbc_term", "lang": "en"}
+{"text": "please clarify the last answer please", "intent": "clarification", "lang": "en"}
+{"text": "thanks there", "intent": "thanks", "lang": "en"}
+{"text": "How should I understand Lym% on hematology report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "how do you explain platelet count during staff orientation", "intent": "platelet_term", "lang": "en"}
+{"text": "What is platelet abnormal distribution in complete blood count?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "How should I interpret low WBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "I need help interpreting CBC parameters", "intent": "help", "lang": "en"}
+{"text": "hey there again", "intent": "greeting", "lang": "en"}
+{"text": "Explain MCHC on a CBC", "intent": "cbc_info", "lang": "en"}
+{"text": "what does a good wedge smear look like", "intent": "blood_smear", "lang": "en"}
+{"text": "how is your day going my friend", "intent": "small_talk", "lang": "en"}
+{"text": "What is reduced HGB in hematology?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "many thanks", "intent": "thanks", "lang": "en"}
+{"text": "what is the role of smear review in abnormal CBC follow up", "intent": "blood_smear", "lang": "en"}
+{"text": "Please help me with CBC reporting terms.", "intent": "help", "lang": "en"}
+{"text": "what broad meaning does high platelet count have", "intent": "platelet_term", "lang": "en"}
+{"text": "how do i prescribe medicine", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "Explain MCV on a CBC", "intent": "cbc_info", "lang": "en"}
+{"text": "Can you guide me on sample collection", "intent": "help", "lang": "en"}
+{"text": "what does lymphopenia mean in broad laboratory terms", "intent": "wbc_term", "lang": "en"}
+{"text": "what are basophils", "intent": "differential_review", "lang": "en"}
+{"text": "Explain Neu# in CBC.", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "how should a blood smear be labeled", "intent": "blood_smear", "lang": "en"}
+{"text": "Give me a simple explanation of RDW.", "intent": "cbc_info", "lang": "en"}
+{"text": "can you decide the medication plan for this patient", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "thanks for the coagulation explanation", "intent": "thanks", "lang": "en"}
+{"text": "please explain more simply", "intent": "clarification", "lang": "en"}
+{"text": "how do you prepare a smear for morphology work", "intent": "blood_smear", "lang": "en"}
+{"text": "say that another way for me", "intent": "clarification", "lang": "en"}
+{"text": "What is MCV in a lab result?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "why is time stamping important in critical result reporting", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "What does a high Lym# suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does PLT mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "how do you identify the feathered edge on a blood film", "intent": "blood_smear", "lang": "en"}
+{"text": "how have you been now", "intent": "small_talk", "lang": "en"}
+{"text": "What does a full blood count measure?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does a low Neu% suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What is thrombocytopenia on a CBC report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "tell me how to treat this patient right now", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "what does platelet aggregation mean", "intent": "platelet_term", "lang": "en"}
+{"text": "how do i bake a cake", "intent": "out_of_scope", "lang": "en"}
+{"text": "thank you that explanation was enough", "intent": "thanks", "lang": "en"}
+{"text": "please diagnose this illness for me", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "how are you today", "intent": "small_talk", "lang": "en"}
+{"text": "have a nice day today", "intent": "goodbye", "lang": "en"}
+{"text": "how quickly should critical results be communicated", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "What is RDW-SD in a lab result?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "what broad significance does high MPV have", "intent": "platelet_term", "lang": "en"}
+{"text": "how's it going my friend", "intent": "small_talk", "lang": "en"}
+{"text": "how do red cell indices support anemia pattern review", "intent": "rbc_term", "lang": "en"}
+{"text": "What is anemia flag in a lab result?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "how r u there", "intent": "small_talk", "lang": "en"}
+{"text": "how do i read RDW on a report", "intent": "rbc_term", "lang": "en"}
+{"text": "What is PLT abnormal distribution in a blood report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "Is Bas# an absolute count or percentage?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What is anisocytosis and RDW?", "intent": "cbc_info", "lang": "en"}
+{"text": "which one is it", "intent": "incomplete_query", "lang": "en"}
+{"text": "I need help with CBC testing.", "intent": "help", "lang": "en"}
+{"text": "How do I read hematology report format for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How is a CBC report used in hematology?", "intent": "cbc_info", "lang": "en"}
+{"text": "what is platelet morphology review", "intent": "platelet_term", "lang": "en"}
+{"text": "see you next time friend", "intent": "goodbye", "lang": "en"}
+{"text": "What is anemia finding in complete blood count?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "how is eosinophilia reported", "intent": "differential_review", "lang": "en"}
+{"text": "What is CBC analyzer flag in complete blood count?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "can you recommend treatment for severe anemia", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "lorem ipsum", "intent": "fallback", "lang": "en"}
+{"text": "What is platelet abnormality on a CBC report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "how do you explain hematocrit to a student", "intent": "rbc_term", "lang": "en"}
+{"text": "what does a differential white count measure", "intent": "wbc_term", "lang": "en"}
+{"text": "thanks a lot really", "intent": "thanks", "lang": "en"}
+{"text": "what should learners know first about platelet count", "intent": "platelet_term", "lang": "en"}
+{"text": "hi assistant", "intent": "greeting", "lang": "en"}
+{"text": "What is MCHC in a lab result?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "how is critical value reporting reviewed for quality improvement", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "what is the role of differential count in infection screening", "intent": "differential_review", "lang": "en"}
+{"text": "thanks for the help really", "intent": "thanks", "lang": "en"}
+{"text": "do you support blood smear questions right now", "intent": "capability_query", "lang": "en"}
+{"text": "i will come back later today", "intent": "goodbye", "lang": "en"}
+{"text": "What is hematocrit in a lab result?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "thanks for the help", "intent": "thanks", "lang": "en"}
+{"text": "what broad significance does low neutrophil count have in differential review", "intent": "differential_review", "lang": "en"}
+{"text": "how is leukocyte review linked to inflammation screening", "intent": "wbc_term", "lang": "en"}
+{"text": "thank you for the hematology guidance", "intent": "thanks", "lang": "en"}
+{"text": "how is critical result communication audited", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "What is platelet abnormality in blood count interpretation?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "what does fragmented red cell appearance suggest broadly", "intent": "blood_smear", "lang": "en"}
+{"text": "you alright", "intent": "small_talk", "lang": "en"}
+{"text": "How do I read this CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "What is RBC count on a CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "thanks for the answer really", "intent": "thanks", "lang": "en"}
+{"text": "how does differential review support routine hematology verification", "intent": "differential_review", "lang": "en"}
+{"text": "What does a CBC test measure?", "intent": "cbc_info", "lang": "en"}
+{"text": "good evening again", "intent": "greeting", "lang": "en"}
+{"text": "greetings there", "intent": "greeting", "lang": "en"}
+{"text": "why would abnormal cells trigger differential review", "intent": "differential_review", "lang": "en"}
+{"text": "how should trainees understand lymphocyte predominance", "intent": "differential_review", "lang": "en"}
+{"text": "what broad situations may lead to thrombocytosis", "intent": "platelet_term", "lang": "en"}
+{"text": "what can this chatbot answer right now", "intent": "capability_query", "lang": "en"}
+{"text": "good afternoon again", "intent": "greeting", "lang": "en"}
+{"text": "which test do you mean", "intent": "incomplete_query", "lang": "en"}
+{"text": "we can stop the chat now", "intent": "goodbye", "lang": "en"}
+{"text": "what can you do right now", "intent": "capability_query", "lang": "en"}
+{"text": "empty meaning", "intent": "fallback", "lang": "en"}
+{"text": "catch you later", "intent": "goodbye", "lang": "en"}
+{"text": "Tell me about platelet count.", "intent": "cbc_info", "lang": "en"}
+{"text": "catch you later friend", "intent": "goodbye", "lang": "en"}
+{"text": "ending this session now thanks", "intent": "goodbye", "lang": "en"}
+{"text": "what is the role of differential count in hematology", "intent": "wbc_term", "lang": "en"}
+{"text": "can you explain your scope today", "intent": "capability_query", "lang": "en"}
+{"text": "do you support blood smear questions exactly", "intent": "capability_query", "lang": "en"}
+{"text": "How do I read reference ranges for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
+{"text": "why must communication details be audited for critical results", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "how is it going there", "intent": "small_talk", "lang": "en"}
+{"text": "how is WBC count reported on a CBC", "intent": "wbc_term", "lang": "en"}
+{"text": "why is smear review important after abnormal analyzer flags", "intent": "blood_smear", "lang": "en"}
+{"text": "Why is Eos% listed on a CBC report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Why is a complete blood count ordered?", "intent": "cbc_info", "lang": "en"}
+{"text": "what is the relationship between RBC count and hemoglobin", "intent": "rbc_term", "lang": "en"}
+{"text": "What is platelet abnormal distribution in hematology?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "hey there friend", "intent": "greeting", "lang": "en"}
+{"text": "Explain Mon% in CBC.", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "tell me the dose for this patient", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "What does the CBC report show?", "intent": "cbc_info", "lang": "en"}
+{"text": "why are RBC indices important in anemia workup", "intent": "rbc_term", "lang": "en"}
+{"text": "can you", "intent": "incomplete_query", "lang": "en"}
+{"text": "What is leucocytosis in this report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "explain it one more time for me", "intent": "clarification", "lang": "en"}
+{"text": "What does low MPV suggest?", "intent": "cbc_info", "lang": "en"}
+{"text": "morning again", "intent": "greeting", "lang": "en"}
+{"text": "why is WBC count not interpreted completely on its own", "intent": "wbc_term", "lang": "en"}
+{"text": "What is platelet flag on a CBC report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "whats up now", "intent": "small_talk", "lang": "en"}
+{"text": "how do you summarize differential count basics", "intent": "differential_review", "lang": "en"}
+{"text": "What does HGB mean in CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "what does normocytic mean in hematology review", "intent": "rbc_term", "lang": "en"}
+{"text": "thanks for the quick explanation", "intent": "thanks", "lang": "en"}
+{"text": "what are you meant to help with in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "What is hematocrit on a CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "what does a low platelet count mean", "intent": "platelet_term", "lang": "en"}
+{"text": "how should analyzer error be ruled out before critical reporting", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "how do i manage this patient medically", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "What is low RBC in blood count interpretation?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "How do I read a CBC report?", "intent": "cbc_info", "lang": "en"}
+{"text": "what is thrombocytosis", "intent": "platelet_term", "lang": "en"}
+{"text": "What does a CBC report include?", "intent": "cbc_info", "lang": "en"}
+{"text": "what questions can i ask", "intent": "capability_query", "lang": "en"}
+{"text": "what does band form increase suggest generally", "intent": "wbc_term", "lang": "en"}
+{"text": "What is HGB in this report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "can you help with coagulation questions exactly", "intent": "capability_query", "lang": "en"}
+{"text": "what is examined first during blood smear review", "intent": "blood_smear", "lang": "en"}
+{"text": "can you help with coagulation questions in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "i need a clearer explanation", "intent": "clarification", "lang": "en"}
+{"text": "What is low RBC flag in this report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "how are u today", "intent": "small_talk", "lang": "en"}
+{"text": "How is RBC measured?", "intent": "cbc_info", "lang": "en"}
+{"text": "what does left shift mean in differential explanation", "intent": "differential_review", "lang": "en"}
+{"text": "What does CBC mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is CBC analyzer flag in this report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "hello there today", "intent": "greeting", "lang": "en"}
+{"text": "how are you now", "intent": "small_talk", "lang": "en"}
+{"text": "what CBC parameters are usually reported together", "intent": "cbc_info", "lang": "en"}
+{"text": "why can steroids influence white blood cell count broadly", "intent": "wbc_term", "lang": "en"}
+{"text": "What is RDW-SD for a hematology assistant?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "tell me how to treat this patient", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "How do you explain MPV?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is PLT flag?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "can i ask about CBC workflow and terminology here", "intent": "capability_query", "lang": "en"}
+{"text": "see you soon for now", "intent": "goodbye", "lang": "en"}
+{"text": "what can you do exactly", "intent": "capability_query", "lang": "en"}
+{"text": "thanks for your support today", "intent": "thanks", "lang": "en"}
+{"text": "what does that refer to", "intent": "incomplete_query", "lang": "en"}
+{"text": "what broad information does MPV provide", "intent": "platelet_term", "lang": "en"}
+{"text": "What is abnormal distribution flag in a blood report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What does MCHC mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "What should I know about MCHC?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is low hematocrit in hematology?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "what does hematocrit represent in hematology", "intent": "rbc_term", "lang": "en"}
+{"text": "What is leucocytosis in hematology?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is reduced MPV in this report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet count low in hematology?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "thanks for walking me through it", "intent": "thanks", "lang": "en"}
+{"text": "what is anemia screening with RBC", "intent": "rbc_term", "lang": "en"}
+{"text": "good afternoon today", "intent": "greeting", "lang": "en"}
+{"text": "why can EDTA cause platelet clumping artifacts", "intent": "platelet_term", "lang": "en"}
+{"text": "bye thanks for the lab help", "intent": "goodbye", "lang": "en"}
+{"text": "How should I interpret high RDW?", "intent": "cbc_info", "lang": "en"}
+{"text": "that is all for now friend", "intent": "goodbye", "lang": "en"}
+{"text": "What is platelet flag in this hematology report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "How do I read the blood report layout?", "intent": "report_structure_help", "lang": "en"}
+{"text": "What is MCH in complete blood count?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "hi hematology assistant there", "intent": "greeting", "lang": "en"}
+{"text": "what injection should i give now", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "good day there", "intent": "greeting", "lang": "en"}
+{"text": "how should white cell review be summarized for students", "intent": "wbc_term", "lang": "en"}
+{"text": "bye thanks for the explanation today", "intent": "goodbye", "lang": "en"}
+{"text": "What does Eos# mean in blood report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "what does a CBC help monitor over time", "intent": "cbc_info", "lang": "en"}
+{"text": "what is the capital city of japan", "intent": "out_of_scope", "lang": "en"}
+{"text": "Please explain WBC.", "intent": "cbc_info", "lang": "en"}
+{"text": "talk to you later friend", "intent": "goodbye", "lang": "en"}
+{"text": "What is Mon#?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "why is read back important during critical value communication", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "Help me with RBC indices", "intent": "help", "lang": "en"}
+{"text": "what can you do in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "What is anemia in a blood report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "hi assistant friend", "intent": "greeting", "lang": "en"}
+{"text": "How do I read hematology report format?", "intent": "report_structure_help", "lang": "en"}
+{"text": "can you explain that to Liam", "intent": "clarification", "lang": "en"}
+{"text": "Please explain hematocrit.", "intent": "cbc_info", "lang": "en"}
+{"text": "thanks for the help there", "intent": "thanks", "lang": "en"}
+{"text": "What is MCHC in this hematology report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "goodbye i will return if another CBC question appears", "intent": "goodbye", "lang": "en"}
+{"text": "can you define RBC count simply", "intent": "rbc_term", "lang": "en"}
+{"text": "what is the feathered edge on a blood smear", "intent": "blood_smear", "lang": "en"}
+{"text": "What is anemia pattern on a CBC report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "please make that easier to understand", "intent": "clarification", "lang": "en"}
+{"text": "what does that mean exactly now", "intent": "clarification", "lang": "en"}
+{"text": "how do you explain RBC count in Tokyo lab training", "intent": "rbc_term", "lang": "en"}
+{"text": "what dose should be given for this condition", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "I need an explanation of MCH.", "intent": "cbc_info", "lang": "en"}
+{"text": "when is smear review required", "intent": "blood_smear", "lang": "en"}
+{"text": "what red cell terms should be taught first in hematology", "intent": "rbc_term", "lang": "en"}
+{"text": "what is WBC count", "intent": "wbc_term", "lang": "en"}
+{"text": "nice to meet you friend", "intent": "greeting", "lang": "en"}
+{"text": "what does a raised hematocrit result mean broadly", "intent": "rbc_term", "lang": "en"}
+{"text": "How do I read the blood report layout on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "What is anemia finding for a hematology assistant?", "intent": "anemia_related_term", "lang": "en"}

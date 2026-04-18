@@ -2,76 +2,86 @@
   "epochs": [
     {
       "epoch": 1.0,
-      "train_loss": 2.4619385902071813,
-      "eval_loss": 1.6204133322744658,
-      "accuracy": 0.625,
-      "f1": 0.5799895312618337,
-      "precision": 0.6836211852973246,
-      "recall": 0.625
+      "train_loss": 2.6097099812066995,
+      "validation_loss": 1.7909580228304622,
+      "accuracy": 0.5757575757575758,
+      "f1": 0.5261813595953713,
+      "precision": 0.6058823361826147,
+      "recall": 0.5757575757575758
     },
     {
       "epoch": 2.0,
-      "train_loss": 0.988945441522001,
-      "eval_loss": 0.6793917814890543,
-      "accuracy": 0.8352272727272727,
-      "f1": 0.8173104199821677,
-      "precision": 0.8045571942012744,
-      "recall": 0.8352272727272727
+      "train_loss": 1.177562010391674,
+      "validation_loss": 0.7682535750697358,
+      "accuracy": 0.8106060606060606,
+      "f1": 0.7920593921118916,
+      "precision": 0.8020202137823575,
+      "recall": 0.8106060606060606
     },
     {
       "epoch": 3.0,
-      "train_loss": 0.43028701929485097,
-      "eval_loss": 0.4451607646364154,
-      "accuracy": 0.8674242424242424,
-      "f1": 0.8555580128389488,
-      "precision": 0.8611709951056301,
-      "recall": 0.8674242424242424
+      "train_loss": 0.508616809860486,
+      "validation_loss": 0.4699270821580983,
+      "accuracy": 0.8813131313131313,
+      "f1": 0.8696125827159874,
+      "precision": 0.8644235085479794,
+      "recall": 0.8813131313131313
     },
     {
       "epoch": 4.0,
-      "train_loss": 0.2378013579623749,
-      "eval_loss": 0.3586459521091346,
-      "accuracy": 0.8977272727272727,
-      "f1": 0.8919130642360426,
-      "precision": 0.8922440319112145,
-      "recall": 0.8977272727272727
+      "train_loss": 0.2657108841839685,
+      "validation_loss": 0.39221672006327696,
+      "accuracy": 0.8712121212121212,
+      "f1": 0.8587704347415959,
+      "precision": 0.8623715575122607,
+      "recall": 0.8712121212121212
     },
     {
       "epoch": 5.0,
-      "train_loss": 0.13884186433660012,
-      "eval_loss": 0.3431982903769522,
-      "accuracy": 0.9034090909090909,
-      "f1": 0.899998383128339,
-      "precision": 0.904764527906316,
-      "recall": 0.9034090909090909
+      "train_loss": 0.1648645509123285,
+      "validation_loss": 0.3336277224800803,
+      "accuracy": 0.8939393939393939,
+      "f1": 0.8898627305133638,
+      "precision": 0.8903848848085492,
+      "recall": 0.8939393939393939
     },
     {
       "epoch": 6.0,
-      "train_loss": 0.09998807285610141,
-      "eval_loss": 0.3259135033145095,
-      "accuracy": 0.9109848484848485,
-      "f1": 0.9118234292406855,
-      "precision": 0.9181737209861961,
-      "recall": 0.9109848484848485
-    },
-    {
-      "epoch": 7.0,
-      "train_loss": 0.07675550196609641,
-      "eval_loss": 0.33382570562940656,
+      "train_loss": 0.10749296680771607,
+      "validation_loss": 0.3436304097524797,
       "accuracy": 0.9015151515151515,
-      "f1": 0.9015975808888814,
-      "precision": 0.9144287227698891,
+      "f1": 0.8961012872592318,
+      "precision": 0.8992574442433486,
       "recall": 0.9015151515151515
     },
     {
+      "epoch": 7.0,
+      "train_loss": 0.08302998830465329,
+      "validation_loss": 0.30279710964121,
+      "accuracy": 0.9090909090909091,
+      "f1": 0.9048680792861163,
+      "precision": 0.904427772266137,
+      "recall": 0.9090909090909091
+    },
+    {
       "epoch": 8.0,
-      "train_loss": 0.05947988699110794,
-      "eval_loss": 0.32950798218900507,
-      "accuracy": 0.9166666666666666,
-      "f1": 0.9171940902526617,
-      "precision": 0.9231259726215387,
-      "recall": 0.9166666666666666
+      "train_loss": 0.06359871233653867,
+      "validation_loss": 0.2876894955683236,
+      "accuracy": 0.9116161616161617,
+      "f1": 0.90613852402375,
+      "precision": 0.9099644212728379,
+      "recall": 0.9116161616161617
     }
   ],
-  "best_f1": 0.9171940902526617
+  "best_f1": 0.90613852402375,
+  "best_epoch": 8,
+  "split_paths": {
+    "train": "D:\\Multilingual Chatbot Design\\chatbot\\data\\splits\\report\\train.jsonl",
+    "validation": "D:\\Multilingual Chatbot Design\\chatbot\\data\\splits\\report\\validation.jsonl",
+    "test": "D:\\Multilingual Chatbot Design\\chatbot\\data\\splits\\report\\test.jsonl",
+    "metadata": "D:\\Multilingual Chatbot Design\\chatbot\\data\\splits\\report\\metadata.json"
+  },
+  "train_size": 1844,
+  "validation_size": 396,
+  "seed": 42
 }

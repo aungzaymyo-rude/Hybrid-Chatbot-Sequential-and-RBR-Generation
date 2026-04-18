@@ -2,7 +2,10 @@
 
 data:
   dataset_path: data/train/intent_dataset.jsonl
-  test_size: 0.2
+  split_dir: data/splits
+  train_ratio: 0.70
+  validation_ratio: 0.15
+  test_ratio: 0.15
   model_profiles:
     general:
       dataset_path: data/train/intent_dataset_general.jsonl

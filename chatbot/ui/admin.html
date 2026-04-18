@@ -7,145 +7,363 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/ui/admin.css">
+  <link rel="stylesheet" href="/ui/admin.css?v=20260418b">
 </head>
 <body>
-  <main class="admin-shell">
-    <header class="admin-header">
-      <div>
+  <div class="admin-layout">
+    <aside class="admin-sidebar">
+      <div class="sidebar-brand">
         <p class="eyebrow">Admin Panel</p>
-        <h1>Production Monitoring</h1>
-        <p class="subtitle">Track fallback drift, guardrails, confidence, and reviewed user phrases.</p>
+        <h1>MLOps Console</h1>
+        <p class="sidebar-copy">Organized by pipeline stage so new operational features can be added without rebuilding the admin surface.</p>
       </div>
-      <div class="header-actions">
-        <a class="secondary-button" href="/">Open Chat UI</a>
-        <a id="export-logs" class="secondary-button" href="/admin/api/export-logs">Export current logs</a>
-        <a id="export-reviewed" class="secondary-button" href="/admin/api/export-reviewed">Export reviewed CSV</a>
-        <button id="refresh-dashboard" class="primary-button" type="button">Refresh</button>
-      </div>
-    </header>
 
-    <section class="metrics-grid" id="metrics-grid"></section>
+      <nav class="sidebar-nav">
+        <button class="sidebar-link active" data-section="overview-section" type="button">Overview</button>
+        <button class="sidebar-link" data-section="trace-section" type="button">Inference Trace</button>
+        <button class="sidebar-link" data-section="ingestion-section" type="button">Data Ingestion</button>
+        <button class="sidebar-link" data-section="versioning-section" type="button">Versioning</button>
+        <button class="sidebar-link" data-section="splits-section" type="button">Splits</button>
+        <button class="sidebar-link" data-section="review-section" type="button">Review Queue</button>
+      </nav>
 
-    <section class="panel">
-      <div class="panel-head">
-        <div>
-          <h2>Model Monitoring</h2>
-          <p class="panel-copy">Filter logs and summaries by deployed model while keeping the dashboard ready for more models later.</p>
+      <section class="sidebar-block">
+        <h2>Exports</h2>
+        <div class="sidebar-actions">
+          <a class="secondary-button" href="/">Open Chat UI</a>
+          <a id="export-logs" class="secondary-button" href="/admin/api/export-logs">Export current logs</a>
+          <a id="export-reviewed" class="secondary-button" href="/admin/api/export-reviewed">Export reviewed CSV</a>
         </div>
-        <div class="filters">
+      </section>
+
+      <section class="sidebar-block">
+        <h2>Model Filter</h2>
+        <div class="filters vertical">
           <select id="model-filter">
             <option value="">All deployed models</option>
           </select>
           <button id="apply-model-filter" class="secondary-button" type="button">Apply model filter</button>
         </div>
-      </div>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr><th>Model</th><th>Traffic</th><th>Avg confidence</th><th>Fallback</th><th>Guardrail</th><th>Auto-switch</th><th>Retrieval</th></tr>
-          </thead>
-          <tbody id="model-table"></tbody>
-        </table>
-      </div>
-    </section>
+      </section>
 
-    <section class="panel-grid visual-grid">
-      <article class="panel">
-        <div class="panel-head">
-          <h2>Monitoring Rates</h2>
-        </div>
-        <div id="rates-chart" class="chart-stack"></div>
-      </article>
-
-      <article class="panel">
-        <div class="panel-head">
-          <h2>Review Workflow</h2>
-        </div>
-        <div id="review-chart" class="chart-stack"></div>
-      </article>
-
-      <article class="panel">
-        <div class="panel-head">
-          <h2>Top Intents</h2>
-        </div>
-        <div id="intent-chart" class="chart-stack"></div>
-      </article>
-
-      <article class="panel">
-        <div class="panel-head">
-          <h2>Model Traffic</h2>
-        </div>
-        <div id="model-traffic-chart" class="chart-stack"></div>
-      </article>
-
-      <article class="panel">
-        <div class="panel-head">
-          <h2>Model Quality</h2>
-        </div>
-        <div id="model-quality-chart" class="chart-stack"></div>
-      </article>
-
-      <article class="panel">
-        <div class="panel-head">
-          <h2>Model Routing</h2>
-        </div>
-        <div id="model-routing-chart" class="chart-stack"></div>
-      </article>
-    </section>
-
-    <section class="panel-grid">
-      <article class="panel">
-        <div class="panel-head">
-          <h2>Intent Breakdown</h2>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr><th>Intent</th><th>Count</th><th>Avg confidence</th></tr>
-            </thead>
-            <tbody id="intent-table"></tbody>
-          </table>
-        </div>
-      </article>
-
-      <article class="panel">
-        <div class="panel-head">
-          <h2>Flagged Phrases</h2>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr><th>Phrase</th><th>Hits</th><th>Intent</th><th>Avg confidence</th></tr>
-            </thead>
-            <tbody id="flagged-table"></tbody>
-          </table>
-        </div>
-      </article>
-    </section>
-
-    <section class="panel">
-      <div class="panel-head">
-        <div>
-          <h2>Recent Conversations</h2>
-          <p class="panel-copy">Review fallback, guardrail, and low-confidence traffic for retraining.</p>
-        </div>
-        <div class="filters">
-          <label><input id="flagged-only" type="checkbox"> Flagged only</label>
-          <select id="review-status">
-            <option value="">All review states</option>
-            <option value="unreviewed">Unreviewed</option>
-            <option value="accepted">Accepted</option>
-            <option value="rejected">Rejected</option>
-          </select>
+      <section class="sidebar-block">
+        <h2>Actions</h2>
+        <div class="sidebar-actions">
+          <button id="refresh-dashboard" class="primary-button" type="button">Refresh dashboard</button>
           <button id="reload-logs" class="secondary-button" type="button">Reload logs</button>
           <button id="run-retrain-help" class="secondary-button" type="button">Show retrain command</button>
         </div>
-      </div>
-      <div id="logs-list" class="logs-list"></div>
-    </section>
-  </main>
+      </section>
+    </aside>
 
-  <script src="/ui/admin.js"></script>
+    <main class="admin-main">
+      <section class="admin-view active" id="overview-section">
+        <header class="admin-header">
+          <div>
+            <p class="eyebrow">Production Monitoring</p>
+            <h2>Hybrid Hematology Chatbot</h2>
+            <p class="subtitle">Track data flow, split policy, versioning, model quality, and reviewed phrases from one admin surface.</p>
+          </div>
+        </header>
+
+        <section class="metrics-grid" id="metrics-grid"></section>
+        <section class="panel">
+          <div class="panel-head">
+            <div>
+              <h2>Model Monitoring</h2>
+              <p class="panel-copy">Filter logs and summaries by deployed model while keeping the dashboard adaptable for future models.</p>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Model</th><th>Traffic</th><th>Avg confidence</th><th>Fallback</th><th>Guardrail</th><th>Auto-switch</th><th>Retrieval</th></tr>
+              </thead>
+              <tbody id="model-table"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel-grid visual-grid">
+          <article class="panel">
+            <div class="panel-head">
+              <h2>Monitoring Rates</h2>
+            </div>
+            <div id="rates-chart" class="chart-stack"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <h2>Review Workflow</h2>
+            </div>
+            <div id="review-chart" class="chart-stack"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <h2>Top Intents</h2>
+            </div>
+            <div id="intent-chart" class="chart-stack"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <h2>Model Traffic</h2>
+            </div>
+            <div id="model-traffic-chart" class="chart-stack"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <h2>Model Quality</h2>
+            </div>
+            <div id="model-quality-chart" class="chart-stack"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <h2>Model Routing</h2>
+            </div>
+            <div id="model-routing-chart" class="chart-stack"></div>
+          </article>
+        </section>
+
+        <section class="panel-grid">
+          <article class="panel">
+            <div class="panel-head">
+              <h2>Intent Breakdown</h2>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr><th>Intent</th><th>Count</th><th>Avg confidence</th></tr>
+                </thead>
+                <tbody id="intent-table"></tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <h2>Flagged Phrases</h2>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr><th>Phrase</th><th>Hits</th><th>Intent</th><th>Avg confidence</th></tr>
+                </thead>
+                <tbody id="flagged-table"></tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <section class="admin-view" id="trace-section">
+        <section class="panel">
+          <div class="panel-head">
+            <div>
+              <h2>Inference Trace</h2>
+              <p class="panel-copy">Inspect how the backend handles one phrase across preprocessing, sequential intent classification, entity detection, TF-IDF retrieval, and final routing.</p>
+            </div>
+          </div>
+          <div class="trace-form">
+            <textarea id="trace-text" rows="4" placeholder="Enter a phrase to inspect the backend layers..."></textarea>
+            <div class="trace-actions">
+              <select id="trace-model">
+                <option value="">Use current default model</option>
+              </select>
+              <button id="run-trace" class="primary-button" type="button">Trace phrase</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel-grid panel-grid-2">
+          <article class="panel">
+            <div class="panel-head">
+              <h2>Input + Model Routing</h2>
+            </div>
+            <div class="mini-metrics" id="trace-input-metrics"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <h2>Preprocessing</h2>
+            </div>
+            <div class="trace-detail" id="trace-preprocess"></div>
+          </article>
+        </section>
+
+        <section class="panel-grid panel-grid-3">
+          <article class="panel">
+            <div class="panel-head">
+              <h2>Rules</h2>
+            </div>
+            <div class="trace-detail" id="trace-rules"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <h2>Classifier</h2>
+            </div>
+            <div id="trace-classifier" class="chart-stack"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <h2>Entity Detection</h2>
+            </div>
+            <div class="trace-detail" id="trace-entity"></div>
+          </article>
+        </section>
+
+        <section class="panel-grid panel-grid-2">
+          <article class="panel">
+            <div class="panel-head">
+              <h2>TF-IDF Retrieval Candidates</h2>
+            </div>
+            <div class="trace-subhead">Direct retrieval from predicted intent</div>
+            <div id="trace-direct-retrieval" class="chart-stack"></div>
+            <div class="trace-subhead">Entity-refined retrieval</div>
+            <div id="trace-entity-retrieval" class="chart-stack"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <h2>Final Route</h2>
+            </div>
+            <div class="trace-detail" id="trace-route"></div>
+          </article>
+        </section>
+      </section>
+
+      <section class="admin-view" id="ingestion-section">
+        <section class="panel-grid panel-grid-3">
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <h2>Data Ingestion</h2>
+              <p class="panel-copy">Current dataset volumes across labeled sources, master dataset, and model-ready datasets.</p>
+            </div>
+          </div>
+          <div class="mini-metrics" id="ingestion-metrics"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <h2>Dataset Footprint</h2>
+              <p class="panel-copy">Row counts and last modified timestamps for the active data artifacts.</p>
+            </div>
+          </div>
+          <div id="dataset-chart" class="chart-stack"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <h2>Recent Labeled Files</h2>
+              <p class="panel-copy">Latest labeled CSV/JSONL sources ready for merge and retraining.</p>
+            </div>
+          </div>
+          <div class="table-wrap compact-table">
+            <table>
+              <thead>
+                <tr><th>File</th><th>Rows</th><th>Updated</th></tr>
+              </thead>
+              <tbody id="labeled-files-table"></tbody>
+            </table>
+          </div>
+        </article>
+        </section>
+      </section>
+
+      <section class="admin-view" id="versioning-section">
+        <section class="panel-grid panel-grid-2">
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <h2>Versioning</h2>
+              <p class="panel-copy">Operational versions derived from config, datasets, model artifacts, split metadata, and knowledge base snapshots.</p>
+            </div>
+          </div>
+          <div class="mini-metrics" id="versioning-metrics"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <h2>Component Snapshot</h2>
+              <p class="panel-copy">Use this as the admin-side reference for dataset versioning until a dedicated version ledger is added.</p>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Component</th><th>Version / Timestamp</th><th>Path</th></tr>
+              </thead>
+              <tbody id="version-table"></tbody>
+            </table>
+          </div>
+        </article>
+        </section>
+      </section>
+
+      <section class="admin-view" id="splits-section">
+        <section class="panel-grid panel-grid-2">
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <h2>Split Policy</h2>
+              <p class="panel-copy">Current train / validation / test policy used for reproducible model runs.</p>
+            </div>
+          </div>
+          <div class="mini-metrics" id="split-policy-metrics"></div>
+          <div id="split-chart" class="chart-stack"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <h2>Model Artifacts</h2>
+              <p class="panel-copy">Model version, best validation epoch, and training sizes for each deployed classifier.</p>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Model</th><th>Version</th><th>Best epoch</th><th>Best F1</th><th>Train / Val</th></tr>
+              </thead>
+              <tbody id="artifact-table"></tbody>
+            </table>
+          </div>
+        </article>
+        </section>
+      </section>
+
+      <section class="admin-view" id="review-section">
+        <section class="panel">
+          <div class="panel-head">
+            <div>
+              <h2>Recent Conversations</h2>
+              <p class="panel-copy">Review fallback, guardrail, and low-confidence traffic for retraining.</p>
+            </div>
+            <div class="filters">
+              <label><input id="flagged-only" type="checkbox"> Flagged only</label>
+              <select id="review-status">
+                <option value="">All review states</option>
+                <option value="unreviewed">Unreviewed</option>
+                <option value="accepted">Accepted</option>
+                <option value="rejected">Rejected</option>
+              </select>
+            </div>
+          </div>
+          <div id="logs-list" class="logs-list"></div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <script src="/ui/admin.js?v=20260418b"></script>
 </body>
 </html>

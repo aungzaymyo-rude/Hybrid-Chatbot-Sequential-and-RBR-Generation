@@ -1,0 +1,91 @@
+{
+  "model_key": "general",
+  "dataset_path": "D:\\Multilingual Chatbot Design\\chatbot\\data\\train\\intent_dataset_general.jsonl",
+  "split_dir": "D:\\Multilingual Chatbot Design\\chatbot\\data\\splits\\general",
+  "ratios": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "seed": 42,
+  "counts": {
+    "train": {
+      "rows": 1868,
+      "intent_counts": {
+        "blood_smear": 70,
+        "capability_query": 114,
+        "cbc_info": 218,
+        "clarification": 100,
+        "coag_test": 210,
+        "critical_value_reporting": 70,
+        "differential_review": 70,
+        "fallback": 14,
+        "goodbye": 95,
+        "greeting": 74,
+        "help": 35,
+        "incomplete_query": 33,
+        "out_of_scope": 34,
+        "platelet_term": 70,
+        "quality_control": 70,
+        "rbc_term": 98,
+        "sample_collection": 150,
+        "small_talk": 70,
+        "thanks": 99,
+        "unsafe_medical_request": 76,
+        "wbc_term": 98
+      }
+    },
+    "validation": {
+      "rows": 401,
+      "intent_counts": {
+        "blood_smear": 15,
+        "capability_query": 25,
+        "cbc_info": 47,
+        "clarification": 22,
+        "coag_test": 45,
+        "critical_value_reporting": 15,
+        "differential_review": 15,
+        "fallback": 3,
+        "goodbye": 21,
+        "greeting": 16,
+        "help": 7,
+        "incomplete_query": 7,
+        "out_of_scope": 7,
+        "platelet_term": 15,
+        "quality_control": 15,
+        "rbc_term": 21,
+        "sample_collection": 32,
+        "small_talk": 15,
+        "thanks": 21,
+        "unsafe_medical_request": 16,
+        "wbc_term": 21
+      }
+    },
+    "test": {
+      "rows": 401,
+      "intent_counts": {
+        "blood_smear": 15,
+        "capability_query": 25,
+        "cbc_info": 47,
+        "clarification": 22,
+        "coag_test": 45,
+        "critical_value_reporting": 15,
+        "differential_review": 15,
+        "fallback": 3,
+        "goodbye": 20,
+        "greeting": 16,
+        "help": 8,
+        "incomplete_query": 7,
+        "out_of_scope": 7,
+        "platelet_term": 15,
+        "quality_control": 15,
+        "rbc_term": 21,
+        "sample_collection": 32,
+        "small_talk": 15,
+        "thanks": 21,
+        "unsafe_medical_request": 16,
+        "wbc_term": 21
+      }
+    }
+  }
+}

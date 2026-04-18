@@ -20,6 +20,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
+from chatbot.data.split_utils import load_split_rows
 from chatbot.models.sequential_intent import IntentTextDataset, SequentialIntentClassifier, Vocabulary, collate_batch
 from chatbot.training.dataset import build_label_maps, load_intent_dataset
 from chatbot.utils.config import load_config, resolve_model_settings
@@ -58,10 +59,12 @@ def _token_lengths(records: Sequence[Dict[str, str]]) -> List[int]:
 
 def _dataset_profile(
     full_records: Sequence[Dict[str, str]],
-    eval_records: Sequence[Dict[str, str]],
+    split_records: Dict[str, Sequence[Dict[str, str]]],
 ) -> Dict[str, object]:
     full_intent_counts = Counter(row['intent'] for row in full_records)
-    eval_intent_counts = Counter(row['intent'] for row in eval_records)
+    train_intent_counts = Counter(row['intent'] for row in split_records['train'])
+    validation_intent_counts = Counter(row['intent'] for row in split_records['validation'])
+    test_intent_counts = Counter(row['intent'] for row in split_records['test'])
     normalized_pairs = [(normalize_text(row['text']), row['intent']) for row in full_records]
     duplicate_count = len(normalized_pairs) - len(set(normalized_pairs))
 
@@ -78,10 +81,14 @@ def _dataset_profile(
 
     return {
         'total_samples': len(full_records),
-        'eval_samples': len(eval_records),
+        'train_samples': len(split_records['train']),
+        'validation_samples': len(split_records['validation']),
+        'test_samples': len(split_records['test']),
         'num_intents': len(full_intent_counts),
         'intent_counts': dict(sorted(full_intent_counts.items())),
-        'eval_intent_counts': dict(sorted(eval_intent_counts.items())),
+        'train_intent_counts': dict(sorted(train_intent_counts.items())),
+        'validation_intent_counts': dict(sorted(validation_intent_counts.items())),
+        'test_intent_counts': dict(sorted(test_intent_counts.items())),
         'vocabulary_size': len(vocab),
         'duplicate_rows': duplicate_count,
         'duplicate_ratio': float(duplicate_count / len(full_records)) if full_records else 0.0,
@@ -104,7 +111,7 @@ def _paper_table_row(
         'timestamp': metadata['timestamp'],
         'architecture': metadata['model_architecture'],
         'dataset_samples': dataset_profile['total_samples'],
-        'eval_samples': dataset_profile['eval_samples'],
+        'test_samples': dataset_profile['test_samples'],
         'num_intents': dataset_profile['num_intents'],
         'vocabulary_size': dataset_profile['vocabulary_size'],
         'imbalance_ratio': dataset_profile['imbalance_ratio'],
@@ -244,22 +251,31 @@ def main() -> None:
 
     dataset = load_intent_dataset(model_settings['dataset_path'])
     label2id, id2label = build_label_maps(dataset)
-    split = dataset.train_test_split(test_size=cfg['data']['test_size'], seed=cfg['training'].get('seed', 42))
     full_records = [dict(row) for row in dataset]
-    eval_records = [dict(row) for row in split['test']]
+    split_rows = load_split_rows(model_settings['split_paths'])
+    train_records = [dict(row) for row in split_rows['train']]
+    validation_records = [dict(row) for row in split_rows['validation']]
+    test_records = [dict(row) for row in split_rows['test']]
 
     batch_size = args.batch_size or cfg['training'].get('eval_batch_size', 32)
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
     result = _evaluate_model(
         model_dir=model_dir,
-        records=eval_records,
+        records=test_records,
         label2id=label2id,
         id2label=id2label,
         batch_size=batch_size,
         device=device,
     )
-    dataset_profile = _dataset_profile(full_records=full_records, eval_records=eval_records)
+    dataset_profile = _dataset_profile(
+        full_records=full_records,
+        split_records={
+            'train': train_records,
+            'validation': validation_records,
+            'test': test_records,
+        },
+    )
 
     run_name = args.run_name or _timestamp()
     run_dir = Path(__file__).resolve().parent / 'runs' / run_name
@@ -273,7 +289,12 @@ def main() -> None:
         'model_version': model_settings['version'],
         'model_architecture': result['model_metadata'].get('architecture', cfg['model'].get('architecture', 'bilstm')),
         'dataset_path': model_settings['dataset_path'],
-        'test_size': cfg['data']['test_size'],
+        'split_dir': model_settings['split_dir'],
+        'split_ratios': {
+            'train': cfg['data']['train_ratio'],
+            'validation': cfg['data']['validation_ratio'],
+            'test': cfg['data']['test_ratio'],
+        },
         'num_labels': len(label2id),
         'batch_size': batch_size,
         'epochs': cfg['training']['epochs'],
@@ -323,12 +344,13 @@ def main() -> None:
     )
     _write_csv(
         run_dir / 'intent_distribution.csv',
-        ['intent', 'train_total', 'eval_total'],
+        ['intent', 'train_total', 'validation_total', 'test_total'],
         [
             {
                 'intent': intent,
-                'train_total': dataset_profile['intent_counts'].get(intent, 0),
-                'eval_total': dataset_profile['eval_intent_counts'].get(intent, 0),
+                'train_total': dataset_profile['train_intent_counts'].get(intent, 0),
+                'validation_total': dataset_profile['validation_intent_counts'].get(intent, 0),
+                'test_total': dataset_profile['test_intent_counts'].get(intent, 0),
             }
             for intent in sorted(dataset_profile['intent_counts'])
         ],

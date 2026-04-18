@@ -45,22 +45,32 @@ class ResponseRetriever:
         return entries
 
     def retrieve(self, question: str, intent: str) -> Optional[str]:
+        ranked = self.rank(question=question, intent=intent, limit=1)
+        if not ranked:
+            return None
+        top = ranked[0]
+        if float(top['score']) < self.threshold:
+            return None
+        return str(top['answer'])
+
+    def rank(self, question: str, intent: str, limit: int = 5) -> List[Dict[str, object]]:
         query = self.vectorizer.transform([question])
         scores = cosine_similarity(query, self.matrix)[0]
 
-        best_idx = -1
-        best_score = -1.0
+        ranked: List[Dict[str, object]] = []
         for idx, entry in enumerate(self.entries):
             if entry.intent != intent:
                 continue
-            score = float(scores[idx])
-            if score > best_score:
-                best_idx = idx
-                best_score = score
-
-        if best_idx == -1 or best_score < self.threshold:
-            return None
-        return self.entries[best_idx].answer
+            ranked.append(
+                {
+                    'intent': entry.intent,
+                    'question': entry.question,
+                    'answer': entry.answer,
+                    'score': float(scores[idx]),
+                }
+            )
+        ranked.sort(key=lambda item: float(item['score']), reverse=True)
+        return ranked[:limit]
 
 
 _CACHE: Dict[str, ResponseRetriever] = {}

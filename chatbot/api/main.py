@@ -7,13 +7,15 @@ from fastapi import Depends, FastAPI, HTTPException, Query
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
-from chatbot.api.schemas import AdminReviewRequest, ChatRequest, ChatResponse
+from chatbot.api.schemas import AdminReviewRequest, ChatRequest, ChatResponse, TraceRequest
 from chatbot.inference.registry import ModelRegistry
+from chatbot.utils.admin_pipeline import build_pipeline_snapshot
 from chatbot.utils.chat_store import ChatHistoryStore
 from chatbot.utils.config import load_config
 from chatbot.utils.logging import setup_logging
 from chatbot.utils.model_advisory import recommend_model_switch
 from chatbot.utils.routing_engine import STATIC_INTENTS, resolve_route
+from chatbot.utils.trace_pipeline import build_trace
 
 CONFIG_PATH = str(Path(__file__).resolve().parents[1] / 'config.yaml')
 UI_DIR = Path(__file__).resolve().parents[1] / 'ui'
@@ -62,6 +64,17 @@ def list_models(registry: ModelRegistry = Depends(get_registry)) -> dict:
         'default': registry.config.get('model_default_key'),
         'models': registry.list_models(),
     }
+
+
+@app.get('/admin/api/pipeline')
+def admin_pipeline(registry: ModelRegistry = Depends(get_registry)) -> dict:
+    cfg = get_config()
+    return build_pipeline_snapshot(cfg, registry.list_models())
+
+
+@app.post('/admin/api/trace')
+def admin_trace(request: TraceRequest) -> dict:
+    return build_trace(request.text, model_key=request.model_key, config_path=CONFIG_PATH)
 
 
 @app.get('/admin/api/summary')

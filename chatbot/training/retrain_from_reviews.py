@@ -76,6 +76,16 @@ def main() -> None:
     for model_key in model_keys:
         build_command.extend(['--model-key', model_key])
     run_step(build_command, cwd=project_root)
+    split_command = [
+        sys.executable,
+        'chatbot/data/create_splits.py',
+        '--config',
+        str(Path(args.config).resolve()),
+        '--overwrite',
+    ]
+    for model_key in model_keys:
+        split_command.extend(['--model-key', model_key])
+    run_step(split_command, cwd=project_root)
 
     for model_key in model_keys:
         run_step(

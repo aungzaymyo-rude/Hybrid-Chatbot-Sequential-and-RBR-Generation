@@ -3088,3 +3088,163 @@
 {"text": "bye and take care now", "intent": "goodbye", "lang": "en"}
 {"text": "see you again soon assistant", "intent": "goodbye", "lang": "en"}
 {"text": "how are you doing in this chat", "intent": "small_talk", "lang": "en"}
+{"text": "What is aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "Explain aPTT", "intent": "coag_test", "lang": "en"}
+{"text": "What does aPTT mean?", "intent": "coag_test", "lang": "en"}
+{"text": "What is the aPTT test?", "intent": "coag_test", "lang": "en"}
+{"text": "Can you explain aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "What is activated partial thromboplastin time?", "intent": "coag_test", "lang": "en"}
+{"text": "What does activated partial thromboplastin time measure?", "intent": "coag_test", "lang": "en"}
+{"text": "What is partial thromboplastin time?", "intent": "coag_test", "lang": "en"}
+{"text": "What is activated PTT?", "intent": "coag_test", "lang": "en"}
+{"text": "Tell me about aPTT", "intent": "coag_test", "lang": "en"}
+{"text": "What does an aPTT result represent?", "intent": "coag_test", "lang": "en"}
+{"text": "What is the purpose of aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "Why is aPTT done?", "intent": "coag_test", "lang": "en"}
+{"text": "When is aPTT used?", "intent": "coag_test", "lang": "en"}
+{"text": "How is aPTT used in coagulation screening?", "intent": "coag_test", "lang": "en"}
+{"text": "What pathway does aPTT evaluate?", "intent": "coag_test", "lang": "en"}
+{"text": "Does aPTT test the intrinsic pathway?", "intent": "coag_test", "lang": "en"}
+{"text": "What is the intrinsic pathway test called?", "intent": "coag_test", "lang": "en"}
+{"text": "Can you define aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "aPTT meaning please", "intent": "coag_test", "lang": "en"}
+{"text": "What is APTT in coagulation?", "intent": "coag_test", "lang": "en"}
+{"text": "What is APTT used for?", "intent": "coag_test", "lang": "en"}
+{"text": "What does prolonged aPTT suggest in lab terms?", "intent": "coag_test", "lang": "en"}
+{"text": "What does a short aPTT mean in laboratory review?", "intent": "coag_test", "lang": "en"}
+{"text": "What does high aPTT mean in coagulation testing?", "intent": "coag_test", "lang": "en"}
+{"text": "How should I understand aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "What is the full form of aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "What is the expanded form of aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "aPTT explanation", "intent": "coag_test", "lang": "en"}
+{"text": "Explain activated partial thromboplastin time in simple terms", "intent": "coag_test", "lang": "en"}
+{"text": "Could you define activated partial thromboplastin time?", "intent": "coag_test", "lang": "en"}
+{"text": "What does the activated partial thromboplastin time test check?", "intent": "coag_test", "lang": "en"}
+{"text": "Which coagulation pathway is checked by aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "What does an abnormal aPTT indicate in lab review?", "intent": "coag_test", "lang": "en"}
+{"text": "Why would a lab perform an aPTT test?", "intent": "coag_test", "lang": "en"}
+{"text": "What does the laboratory use aPTT for?", "intent": "coag_test", "lang": "en"}
+{"text": "Can you tell me what aPTT measures?", "intent": "coag_test", "lang": "en"}
+{"text": "I need the meaning of aPTT", "intent": "coag_test", "lang": "en"}
+{"text": "I need the definition of aPTT", "intent": "coag_test", "lang": "en"}
+{"text": "What is an aPTT assay?", "intent": "coag_test", "lang": "en"}
+{"text": "What is PT?", "intent": "coag_test", "lang": "en"}
+{"text": "Explain PT test", "intent": "coag_test", "lang": "en"}
+{"text": "What does PT mean in coagulation?", "intent": "coag_test", "lang": "en"}
+{"text": "What is prothrombin time?", "intent": "coag_test", "lang": "en"}
+{"text": "What does prothrombin time measure?", "intent": "coag_test", "lang": "en"}
+{"text": "What pathway does PT evaluate?", "intent": "coag_test", "lang": "en"}
+{"text": "What is the PT test used for?", "intent": "coag_test", "lang": "en"}
+{"text": "Can you explain PT?", "intent": "coag_test", "lang": "en"}
+{"text": "PT meaning please", "intent": "coag_test", "lang": "en"}
+{"text": "What is the purpose of PT in lab testing?", "intent": "coag_test", "lang": "en"}
+{"text": "Why is PT ordered in coagulation review?", "intent": "coag_test", "lang": "en"}
+{"text": "How should I understand PT?", "intent": "coag_test", "lang": "en"}
+{"text": "What does prolonged PT suggest in lab terms?", "intent": "coag_test", "lang": "en"}
+{"text": "What is the difference between PT and aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "What pathway is checked by PT?", "intent": "coag_test", "lang": "en"}
+{"text": "What is the full form of PT in coagulation?", "intent": "coag_test", "lang": "en"}
+{"text": "How is PT used in warfarin monitoring?", "intent": "coag_test", "lang": "en"}
+{"text": "Can you define prothrombin time?", "intent": "coag_test", "lang": "en"}
+{"text": "What does the PT result represent?", "intent": "coag_test", "lang": "en"}
+{"text": "What is PT screening?", "intent": "coag_test", "lang": "en"}
+{"text": "What is INR?", "intent": "coag_test", "lang": "en"}
+{"text": "Explain INR", "intent": "coag_test", "lang": "en"}
+{"text": "What does INR mean?", "intent": "coag_test", "lang": "en"}
+{"text": "What is the INR test?", "intent": "coag_test", "lang": "en"}
+{"text": "How is INR related to PT?", "intent": "coag_test", "lang": "en"}
+{"text": "What is international normalized ratio?", "intent": "coag_test", "lang": "en"}
+{"text": "Can you explain INR in simple terms?", "intent": "coag_test", "lang": "en"}
+{"text": "What is INR used for?", "intent": "coag_test", "lang": "en"}
+{"text": "Why is INR reported?", "intent": "coag_test", "lang": "en"}
+{"text": "How should I understand INR?", "intent": "coag_test", "lang": "en"}
+{"text": "What does high INR mean in lab review?", "intent": "coag_test", "lang": "en"}
+{"text": "What is the full form of INR?", "intent": "coag_test", "lang": "en"}
+{"text": "INR meaning please", "intent": "coag_test", "lang": "en"}
+{"text": "How does INR standardize PT?", "intent": "coag_test", "lang": "en"}
+{"text": "What does INR monitor?", "intent": "coag_test", "lang": "en"}
+{"text": "Can you define international normalized ratio?", "intent": "coag_test", "lang": "en"}
+{"text": "What is the purpose of INR?", "intent": "coag_test", "lang": "en"}
+{"text": "What does an INR result show?", "intent": "coag_test", "lang": "en"}
+{"text": "What is INR in coagulation screening?", "intent": "coag_test", "lang": "en"}
+{"text": "Tell me about INR", "intent": "coag_test", "lang": "en"}
+{"text": "Which tube is used for aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "Which tube is used for PT?", "intent": "coag_test", "lang": "en"}
+{"text": "Which tube is used for INR?", "intent": "coag_test", "lang": "en"}
+{"text": "What tube is used for coagulation tests?", "intent": "coag_test", "lang": "en"}
+{"text": "What color tube is used for coagulation tests?", "intent": "coag_test", "lang": "en"}
+{"text": "What happens if the citrate tube is underfilled?", "intent": "coag_test", "lang": "en"}
+{"text": "Why is citrate tube fill volume important?", "intent": "coag_test", "lang": "en"}
+{"text": "How should a coagulation sample be collected?", "intent": "coag_test", "lang": "en"}
+{"text": "How many inversions are needed for a citrate tube?", "intent": "coag_test", "lang": "en"}
+{"text": "What are the rejection criteria for a coagulation sample?", "intent": "coag_test", "lang": "en"}
+{"text": "What should I do with a clotted citrate sample?", "intent": "coag_test", "lang": "en"}
+{"text": "What happens if coagulation transport is delayed?", "intent": "coag_test", "lang": "en"}
+{"text": "How stable is a citrate sample for PT and aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "What should I do with a mislabeled coagulation specimen?", "intent": "coag_test", "lang": "en"}
+{"text": "Why must the light blue tube be filled completely?", "intent": "coag_test", "lang": "en"}
+{"text": "Can I run PT on an underfilled citrate tube?", "intent": "coag_test", "lang": "en"}
+{"text": "What if the coag sample has a clot?", "intent": "coag_test", "lang": "en"}
+{"text": "What is the correct tube for PT and aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "How should citrate samples be mixed after draw?", "intent": "coag_test", "lang": "en"}
+{"text": "What are common preanalytical errors in coag testing?", "intent": "coag_test", "lang": "en"}
+{"text": "How should a blue-top tube be handled?", "intent": "coag_test", "lang": "en"}
+{"text": "Can transport delay affect aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "Can transport delay affect PT?", "intent": "coag_test", "lang": "en"}
+{"text": "When should a coagulation sample be rejected?", "intent": "coag_test", "lang": "en"}
+{"text": "What tube additive is used for coag tests?", "intent": "coag_test", "lang": "en"}
+{"text": "Which anticoagulant is used for PT and aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "Is a light blue citrate tube used for INR?", "intent": "coag_test", "lang": "en"}
+{"text": "How should a coag specimen be labeled?", "intent": "coag_test", "lang": "en"}
+{"text": "What specimen problems affect PT and aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "What are citrate specimen acceptance rules?", "intent": "coag_test", "lang": "en"}
+{"text": "What should I do with a short-fill citrate sample?", "intent": "coag_test", "lang": "en"}
+{"text": "Why does underfill prolong PT and aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "What does the blood-to-anticoagulant ratio matter for coag tests?", "intent": "coag_test", "lang": "en"}
+{"text": "Can I use the wrong tube for coagulation testing?", "intent": "coag_test", "lang": "en"}
+{"text": "What if a coag sample arrives late to the lab?", "intent": "coag_test", "lang": "en"}
+{"text": "How do I collect blood for coagulation screening?", "intent": "coag_test", "lang": "en"}
+{"text": "How should I transport a citrate specimen?", "intent": "coag_test", "lang": "en"}
+{"text": "What invalidates a PT or aPTT sample?", "intent": "coag_test", "lang": "en"}
+{"text": "What should be checked before releasing a coag specimen?", "intent": "coag_test", "lang": "en"}
+{"text": "Can an unlabeled citrate specimen be accepted?", "intent": "coag_test", "lang": "en"}
+{"text": "Can a hemolyzed citrate sample affect coag testing?", "intent": "coag_test", "lang": "en"}
+{"text": "What tube is needed for clotting tests?", "intent": "coag_test", "lang": "en"}
+{"text": "Which specimen is correct for PT INR and aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "What is the approved tube for coagulation screening?", "intent": "coag_test", "lang": "en"}
+{"text": "What color is the sodium citrate tube?", "intent": "coag_test", "lang": "en"}
+{"text": "Why is the light blue tube important for coagulation?", "intent": "coag_test", "lang": "en"}
+{"text": "Does aPTT use a lavender tube or blue tube?", "intent": "coag_test", "lang": "en"}
+{"text": "Does PT use EDTA or citrate?", "intent": "coag_test", "lang": "en"}
+{"text": "Can I collect coag tests in EDTA?", "intent": "coag_test", "lang": "en"}
+{"text": "Which tube should be avoided for coagulation tests?", "intent": "coag_test", "lang": "en"}
+{"text": "What are common citrate sample rejection reasons?", "intent": "coag_test", "lang": "en"}
+{"text": "What should be done after drawing a citrate tube?", "intent": "coag_test", "lang": "en"}
+{"text": "How do I avoid preanalytical error in coag samples?", "intent": "coag_test", "lang": "en"}
+{"text": "What is the correct specimen for aPTT testing?", "intent": "coag_test", "lang": "en"}
+{"text": "What is the correct specimen for PT testing?", "intent": "coag_test", "lang": "en"}
+{"text": "What is the correct specimen for INR testing?", "intent": "coag_test", "lang": "en"}
+{"text": "Can a short draw affect INR?", "intent": "coag_test", "lang": "en"}
+{"text": "What if the citrate specimen is not filled to the line?", "intent": "coag_test", "lang": "en"}
+{"text": "Why is citrate concentration important?", "intent": "coag_test", "lang": "en"}
+{"text": "How many times should I invert a blue top tube?", "intent": "coag_test", "lang": "en"}
+{"text": "How should blue top tubes be transported to the lab?", "intent": "coag_test", "lang": "en"}
+{"text": "Can a coag sample be rejected for delay?", "intent": "coag_test", "lang": "en"}
+{"text": "Can a coag sample be rejected for underfill?", "intent": "coag_test", "lang": "en"}
+{"text": "Can a coag sample be rejected for clotting?", "intent": "coag_test", "lang": "en"}
+{"text": "What should be checked on receipt of a coag sample?", "intent": "coag_test", "lang": "en"}
+{"text": "What does the lab do with a rejected coag sample?", "intent": "coag_test", "lang": "en"}
+{"text": "What acceptance criteria apply to citrate tubes?", "intent": "coag_test", "lang": "en"}
+{"text": "What tube is used for intrinsic and extrinsic pathway tests?", "intent": "coag_test", "lang": "en"}
+{"text": "Which specimen is used for coagulation screening panel?", "intent": "coag_test", "lang": "en"}
+{"text": "What if the blue top tube is mislabeled?", "intent": "coag_test", "lang": "en"}
+{"text": "Can PT and aPTT be performed on a wrong tube?", "intent": "coag_test", "lang": "en"}
+{"text": "How long can a coagulation sample wait before analysis?", "intent": "coag_test", "lang": "en"}
+{"text": "What are coagulation sample stability limits?", "intent": "coag_test", "lang": "en"}
+{"text": "Why is prompt processing important for coag specimens?", "intent": "coag_test", "lang": "en"}
+{"text": "What handling errors can affect PT aPTT and INR?", "intent": "coag_test", "lang": "en"}
+{"text": "How should I collect a citrate sample for clotting assays?", "intent": "coag_test", "lang": "en"}
+{"text": "Which collection tube is correct for clotting studies?", "intent": "coag_test", "lang": "en"}
+{"text": "What should I do if the citrate specimen is underfilled?", "intent": "coag_test", "lang": "en"}
+{"text": "What should I do if the coag sample is clotted?", "intent": "coag_test", "lang": "en"}
+{"text": "What should I do if the coag sample is delayed?", "intent": "coag_test", "lang": "en"}

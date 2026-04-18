@@ -13,5 +13,6 @@
   "unk_id": 1,
   "model_key": "general",
   "dataset_path": "D:\\Multilingual Chatbot Design\\chatbot\\data\\train\\intent_dataset_general.jsonl",
+  "split_dir": "D:\\Multilingual Chatbot Design\\chatbot\\data\\splits\\general",
   "version": "bilstm-general-v1"
 }

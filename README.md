@@ -60,6 +60,7 @@ Data moves through stable stages so you can grow the model over time:
 - `chatbot/data/raw/` contains unprocessed sources (PDFs, notes, exports)
 - `chatbot/data/labeled/` contains human-labeled Q/A samples (.jsonl or .csv)
 - `chatbot/data/train/` contains the final dataset used by training
+- `chatbot/data/splits/` contains fixed train/validation/test JSONL files for reproducible model runs
 - `chatbot/data/reports/` contains audits and data quality outputs
 
 Labeled file format (CSV/JSONL):
@@ -68,15 +69,20 @@ Labeled file format (CSV/JSONL):
 - `lang` (optional, defaults to `en`)
 
 Master dataset snapshot (`chatbot/data/train/intent_dataset.jsonl`):
-- Total samples: `3090`
+- Total samples: `3250`
 - Total intents: `27`
-- Largest classes: `cbc_info=312`, `sample_collection=214`, `wbc_term=140`, `rbc_term=140`, `coag_test=140`
+- Largest classes: `cbc_info=312`, `coag_test=300`, `sample_collection=214`, `wbc_term=140`, `rbc_term=140`
 - Report-expansion classes merged at `100` each: `cbc_result_parameter`, `cbc_flag_explanation`, `anemia_related_term`, `platelet_abnormality`, `differential_result_explanation`
 - Communication/safety examples now include: `capability_query=164`, `clarification=144`, `thanks=141`, `goodbye=136`, `greeting=106`, `small_talk=100`, `unsafe_medical_request=108`, `out_of_scope=48`, `incomplete_query=47`, `fallback=20`
 
 Derived model datasets:
-- `chatbot/data/train/intent_dataset_general.jsonl`: `2510` samples across `21` intents
+- `chatbot/data/train/intent_dataset_general.jsonl`: `2670` samples across `21` intents
 - `chatbot/data/train/intent_dataset_report.jsonl`: `2636` samples across `24` intents
+
+Fixed split policy:
+- Train / validation / test = `70 / 15 / 15`
+- `chatbot/data/splits/general/`: train `1868`, validation `401`, test `401`
+- `chatbot/data/splits/report/`: train `1844`, validation `396`, test `396`
 
 Two-model dataset count summary:
 - `general`: includes workflow and assistant intents such as `sample_collection`, `coag_test`, `quality_control`, `cbc_info`, `rbc_term`, `wbc_term`, `blood_smear`, plus communication/safety intents
@@ -85,6 +91,10 @@ Two-model dataset count summary:
 Conversation expansion data:
 - `chatbot/data/labeled/conversation_expansion_600.csv`: `600` new labeled conversation rows
 - Added `small_talk` as a dedicated intent for social phrases such as `how are you`, `how are u`, and `how is it going`
+
+Focused coagulation expansion:
+- `chatbot/data/labeled/coag_test_aptt_expansion_160.csv`: `160` new `coag_test` rows
+- Expanded aPTT, PT, INR, citrate tube, underfill, delay, and coag specimen handling phrasing
 
 ## Build Training Dataset
 Training uses one master file first:
@@ -134,6 +144,19 @@ This produces:
 - `chatbot/data/train/intent_dataset_general.jsonl`
 - `chatbot/data/train/intent_dataset_report.jsonl`
 
+Then create fixed split files for both models:
+```bash
+python chatbot/data/create_splits.py --config chatbot/config.yaml --overwrite
+```
+
+This produces:
+- `chatbot/data/splits/general/train.jsonl`
+- `chatbot/data/splits/general/validation.jsonl`
+- `chatbot/data/splits/general/test.jsonl`
+- `chatbot/data/splits/report/train.jsonl`
+- `chatbot/data/splits/report/validation.jsonl`
+- `chatbot/data/splits/report/test.jsonl`
+
 Do not run all build commands one after another with `--overwrite` to the same master file unless that is exactly the dataset you want. Pick one build path, produce one master dataset file, then derive the model-specific datasets from it.
 
 `generate_dataset.py` can now generate only new rows and optionally combine them with an existing dataset.
@@ -142,6 +165,10 @@ Do not run all build commands one after another with `--overwrite` to the same m
 
 ## Train
 The current backend is a BiLSTM sequential model with vocabulary building, tokenization, embedding lookup, and padded sequence batching.
+Training now uses the fixed split files:
+- weights are fit on `train`
+- the best checkpoint is selected by validation F1 on `validation`
+- the held-out `test` split is reserved for final evaluation only
 
 Train the `general` model:
 ```bash
@@ -165,6 +192,8 @@ python chatbot/evaluation/evaluate.py --config chatbot/config.yaml --model-key g
 python chatbot/evaluation/evaluate.py --config chatbot/config.yaml --model-key report --run-name report_model_eval
 streamlit run chatbot/evaluation/dashboard.py
 ```
+Evaluation now scores the saved model only on the fixed `test` split for the selected model profile.
+
 Each evaluation run now exports paper-ready artifacts inside `chatbot/evaluation/runs/<run_name>/`:
 - `metrics.json`
 - `dataset_profile.json`
@@ -175,8 +204,10 @@ Each evaluation run now exports paper-ready artifacts inside `chatbot/evaluation
 - `confusion_matrix.csv`
 
 Latest evaluation snapshots:
-- `general_model_eval_20260417_conversation`: `2510` samples, `21` intents, accuracy `0.9841`, macro F1 `0.9676`
-- `report_model_eval_20260417_conversation`: `2636` samples, `24` intents, accuracy `0.9924`, macro F1 `0.9875`
+- `general_model_eval_split_701515`: test samples `401`, accuracy `0.8928`, macro F1 `0.8649`
+- `report_model_eval_split_701515`: test samples `396`, accuracy `0.9040`, macro F1 `0.8604`
+
+The split-aware scores are lower than the older single-holdout numbers. That is expected. They are the stronger paper metrics because the models are now selected on validation and reported on an untouched test set.
 
 ## Inference (CLI)
 ```bash
@@ -248,6 +279,9 @@ The current knowledge base now includes more operational coverage for:
 - Controlled guardrail responses for unsafe or out-of-scope requests
 - Query logging to PostgreSQL for future tuning and monitoring
 - Admin monitoring panel for fallback, guardrail, confidence, review workflow, and multi-model monitoring
+- Sidebar-based admin layout organized by MLOps stage: overview, ingestion, versioning, splits, monitoring, and review queue
+- Admin pipeline paths are displayed as project-relative paths so the UI stays portable across Windows hosts and Docker/Linux deployments
+- Inference Trace section visualizes one phrase across normalization, tokenization, BiLSTM classification, entity detection, TF-IDF retrieval candidates, and final route selection
 
 ## API
 ```bash
@@ -272,6 +306,18 @@ The admin panel now supports multi-model monitoring for the current two-model se
 - model filter dropdown populated from `/models`
 - per-model traffic, confidence, fallback, guardrail, auto-switch, and retrieval monitoring
 - model-aware recent log review showing requested model vs answered model
+- MLOps pipeline sections for:
+  - data ingestion and labeled-source tracking
+  - dataset / model / knowledge-base version snapshots
+  - fixed split policy and per-model split counts
+- Sidebar sections switch views inside the admin console instead of scrolling through one long page
+- `Inference Trace` can inspect a single phrase and show:
+  - normalized text and token-to-vocabulary IDs
+  - hard-rule matches before the model stage
+  - top classifier intents and fallback threshold
+  - detected entity and canonical routing question
+  - TF-IDF retrieval candidates and similarity scores
+  - final route source and response explanation
 
 ## Production Retraining Loop
 1. Open `http://localhost:8000/admin` and review fallback, guardrail, and low-confidence phrases.
@@ -286,8 +332,9 @@ This script will:
 - export accepted reviewed queries to `chatbot/data/labeled/reviewed_queries_<timestamp>.csv`
 - merge labeled data into `chatbot/data/train/intent_dataset.jsonl`
 - rebuild `intent_dataset_general.jsonl` and `intent_dataset_report.jsonl`
+- rebuild the fixed `70/15/15` split files for both model datasets
 - retrain both BiLSTM models by default
-- run evaluation for both models unless `--skip-eval` is passed
+- run test-only evaluation for both models unless `--skip-eval` is passed
 
 Useful options:
 ```bash

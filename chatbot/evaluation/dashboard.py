@@ -72,31 +72,43 @@ with tab_overview:
 
 with tab_dataset:
     st.subheader('Dataset Summary')
-    profile_cols = st.columns(5)
+    profile_cols = st.columns(6)
     profile_cols[0].metric('Total Samples', f"{dataset_profile.get('total_samples', 0)}")
-    profile_cols[1].metric('Eval Samples', f"{dataset_profile.get('eval_samples', 0)}")
-    profile_cols[2].metric('Num Intents', f"{dataset_profile.get('num_intents', 0)}")
-    profile_cols[3].metric('Vocabulary Size', f"{dataset_profile.get('vocabulary_size', 0)}")
-    profile_cols[4].metric('Imbalance Ratio', f"{dataset_profile.get('imbalance_ratio', 0):.2f}")
+    profile_cols[1].metric('Train Samples', f"{dataset_profile.get('train_samples', 0)}")
+    profile_cols[2].metric('Validation Samples', f"{dataset_profile.get('validation_samples', 0)}")
+    profile_cols[3].metric('Test Samples', f"{dataset_profile.get('test_samples', 0)}")
+    profile_cols[4].metric('Num Intents', f"{dataset_profile.get('num_intents', 0)}")
+    profile_cols[5].metric('Vocabulary Size', f"{dataset_profile.get('vocabulary_size', 0)}")
 
     detail_cols = st.columns(4)
     detail_cols[0].metric('Avg Tokens', f"{dataset_profile.get('avg_tokens', 0):.2f}")
     detail_cols[1].metric('Median Tokens', f"{dataset_profile.get('median_tokens', 0):.2f}")
     detail_cols[2].metric('Duplicate Rows', f"{dataset_profile.get('duplicate_rows', 0)}")
-    detail_cols[3].metric('Duplicate Ratio', f"{dataset_profile.get('duplicate_ratio', 0):.4f}")
+    detail_cols[3].metric('Imbalance Ratio', f"{dataset_profile.get('imbalance_ratio', 0):.2f}")
 
     intent_counts = dataset_profile.get('intent_counts', {})
-    eval_counts = dataset_profile.get('eval_intent_counts', {})
+    validation_counts = dataset_profile.get('validation_intent_counts', {})
+    test_counts = dataset_profile.get('test_intent_counts', {})
     if intent_counts:
         dist_df = pd.DataFrame(
             [
-                {'intent': intent, 'dataset_count': count, 'eval_count': eval_counts.get(intent, 0)}
+                {
+                    'intent': intent,
+                    'dataset_count': count,
+                    'validation_count': validation_counts.get(intent, 0),
+                    'test_count': test_counts.get(intent, 0),
+                }
                 for intent, count in sorted(intent_counts.items())
             ]
         )
         st.subheader('Intent Distribution')
         st.dataframe(dist_df, use_container_width=True)
-        fig_dist = px.bar(dist_df, x='intent', y=['dataset_count', 'eval_count'], barmode='group')
+        fig_dist = px.bar(
+            dist_df,
+            x='intent',
+            y=['dataset_count', 'validation_count', 'test_count'],
+            barmode='group',
+        )
         st.plotly_chart(fig_dist, use_container_width=True)
 
 with tab_classes:

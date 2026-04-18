@@ -44,6 +44,14 @@ def resolve_model_settings(cfg: Dict[str, Any], model_key: str | None = None) ->
     profile = profiles.get(resolved_key, {})
     dataset_path = profile.get('dataset_path', data_cfg.get('dataset_path'))
     intents = list(profile.get('intents', []))
+    split_dir_root = data_cfg.get('split_dir')
+    split_dir = str(Path(split_dir_root) / resolved_key) if split_dir_root else ''
+    split_paths = {
+        'train': str(Path(split_dir) / 'train.jsonl') if split_dir else '',
+        'validation': str(Path(split_dir) / 'validation.jsonl') if split_dir else '',
+        'test': str(Path(split_dir) / 'test.jsonl') if split_dir else '',
+        'metadata': str(Path(split_dir) / 'metadata.json') if split_dir else '',
+    }
 
     return {
         'model_key': resolved_key,
@@ -51,6 +59,8 @@ def resolve_model_settings(cfg: Dict[str, Any], model_key: str | None = None) ->
         'dataset_path': dataset_path,
         'version': str(version),
         'intents': intents,
+        'split_dir': split_dir,
+        'split_paths': split_paths,
     }
 
 
@@ -64,6 +74,8 @@ def load_config(path: str | Path) -> Dict[str, Any]:
     data_cfg = cfg.get('data', {})
     if 'dataset_path' in data_cfg:
         data_cfg['dataset_path'] = _resolve_path(base_dir, data_cfg['dataset_path'])
+    if 'split_dir' in data_cfg:
+        data_cfg['split_dir'] = _resolve_path(base_dir, data_cfg['split_dir'])
     model_profiles = data_cfg.get('model_profiles', {})
     if isinstance(model_profiles, dict):
         resolved_profiles: Dict[str, Any] = {}

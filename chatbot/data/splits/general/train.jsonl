@@ -1,0 +1,1868 @@
+{"text": "thanks for the blood smear summary", "intent": "thanks", "lang": "en"}
+{"text": "how can an old specimen affect blood film findings", "intent": "blood_smear", "lang": "en"}
+{"text": "What specimen problems affect PT and aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "thanks that helped", "intent": "thanks", "lang": "en"}
+{"text": "How do you explain hemoglobin?", "intent": "cbc_info", "lang": "en"}
+{"text": "what is the meaning of RBC count on a report", "intent": "rbc_term", "lang": "en"}
+{"text": "hope you are well there", "intent": "small_talk", "lang": "en"}
+{"text": "How should I prepare the collection site for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to handle pediatric CBC samples?", "intent": "sample_collection", "lang": "en"}
+{"text": "How should I interpret high RBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "bye assistant then", "intent": "goodbye", "lang": "en"}
+{"text": "how is sample volume verified in a coagulation tube", "intent": "coag_test", "lang": "en"}
+{"text": "What does activated partial thromboplastin time measure?", "intent": "coag_test", "lang": "en"}
+{"text": "see you later after the next case", "intent": "goodbye", "lang": "en"}
+{"text": "I need help understanding hematology lab questions.", "intent": "help", "lang": "en"}
+{"text": "what do you specialize in exactly", "intent": "capability_query", "lang": "en"}
+{"text": "Define hemoglobin.", "intent": "cbc_info", "lang": "en"}
+{"text": "what exactly are you saying there", "intent": "clarification", "lang": "en"}
+{"text": "which value are we discussing", "intent": "incomplete_query", "lang": "en"}
+{"text": "what broad difference exists between routine reporting and critical reporting", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "How do I handle CBC transport through a pneumatic tube?", "intent": "sample_collection", "lang": "en"}
+{"text": "I need support with CBC sample stability", "intent": "help", "lang": "en"}
+{"text": "What does high MCV suggest?", "intent": "cbc_info", "lang": "en"}
+{"text": "Which anticoagulant should be avoided for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "how does hematocrit influence citrate ratio in special cases", "intent": "coag_test", "lang": "en"}
+{"text": "tell me the latest celebrity news", "intent": "out_of_scope", "lang": "en"}
+{"text": "appreciate the help on that one", "intent": "thanks", "lang": "en"}
+{"text": "How should I handle pediatric CBC samples?", "intent": "sample_collection", "lang": "en"}
+{"text": "How stable is a citrate sample for PT and aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "how do you explain atypical lymphocytes simply", "intent": "wbc_term", "lang": "en"}
+{"text": "What is hemoglobin in a CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "what medication should be ordered from this report", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "what broad information does hematocrit provide", "intent": "rbc_term", "lang": "en"}
+{"text": "What is the normal range for MPV?", "intent": "cbc_info", "lang": "en"}
+{"text": "what does blast flag mean before smear review", "intent": "differential_review", "lang": "en"}
+{"text": "thanks for walking me through it", "intent": "thanks", "lang": "en"}
+{"text": "explain white blood cell count", "intent": "wbc_term", "lang": "en"}
+{"text": "why is hematocrit reviewed with RBC count", "intent": "rbc_term", "lang": "en"}
+{"text": "what should be done if a critical result seems inconsistent", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "not related", "intent": "fallback", "lang": "en"}
+{"text": "What is the normal range for platelet count?", "intent": "cbc_info", "lang": "en"}
+{"text": "can you tell me the treatment plan for this CBC result", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "what does basophilia mean", "intent": "differential_review", "lang": "en"}
+{"text": "how can you help", "intent": "capability_query", "lang": "en"}
+{"text": "What are the rejection criteria for a coagulation sample?", "intent": "coag_test", "lang": "en"}
+{"text": "do you explain lab terms as well as specimen handling", "intent": "capability_query", "lang": "en"}
+{"text": "which lab topics are supported right now", "intent": "capability_query", "lang": "en"}
+{"text": "What does prolonged PT suggest in lab terms?", "intent": "coag_test", "lang": "en"}
+{"text": "many thanks", "intent": "thanks", "lang": "en"}
+{"text": "what does high WBC suggest", "intent": "wbc_term", "lang": "en"}
+{"text": "how is leukocyte count used in routine hematology workflow", "intent": "wbc_term", "lang": "en"}
+{"text": "how should trainees understand Westgard rules", "intent": "quality_control", "lang": "en"}
+{"text": "how is a manual differential performed", "intent": "differential_review", "lang": "en"}
+{"text": "what is the purpose of manual differential review", "intent": "differential_review", "lang": "en"}
+{"text": "can you say that in simple words now", "intent": "clarification", "lang": "en"}
+{"text": "what areas are covered by this chat right now", "intent": "capability_query", "lang": "en"}
+{"text": "can you tell me your scope today", "intent": "capability_query", "lang": "en"}
+{"text": "What does a short aPTT mean in laboratory review?", "intent": "coag_test", "lang": "en"}
+{"text": "I need help with CBC testing.", "intent": "help", "lang": "en"}
+{"text": "Can you assist me with a CBC question?", "intent": "help", "lang": "en"}
+{"text": "what broad information does hemoglobin provide", "intent": "rbc_term", "lang": "en"}
+{"text": "hi hematology assistant", "intent": "greeting", "lang": "en"}
+{"text": "what does a toxic granulation pattern look like broadly", "intent": "blood_smear", "lang": "en"}
+{"text": "how should trainees read MCHC on a CBC report", "intent": "rbc_term", "lang": "en"}
+{"text": "what does hypochromia relate to in red cell indices", "intent": "rbc_term", "lang": "en"}
+{"text": "how is differential review linked to smear examination", "intent": "differential_review", "lang": "en"}
+{"text": "how often should hematology QC be run", "intent": "quality_control", "lang": "en"}
+{"text": "i will come back later", "intent": "goodbye", "lang": "en"}
+{"text": "???", "intent": "fallback", "lang": "en"}
+{"text": "What pathway does aPTT evaluate?", "intent": "coag_test", "lang": "en"}
+{"text": "Give me a simple explanation of platelet count.", "intent": "cbc_info", "lang": "en"}
+{"text": "How do I process a CBC sample that arrives late?", "intent": "sample_collection", "lang": "en"}
+{"text": "you doing fine now", "intent": "small_talk", "lang": "en"}
+{"text": "what do you help with in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "please help", "intent": "help", "lang": "en"}
+{"text": "how are platelets connected to specimen handling issues", "intent": "platelet_term", "lang": "en"}
+{"text": "what does platelet estimate on smear mean", "intent": "platelet_term", "lang": "en"}
+{"text": "What is the aPTT test?", "intent": "coag_test", "lang": "en"}
+{"text": "thank you for that again", "intent": "thanks", "lang": "en"}
+{"text": "how should communication delay be documented for critical results", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "how should new staff summarize red cell review", "intent": "rbc_term", "lang": "en"}
+{"text": "what can you do today", "intent": "capability_query", "lang": "en"}
+{"text": "what does a raised hematocrit result mean broadly", "intent": "rbc_term", "lang": "en"}
+{"text": "How do you explain hematocrit?", "intent": "cbc_info", "lang": "en"}
+{"text": "How should I interpret low MPV?", "intent": "cbc_info", "lang": "en"}
+{"text": "how is manual smear review taught to new staff", "intent": "blood_smear", "lang": "en"}
+{"text": "what are eosinophils", "intent": "differential_review", "lang": "en"}
+{"text": "What is the required tube type for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "how do you explain PT for Alex", "intent": "coag_test", "lang": "en"}
+{"text": "Why would a lab perform an aPTT test?", "intent": "coag_test", "lang": "en"}
+{"text": "are you for sample handling or result explanation", "intent": "capability_query", "lang": "en"}
+{"text": "Give me a simple explanation of MCH.", "intent": "cbc_info", "lang": "en"}
+{"text": "how is it going", "intent": "small_talk", "lang": "en"}
+{"text": "what does lymphopenia mean in basic hematology language", "intent": "wbc_term", "lang": "en"}
+{"text": "how is normocytic pattern described in simple hematology language", "intent": "rbc_term", "lang": "en"}
+{"text": "how is RBC count interpreted", "intent": "rbc_term", "lang": "en"}
+{"text": "How do I understand a CBC test?", "intent": "cbc_info", "lang": "en"}
+{"text": "what is the basic purpose of hemoglobin testing", "intent": "rbc_term", "lang": "en"}
+{"text": "Why is a CBC ordered?", "intent": "cbc_info", "lang": "en"}
+{"text": "what RBC term should I know for hematology", "intent": "rbc_term", "lang": "en"}
+{"text": "What is WBC count?", "intent": "cbc_info", "lang": "en"}
+{"text": "what broad significance does low MPV have", "intent": "platelet_term", "lang": "en"}
+{"text": "how is platelet count reported", "intent": "platelet_term", "lang": "en"}
+{"text": "what does prolonged activated partial thromboplastin time suggest generally", "intent": "coag_test", "lang": "en"}
+{"text": "why would abnormal cells trigger differential review", "intent": "differential_review", "lang": "en"}
+{"text": "thanks i got it today", "intent": "thanks", "lang": "en"}
+{"text": "what is the safest wording for broad coagulation explanation", "intent": "coag_test", "lang": "en"}
+{"text": "In EDTA specimen processing, what should I do if transport is delayed?", "intent": "sample_collection", "lang": "en"}
+{"text": "which injection should be administered first", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "Help me with RBC indices.", "intent": "help", "lang": "en"}
+{"text": "What should I review when the CBC specimen volume looks low?", "intent": "sample_collection", "lang": "en"}
+{"text": "what are screening coag assays in Mandalay lab", "intent": "coag_test", "lang": "en"}
+{"text": "How long is CBC sample stable?", "intent": "sample_collection", "lang": "en"}
+{"text": "what do you specialize in in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "What does a CBC include?", "intent": "cbc_info", "lang": "en"}
+{"text": "why must control materials be mixed properly before use", "intent": "quality_control", "lang": "en"}
+{"text": "what does neutropenia mean in broad terms", "intent": "wbc_term", "lang": "en"}
+{"text": "what does low neutrophil count suggest generally", "intent": "differential_review", "lang": "en"}
+{"text": "can you simplify that answer", "intent": "clarification", "lang": "en"}
+{"text": "what does a high neutrophil count suggest in general", "intent": "wbc_term", "lang": "en"}
+{"text": "what does MPV mean", "intent": "platelet_term", "lang": "en"}
+{"text": "how is precision described in hematology QC", "intent": "quality_control", "lang": "en"}
+{"text": "Can I use a heparin tube for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "how should a coag sample be mixed after draw", "intent": "coag_test", "lang": "en"}
+{"text": "what does abnormal white cell morphology lead to in workflow", "intent": "wbc_term", "lang": "en"}
+{"text": "what are schistocytes on a peripheral smear", "intent": "blood_smear", "lang": "en"}
+{"text": "great thanks today", "intent": "thanks", "lang": "en"}
+{"text": "what topics do you cover today", "intent": "capability_query", "lang": "en"}
+{"text": "talk to you later friend", "intent": "goodbye", "lang": "en"}
+{"text": "what does red cell count show in screening", "intent": "rbc_term", "lang": "en"}
+{"text": "In hematology sample preparation, what storage rule should I follow?", "intent": "sample_collection", "lang": "en"}
+{"text": "how is red cell morphology categorized on smear", "intent": "blood_smear", "lang": "en"}
+{"text": "what are target cells on a peripheral smear", "intent": "blood_smear", "lang": "en"}
+{"text": "why is platelet count important in bleeding risk review", "intent": "platelet_term", "lang": "en"}
+{"text": "what does prolonged aPTT indicate in broad laboratory language", "intent": "coag_test", "lang": "en"}
+{"text": "can you help with coagulation questions today", "intent": "capability_query", "lang": "en"}
+{"text": "how should failed contact attempts be recorded", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "what do you know about hematology lab work exactly", "intent": "capability_query", "lang": "en"}
+{"text": "what details should be recorded after critical call", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "how does critical value communication support laboratory patient safety", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "can you explain that to Liam", "intent": "clarification", "lang": "en"}
+{"text": "how should a citrate tube be checked before acceptance", "intent": "coag_test", "lang": "en"}
+{"text": "What is the normal range for MCH?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the difference between PT and aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "what are blood smear artifacts", "intent": "blood_smear", "lang": "en"}
+{"text": "appreciate it today", "intent": "thanks", "lang": "en"}
+{"text": "what should i know about red cell indices", "intent": "rbc_term", "lang": "en"}
+{"text": "what should be documented on a hematology label", "intent": "sample_collection", "lang": "en"}
+{"text": "what kind of hematology support can i expect here", "intent": "capability_query", "lang": "en"}
+{"text": "How is HCT measured?", "intent": "cbc_info", "lang": "en"}
+{"text": "how are you today", "intent": "small_talk", "lang": "en"}
+{"text": "please explain that again now", "intent": "clarification", "lang": "en"}
+{"text": "what is the weather in yangon right now", "intent": "out_of_scope", "lang": "en"}
+{"text": "how should trainees understand basophils in differential review", "intent": "wbc_term", "lang": "en"}
+{"text": "tell me the correct injection dose", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "Please explain hematocrit.", "intent": "cbc_info", "lang": "en"}
+{"text": "how does that work", "intent": "incomplete_query", "lang": "en"}
+{"text": "Define MCHC.", "intent": "cbc_info", "lang": "en"}
+{"text": "which antibiotic should i use", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "which lab topics are supported exactly", "intent": "capability_query", "lang": "en"}
+{"text": "can you explain that step by step now", "intent": "clarification", "lang": "en"}
+{"text": "how do i manage a short draw in an EDTA tube", "intent": "sample_collection", "lang": "en"}
+{"text": "bye and thanks then", "intent": "goodbye", "lang": "en"}
+{"text": "what can you do for Liam", "intent": "capability_query", "lang": "en"}
+{"text": "can you restate that now", "intent": "clarification", "lang": "en"}
+{"text": "why", "intent": "incomplete_query", "lang": "en"}
+{"text": "how do you interpret a QC shift", "intent": "quality_control", "lang": "en"}
+{"text": "hope you are well my friend", "intent": "small_talk", "lang": "en"}
+{"text": "what is the purpose of routine coagulation profile", "intent": "coag_test", "lang": "en"}
+{"text": "why should failed QC never be ignored", "intent": "quality_control", "lang": "en"}
+{"text": "Can I use a microtainer for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "what are you trained for exactly", "intent": "capability_query", "lang": "en"}
+{"text": "why is platelet clump detection important for result safety", "intent": "platelet_term", "lang": "en"}
+{"text": "what does prolonged prothrombin time suggest generally", "intent": "coag_test", "lang": "en"}
+{"text": "thanks see you soon", "intent": "goodbye", "lang": "en"}
+{"text": "What sample type is required for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "What happens if an EDTA tube is underfilled?", "intent": "sample_collection", "lang": "en"}
+{"text": "who are the best singers", "intent": "out_of_scope", "lang": "en"}
+{"text": "what broad meaning does a QC shift have", "intent": "quality_control", "lang": "en"}
+{"text": "I have a question about CBC testing.", "intent": "help", "lang": "en"}
+{"text": "what does morphology review mean on a smear", "intent": "blood_smear", "lang": "en"}
+{"text": "hello assistant friend", "intent": "greeting", "lang": "en"}
+{"text": "what is the policy for critical WBC results", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "what broad clues come from monocyte increase", "intent": "differential_review", "lang": "en"}
+{"text": "what can cause a very high WBC count in broad terms", "intent": "wbc_term", "lang": "en"}
+{"text": "what does INR show in coag review", "intent": "coag_test", "lang": "en"}
+{"text": "what does anisocytosis have to do with RDW", "intent": "rbc_term", "lang": "en"}
+{"text": "what is the common pathway in broad coagulation explanation", "intent": "coag_test", "lang": "en"}
+{"text": "Could you define activated partial thromboplastin time?", "intent": "coag_test", "lang": "en"}
+{"text": "Please assist with CBC lab steps.", "intent": "help", "lang": "en"}
+{"text": "What is the full form of aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "What if the blue top tube is mislabeled?", "intent": "coag_test", "lang": "en"}
+{"text": "what is the purpose of a differential count", "intent": "differential_review", "lang": "en"}
+{"text": "how r u", "intent": "small_talk", "lang": "en"}
+{"text": "how is a smear made in Bangkok hematology lab", "intent": "blood_smear", "lang": "en"}
+{"text": "what does high RBC count suggest in general screening", "intent": "rbc_term", "lang": "en"}
+{"text": "greetings", "intent": "greeting", "lang": "en"}
+{"text": "have a nice day today", "intent": "goodbye", "lang": "en"}
+{"text": "how do you explain RBC count in Tokyo lab training", "intent": "rbc_term", "lang": "en"}
+{"text": "I need the meaning of aPTT", "intent": "coag_test", "lang": "en"}
+{"text": "thanks assistant", "intent": "thanks", "lang": "en"}
+{"text": "thank you very much today", "intent": "thanks", "lang": "en"}
+{"text": "In EDTA specimen processing, what mixing step is required?", "intent": "sample_collection", "lang": "en"}
+{"text": "how is red cell morphology linked with RBC indices", "intent": "rbc_term", "lang": "en"}
+{"text": "how should new staff summarize platelet review", "intent": "platelet_term", "lang": "en"}
+{"text": "goodbye for now", "intent": "goodbye", "lang": "en"}
+{"text": "what can drying artifacts do to blood smear quality", "intent": "blood_smear", "lang": "en"}
+{"text": "what does high neutrophil count suggest generally", "intent": "differential_review", "lang": "en"}
+{"text": "what is the difference between hemoglobin and hematocrit", "intent": "rbc_term", "lang": "en"}
+{"text": "how can EDTA affect platelet clumping", "intent": "platelet_term", "lang": "en"}
+{"text": "what is the practical meaning of RDW in lab interpretation", "intent": "rbc_term", "lang": "en"}
+{"text": "how should trainees read MCH on a CBC report", "intent": "rbc_term", "lang": "en"}
+{"text": "tell me the dosage to use for this patient", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "take care friend", "intent": "goodbye", "lang": "en"}
+{"text": "what can this assistant do exactly", "intent": "capability_query", "lang": "en"}
+{"text": "thank you so much", "intent": "thanks", "lang": "en"}
+{"text": "Can I use citrate tube for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "how do you explain a prolonged aPTT result in broad terms", "intent": "coag_test", "lang": "en"}
+{"text": "What information does a CBC test provide?", "intent": "cbc_info", "lang": "en"}
+{"text": "What information does a CBC provide?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the correct fill volume for an EDTA tube?", "intent": "sample_collection", "lang": "en"}
+{"text": "how does overfill affect citrate sample validity", "intent": "coag_test", "lang": "en"}
+{"text": "what morphology findings are commonly communicated to clinicians", "intent": "blood_smear", "lang": "en"}
+{"text": "how r u my friend", "intent": "small_talk", "lang": "en"}
+{"text": "what should be checked first during smear review", "intent": "blood_smear", "lang": "en"}
+{"text": "good day friend", "intent": "greeting", "lang": "en"}
+{"text": "During CBC specimen handling, what should I do if transport is delayed?", "intent": "sample_collection", "lang": "en"}
+{"text": "For CBC collection, what should I do if transport is delayed?", "intent": "sample_collection", "lang": "en"}
+{"text": "i am confused by that explanation again", "intent": "clarification", "lang": "en"}
+{"text": "everything going okay today", "intent": "small_talk", "lang": "en"}
+{"text": "Can you explain RDW?", "intent": "cbc_info", "lang": "en"}
+{"text": "how should i dose this injection", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "what does high MPV suggest generally", "intent": "platelet_term", "lang": "en"}
+{"text": "What acceptance criteria apply to citrate tubes?", "intent": "coag_test", "lang": "en"}
+{"text": "why is smear quality important for manual differential count", "intent": "differential_review", "lang": "en"}
+{"text": "why is feathered edge examination important", "intent": "blood_smear", "lang": "en"}
+{"text": "Why is aPTT done?", "intent": "coag_test", "lang": "en"}
+{"text": "how are things now", "intent": "small_talk", "lang": "en"}
+{"text": "what broad significance does low neutrophil count have in differential review", "intent": "differential_review", "lang": "en"}
+{"text": "how can transport vibration affect coagulation specimens", "intent": "coag_test", "lang": "en"}
+{"text": "how do you explain hematocrit to a student", "intent": "rbc_term", "lang": "en"}
+{"text": "what should be documented after smear morphology review", "intent": "blood_smear", "lang": "en"}
+{"text": "tell me how to treat this patient", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "how do you explain abnormal white cell patterns", "intent": "wbc_term", "lang": "en"}
+{"text": "how is PT INR reported", "intent": "coag_test", "lang": "en"}
+{"text": "thank you for that", "intent": "thanks", "lang": "en"}
+{"text": "What is the purpose of a complete blood count?", "intent": "cbc_info", "lang": "en"}
+{"text": "i will come back later friend", "intent": "goodbye", "lang": "en"}
+{"text": "what does a complete blood count", "intent": "cbc_info", "lang": "en"}
+{"text": "see you later after the next shift", "intent": "goodbye", "lang": "en"}
+{"text": "explain it step by step", "intent": "clarification", "lang": "en"}
+{"text": "What can a full blood count tell us?", "intent": "cbc_info", "lang": "en"}
+{"text": "hey", "intent": "greeting", "lang": "en"}
+{"text": "What does MCHC mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "how should i prescribe for this blood result", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "help me understand mean platelet volume", "intent": "cbc_info", "lang": "en"}
+{"text": "Is a light blue citrate tube used for INR?", "intent": "coag_test", "lang": "en"}
+{"text": "What is the purpose of a CBC test?", "intent": "cbc_info", "lang": "en"}
+{"text": "what does the intrinsic pathway refer to in simple terms", "intent": "coag_test", "lang": "en"}
+{"text": "how do you explain red blood cell count in simple language", "intent": "rbc_term", "lang": "en"}
+{"text": "what is the use of a white cell differential", "intent": "wbc_term", "lang": "en"}
+{"text": "thanks im done here", "intent": "goodbye", "lang": "en"}
+{"text": "bye assistant today", "intent": "goodbye", "lang": "en"}
+{"text": "can you choose treatment for this patient", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "can you make that easier to understand", "intent": "clarification", "lang": "en"}
+{"text": "can you tell me what medicine fixes this blood count", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "what about the other result", "intent": "incomplete_query", "lang": "en"}
+{"text": "In EDTA specimen processing, when should I reject the sample?", "intent": "sample_collection", "lang": "en"}
+{"text": "can you help with coagulation questions right now", "intent": "capability_query", "lang": "en"}
+{"text": "thanks for your support", "intent": "thanks", "lang": "en"}
+{"text": "CBC vs differential ? what is the difference?", "intent": "cbc_info", "lang": "en"}
+{"text": "can you answer rbc and wbc questions", "intent": "capability_query", "lang": "en"}
+{"text": "what does a blood film help confirm", "intent": "blood_smear", "lang": "en"}
+{"text": "thank you for keeping it simple", "intent": "thanks", "lang": "en"}
+{"text": "what broad quality indicator applies to critical result turnaround", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "what does an elevated white count mean in general", "intent": "wbc_term", "lang": "en"}
+{"text": "What is INR?", "intent": "coag_test", "lang": "en"}
+{"text": "What parameters are included in a full blood count?", "intent": "cbc_info", "lang": "en"}
+{"text": "how is startup QC performed on a hematology analyzer", "intent": "quality_control", "lang": "en"}
+{"text": "how can platelet review trigger specimen recollection", "intent": "platelet_term", "lang": "en"}
+{"text": "how is manual differential taught during hematology training", "intent": "differential_review", "lang": "en"}
+{"text": "how is WBC count interpreted with differential pattern", "intent": "wbc_term", "lang": "en"}
+{"text": "what are common preanalytical errors in CBC collection", "intent": "sample_collection", "lang": "en"}
+{"text": "what is the purpose of PT in coagulation testing", "intent": "coag_test", "lang": "en"}
+{"text": "I have a question about CBC testing", "intent": "help", "lang": "en"}
+{"text": "how do i treat leukemia", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "please explain that again for me", "intent": "clarification", "lang": "en"}
+{"text": "Give me a simple explanation of hematocrit.", "intent": "cbc_info", "lang": "en"}
+{"text": "How to transport CBC in cold chain?", "intent": "sample_collection", "lang": "en"}
+{"text": "that answer is still confusing can you restate it", "intent": "clarification", "lang": "en"}
+{"text": "How should I interpret low RBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the approved tube for coagulation screening?", "intent": "coag_test", "lang": "en"}
+{"text": "what topics do you cover exactly", "intent": "capability_query", "lang": "en"}
+{"text": "why is peer comparison useful in quality control", "intent": "quality_control", "lang": "en"}
+{"text": "how do you explain WBC count in Madrid lab training", "intent": "wbc_term", "lang": "en"}
+{"text": "talk to you later then", "intent": "goodbye", "lang": "en"}
+{"text": "can you summarize coag sample requirements", "intent": "coag_test", "lang": "en"}
+{"text": "what does neutrophilia mean", "intent": "differential_review", "lang": "en"}
+{"text": "how do analyzer flags lead to white cell review", "intent": "wbc_term", "lang": "en"}
+{"text": "what does eosinophilia refer to in a report", "intent": "wbc_term", "lang": "en"}
+{"text": "why is WBC count not interpreted completely on its own", "intent": "wbc_term", "lang": "en"}
+{"text": "how is anisopoikilocytosis seen on a blood film", "intent": "blood_smear", "lang": "en"}
+{"text": "what does leukocyte mean on the report", "intent": "wbc_term", "lang": "en"}
+{"text": "What does CBC stand for?", "intent": "cbc_info", "lang": "en"}
+{"text": "what can cause a raised white cell count", "intent": "wbc_term", "lang": "en"}
+{"text": "Can you explain MCHC?", "intent": "cbc_info", "lang": "en"}
+{"text": "why is the citrate ratio important in coagulation testing", "intent": "coag_test", "lang": "en"}
+{"text": "can you help me with calculus homework", "intent": "out_of_scope", "lang": "en"}
+{"text": "What information does a CBC report provide?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is anisocytosis and RDW?", "intent": "cbc_info", "lang": "en"}
+{"text": "what broad importance does differential review have in leukemia patterns", "intent": "differential_review", "lang": "en"}
+{"text": "before we start what do you support", "intent": "capability_query", "lang": "en"}
+{"text": "i will come back later for now", "intent": "goodbye", "lang": "en"}
+{"text": "how are analyzer flags investigated during QC troubleshooting", "intent": "quality_control", "lang": "en"}
+{"text": "thanks for your support again", "intent": "thanks", "lang": "en"}
+{"text": "what antibiotic should i prescribe after this result", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "what are you trying to say", "intent": "clarification", "lang": "en"}
+{"text": "thank you so much there", "intent": "thanks", "lang": "en"}
+{"text": "how do you summarize PT and aPTT for students", "intent": "coag_test", "lang": "en"}
+{"text": "thanks for the answer again", "intent": "thanks", "lang": "en"}
+{"text": "How should I interpret low WBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "talk later then", "intent": "goodbye", "lang": "en"}
+{"text": "Why is INR reported?", "intent": "coag_test", "lang": "en"}
+{"text": "can you support red cell and white cell topic questions", "intent": "capability_query", "lang": "en"}
+{"text": "thank you very much there", "intent": "thanks", "lang": "en"}
+{"text": "can you explain that step by step please", "intent": "clarification", "lang": "en"}
+{"text": "can you tell me your scope", "intent": "capability_query", "lang": "en"}
+{"text": "What is the correct draw volume for lavender top?", "intent": "sample_collection", "lang": "en"}
+{"text": "thanks for your support there", "intent": "thanks", "lang": "en"}
+{"text": "Can I reuse a tube?", "intent": "sample_collection", "lang": "en"}
+{"text": "thanks for the lab guidance", "intent": "thanks", "lang": "en"}
+{"text": "bye Alex", "intent": "goodbye", "lang": "en"}
+{"text": "please diagnose this illness for me", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "many thanks really", "intent": "thanks", "lang": "en"}
+{"text": "What PPE is needed for CBC blood draw?", "intent": "sample_collection", "lang": "en"}
+{"text": "Can you help me understand EDTA sample requirements?", "intent": "help", "lang": "en"}
+{"text": "what does low MCHC suggest generally", "intent": "rbc_term", "lang": "en"}
+{"text": "hi today", "intent": "greeting", "lang": "en"}
+{"text": "what should Maya know about blood film preparation", "intent": "blood_smear", "lang": "en"}
+{"text": "how is differential review used after CBC", "intent": "differential_review", "lang": "en"}
+{"text": "why is platelet count reviewed with smear estimate", "intent": "platelet_term", "lang": "en"}
+{"text": "Explain CBC", "intent": "cbc_info", "lang": "en"}
+{"text": "what should a trainee know about blood film thickness", "intent": "blood_smear", "lang": "en"}
+{"text": "what is leukocytosis", "intent": "wbc_term", "lang": "en"}
+{"text": "what is the broad role of RBC count in oxygen carrying assessment", "intent": "rbc_term", "lang": "en"}
+{"text": "Can CBC be collected from a line draw?", "intent": "sample_collection", "lang": "en"}
+{"text": "why are local SOPs important for critical values", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "how do you summarize platelet basics for training", "intent": "platelet_term", "lang": "en"}
+{"text": "what is the role of band neutrophils in differential count", "intent": "differential_review", "lang": "en"}
+{"text": "how should I understand erythrocyte count", "intent": "rbc_term", "lang": "en"}
+{"text": "how is platelet count linked to analyzer flags", "intent": "platelet_term", "lang": "en"}
+{"text": "i need a clearer explanation for me", "intent": "clarification", "lang": "en"}
+{"text": "How should I interpret low hematocrit?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the correct capillary collection method?", "intent": "sample_collection", "lang": "en"}
+{"text": "how do you explain platelet abnormalities without diagnosis", "intent": "platelet_term", "lang": "en"}
+{"text": "I need an explanation of MPV.", "intent": "cbc_info", "lang": "en"}
+{"text": "how are things today there", "intent": "small_talk", "lang": "en"}
+{"text": "What is the maximum hold time for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "How is a CBC test used in hematology?", "intent": "cbc_info", "lang": "en"}
+{"text": "what is read back policy for critical values", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "how do you identify the feathered edge on a blood film", "intent": "blood_smear", "lang": "en"}
+{"text": "afternoon", "intent": "greeting", "lang": "en"}
+{"text": "why is platelet count important in clotting risk review", "intent": "platelet_term", "lang": "en"}
+{"text": "how should white cell review be summarized for students", "intent": "wbc_term", "lang": "en"}
+{"text": "how do you explain neutrophils to learners", "intent": "differential_review", "lang": "en"}
+{"text": "thanks for explaining", "intent": "thanks", "lang": "en"}
+{"text": "thanks today", "intent": "thanks", "lang": "en"}
+{"text": "what broad situations may trigger low white cell concern", "intent": "wbc_term", "lang": "en"}
+{"text": "hope you are well", "intent": "small_talk", "lang": "en"}
+{"text": "what is today's exchange rate", "intent": "out_of_scope", "lang": "en"}
+{"text": "how do you feel today my friend", "intent": "small_talk", "lang": "en"}
+{"text": "what should be communicated with a very low hemoglobin result", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "can you explain a complete blood count", "intent": "cbc_info", "lang": "en"}
+{"text": "what are your capabilities today", "intent": "capability_query", "lang": "en"}
+{"text": "how should coag samples be collected", "intent": "coag_test", "lang": "en"}
+{"text": "why is patient identification essential during a critical call", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "hello there", "intent": "greeting", "lang": "en"}
+{"text": "why is platelet morphology considered in hematology review", "intent": "platelet_term", "lang": "en"}
+{"text": "thank you for that really", "intent": "thanks", "lang": "en"}
+{"text": "How do you explain RDW?", "intent": "cbc_info", "lang": "en"}
+{"text": "what does eosinophilia mean", "intent": "differential_review", "lang": "en"}
+{"text": "can you make that clearer", "intent": "clarification", "lang": "en"}
+{"text": "bye for now then", "intent": "goodbye", "lang": "en"}
+{"text": "what does this term mean exactly", "intent": "clarification", "lang": "en"}
+{"text": "How should CBC samples be transported?", "intent": "sample_collection", "lang": "en"}
+{"text": "Can you explain how this works in hematology", "intent": "help", "lang": "en"}
+{"text": "During CBC specimen handling, what labeling step matters most?", "intent": "sample_collection", "lang": "en"}
+{"text": "what are you built to assist with in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "How do I collect blood for coagulation screening?", "intent": "coag_test", "lang": "en"}
+{"text": "many thanks for the explanation", "intent": "thanks", "lang": "en"}
+{"text": "how should critical reporting be monitored for quality improvement", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "How should I collect blood for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "Can transport delay affect PT?", "intent": "coag_test", "lang": "en"}
+{"text": "what is the purpose of prothrombin time testing", "intent": "coag_test", "lang": "en"}
+{"text": "can you break that down for me", "intent": "clarification", "lang": "en"}
+{"text": "What does a full blood count include?", "intent": "cbc_info", "lang": "en"}
+{"text": "How should I interpret high hematocrit?", "intent": "cbc_info", "lang": "en"}
+{"text": "what broad meaning does leukocytosis have in lab review", "intent": "wbc_term", "lang": "en"}
+{"text": "what is the latest movie release", "intent": "out_of_scope", "lang": "en"}
+{"text": "help me understand platelet count", "intent": "cbc_info", "lang": "en"}
+{"text": "For a lavender top tube, what should I do if transport is delayed?", "intent": "sample_collection", "lang": "en"}
+{"text": "What does the activated partial thromboplastin time test check?", "intent": "coag_test", "lang": "en"}
+{"text": "what are your capabilities right now", "intent": "capability_query", "lang": "en"}
+{"text": "what is the light blue tube used for", "intent": "coag_test", "lang": "en"}
+{"text": "how do i bake a cake", "intent": "out_of_scope", "lang": "en"}
+{"text": "how do you explain anisocytosis on a blood film", "intent": "blood_smear", "lang": "en"}
+{"text": "see you for now", "intent": "goodbye", "lang": "en"}
+{"text": "when should a CBC trigger smear review", "intent": "blood_smear", "lang": "en"}
+{"text": "everything going okay my friend", "intent": "small_talk", "lang": "en"}
+{"text": "What color tube is used for coagulation tests?", "intent": "coag_test", "lang": "en"}
+{"text": "thanks i can continue now", "intent": "thanks", "lang": "en"}
+{"text": "how should trainees understand lymphocytes in differential review", "intent": "wbc_term", "lang": "en"}
+{"text": "which drug should be ordered for low hemoglobin", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "How many times to invert lavender tube?", "intent": "sample_collection", "lang": "en"}
+{"text": "what do you know about hematology lab work in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "What is the normal range for hematocrit?", "intent": "cbc_info", "lang": "en"}
+{"text": "what should i ask you about in the hematology lab", "intent": "capability_query", "lang": "en"}
+{"text": "how is your day going", "intent": "small_talk", "lang": "en"}
+{"text": "How should I interpret high WBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "how is it going my friend", "intent": "small_talk", "lang": "en"}
+{"text": "thanks that answered the lab question", "intent": "thanks", "lang": "en"}
+{"text": "What is platelet count?", "intent": "cbc_info", "lang": "en"}
+{"text": "can you explain mean platelet volume", "intent": "cbc_info", "lang": "en"}
+{"text": "can you define RBC count simply", "intent": "rbc_term", "lang": "en"}
+{"text": "why should analyzer error be ruled out before a critical call", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "In hematology sample preparation, what mixing step is required?", "intent": "sample_collection", "lang": "en"}
+{"text": "how do you recognize smudge cells in broad terms", "intent": "blood_smear", "lang": "en"}
+{"text": "How should I manage CBC sample stability during a shift change?", "intent": "sample_collection", "lang": "en"}
+{"text": "what is the role of controls in result reliability", "intent": "quality_control", "lang": "en"}
+{"text": "how do you troubleshoot failed hematology QC", "intent": "quality_control", "lang": "en"}
+{"text": "What is partial thromboplastin time?", "intent": "coag_test", "lang": "en"}
+{"text": "can you explain WBC values", "intent": "wbc_term", "lang": "en"}
+{"text": "what about that one", "intent": "incomplete_query", "lang": "en"}
+{"text": "many thanks today", "intent": "thanks", "lang": "en"}
+{"text": "what movie should i watch tonight", "intent": "out_of_scope", "lang": "en"}
+{"text": "what are you built to assist with today", "intent": "capability_query", "lang": "en"}
+{"text": "What does the laboratory use aPTT for?", "intent": "coag_test", "lang": "en"}
+{"text": "how can MCV guide red cell pattern classification", "intent": "rbc_term", "lang": "en"}
+{"text": "please explain that one more time", "intent": "clarification", "lang": "en"}
+{"text": "what is red blood cell count in a CBC report", "intent": "rbc_term", "lang": "en"}
+{"text": "What does the lab do with a rejected coag sample?", "intent": "coag_test", "lang": "en"}
+{"text": "what broad role does carryover check have in analyzer monitoring", "intent": "quality_control", "lang": "en"}
+{"text": "what broad role does callback verification have in critical reporting", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "what are you meant to help with in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "see you", "intent": "goodbye", "lang": "en"}
+{"text": "what is a critical value in hematology", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "can you explain what this chatbot is designed to do", "intent": "capability_query", "lang": "en"}
+{"text": "Which anticoagulant is used for PT and aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "why is manual verification needed for some differential results", "intent": "differential_review", "lang": "en"}
+{"text": "can you explain that step by step for me", "intent": "clarification", "lang": "en"}
+{"text": "how should repeat analysis be documented for critical results", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "how should i medicate this patient after the coag result", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "What should I do if the CBC sample is too old?", "intent": "sample_collection", "lang": "en"}
+{"text": "good day again", "intent": "greeting", "lang": "en"}
+{"text": "What does high WBC mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "When should I mix the EDTA tube after collection?", "intent": "sample_collection", "lang": "en"}
+{"text": "what happens if QC is ignored before reporting", "intent": "quality_control", "lang": "en"}
+{"text": "Is a lavender top tube used for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "what is packed cell volume compared with hematocrit", "intent": "rbc_term", "lang": "en"}
+{"text": "what should i know about light blue tube handling", "intent": "coag_test", "lang": "en"}
+{"text": "what areas are covered by this chat exactly", "intent": "capability_query", "lang": "en"}
+{"text": "please explain a CBC", "intent": "cbc_info", "lang": "en"}
+{"text": "I need guidance on hematology.", "intent": "help", "lang": "en"}
+{"text": "Can a hemolyzed citrate sample affect coag testing?", "intent": "coag_test", "lang": "en"}
+{"text": "What does low WBC suggest?", "intent": "cbc_info", "lang": "en"}
+{"text": "see you again soon assistant", "intent": "goodbye", "lang": "en"}
+{"text": "what does platelet count indicate in lab screening", "intent": "platelet_term", "lang": "en"}
+{"text": "afternoon again", "intent": "greeting", "lang": "en"}
+{"text": "What happens if coagulation transport is delayed?", "intent": "coag_test", "lang": "en"}
+{"text": "what does MCHC help identify in a report", "intent": "rbc_term", "lang": "en"}
+{"text": "How do I avoid preanalytical error in coag samples?", "intent": "coag_test", "lang": "en"}
+{"text": "evening again", "intent": "greeting", "lang": "en"}
+{"text": "For CBC collection, what should I do for low volume?", "intent": "sample_collection", "lang": "en"}
+{"text": "how do i prescribe medicine", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "what does low hematocrit mean in general screening", "intent": "rbc_term", "lang": "en"}
+{"text": "why is platelet poor plasma important in some coag testing", "intent": "coag_test", "lang": "en"}
+{"text": "could you rephrase that for me", "intent": "clarification", "lang": "en"}
+{"text": "could you clarify that point again", "intent": "clarification", "lang": "en"}
+{"text": "what can cause a low white cell count", "intent": "wbc_term", "lang": "en"}
+{"text": "how does differential count support leukemia screening", "intent": "wbc_term", "lang": "en"}
+{"text": "can you break that down a bit more", "intent": "clarification", "lang": "en"}
+{"text": "take care", "intent": "goodbye", "lang": "en"}
+{"text": "can you say that another way for me", "intent": "clarification", "lang": "en"}
+{"text": "How should I understand INR?", "intent": "coag_test", "lang": "en"}
+{"text": "what does a raised hematocrit suggest in general", "intent": "rbc_term", "lang": "en"}
+{"text": "how r u today", "intent": "small_talk", "lang": "en"}
+{"text": "how", "intent": "incomplete_query", "lang": "en"}
+{"text": "how do you feel today now", "intent": "small_talk", "lang": "en"}
+{"text": "bye", "intent": "goodbye", "lang": "en"}
+{"text": "What does high hematocrit indicate?", "intent": "cbc_info", "lang": "en"}
+{"text": "hello lab assistant friend", "intent": "greeting", "lang": "en"}
+{"text": "For CBC collection, what should I document after the draw?", "intent": "sample_collection", "lang": "en"}
+{"text": "what does a low hemoglobin value usually mean in broad terms", "intent": "rbc_term", "lang": "en"}
+{"text": "what broad situations lead to a manual differential request", "intent": "differential_review", "lang": "en"}
+{"text": "can you answer both term questions and specimen questions", "intent": "capability_query", "lang": "en"}
+{"text": "how can smear review support differential count interpretation", "intent": "blood_smear", "lang": "en"}
+{"text": "what treatment should be started for this patient with anemia", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "How should I label a CBC specimen?", "intent": "sample_collection", "lang": "en"}
+{"text": "what is mandatory documentation for critical reporting", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "how does thick smear area affect morphology reading", "intent": "blood_smear", "lang": "en"}
+{"text": "why would a CBC flag trigger smear examination", "intent": "blood_smear", "lang": "en"}
+{"text": "How to mix EDTA tube gently?", "intent": "sample_collection", "lang": "en"}
+{"text": "can you break that down again", "intent": "clarification", "lang": "en"}
+{"text": "what is examined first during blood smear review", "intent": "blood_smear", "lang": "en"}
+{"text": "can you tell me your scope exactly", "intent": "capability_query", "lang": "en"}
+{"text": "what does monocytosis mean in broad laboratory terms", "intent": "wbc_term", "lang": "en"}
+{"text": "how are red cell indices reviewed together", "intent": "rbc_term", "lang": "en"}
+{"text": "how should repeated critical results be documented", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "blue sandwich", "intent": "fallback", "lang": "en"}
+{"text": "hello bot", "intent": "greeting", "lang": "en"}
+{"text": "how quickly should critical results be communicated", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "which medicine treats thrombocytopenia in this patient", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "what is platelet clumping", "intent": "platelet_term", "lang": "en"}
+{"text": "How should I interpret high MCHC?", "intent": "cbc_info", "lang": "en"}
+{"text": "what can poor smear preparation affect", "intent": "blood_smear", "lang": "en"}
+{"text": "i need a clearer explanation", "intent": "clarification", "lang": "en"}
+{"text": "can you explain again please", "intent": "clarification", "lang": "en"}
+{"text": "how is basophilia described in a differential report", "intent": "wbc_term", "lang": "en"}
+{"text": "what does WBC count represent on the report", "intent": "wbc_term", "lang": "en"}
+{"text": "how should CBC specimens be transported to the analyzer", "intent": "sample_collection", "lang": "en"}
+{"text": "what does the monolayer area mean on a blood film", "intent": "blood_smear", "lang": "en"}
+{"text": "Give me a simple explanation of MCV.", "intent": "cbc_info", "lang": "en"}
+{"text": "what is the broad workflow for panic value handling", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "What is the normal range for MCHC?", "intent": "cbc_info", "lang": "en"}
+{"text": "how can clogging affect QC performance", "intent": "quality_control", "lang": "en"}
+{"text": "what does erythrocyte count represent on a report", "intent": "rbc_term", "lang": "en"}
+{"text": "How to handle QC for sample collection?", "intent": "sample_collection", "lang": "en"}
+{"text": "thanks that helped really", "intent": "thanks", "lang": "en"}
+{"text": "appreciate the explanation again", "intent": "thanks", "lang": "en"}
+{"text": "i do not understand now", "intent": "clarification", "lang": "en"}
+{"text": "what broad significance does high neutrophil count have in differential review", "intent": "differential_review", "lang": "en"}
+{"text": "Can you explain CBC results?", "intent": "cbc_info", "lang": "en"}
+{"text": "why can clotted citrate samples not be used", "intent": "coag_test", "lang": "en"}
+{"text": "what broad information does absolute neutrophil count provide", "intent": "differential_review", "lang": "en"}
+{"text": "what is the broad use of absolute neutrophil count", "intent": "wbc_term", "lang": "en"}
+{"text": "good afternoon", "intent": "greeting", "lang": "en"}
+{"text": "what is a critical WBC threshold concept", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "what does leukocyte count tell us generally", "intent": "wbc_term", "lang": "en"}
+{"text": "how should Liam collect a citrate sample", "intent": "coag_test", "lang": "en"}
+{"text": "what does RBC mean in hematology", "intent": "rbc_term", "lang": "en"}
+{"text": "what do you help with right now", "intent": "capability_query", "lang": "en"}
+{"text": "I need help with pre-analytical CBC issues.", "intent": "help", "lang": "en"}
+{"text": "what does smear staining help you see", "intent": "blood_smear", "lang": "en"}
+{"text": "how does critical result workflow differ from routine reporting", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "how often should analyzer quality control be run in broad workflow", "intent": "quality_control", "lang": "en"}
+{"text": "which CBC values are checked in routine hematology work", "intent": "cbc_info", "lang": "en"}
+{"text": "Can you define international normalized ratio?", "intent": "coag_test", "lang": "en"}
+{"text": "Define hematocrit.", "intent": "cbc_info", "lang": "en"}
+{"text": "what does RBC tell us for Alex", "intent": "rbc_term", "lang": "en"}
+{"text": "what broad meaning does a reduced platelet count carry", "intent": "platelet_term", "lang": "en"}
+{"text": "thanks a lot really", "intent": "thanks", "lang": "en"}
+{"text": "evening there", "intent": "greeting", "lang": "en"}
+{"text": "What are common citrate sample rejection reasons?", "intent": "coag_test", "lang": "en"}
+{"text": "When should a coagulation sample be rejected?", "intent": "coag_test", "lang": "en"}
+{"text": "What are the rejection criteria for a CBC sample?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the full form of PT in coagulation?", "intent": "coag_test", "lang": "en"}
+{"text": "What does CBC mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "How do I avoid platelet clumping in a CBC sample?", "intent": "sample_collection", "lang": "en"}
+{"text": "hi hematology assistant friend", "intent": "greeting", "lang": "en"}
+{"text": "can you choose the medicine based on the result", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "what broad meaning does a critical white cell result carry", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "which lab topics are supported", "intent": "capability_query", "lang": "en"}
+{"text": "what preanalytical errors affect PT results", "intent": "coag_test", "lang": "en"}
+{"text": "ending chat now", "intent": "goodbye", "lang": "en"}
+{"text": "how do you interpret a QC trend", "intent": "quality_control", "lang": "en"}
+{"text": "how does a blood smear help when analyzer flags appear", "intent": "blood_smear", "lang": "en"}
+{"text": "Please explain MCHC.", "intent": "cbc_info", "lang": "en"}
+{"text": "good morning today", "intent": "greeting", "lang": "en"}
+{"text": "what broad information does PT INR provide", "intent": "coag_test", "lang": "en"}
+{"text": "what records should be kept for hematology QC", "intent": "quality_control", "lang": "en"}
+{"text": "why would a differential be added after a CBC", "intent": "wbc_term", "lang": "en"}
+{"text": "what broad meaning does monocytosis have in differential review", "intent": "differential_review", "lang": "en"}
+{"text": "Give me a simple explanation of MCHC.", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the difference between K2 EDTA and K3 EDTA for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "how should trainees understand lymphocyte predominance", "intent": "differential_review", "lang": "en"}
+{"text": "what is the role of prompt analysis in coagulation workflow", "intent": "coag_test", "lang": "en"}
+{"text": "What does HCT mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "how is polychromasia described on a smear review", "intent": "blood_smear", "lang": "en"}
+{"text": "hello today", "intent": "greeting", "lang": "en"}
+{"text": "what broad change in RBC parameters may trigger smear review", "intent": "rbc_term", "lang": "en"}
+{"text": "how do i cook rice", "intent": "out_of_scope", "lang": "en"}
+{"text": "how should failed contact attempts be documented", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "what does high RDW mean in general review", "intent": "rbc_term", "lang": "en"}
+{"text": "can you explain that result", "intent": "incomplete_query", "lang": "en"}
+{"text": "hi assistant", "intent": "greeting", "lang": "en"}
+{"text": "During CBC specimen handling, what should I do for low volume?", "intent": "sample_collection", "lang": "en"}
+{"text": "What parameters are included in a CBC test?", "intent": "cbc_info", "lang": "en"}
+{"text": "how is the differential used after an abnormal CBC", "intent": "wbc_term", "lang": "en"}
+{"text": "what next", "intent": "incomplete_query", "lang": "en"}
+{"text": "how should learners interpret leukocyte terminology", "intent": "wbc_term", "lang": "en"}
+{"text": "what injection should i give now", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "random text 123", "intent": "fallback", "lang": "en"}
+{"text": "how do you prepare a blood film", "intent": "blood_smear", "lang": "en"}
+{"text": "tell me the injection amount to give immediately", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "What is MPV?", "intent": "cbc_info", "lang": "en"}
+{"text": "what is quantum physics", "intent": "out_of_scope", "lang": "en"}
+{"text": "catch you later then", "intent": "goodbye", "lang": "en"}
+{"text": "How is RDW measured?", "intent": "cbc_info", "lang": "en"}
+{"text": "what does leukocyte count mean", "intent": "wbc_term", "lang": "en"}
+{"text": "are you okay now", "intent": "small_talk", "lang": "en"}
+{"text": "Can I use the wrong tube for coagulation testing?", "intent": "coag_test", "lang": "en"}
+{"text": "what is the broad purpose of morphology comment in hematology", "intent": "blood_smear", "lang": "en"}
+{"text": "Can CBC be performed on capillary blood?", "intent": "sample_collection", "lang": "en"}
+{"text": "what broad information does absolute lymphocyte count provide", "intent": "differential_review", "lang": "en"}
+{"text": "how do analyzer flags interact with RBC indices", "intent": "rbc_term", "lang": "en"}
+{"text": "can you explain what this assistant is limited to", "intent": "capability_query", "lang": "en"}
+{"text": "morning today", "intent": "greeting", "lang": "en"}
+{"text": "how should results from differential count be documented", "intent": "differential_review", "lang": "en"}
+{"text": "what is MCHC used for in red cell interpretation", "intent": "rbc_term", "lang": "en"}
+{"text": "I need help with specimen handling", "intent": "help", "lang": "en"}
+{"text": "Explain MCV on a CBC", "intent": "cbc_info", "lang": "en"}
+{"text": "i didnt understand that now", "intent": "clarification", "lang": "en"}
+{"text": "how is your day going there", "intent": "small_talk", "lang": "en"}
+{"text": "what sort of lab assistant support do you provide", "intent": "capability_query", "lang": "en"}
+{"text": "What is WBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "what broad meaning does atypical lymphocyte comment carry", "intent": "differential_review", "lang": "en"}
+{"text": "can you book a hotel for me", "intent": "out_of_scope", "lang": "en"}
+{"text": "what sort of questions should i ask here in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "hello assistant there", "intent": "greeting", "lang": "en"}
+{"text": "how should this patient be treated medically", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "What is INR used for?", "intent": "coag_test", "lang": "en"}
+{"text": "What is the minimum volume for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "what does platelet estimate from smear mean", "intent": "blood_smear", "lang": "en"}
+{"text": "do you cover CBC blood smear and coagulation questions", "intent": "capability_query", "lang": "en"}
+{"text": "thank you so much today", "intent": "thanks", "lang": "en"}
+{"text": "tell me about today's stock market", "intent": "out_of_scope", "lang": "en"}
+{"text": "what do you mean", "intent": "clarification", "lang": "en"}
+{"text": "how does local policy define critical limits in broad terms", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "appreciate it really", "intent": "thanks", "lang": "en"}
+{"text": "what hematology questions can i ask", "intent": "capability_query", "lang": "en"}
+{"text": "what should be communicated with a very high white count", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "What does low platelet count suggest?", "intent": "cbc_info", "lang": "en"}
+{"text": "what do you specialize in right now", "intent": "capability_query", "lang": "en"}
+{"text": "are you built for hematology only", "intent": "capability_query", "lang": "en"}
+{"text": "how does delayed smear preparation affect morphology", "intent": "blood_smear", "lang": "en"}
+{"text": "what is mean and SD in QC review", "intent": "quality_control", "lang": "en"}
+{"text": "how do you explain RBC indices during training", "intent": "rbc_term", "lang": "en"}
+{"text": "Tell me about INR", "intent": "coag_test", "lang": "en"}
+{"text": "how should a student understand erythrocytes in CBC", "intent": "rbc_term", "lang": "en"}
+{"text": "how is going now", "intent": "small_talk", "lang": "en"}
+{"text": "how do you summarize differential count basics", "intent": "differential_review", "lang": "en"}
+{"text": "can you prescribe medicine based on this hematology result", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "what hematology questions can i ask right now", "intent": "capability_query", "lang": "en"}
+{"text": "what is your role in hematology workflow", "intent": "capability_query", "lang": "en"}
+{"text": "what does that value mean", "intent": "incomplete_query", "lang": "en"}
+{"text": "how do you summarize leukocytosis for new staff", "intent": "wbc_term", "lang": "en"}
+{"text": "what is the role of background checks in instrument QC", "intent": "quality_control", "lang": "en"}
+{"text": "why is the white cell differential important", "intent": "wbc_term", "lang": "en"}
+{"text": "what areas are covered by this chat", "intent": "capability_query", "lang": "en"}
+{"text": "which test", "intent": "incomplete_query", "lang": "en"}
+{"text": "hi, I have a CBC question", "intent": "greeting", "lang": "en"}
+{"text": "How is MCV measured?", "intent": "cbc_info", "lang": "en"}
+{"text": "what is platelet distribution width", "intent": "platelet_term", "lang": "en"}
+{"text": "What is the normal range for WBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "how are you now", "intent": "small_talk", "lang": "en"}
+{"text": "What is MCHC?", "intent": "cbc_info", "lang": "en"}
+{"text": "what topics do you support this today", "intent": "capability_query", "lang": "en"}
+{"text": "What is basophil count?", "intent": "cbc_info", "lang": "en"}
+{"text": "can you give me a prescribing recommendation now", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "What if EDTA tube is overfilled?", "intent": "sample_collection", "lang": "en"}
+{"text": "thank you that was helpful", "intent": "thanks", "lang": "en"}
+{"text": "what are the main parts of the white cell differential", "intent": "wbc_term", "lang": "en"}
+{"text": "how have you been my friend", "intent": "small_talk", "lang": "en"}
+{"text": "what can happen if the wrong tube is used for coag tests", "intent": "coag_test", "lang": "en"}
+{"text": "please explain more simply", "intent": "clarification", "lang": "en"}
+{"text": "What is the purpose of a CBC report?", "intent": "cbc_info", "lang": "en"}
+{"text": "how do you explain platelet count in simple language", "intent": "platelet_term", "lang": "en"}
+{"text": "what treatment should be used for this abnormal CBC", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "how do you explain platelet count during staff orientation", "intent": "platelet_term", "lang": "en"}
+{"text": "What is a CBC panel?", "intent": "cbc_info", "lang": "en"}
+{"text": "are you doing well today", "intent": "small_talk", "lang": "en"}
+{"text": "can you break that down now", "intent": "clarification", "lang": "en"}
+{"text": "what does repeated QC failure suggest", "intent": "quality_control", "lang": "en"}
+{"text": "how do you summarize peripheral smear workflow simply", "intent": "blood_smear", "lang": "en"}
+{"text": "can you define hematocrit simply", "intent": "rbc_term", "lang": "en"}
+{"text": "In hematology sample preparation, what should I document after the draw?", "intent": "sample_collection", "lang": "en"}
+{"text": "Please help with CBC basics", "intent": "help", "lang": "en"}
+{"text": "what does a raised hemoglobin result mean broadly", "intent": "rbc_term", "lang": "en"}
+{"text": "how should Noah understand RBC count", "intent": "rbc_term", "lang": "en"}
+{"text": "how is it going today", "intent": "small_talk", "lang": "en"}
+{"text": "how do you teach smear review to Ava", "intent": "blood_smear", "lang": "en"}
+{"text": "can you tell me your scope in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "Tell me about MCH.", "intent": "cbc_info", "lang": "en"}
+{"text": "afternoon there", "intent": "greeting", "lang": "en"}
+{"text": "Please guide me through CBC sample transport.", "intent": "help", "lang": "en"}
+{"text": "how are platelet flags followed up in the lab", "intent": "platelet_term", "lang": "en"}
+{"text": "what does normal RDW add to MCV interpretation", "intent": "rbc_term", "lang": "en"}
+{"text": "what does high RBC suggest", "intent": "rbc_term", "lang": "en"}
+{"text": "do you support blood smear questions exactly", "intent": "capability_query", "lang": "en"}
+{"text": "talk to you later for now", "intent": "goodbye", "lang": "en"}
+{"text": "can you outline the CBC collection workflow step by step", "intent": "sample_collection", "lang": "en"}
+{"text": "when should a clotted CBC sample be rejected", "intent": "sample_collection", "lang": "en"}
+{"text": "hi again", "intent": "greeting", "lang": "en"}
+{"text": "how do you explain RBC count in Mandalay lab training", "intent": "rbc_term", "lang": "en"}
+{"text": "What does low MPV suggest?", "intent": "cbc_info", "lang": "en"}
+{"text": "what do you know about hematology lab work", "intent": "capability_query", "lang": "en"}
+{"text": "that is all for now then", "intent": "goodbye", "lang": "en"}
+{"text": "how are things today now", "intent": "small_talk", "lang": "en"}
+{"text": "you doing fine today", "intent": "small_talk", "lang": "en"}
+{"text": "i need more detail on that", "intent": "clarification", "lang": "en"}
+{"text": "bye thanks for the explanation today", "intent": "goodbye", "lang": "en"}
+{"text": "can you clarify that again", "intent": "clarification", "lang": "en"}
+{"text": "okay thank you", "intent": "thanks", "lang": "en"}
+{"text": "What does INR monitor?", "intent": "coag_test", "lang": "en"}
+{"text": "what is the difference between QC and calibration", "intent": "quality_control", "lang": "en"}
+{"text": "why is urgent documentation part of critical result safety", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "im leaving the chat now", "intent": "goodbye", "lang": "en"}
+{"text": "i am confused by that explanation for me", "intent": "clarification", "lang": "en"}
+{"text": "why are giant platelets noted during smear review", "intent": "platelet_term", "lang": "en"}
+{"text": "hi friend", "intent": "greeting", "lang": "en"}
+{"text": "i am confused by that explanation", "intent": "clarification", "lang": "en"}
+{"text": "thanks for clarifying really", "intent": "thanks", "lang": "en"}
+{"text": "How do I read a CBC report?", "intent": "cbc_info", "lang": "en"}
+{"text": "how do you explain the feathered edge on a smear", "intent": "blood_smear", "lang": "en"}
+{"text": "how are platelet abnormalities followed up in the lab", "intent": "platelet_term", "lang": "en"}
+{"text": "What is monocyte count?", "intent": "cbc_info", "lang": "en"}
+{"text": "what does macrocytic pattern mean in CBC review", "intent": "rbc_term", "lang": "en"}
+{"text": "what broad significance does high MPV have", "intent": "platelet_term", "lang": "en"}
+{"text": "how do you summarize microcytic normocytic and macrocytic patterns", "intent": "rbc_term", "lang": "en"}
+{"text": "What is hematocrit?", "intent": "cbc_info", "lang": "en"}
+{"text": "help me write a song lyric", "intent": "out_of_scope", "lang": "en"}
+{"text": "good morning there", "intent": "greeting", "lang": "en"}
+{"text": "thanks for the help again", "intent": "thanks", "lang": "en"}
+{"text": "can you help with cbc questions right now", "intent": "capability_query", "lang": "en"}
+{"text": "please explain that again", "intent": "clarification", "lang": "en"}
+{"text": "please explain more simply now", "intent": "clarification", "lang": "en"}
+{"text": "im confused can you explain again", "intent": "clarification", "lang": "en"}
+{"text": "what broad situations may lead to thrombocytopenia", "intent": "platelet_term", "lang": "en"}
+{"text": "can you make that easier to understand please", "intent": "clarification", "lang": "en"}
+{"text": "what is the role of differential count in leukemia screening", "intent": "differential_review", "lang": "en"}
+{"text": "What is the minimum sample volume for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "are you doing well my friend", "intent": "small_talk", "lang": "en"}
+{"text": "see you later assistant", "intent": "goodbye", "lang": "en"}
+{"text": "What is RDW?", "intent": "cbc_info", "lang": "en"}
+{"text": "What if the coag sample has a clot?", "intent": "coag_test", "lang": "en"}
+{"text": "what should be reviewed when the WBC is flagged", "intent": "wbc_term", "lang": "en"}
+{"text": "how do i summarize white cell review for new staff", "intent": "wbc_term", "lang": "en"}
+{"text": "what is the value of a manual blood film review", "intent": "blood_smear", "lang": "en"}
+{"text": "what does PT INR report tell the lab team", "intent": "coag_test", "lang": "en"}
+{"text": "can you say that in simple words for me", "intent": "clarification", "lang": "en"}
+{"text": "What is eosinophil count?", "intent": "cbc_info", "lang": "en"}
+{"text": "what is thrombocytopenia", "intent": "platelet_term", "lang": "en"}
+{"text": "ending chat now for now", "intent": "goodbye", "lang": "en"}
+{"text": "I need help with collection order of draw", "intent": "help", "lang": "en"}
+{"text": "what is a five part differential", "intent": "differential_review", "lang": "en"}
+{"text": "how should new staff summarize analyzer QC", "intent": "quality_control", "lang": "en"}
+{"text": "what is the broad meaning of prolonged clotting time", "intent": "coag_test", "lang": "en"}
+{"text": "what does RBC tell us for Ava", "intent": "rbc_term", "lang": "en"}
+{"text": "everything going okay now", "intent": "small_talk", "lang": "en"}
+{"text": "many thanks for the clarification", "intent": "thanks", "lang": "en"}
+{"text": "how should a peripheral smear slide be handled", "intent": "blood_smear", "lang": "en"}
+{"text": "what is lymphocyte predominance in broad terms", "intent": "differential_review", "lang": "en"}
+{"text": "can you help with cbc questions exactly", "intent": "capability_query", "lang": "en"}
+{"text": "can you explain this result", "intent": "incomplete_query", "lang": "en"}
+{"text": "What does HGB mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "can you restate that please", "intent": "clarification", "lang": "en"}
+{"text": "how can infection affect white blood cell count generally", "intent": "wbc_term", "lang": "en"}
+{"text": "what does microcytic anemia pattern mean", "intent": "rbc_term", "lang": "en"}
+{"text": "what smear features help confirm analyzer abnormalities", "intent": "blood_smear", "lang": "en"}
+{"text": "what is the role of INR in warfarin monitoring", "intent": "coag_test", "lang": "en"}
+{"text": "what dose should i inject into this patient", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "How should I interpret low MCHC?", "intent": "cbc_info", "lang": "en"}
+{"text": "say that another way again", "intent": "clarification", "lang": "en"}
+{"text": "what is the difference between QC and calibration in simple terms", "intent": "quality_control", "lang": "en"}
+{"text": "are you okay today", "intent": "small_talk", "lang": "en"}
+{"text": "how do you explain neutrophils to a trainee", "intent": "differential_review", "lang": "en"}
+{"text": "what topics do you cover right now", "intent": "capability_query", "lang": "en"}
+{"text": "how should abnormal QC trends be documented", "intent": "quality_control", "lang": "en"}
+{"text": "what should be checked when platelet count is unexpectedly low", "intent": "platelet_term", "lang": "en"}
+{"text": "What is leukocytosis?", "intent": "cbc_info", "lang": "en"}
+{"text": "how does maintenance support stable QC performance", "intent": "quality_control", "lang": "en"}
+{"text": "can you define WBC count simply", "intent": "wbc_term", "lang": "en"}
+{"text": "why is that", "intent": "incomplete_query", "lang": "en"}
+{"text": "Tell me about WBC.", "intent": "cbc_info", "lang": "en"}
+{"text": "which one is it", "intent": "incomplete_query", "lang": "en"}
+{"text": "how now", "intent": "incomplete_query", "lang": "en"}
+{"text": "what is the role of citrate tube color recognition in training", "intent": "coag_test", "lang": "en"}
+{"text": "thank you Ava", "intent": "thanks", "lang": "en"}
+{"text": "what does a CBC panel measure exactly", "intent": "cbc_info", "lang": "en"}
+{"text": "why is a manual differential sometimes needed", "intent": "wbc_term", "lang": "en"}
+{"text": "How should I handle a fainting patient during CBC draw?", "intent": "sample_collection", "lang": "en"}
+{"text": "say that another way please", "intent": "clarification", "lang": "en"}
+{"text": "what does immature granulocyte mean", "intent": "differential_review", "lang": "en"}
+{"text": "what topics do you cover in Bangkok lab", "intent": "capability_query", "lang": "en"}
+{"text": "What does low platelet mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "what CBC parameters are usually reported together", "intent": "cbc_info", "lang": "en"}
+{"text": "you alright now", "intent": "small_talk", "lang": "en"}
+{"text": "what is the purpose of leukocyte review in CBC", "intent": "wbc_term", "lang": "en"}
+{"text": "what does toxic granulation relate to in white cell review", "intent": "wbc_term", "lang": "en"}
+{"text": "we can end the conversation now", "intent": "goodbye", "lang": "en"}
+{"text": "hi hematology assistant there", "intent": "greeting", "lang": "en"}
+{"text": "What should I check before accepting a CBC sample into the lab?", "intent": "sample_collection", "lang": "en"}
+{"text": "what is the main use of INR in routine testing", "intent": "coag_test", "lang": "en"}
+{"text": "how is temperature linked to QC stability", "intent": "quality_control", "lang": "en"}
+{"text": "What if sample is delayed in transport?", "intent": "sample_collection", "lang": "en"}
+{"text": "what broad steps follow acknowledgment of a critical result", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "hi there again", "intent": "greeting", "lang": "en"}
+{"text": "what is platelet morphology review", "intent": "platelet_term", "lang": "en"}
+{"text": "What does high hemoglobin suggest?", "intent": "cbc_info", "lang": "en"}
+{"text": "why must critical values be verified before calling", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "can you explain your scope", "intent": "capability_query", "lang": "en"}
+{"text": "what is the meaning of erythrocyte count", "intent": "rbc_term", "lang": "en"}
+{"text": "Please help me with CBC reporting terms.", "intent": "help", "lang": "en"}
+{"text": "tell me how to treat this patient right now", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "say that another way now", "intent": "clarification", "lang": "en"}
+{"text": "how do i avoid sample dilution in hematology collection", "intent": "sample_collection", "lang": "en"}
+{"text": "thanks for the hematology help", "intent": "thanks", "lang": "en"}
+{"text": "how do you explain monocyte increase simply", "intent": "differential_review", "lang": "en"}
+{"text": "What collection issue most often causes CBC rejection?", "intent": "sample_collection", "lang": "en"}
+{"text": "blorp blorp", "intent": "fallback", "lang": "en"}
+{"text": "What tube additive is used for coag tests?", "intent": "coag_test", "lang": "en"}
+{"text": "what is the role of supervisor notification in critical reporting", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "What is the correct fill volume for EDTA?", "intent": "sample_collection", "lang": "en"}
+{"text": "thanks for your help", "intent": "thanks", "lang": "en"}
+{"text": "why is read back important during critical value communication", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "what is anemia screening with RBC", "intent": "rbc_term", "lang": "en"}
+{"text": "what are you trained for in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "can you restate that for me", "intent": "clarification", "lang": "en"}
+{"text": "what broad meaning does a critical hemoglobin result carry", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "lorem ipsum", "intent": "fallback", "lang": "en"}
+{"text": "what does a low platelet count mean", "intent": "platelet_term", "lang": "en"}
+{"text": "which tube should be selected for a routine CBC", "intent": "sample_collection", "lang": "en"}
+{"text": "what does basophilia mean in a general explanation", "intent": "wbc_term", "lang": "en"}
+{"text": "how do daily QC checks support hematology result reliability", "intent": "quality_control", "lang": "en"}
+{"text": "how do you explain platelets to a trainee", "intent": "platelet_term", "lang": "en"}
+{"text": "hello", "intent": "greeting", "lang": "en"}
+{"text": "What is the purpose of aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "What are common preanalytical errors in coag testing?", "intent": "coag_test", "lang": "en"}
+{"text": "what can cause thrombocytosis in broad terms", "intent": "platelet_term", "lang": "en"}
+{"text": "how is critical value reporting reviewed for quality improvement", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "how should Maya understand leukocyte count", "intent": "wbc_term", "lang": "en"}
+{"text": "how much drug should this patient receive today", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "how do i manage this patient medically", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "bye and thanks for now", "intent": "goodbye", "lang": "en"}
+{"text": "what do you specialize in", "intent": "capability_query", "lang": "en"}
+{"text": "how is your day going now", "intent": "small_talk", "lang": "en"}
+{"text": "what does a broad high white count mean before clinical review", "intent": "wbc_term", "lang": "en"}
+{"text": "why is QC important for result reliability", "intent": "quality_control", "lang": "en"}
+{"text": "what sort of questions should i ask here exactly", "intent": "capability_query", "lang": "en"}
+{"text": "okay bye", "intent": "goodbye", "lang": "en"}
+{"text": "morning there", "intent": "greeting", "lang": "en"}
+{"text": "What does a CBC report measure?", "intent": "cbc_info", "lang": "en"}
+{"text": "hi there friend", "intent": "greeting", "lang": "en"}
+{"text": "hi hematology assistant again", "intent": "greeting", "lang": "en"}
+{"text": "can i ask about CBC workflow and terminology here", "intent": "capability_query", "lang": "en"}
+{"text": "how are abnormal white cell patterns followed up in the lab", "intent": "wbc_term", "lang": "en"}
+{"text": "goodbye assistant for now", "intent": "goodbye", "lang": "en"}
+{"text": "bye today", "intent": "goodbye", "lang": "en"}
+{"text": "can you explain RBC values", "intent": "rbc_term", "lang": "en"}
+{"text": "which one are you talking about", "intent": "incomplete_query", "lang": "en"}
+{"text": "do you support blood smear questions today", "intent": "capability_query", "lang": "en"}
+{"text": "what", "intent": "incomplete_query", "lang": "en"}
+{"text": "how do you explain PT for Ava", "intent": "coag_test", "lang": "en"}
+{"text": "Can you guide me on sample collection", "intent": "help", "lang": "en"}
+{"text": "hello there there", "intent": "greeting", "lang": "en"}
+{"text": "can you explain platelet count", "intent": "cbc_info", "lang": "en"}
+{"text": "what does out of control QC mean", "intent": "quality_control", "lang": "en"}
+{"text": "hi lab bot", "intent": "greeting", "lang": "en"}
+{"text": "what drug should i give for anemia", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "see you friend", "intent": "goodbye", "lang": "en"}
+{"text": "thanks a lot again", "intent": "thanks", "lang": "en"}
+{"text": "I need assistance with hematology workflow.", "intent": "help", "lang": "en"}
+{"text": "hello, can you help?", "intent": "greeting", "lang": "en"}
+{"text": "why are red cell indices reported together", "intent": "rbc_term", "lang": "en"}
+{"text": "what does RBC tell us for Liam", "intent": "rbc_term", "lang": "en"}
+{"text": "Please assist with CBC lab steps", "intent": "help", "lang": "en"}
+{"text": "how's it going there", "intent": "small_talk", "lang": "en"}
+{"text": "I need help with EDTA tube handling", "intent": "help", "lang": "en"}
+{"text": "please tell me the injection dose", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "What is the purpose of INR?", "intent": "coag_test", "lang": "en"}
+{"text": "how do you explain lymphocytes to a trainee", "intent": "differential_review", "lang": "en"}
+{"text": "why is citrate tube inversion important", "intent": "coag_test", "lang": "en"}
+{"text": "how do clogging problems affect hematology QC", "intent": "quality_control", "lang": "en"}
+{"text": "how do you summarize critical value workflow for staff", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "What does MCV mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "which drug should i prescribe for this case", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "What is the correct barcode placement on a CBC tube?", "intent": "sample_collection", "lang": "en"}
+{"text": "What does low MCV suggest?", "intent": "cbc_info", "lang": "en"}
+{"text": "what is the purpose of WBC review in hematology", "intent": "wbc_term", "lang": "en"}
+{"text": "How should I interpret high MCV?", "intent": "cbc_info", "lang": "en"}
+{"text": "how r u now", "intent": "small_talk", "lang": "en"}
+{"text": "how do i read RDW on a report", "intent": "rbc_term", "lang": "en"}
+{"text": "what broad meaning does leukopenia have in lab review", "intent": "wbc_term", "lang": "en"}
+{"text": "what broad clues come from lymphocyte increase", "intent": "differential_review", "lang": "en"}
+{"text": "how is RBC count reported in CBC", "intent": "rbc_term", "lang": "en"}
+{"text": "not sure", "intent": "fallback", "lang": "en"}
+{"text": "explain it one more time", "intent": "clarification", "lang": "en"}
+{"text": "Explain activated partial thromboplastin time in simple terms", "intent": "coag_test", "lang": "en"}
+{"text": "What should I do with a clotted EDTA sample?", "intent": "sample_collection", "lang": "en"}
+{"text": "why must QC be acceptable before releasing patient results", "intent": "quality_control", "lang": "en"}
+{"text": "how do i inject this medicine safely into the patient", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "In EDTA specimen processing, what labeling step matters most?", "intent": "sample_collection", "lang": "en"}
+{"text": "how should i summarize RBC parameters for training", "intent": "rbc_term", "lang": "en"}
+{"text": "can you tell me a joke", "intent": "out_of_scope", "lang": "en"}
+{"text": "How should a coagulation sample be collected?", "intent": "coag_test", "lang": "en"}
+{"text": "what are common coagulation tests", "intent": "coag_test", "lang": "en"}
+{"text": "why is differential review part of hematology verification", "intent": "differential_review", "lang": "en"}
+{"text": "what broad importance does differential review have in infection patterns", "intent": "differential_review", "lang": "en"}
+{"text": "why would a CBC trigger differential review", "intent": "wbc_term", "lang": "en"}
+{"text": "hello lab assistant today", "intent": "greeting", "lang": "en"}
+{"text": "Explain RBC", "intent": "cbc_info", "lang": "en"}
+{"text": "I need support with CBC sample stability.", "intent": "help", "lang": "en"}
+{"text": "how have you been", "intent": "small_talk", "lang": "en"}
+{"text": "bye and thanks today", "intent": "goodbye", "lang": "en"}
+{"text": "why is time stamping important in critical result reporting", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "how do i explain coagulation screen basics simply", "intent": "coag_test", "lang": "en"}
+{"text": "what sort of questions should i ask here", "intent": "capability_query", "lang": "en"}
+{"text": "can you repeat that", "intent": "clarification", "lang": "en"}
+{"text": "how long can an EDTA specimen wait before analysis", "intent": "sample_collection", "lang": "en"}
+{"text": "What does EDTA do in CBC tube?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is MCV?", "intent": "cbc_info", "lang": "en"}
+{"text": "how are things today today", "intent": "small_talk", "lang": "en"}
+{"text": "How should citrate samples be mixed after draw?", "intent": "coag_test", "lang": "en"}
+{"text": "how does platelet clumping affect CBC interpretation", "intent": "platelet_term", "lang": "en"}
+{"text": "what should be checked before releasing a critical CBC result", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "how is leukocyte review linked to inflammation screening", "intent": "wbc_term", "lang": "en"}
+{"text": "what is the correct tube for full blood count collection", "intent": "sample_collection", "lang": "en"}
+{"text": "what is calibration in a hematology analyzer", "intent": "quality_control", "lang": "en"}
+{"text": "talk later thanks again", "intent": "goodbye", "lang": "en"}
+{"text": "how should new staff summarize critical value procedures", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "What does INR mean?", "intent": "coag_test", "lang": "en"}
+{"text": "what broad meaning does an elevated platelet count carry", "intent": "platelet_term", "lang": "en"}
+{"text": "what broad information does neutrophil predominance provide", "intent": "wbc_term", "lang": "en"}
+{"text": "how are u my friend", "intent": "small_talk", "lang": "en"}
+{"text": "what is PT test", "intent": "coag_test", "lang": "en"}
+{"text": "how do you explain read back verification simply", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "why is manual white cell review sometimes necessary", "intent": "wbc_term", "lang": "en"}
+{"text": "Please explain RBC.", "intent": "cbc_info", "lang": "en"}
+{"text": "how should trainees read RDW on a CBC report", "intent": "rbc_term", "lang": "en"}
+{"text": "What is thrombocytopenia?", "intent": "cbc_info", "lang": "en"}
+{"text": "what broad importance does calibration have after service work", "intent": "quality_control", "lang": "en"}
+{"text": "sample gibberish", "intent": "fallback", "lang": "en"}
+{"text": "what are the common screening coagulation assays", "intent": "coag_test", "lang": "en"}
+{"text": "what can this chatbot answer in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "talk later friend", "intent": "goodbye", "lang": "en"}
+{"text": "how are communication delays handled in critical reporting", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "what's up", "intent": "small_talk", "lang": "en"}
+{"text": "what does eosinophilia mean in broad laboratory terms", "intent": "wbc_term", "lang": "en"}
+{"text": "what is the difference between WBC count and differential", "intent": "wbc_term", "lang": "en"}
+{"text": "what is the broad purpose of reviewing abnormal differential results", "intent": "differential_review", "lang": "en"}
+{"text": "During CBC specimen handling, how do I prevent clotting?", "intent": "sample_collection", "lang": "en"}
+{"text": "what can you answer for Noah", "intent": "capability_query", "lang": "en"}
+{"text": "Which specimen is correct for PT INR and aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "what is the purpose of coagulation screen before procedure work", "intent": "coag_test", "lang": "en"}
+{"text": "how does differential review support routine hematology verification", "intent": "differential_review", "lang": "en"}
+{"text": "I need assistance with hematology workflow", "intent": "help", "lang": "en"}
+{"text": "why are immature granulocytes reviewed carefully", "intent": "differential_review", "lang": "en"}
+{"text": "Help me with RBC indices", "intent": "help", "lang": "en"}
+{"text": "you alright there", "intent": "small_talk", "lang": "en"}
+{"text": "explain red blood cell count", "intent": "rbc_term", "lang": "en"}
+{"text": "What should be checked on receipt of a coag sample?", "intent": "coag_test", "lang": "en"}
+{"text": "what is platelet count", "intent": "platelet_term", "lang": "en"}
+{"text": "what does a wedge smear technique involve", "intent": "blood_smear", "lang": "en"}
+{"text": "Which collection tube is correct for clotting studies?", "intent": "coag_test", "lang": "en"}
+{"text": "hi assistant there", "intent": "greeting", "lang": "en"}
+{"text": "which pathway does PT assess", "intent": "coag_test", "lang": "en"}
+{"text": "how should I understand platelet parameters", "intent": "platelet_term", "lang": "en"}
+{"text": "can you describe your capabilities simply", "intent": "capability_query", "lang": "en"}
+{"text": "what should be done after reagent replacement before patient testing", "intent": "quality_control", "lang": "en"}
+{"text": "can you clarify the term you just used", "intent": "clarification", "lang": "en"}
+{"text": "Can you explain platelet count?", "intent": "cbc_info", "lang": "en"}
+{"text": "what therapy should i give immediately", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "can you make that easier to understand for me", "intent": "clarification", "lang": "en"}
+{"text": "Can you explain MPV?", "intent": "cbc_info", "lang": "en"}
+{"text": "Give me a simple explanation of RBC.", "intent": "cbc_info", "lang": "en"}
+{"text": "how should trainees understand mean platelet volume", "intent": "platelet_term", "lang": "en"}
+{"text": "okay thanks today", "intent": "thanks", "lang": "en"}
+{"text": "explain it again for Emma", "intent": "clarification", "lang": "en"}
+{"text": "why are critical hematology results reported urgently", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "please tell me how to treat this condition", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "how does platelet aggregation change reported counts", "intent": "platelet_term", "lang": "en"}
+{"text": "how should I describe a CBC to a trainee", "intent": "cbc_info", "lang": "en"}
+{"text": "how does smear review support platelet interpretation", "intent": "platelet_term", "lang": "en"}
+{"text": "what is Westgard rule in simple terms", "intent": "quality_control", "lang": "en"}
+{"text": "how do i treat severe anemia right now", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "what should learners know first about platelet count", "intent": "platelet_term", "lang": "en"}
+{"text": "what is the difference between PT and aPTT", "intent": "coag_test", "lang": "en"}
+{"text": "hope u are well", "intent": "small_talk", "lang": "en"}
+{"text": "have a good day today", "intent": "goodbye", "lang": "en"}
+{"text": "Explain WBC", "intent": "cbc_info", "lang": "en"}
+{"text": "Give me a simple explanation of RDW.", "intent": "cbc_info", "lang": "en"}
+{"text": "What is thrombocytosis?", "intent": "cbc_info", "lang": "en"}
+{"text": "In hematology sample preparation, what labeling step matters most?", "intent": "sample_collection", "lang": "en"}
+{"text": "how should EDTA samples be mixed after venipuncture", "intent": "sample_collection", "lang": "en"}
+{"text": "can you simplify that answer again", "intent": "clarification", "lang": "en"}
+{"text": "Can a coag sample be rejected for clotting?", "intent": "coag_test", "lang": "en"}
+{"text": "please explain more simply for me", "intent": "clarification", "lang": "en"}
+{"text": "What is APTT in coagulation?", "intent": "coag_test", "lang": "en"}
+{"text": "what is the purpose of platelet review in CBC interpretation", "intent": "platelet_term", "lang": "en"}
+{"text": "what should Noah know about blood film preparation", "intent": "blood_smear", "lang": "en"}
+{"text": "what is daily maintenance for hematology analyzer", "intent": "quality_control", "lang": "en"}
+{"text": "what is the capital of france", "intent": "out_of_scope", "lang": "en"}
+{"text": "what broad significance does low MCH carry", "intent": "rbc_term", "lang": "en"}
+{"text": "what does thrombocytosis mean in broad laboratory terms", "intent": "platelet_term", "lang": "en"}
+{"text": "how are white cell abnormalities followed up on smear", "intent": "blood_smear", "lang": "en"}
+{"text": "i am confused by that explanation now", "intent": "clarification", "lang": "en"}
+{"text": "how do laboratory staff verify suspicious smear findings", "intent": "blood_smear", "lang": "en"}
+{"text": "What is PT?", "intent": "coag_test", "lang": "en"}
+{"text": "How do you explain WBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "what can this chatbot answer", "intent": "capability_query", "lang": "en"}
+{"text": "can you define hemoglobin simply", "intent": "rbc_term", "lang": "en"}
+{"text": "During CBC specimen handling, when should I reject the sample?", "intent": "sample_collection", "lang": "en"}
+{"text": "what is leukopenia", "intent": "wbc_term", "lang": "en"}
+{"text": "what is the broad use of INR reporting", "intent": "coag_test", "lang": "en"}
+{"text": "what is the role of commercial controls in hematology QC", "intent": "quality_control", "lang": "en"}
+{"text": "that is all i needed goodbye", "intent": "goodbye", "lang": "en"}
+{"text": "Explain aPTT", "intent": "coag_test", "lang": "en"}
+{"text": "how's it going today", "intent": "small_talk", "lang": "en"}
+{"text": "hey again", "intent": "greeting", "lang": "en"}
+{"text": "can you explain peripheral smear review", "intent": "blood_smear", "lang": "en"}
+{"text": "how does heparin monitoring differ from PT INR review", "intent": "coag_test", "lang": "en"}
+{"text": "which drug should i start today", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "What should I know about MCH?", "intent": "cbc_info", "lang": "en"}
+{"text": "Which tests are part of a CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "have a nice day friend", "intent": "goodbye", "lang": "en"}
+{"text": "what does low MPV suggest generally", "intent": "platelet_term", "lang": "en"}
+{"text": "why must critical values be documented", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "how does specimen age affect differential review", "intent": "differential_review", "lang": "en"}
+{"text": "Is lavender top used for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "What invalidates a PT or aPTT sample?", "intent": "coag_test", "lang": "en"}
+{"text": "what do you help with today", "intent": "capability_query", "lang": "en"}
+{"text": "okay thanks really", "intent": "thanks", "lang": "en"}
+{"text": "how can platelet clumps affect CBC results", "intent": "platelet_term", "lang": "en"}
+{"text": "Can PT and aPTT be performed on a wrong tube?", "intent": "coag_test", "lang": "en"}
+{"text": "What does high RDW suggest?", "intent": "cbc_info", "lang": "en"}
+{"text": "which mobile phone should i buy now", "intent": "out_of_scope", "lang": "en"}
+{"text": "how do you explain leukopenia to a student", "intent": "wbc_term", "lang": "en"}
+{"text": "how do you explain white cell abnormalities without diagnosis", "intent": "wbc_term", "lang": "en"}
+{"text": "what is", "intent": "incomplete_query", "lang": "en"}
+{"text": "What is INR in coagulation screening?", "intent": "coag_test", "lang": "en"}
+{"text": "have a nice day then", "intent": "goodbye", "lang": "en"}
+{"text": "What is FBC vs CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "how should Emma understand leukocyte count", "intent": "wbc_term", "lang": "en"}
+{"text": "what do you mean", "intent": "incomplete_query", "lang": "en"}
+{"text": "how are abnormal cell flags followed up in differential work", "intent": "differential_review", "lang": "en"}
+{"text": "what does basophilia mean in broad laboratory terms", "intent": "wbc_term", "lang": "en"}
+{"text": "how is WBC count interpreted", "intent": "wbc_term", "lang": "en"}
+{"text": "thank you for that today", "intent": "thanks", "lang": "en"}
+{"text": "what does a low neutrophil count suggest in general", "intent": "wbc_term", "lang": "en"}
+{"text": "I need an explanation of MCV.", "intent": "cbc_info", "lang": "en"}
+{"text": "how do i manage this patient's disease", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "goodbye today", "intent": "goodbye", "lang": "en"}
+{"text": "what therapy should i begin today", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "What is the acceptable time from CBC draw to analysis?", "intent": "sample_collection", "lang": "en"}
+{"text": "how do coag tests fit into hematology workflow", "intent": "coag_test", "lang": "en"}
+{"text": "what sort of questions should i ask here right now", "intent": "capability_query", "lang": "en"}
+{"text": "what does low RBC count indicate in general screening", "intent": "rbc_term", "lang": "en"}
+{"text": "how are you doing in this chat", "intent": "small_talk", "lang": "en"}
+{"text": "can you say that in simple words again", "intent": "clarification", "lang": "en"}
+{"text": "What does PLT mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "why is coefficient of variation discussed in QC review", "intent": "quality_control", "lang": "en"}
+{"text": "what does prolonged PT indicate in broad laboratory language", "intent": "coag_test", "lang": "en"}
+{"text": "explain white cell differential review", "intent": "differential_review", "lang": "en"}
+{"text": "can you say that in simple words please", "intent": "clarification", "lang": "en"}
+{"text": "what does a low hemoglobin result usually point to", "intent": "rbc_term", "lang": "en"}
+{"text": "what is startup QC workflow for hematology analyzer", "intent": "quality_control", "lang": "en"}
+{"text": "How does INR standardize PT?", "intent": "coag_test", "lang": "en"}
+{"text": "How should I transport a citrate specimen?", "intent": "coag_test", "lang": "en"}
+{"text": "what medicine should this patient get now", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "i didnt understand that for me", "intent": "clarification", "lang": "en"}
+{"text": "What should I know about RBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "teach me guitar chords", "intent": "out_of_scope", "lang": "en"}
+{"text": "What should I know about MPV?", "intent": "cbc_info", "lang": "en"}
+{"text": "how's it going my friend", "intent": "small_talk", "lang": "en"}
+{"text": "that makes sense thanks", "intent": "thanks", "lang": "en"}
+{"text": "What should I do if the coag sample is delayed?", "intent": "coag_test", "lang": "en"}
+{"text": "what does neutropenia mean in broad laboratory terms", "intent": "wbc_term", "lang": "en"}
+{"text": "bye assistant", "intent": "goodbye", "lang": "en"}
+{"text": "tell me a story about space travel", "intent": "out_of_scope", "lang": "en"}
+{"text": "aPTT explanation", "intent": "coag_test", "lang": "en"}
+{"text": "what broad meaning does a left shift have", "intent": "wbc_term", "lang": "en"}
+{"text": "hope u are well there", "intent": "small_talk", "lang": "en"}
+{"text": "What is EDTA K2 vs K3 difference for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "What does low MCH suggest?", "intent": "cbc_info", "lang": "en"}
+{"text": "what does INR mean", "intent": "coag_test", "lang": "en"}
+{"text": "irrelevant text", "intent": "fallback", "lang": "en"}
+{"text": "hi there", "intent": "greeting", "lang": "en"}
+{"text": "when is smear review required", "intent": "blood_smear", "lang": "en"}
+{"text": "what does a reduced hemoglobin result mean broadly", "intent": "rbc_term", "lang": "en"}
+{"text": "tell me about a complete blood count", "intent": "cbc_info", "lang": "en"}
+{"text": "please clarify that", "intent": "clarification", "lang": "en"}
+{"text": "what is the practical meaning of MCV in lab interpretation", "intent": "rbc_term", "lang": "en"}
+{"text": "write a short poem for me", "intent": "out_of_scope", "lang": "en"}
+{"text": "How long does CBC take?", "intent": "cbc_info", "lang": "en"}
+{"text": "How do I keep CBC sample quality during transport?", "intent": "sample_collection", "lang": "en"}
+{"text": "appreciate the explanation", "intent": "thanks", "lang": "en"}
+{"text": "Please explain MPV.", "intent": "cbc_info", "lang": "en"}
+{"text": "have a good day goodbye", "intent": "goodbye", "lang": "en"}
+{"text": "why is caller identification important in critical reporting", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "why is maintenance documentation important for QC review", "intent": "quality_control", "lang": "en"}
+{"text": "what is RBC count", "intent": "rbc_term", "lang": "en"}
+{"text": "n/a", "intent": "fallback", "lang": "en"}
+{"text": "what should be documented for rejected citrate specimens", "intent": "coag_test", "lang": "en"}
+{"text": "how is macrocytosis described in simple hematology language", "intent": "rbc_term", "lang": "en"}
+{"text": "tell me how to treat this platelet problem", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "what should be done if QC fails", "intent": "quality_control", "lang": "en"}
+{"text": "What does hematocrit mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "goodbye", "intent": "goodbye", "lang": "en"}
+{"text": "what does", "intent": "incomplete_query", "lang": "en"}
+{"text": "thanks for the answer today", "intent": "thanks", "lang": "en"}
+{"text": "who is the best singer right now", "intent": "out_of_scope", "lang": "en"}
+{"text": "why is anticoagulant choice relevant to platelet artifacts", "intent": "platelet_term", "lang": "en"}
+{"text": "how are blasts screened on a blood smear", "intent": "blood_smear", "lang": "en"}
+{"text": "thanks a lot", "intent": "thanks", "lang": "en"}
+{"text": "hey assistant today", "intent": "greeting", "lang": "en"}
+{"text": "How to prevent hemolysis during collection?", "intent": "sample_collection", "lang": "en"}
+{"text": "what can this assistant do in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "good afternoon today", "intent": "greeting", "lang": "en"}
+{"text": "what does a reduced platelet count suggest generally", "intent": "platelet_term", "lang": "en"}
+{"text": "what is carryover check in hematology analyzer monitoring", "intent": "quality_control", "lang": "en"}
+{"text": "thanks for clarifying today", "intent": "thanks", "lang": "en"}
+{"text": "what does anisocytosis mean alongside RDW", "intent": "rbc_term", "lang": "en"}
+{"text": "what medication should i give for anemia", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "How do I handle an EDTA sample with visible clots?", "intent": "sample_collection", "lang": "en"}
+{"text": "what is the practical meaning of MCH in lab interpretation", "intent": "rbc_term", "lang": "en"}
+{"text": "aPTT meaning please", "intent": "coag_test", "lang": "en"}
+{"text": "What is a CBC with differential?", "intent": "cbc_info", "lang": "en"}
+{"text": "Why is PT ordered in coagulation review?", "intent": "coag_test", "lang": "en"}
+{"text": "how is platelet count interpreted", "intent": "platelet_term", "lang": "en"}
+{"text": "what does prolonged aPTT suggest", "intent": "coag_test", "lang": "en"}
+{"text": "How should I handle a CBC sample from a difficult draw?", "intent": "sample_collection", "lang": "en"}
+{"text": "bye for now friend", "intent": "goodbye", "lang": "en"}
+{"text": "how do you teach Westgard rules to new staff", "intent": "quality_control", "lang": "en"}
+{"text": "tell me about platelet count", "intent": "cbc_info", "lang": "en"}
+{"text": "what topics do you cover in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "What is MCH?", "intent": "cbc_info", "lang": "en"}
+{"text": "write me a poem", "intent": "out_of_scope", "lang": "en"}
+{"text": "ending this session now thanks", "intent": "goodbye", "lang": "en"}
+{"text": "Give a simple explanation of CBC", "intent": "cbc_info", "lang": "en"}
+{"text": "what is the meaning of leukocyte differential", "intent": "wbc_term", "lang": "en"}
+{"text": "what is the role of smear review in abnormal WBC patterns", "intent": "wbc_term", "lang": "en"}
+{"text": "which pathway does aPTT assess", "intent": "coag_test", "lang": "en"}
+{"text": "I need help interpreting CBC parameters.", "intent": "help", "lang": "en"}
+{"text": "how are blasts screened in a differential workflow", "intent": "differential_review", "lang": "en"}
+{"text": "what is the purpose of aPTT in coagulation testing", "intent": "coag_test", "lang": "en"}
+{"text": "What handling errors can affect PT aPTT and INR?", "intent": "coag_test", "lang": "en"}
+{"text": "you alright today", "intent": "small_talk", "lang": "en"}
+{"text": "what is hematology analyzer quality control", "intent": "quality_control", "lang": "en"}
+{"text": "good day today", "intent": "greeting", "lang": "en"}
+{"text": "How should I interpret low MCV?", "intent": "cbc_info", "lang": "en"}
+{"text": "thanks i got it really", "intent": "thanks", "lang": "en"}
+{"text": "What is the intrinsic pathway test called?", "intent": "coag_test", "lang": "en"}
+{"text": "see you later today", "intent": "goodbye", "lang": "en"}
+{"text": "what are the standard sample checks before running coag tests", "intent": "coag_test", "lang": "en"}
+{"text": "hi assistant again", "intent": "greeting", "lang": "en"}
+{"text": "what should be done before releasing results after QC trouble", "intent": "quality_control", "lang": "en"}
+{"text": "What is the normal range for RDW?", "intent": "cbc_info", "lang": "en"}
+{"text": "goodbye assistant then", "intent": "goodbye", "lang": "en"}
+{"text": "i do not understand please", "intent": "clarification", "lang": "en"}
+{"text": "what does a good wedge smear look like", "intent": "blood_smear", "lang": "en"}
+{"text": "How can I prevent hemolysis during CBC collection?", "intent": "sample_collection", "lang": "en"}
+{"text": "How do I understand a CBC report?", "intent": "cbc_info", "lang": "en"}
+{"text": "see you soon friend", "intent": "goodbye", "lang": "en"}
+{"text": "what does a CBC help monitor over time", "intent": "cbc_info", "lang": "en"}
+{"text": "what is a three part differential", "intent": "differential_review", "lang": "en"}
+{"text": "how should a critical coagulation result be escalated broadly", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "thanks that helped there", "intent": "thanks", "lang": "en"}
+{"text": "what does that mean exactly please", "intent": "clarification", "lang": "en"}
+{"text": "what broad meaning does eosinophilia have in differential review", "intent": "differential_review", "lang": "en"}
+{"text": "thanks i understand the term now", "intent": "thanks", "lang": "en"}
+{"text": "EDTA tube for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the tube additive for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "what can happen if the coagulation tube is overfilled", "intent": "coag_test", "lang": "en"}
+{"text": "ending chat now friend", "intent": "goodbye", "lang": "en"}
+{"text": "Which tube is used for aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "what does this result show", "intent": "incomplete_query", "lang": "en"}
+{"text": "say that another way for me", "intent": "clarification", "lang": "en"}
+{"text": "thanks for making that clear", "intent": "thanks", "lang": "en"}
+{"text": "what does high RDW add to MCV interpretation", "intent": "rbc_term", "lang": "en"}
+{"text": "What is PT screening?", "intent": "coag_test", "lang": "en"}
+{"text": "how do you prepare a smear for morphology work", "intent": "blood_smear", "lang": "en"}
+{"text": "How do I understand a CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "What should I do if the citrate specimen is underfilled?", "intent": "coag_test", "lang": "en"}
+{"text": "how are supervisors involved in critical reporting workflow", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "I need an explanation of hematocrit.", "intent": "cbc_info", "lang": "en"}
+{"text": "INR meaning please", "intent": "coag_test", "lang": "en"}
+{"text": "What does high MCH suggest?", "intent": "cbc_info", "lang": "en"}
+{"text": "what is the purpose of sodium citrate in coagulation collection", "intent": "coag_test", "lang": "en"}
+{"text": "how do you summarize coag specimen collection in one explanation", "intent": "coag_test", "lang": "en"}
+{"text": "how are night shift critical values handled in broad workflow", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "Can I draw CBC from IV line?", "intent": "sample_collection", "lang": "en"}
+{"text": "hey assistant friend", "intent": "greeting", "lang": "en"}
+{"text": "thank you very much", "intent": "thanks", "lang": "en"}
+{"text": "How should I manage a redraw for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "how is platelet clumping seen on a blood film", "intent": "blood_smear", "lang": "en"}
+{"text": "tell me the dose for this patient", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "talk later", "intent": "goodbye", "lang": "en"}
+{"text": "Can you explain how this works in hematology?", "intent": "help", "lang": "en"}
+{"text": "how is hypochromia appreciated on a smear", "intent": "blood_smear", "lang": "en"}
+{"text": "Can I collect coag tests in EDTA?", "intent": "coag_test", "lang": "en"}
+{"text": "hey assistant again", "intent": "greeting", "lang": "en"}
+{"text": "what broad meaning does a critical platelet result carry", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "what does a prolonged PT indicate generally", "intent": "coag_test", "lang": "en"}
+{"text": "what preanalytical errors affect aPTT results", "intent": "coag_test", "lang": "en"}
+{"text": "how are things today", "intent": "small_talk", "lang": "en"}
+{"text": "How to avoid clotting in CBC sample?", "intent": "sample_collection", "lang": "en"}
+{"text": "thanks that helped today", "intent": "thanks", "lang": "en"}
+{"text": "What is the differential in CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "I need an explanation of MCHC.", "intent": "cbc_info", "lang": "en"}
+{"text": "have a good day then", "intent": "goodbye", "lang": "en"}
+{"text": "can you help?", "intent": "incomplete_query", "lang": "en"}
+{"text": "Can you explain hemoglobin?", "intent": "cbc_info", "lang": "en"}
+{"text": "In hematology sample preparation, when should I reject the sample?", "intent": "sample_collection", "lang": "en"}
+{"text": "Does aPTT test the intrinsic pathway?", "intent": "coag_test", "lang": "en"}
+{"text": "how much medicine should this patient receive", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "How should I interpret high MPV?", "intent": "cbc_info", "lang": "en"}
+{"text": "what is a peripheral blood smear", "intent": "blood_smear", "lang": "en"}
+{"text": "ending the conversation now", "intent": "goodbye", "lang": "en"}
+{"text": "what does eosinophilia indicate in a general explanation", "intent": "wbc_term", "lang": "en"}
+{"text": "What is anemia in CBC terms?", "intent": "cbc_info", "lang": "en"}
+{"text": "what does INR standardize in reporting", "intent": "coag_test", "lang": "en"}
+{"text": "what broad handling rule matters most for coagulation samples", "intent": "coag_test", "lang": "en"}
+{"text": "What does high RBC suggest?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does PT mean in coagulation?", "intent": "coag_test", "lang": "en"}
+{"text": "what is the capital city of japan", "intent": "out_of_scope", "lang": "en"}
+{"text": "what does a long clotting time suggest", "intent": "coag_test", "lang": "en"}
+{"text": "can you say that in a simpler way", "intent": "clarification", "lang": "en"}
+{"text": "what is the difference between platelet count and MPV", "intent": "platelet_term", "lang": "en"}
+{"text": "what kind of questions should Ava ask you", "intent": "capability_query", "lang": "en"}
+{"text": "how is accuracy described in hematology QC", "intent": "quality_control", "lang": "en"}
+{"text": "How to collect CBC from fingerstick?", "intent": "sample_collection", "lang": "en"}
+{"text": "How to collect blood for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "can you suggest a phone to buy", "intent": "out_of_scope", "lang": "en"}
+{"text": "why can delayed smear preparation affect morphology", "intent": "blood_smear", "lang": "en"}
+{"text": "thanks for the help there", "intent": "thanks", "lang": "en"}
+{"text": "how do new staff learn differential interpretation", "intent": "differential_review", "lang": "en"}
+{"text": "What should I do if the coag sample is clotted?", "intent": "coag_test", "lang": "en"}
+{"text": "what can cause raised RBC count", "intent": "rbc_term", "lang": "en"}
+{"text": "hey there", "intent": "greeting", "lang": "en"}
+{"text": "what is a screening coagulation profile", "intent": "coag_test", "lang": "en"}
+{"text": "do you answer report questions today", "intent": "capability_query", "lang": "en"}
+{"text": "what does that mean exactly for me", "intent": "clarification", "lang": "en"}
+{"text": "how have you been there", "intent": "small_talk", "lang": "en"}
+{"text": "good night", "intent": "goodbye", "lang": "en"}
+{"text": "why are abnormal lymphocytes looked for on smear", "intent": "blood_smear", "lang": "en"}
+{"text": "What tube is needed for clotting tests?", "intent": "coag_test", "lang": "en"}
+{"text": "Why is the light blue tube important for coagulation?", "intent": "coag_test", "lang": "en"}
+{"text": "Why is a full blood count ordered?", "intent": "cbc_info", "lang": "en"}
+{"text": "In hematology sample preparation, what should I do if transport is delayed?", "intent": "sample_collection", "lang": "en"}
+{"text": "what prescription should i write from this report", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "help me understand a complete blood count", "intent": "cbc_info", "lang": "en"}
+{"text": "how do abnormal lymphocytes fit into differential review", "intent": "wbc_term", "lang": "en"}
+{"text": "what should be checked when WBC results look inconsistent", "intent": "wbc_term", "lang": "en"}
+{"text": "goodbye and thanks for the help", "intent": "goodbye", "lang": "en"}
+{"text": "thank you today", "intent": "thanks", "lang": "en"}
+{"text": "why can EDTA cause platelet clumping artifacts", "intent": "platelet_term", "lang": "en"}
+{"text": "what is the value of reviewing hemoglobin with morphology findings", "intent": "rbc_term", "lang": "en"}
+{"text": "how should i adjust medication from this lab report", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "please clarify the last answer", "intent": "clarification", "lang": "en"}
+{"text": "What is the absolute neutrophil count?", "intent": "cbc_info", "lang": "en"}
+{"text": "zxcv qwer", "intent": "fallback", "lang": "en"}
+{"text": "What should I know about hemoglobin?", "intent": "cbc_info", "lang": "en"}
+{"text": "What are normal CBC ranges?", "intent": "cbc_info", "lang": "en"}
+{"text": "hey friend", "intent": "greeting", "lang": "en"}
+{"text": "how do you summarize platelet basics", "intent": "platelet_term", "lang": "en"}
+{"text": "recommend a cafe near me", "intent": "out_of_scope", "lang": "en"}
+{"text": "great thanks again", "intent": "thanks", "lang": "en"}
+{"text": "During CBC specimen handling, what storage rule should I follow?", "intent": "sample_collection", "lang": "en"}
+{"text": "what topics do you cover", "intent": "capability_query", "lang": "en"}
+{"text": "can you explain coag and smear questions", "intent": "capability_query", "lang": "en"}
+{"text": "bye for now today", "intent": "goodbye", "lang": "en"}
+{"text": "please explain that again please", "intent": "clarification", "lang": "en"}
+{"text": "What does WBC stand for?", "intent": "cbc_info", "lang": "en"}
+{"text": "have a good shift", "intent": "goodbye", "lang": "en"}
+{"text": "what is thrombocytosis", "intent": "platelet_term", "lang": "en"}
+{"text": "how are QC problems escalated in the lab", "intent": "quality_control", "lang": "en"}
+{"text": "thanks", "intent": "thanks", "lang": "en"}
+{"text": "Can a short draw affect INR?", "intent": "coag_test", "lang": "en"}
+{"text": "thanks for your support really", "intent": "thanks", "lang": "en"}
+{"text": "what is the proper dosage for this patient", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "tell me about mean platelet volume", "intent": "cbc_info", "lang": "en"}
+{"text": "have a good day friend", "intent": "goodbye", "lang": "en"}
+{"text": "Define RBC.", "intent": "cbc_info", "lang": "en"}
+{"text": "what tube top is standard for coagulation studies", "intent": "coag_test", "lang": "en"}
+{"text": "whats up my friend", "intent": "small_talk", "lang": "en"}
+{"text": "what should be checked when differential results look inconsistent", "intent": "differential_review", "lang": "en"}
+{"text": "how should Alex collect a citrate sample", "intent": "coag_test", "lang": "en"}
+{"text": "How should I interpret high hemoglobin?", "intent": "cbc_info", "lang": "en"}
+{"text": "how should i explain hemoglobin to a trainee", "intent": "rbc_term", "lang": "en"}
+{"text": "talk later today", "intent": "goodbye", "lang": "en"}
+{"text": "What is the purpose of PT in lab testing?", "intent": "coag_test", "lang": "en"}
+{"text": "what is the difference between CBC and CBC with differential", "intent": "cbc_info", "lang": "en"}
+{"text": "how should Maya understand RBC count", "intent": "rbc_term", "lang": "en"}
+{"text": "which lab topics are supported today", "intent": "capability_query", "lang": "en"}
+{"text": "see you next time for now", "intent": "goodbye", "lang": "en"}
+{"text": "how are things there", "intent": "small_talk", "lang": "en"}
+{"text": "How to handle microtainer for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "what is the broad meaning of immature granulocytes", "intent": "wbc_term", "lang": "en"}
+{"text": "see you later", "intent": "goodbye", "lang": "en"}
+{"text": "see you soon then", "intent": "goodbye", "lang": "en"}
+{"text": "what should be recorded about the person receiving a critical call", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "What does aPTT mean?", "intent": "coag_test", "lang": "en"}
+{"text": "In hematology sample preparation, how do I prevent clotting?", "intent": "sample_collection", "lang": "en"}
+{"text": "How long is a CBC sample stable?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is EDTA concentration in CBC tube?", "intent": "sample_collection", "lang": "en"}
+{"text": "how should platelet count be explained to non-specialists", "intent": "platelet_term", "lang": "en"}
+{"text": "what does an absolute neutrophil count mean", "intent": "differential_review", "lang": "en"}
+{"text": "why does anticoagulant ratio matter in citrate tubes", "intent": "coag_test", "lang": "en"}
+{"text": "why is differential count added after some CBCs", "intent": "differential_review", "lang": "en"}
+{"text": "how should a light blue tube be labeled", "intent": "coag_test", "lang": "en"}
+{"text": "how much of this antibiotic should the patient get", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "hi there there", "intent": "greeting", "lang": "en"}
+{"text": "how are critical hematology results reported", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "what preanalytical errors affect coagulation tests", "intent": "coag_test", "lang": "en"}
+{"text": "how do red cell values support general laboratory review", "intent": "rbc_term", "lang": "en"}
+{"text": "What does low hemoglobin mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "How do you explain MCV?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is activated PTT?", "intent": "coag_test", "lang": "en"}
+{"text": "which one", "intent": "incomplete_query", "lang": "en"}
+{"text": "how should i start treatment for leukemia", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "what is the purpose of a peripheral smear in morphology review", "intent": "blood_smear", "lang": "en"}
+{"text": "how are you my friend", "intent": "small_talk", "lang": "en"}
+{"text": "see you later friend", "intent": "goodbye", "lang": "en"}
+{"text": "What is the expanded form of aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "what happens if a clinician cannot be reached for a critical result", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "whats up now", "intent": "small_talk", "lang": "en"}
+{"text": "What is prothrombin time?", "intent": "coag_test", "lang": "en"}
+{"text": "what medicine should i start after this coagulation result", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "good evening friend", "intent": "greeting", "lang": "en"}
+{"text": "what is rouleaux formation on smear review", "intent": "blood_smear", "lang": "en"}
+{"text": "are you okay there", "intent": "small_talk", "lang": "en"}
+{"text": "how should trainees read MCV on a CBC report", "intent": "rbc_term", "lang": "en"}
+{"text": "what broad clues come from neutrophil increase", "intent": "differential_review", "lang": "en"}
+{"text": "For CBC collection, how do I prevent clotting?", "intent": "sample_collection", "lang": "en"}
+{"text": "what are you trained for right now", "intent": "capability_query", "lang": "en"}
+{"text": "can you explain what this assistant does", "intent": "capability_query", "lang": "en"}
+{"text": "What transport temperature is acceptable for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "which hematology areas are available in this assistant", "intent": "capability_query", "lang": "en"}
+{"text": "can you decide the treatment for me", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "help?", "intent": "incomplete_query", "lang": "en"}
+{"text": "what are the common screening coagulation tests", "intent": "coag_test", "lang": "en"}
+{"text": "can you diagnose this patient", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "Please explain MCH.", "intent": "cbc_info", "lang": "en"}
+{"text": "What should I know about hematocrit?", "intent": "cbc_info", "lang": "en"}
+{"text": "can you explain your scope exactly", "intent": "capability_query", "lang": "en"}
+{"text": "how are platelet parameters reported in CBC workflow", "intent": "platelet_term", "lang": "en"}
+{"text": "hey today", "intent": "greeting", "lang": "en"}
+{"text": "hello, can you assist?", "intent": "greeting", "lang": "en"}
+{"text": "what broad significance does low neutrophil count have", "intent": "wbc_term", "lang": "en"}
+{"text": "what does normocytic mean in hematology review", "intent": "rbc_term", "lang": "en"}
+{"text": "i didnt understand that again", "intent": "clarification", "lang": "en"}
+{"text": "how do you summarize critical value workflow", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "what is the best movie this year", "intent": "out_of_scope", "lang": "en"}
+{"text": "what broad clues come from eosinophil increase", "intent": "differential_review", "lang": "en"}
+{"text": "what is pseudothrombocytopenia in simple terms", "intent": "platelet_term", "lang": "en"}
+{"text": "how do you explain WBC count in Tokyo lab training", "intent": "wbc_term", "lang": "en"}
+{"text": "thanks for clarifying again", "intent": "thanks", "lang": "en"}
+{"text": "what therapy should i start immediately", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "What tube color is used for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "how should critical result training be given to new staff", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "please make that term easier to understand", "intent": "clarification", "lang": "en"}
+{"text": "For CBC collection, what transport condition must be checked?", "intent": "sample_collection", "lang": "en"}
+{"text": "goodbye i have no more hematology questions", "intent": "goodbye", "lang": "en"}
+{"text": "talk to you later", "intent": "goodbye", "lang": "en"}
+{"text": "can you choose an injection for this case", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "hello friend", "intent": "greeting", "lang": "en"}
+{"text": "what is red cell count in CBC", "intent": "rbc_term", "lang": "en"}
+{"text": "what is the recommended handling for coagulation specimens", "intent": "coag_test", "lang": "en"}
+{"text": "why is that important", "intent": "incomplete_query", "lang": "en"}
+{"text": "how do i cook fried rice", "intent": "out_of_scope", "lang": "en"}
+{"text": "how is going there", "intent": "small_talk", "lang": "en"}
+{"text": "what does a differential white count measure", "intent": "wbc_term", "lang": "en"}
+{"text": "How should I interpret high platelet count?", "intent": "cbc_info", "lang": "en"}
+{"text": "how is RDW used in anemia pattern review", "intent": "rbc_term", "lang": "en"}
+{"text": "okay see you later", "intent": "goodbye", "lang": "en"}
+{"text": "why is smear review important after abnormal analyzer flags", "intent": "blood_smear", "lang": "en"}
+{"text": "what does QC target range mean", "intent": "quality_control", "lang": "en"}
+{"text": "what sort of CBC questions should I ask you", "intent": "capability_query", "lang": "en"}
+{"text": "thanks i got it there", "intent": "thanks", "lang": "en"}
+{"text": "can you explain your scope before I ask", "intent": "capability_query", "lang": "en"}
+{"text": "how should CBC samples be stored before processing", "intent": "sample_collection", "lang": "en"}
+{"text": "how do you explain critical reporting to a trainee", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "goodbye assistant", "intent": "goodbye", "lang": "en"}
+{"text": "What to do with clotted EDTA sample?", "intent": "sample_collection", "lang": "en"}
+{"text": "i dont get it", "intent": "incomplete_query", "lang": "en"}
+{"text": "How do I avoid hemoconcentration during CBC draw?", "intent": "sample_collection", "lang": "en"}
+{"text": "what should i prescribe for abnormal white count", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "how is specimen centrifugation linked to coag test quality", "intent": "coag_test", "lang": "en"}
+{"text": "thanks again", "intent": "thanks", "lang": "en"}
+{"text": "what should new staff know about coagulation sample integrity", "intent": "coag_test", "lang": "en"}
+{"text": "What does the blood-to-anticoagulant ratio matter for coag tests?", "intent": "coag_test", "lang": "en"}
+{"text": "what does a platelet flag mean", "intent": "platelet_term", "lang": "en"}
+{"text": "For a lavender top tube, how do I prevent clotting?", "intent": "sample_collection", "lang": "en"}
+{"text": "How do I reduce pre-analytical errors for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "ending chat now today", "intent": "goodbye", "lang": "en"}
+{"text": "which test do you mean", "intent": "incomplete_query", "lang": "en"}
+{"text": "Can you explain MCV?", "intent": "cbc_info", "lang": "en"}
+{"text": "okay bye friend", "intent": "goodbye", "lang": "en"}
+{"text": "what staining method is commonly used for blood film review", "intent": "blood_smear", "lang": "en"}
+{"text": "What does high hematocrit suggest?", "intent": "cbc_info", "lang": "en"}
+{"text": "great thanks there", "intent": "thanks", "lang": "en"}
+{"text": "see you soon today", "intent": "goodbye", "lang": "en"}
+{"text": "which medicine is needed for this blood smear finding", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "how do platelets relate to bleeding risk", "intent": "platelet_term", "lang": "en"}
+{"text": "How do you explain RBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "hi hematology assistant today", "intent": "greeting", "lang": "en"}
+{"text": "how do coag results fit with hematology workflow", "intent": "coag_test", "lang": "en"}
+{"text": "What should I check before sending a CBC sample to the analyzer?", "intent": "sample_collection", "lang": "en"}
+{"text": "what is platelet satellitism in broad terms", "intent": "platelet_term", "lang": "en"}
+{"text": "what hematology questions can i ask in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "How should blue top tubes be transported to the lab?", "intent": "coag_test", "lang": "en"}
+{"text": "what does band form increase suggest generally", "intent": "wbc_term", "lang": "en"}
+{"text": "how are u there", "intent": "small_talk", "lang": "en"}
+{"text": "can you explain this", "intent": "incomplete_query", "lang": "en"}
+{"text": "hello there friend", "intent": "greeting", "lang": "en"}
+{"text": "How should I collect a citrate sample for clotting assays?", "intent": "coag_test", "lang": "en"}
+{"text": "Help me understand CBC.", "intent": "help", "lang": "en"}
+{"text": "How do I avoid contamination of a CBC sample?", "intent": "sample_collection", "lang": "en"}
+{"text": "Can you guide me on sample collection?", "intent": "help", "lang": "en"}
+{"text": "Give me a simple explanation of hemoglobin.", "intent": "cbc_info", "lang": "en"}
+{"text": "can you diagnose and treat this hematology case", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "why is underfill a problem for coagulation testing", "intent": "coag_test", "lang": "en"}
+{"text": "please explain a complete blood count", "intent": "cbc_info", "lang": "en"}
+{"text": "Can you define prothrombin time?", "intent": "coag_test", "lang": "en"}
+{"text": "Give me a simple explanation of WBC.", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the tube color for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "see you soon for now", "intent": "goodbye", "lang": "en"}
+{"text": "please simplify this answer", "intent": "clarification", "lang": "en"}
+{"text": "What should I do if the tube cap is loose after collection?", "intent": "sample_collection", "lang": "en"}
+{"text": "thanks a lot today", "intent": "thanks", "lang": "en"}
+{"text": "can you help with cbc questions", "intent": "capability_query", "lang": "en"}
+{"text": "talk again this this week", "intent": "goodbye", "lang": "en"}
+{"text": "can you help with this", "intent": "incomplete_query", "lang": "en"}
+{"text": "see you next time then", "intent": "goodbye", "lang": "en"}
+{"text": "Explain MCV", "intent": "cbc_info", "lang": "en"}
+{"text": "For CBC collection, how do I reduce hemolysis risk?", "intent": "sample_collection", "lang": "en"}
+{"text": "thanks i got it again", "intent": "thanks", "lang": "en"}
+{"text": "can you say that in simple words", "intent": "clarification", "lang": "en"}
+{"text": "okay bye today", "intent": "goodbye", "lang": "en"}
+{"text": "what is coefficient of variation in lab QC", "intent": "quality_control", "lang": "en"}
+{"text": "what does monocytosis mean in a basic explanation", "intent": "wbc_term", "lang": "en"}
+{"text": "are you doing well", "intent": "small_talk", "lang": "en"}
+{"text": "How should I handle a broken CBC tube during transport?", "intent": "sample_collection", "lang": "en"}
+{"text": "are you doing well now", "intent": "small_talk", "lang": "en"}
+{"text": "thanks for the quick explanation", "intent": "thanks", "lang": "en"}
+{"text": "how do you summarize analyzer QC basics", "intent": "quality_control", "lang": "en"}
+{"text": "What parameters are in a CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "can you help with cbc questions in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "how is the weather today", "intent": "out_of_scope", "lang": "en"}
+{"text": "how should trainees understand Levy Jennings charts", "intent": "quality_control", "lang": "en"}
+{"text": "what does platelet aggregation mean", "intent": "platelet_term", "lang": "en"}
+{"text": "how is microcytosis described in simple hematology language", "intent": "rbc_term", "lang": "en"}
+{"text": "How do I handle CBC collection for a pediatric patient?", "intent": "sample_collection", "lang": "en"}
+{"text": "can you tell me what this lab assistant covers", "intent": "capability_query", "lang": "en"}
+{"text": "I need help with laboratory workflow for CBC.", "intent": "help", "lang": "en"}
+{"text": "i need a clearer explanation please", "intent": "clarification", "lang": "en"}
+{"text": "how should a smear slide be dried before staining", "intent": "blood_smear", "lang": "en"}
+{"text": "how should a blood smear be labeled", "intent": "blood_smear", "lang": "en"}
+{"text": "appreciate it", "intent": "thanks", "lang": "en"}
+{"text": "how can inflammation affect white blood cell count generally", "intent": "wbc_term", "lang": "en"}
+{"text": "What does the PT result represent?", "intent": "coag_test", "lang": "en"}
+{"text": "For a lavender top tube, when should I reject the sample?", "intent": "sample_collection", "lang": "en"}
+{"text": "can you explain that result term more simply", "intent": "clarification", "lang": "en"}
+{"text": "What information does a full blood count provide?", "intent": "cbc_info", "lang": "en"}
+{"text": "can you clarify that for me", "intent": "clarification", "lang": "en"}
+{"text": "Can you support me with CBC specimen handling?", "intent": "help", "lang": "en"}
+{"text": "what are you trained for", "intent": "capability_query", "lang": "en"}
+{"text": "how should Noah understand leukocyte count", "intent": "wbc_term", "lang": "en"}
+{"text": "I need an explanation of hemoglobin.", "intent": "cbc_info", "lang": "en"}
+{"text": "hope you are well today", "intent": "small_talk", "lang": "en"}
+{"text": "how's it going now", "intent": "small_talk", "lang": "en"}
+{"text": "thank you Alex", "intent": "thanks", "lang": "en"}
+{"text": "what causes preanalytical error in PT and aPTT testing", "intent": "coag_test", "lang": "en"}
+{"text": "what should be checked before accepting a CBC specimen", "intent": "sample_collection", "lang": "en"}
+{"text": "test noise", "intent": "fallback", "lang": "en"}
+{"text": "Why must the light blue tube be filled completely?", "intent": "coag_test", "lang": "en"}
+{"text": "what is the difference between RBC count and hemoglobin", "intent": "rbc_term", "lang": "en"}
+{"text": "What does low RDW suggest?", "intent": "cbc_info", "lang": "en"}
+{"text": "how should trainees understand monocytes in differential review", "intent": "wbc_term", "lang": "en"}
+{"text": "that was useful thanks", "intent": "thanks", "lang": "en"}
+{"text": "When is a full blood count useful?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the normal range for MCV?", "intent": "cbc_info", "lang": "en"}
+{"text": "How should I interpret low RDW?", "intent": "cbc_info", "lang": "en"}
+{"text": "can you recommend medication for this CBC problem", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "Can transport delay affect aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "please give the treatment instructions for this patient", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "What is acceptable sample appearance for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "what does a CBC", "intent": "cbc_info", "lang": "en"}
+{"text": "okay thanks for clearing that up", "intent": "thanks", "lang": "en"}
+{"text": "good morning friend", "intent": "greeting", "lang": "en"}
+{"text": "What is the correct pediatric volume for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "Order of draw for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "ending the session thanks again", "intent": "goodbye", "lang": "en"}
+{"text": "how should QC failures be documented", "intent": "quality_control", "lang": "en"}
+{"text": "how does repeat analysis fit into critical value verification", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "appreciate the explanation there", "intent": "thanks", "lang": "en"}
+{"text": "when is manual morphology review preferred over analyzer output", "intent": "blood_smear", "lang": "en"}
+{"text": "how do you explain hematology quality control in simple language", "intent": "quality_control", "lang": "en"}
+{"text": "do you answer report questions in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "see you next time friend", "intent": "goodbye", "lang": "en"}
+{"text": "what can you do right now", "intent": "capability_query", "lang": "en"}
+{"text": "What pathway is checked by PT?", "intent": "coag_test", "lang": "en"}
+{"text": "how have you been now", "intent": "small_talk", "lang": "en"}
+{"text": "Can I recollect CBC if clotted?", "intent": "sample_collection", "lang": "en"}
+{"text": "what does abnormal platelet size suggest generally", "intent": "platelet_term", "lang": "en"}
+{"text": "i do not understand", "intent": "clarification", "lang": "en"}
+{"text": "how are absolute and percentage results used together in differential review", "intent": "differential_review", "lang": "en"}
+{"text": "good afternoon there", "intent": "greeting", "lang": "en"}
+{"text": "alright thanks again", "intent": "thanks", "lang": "en"}
+{"text": "what dose should be given for this condition", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "i do not follow that explanation yet", "intent": "clarification", "lang": "en"}
+{"text": "thank you there", "intent": "thanks", "lang": "en"}
+{"text": "Can I use a citrate tube for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "see you later then", "intent": "goodbye", "lang": "en"}
+{"text": "What sample is needed for CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "what are lymphocytes", "intent": "differential_review", "lang": "en"}
+{"text": "Can you define aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "how quickly should coag samples reach the lab bench", "intent": "coag_test", "lang": "en"}
+{"text": "how is temperature linked to analyzer quality control", "intent": "quality_control", "lang": "en"}
+{"text": "catch you later for now", "intent": "goodbye", "lang": "en"}
+{"text": "thanks for explaining really", "intent": "thanks", "lang": "en"}
+{"text": "what does red cell size variation mean in broad terms", "intent": "rbc_term", "lang": "en"}
+{"text": "What does platelet count mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "can you help with coagulation questions in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "why is patient identification essential during critical call", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "when would a lab request a CBC review", "intent": "cbc_info", "lang": "en"}
+{"text": "what does neutrophilia usually suggest in lab review", "intent": "wbc_term", "lang": "en"}
+{"text": "How should I handle neonatal CBC samples?", "intent": "sample_collection", "lang": "en"}
+{"text": "how should Ava collect a citrate sample", "intent": "coag_test", "lang": "en"}
+{"text": "thanks there", "intent": "thanks", "lang": "en"}
+{"text": "What is the purpose of CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "how does smear review support critical result verification", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "what does monocytosis mean in a general explanation", "intent": "wbc_term", "lang": "en"}
+{"text": "do you support blood smear questions right now", "intent": "capability_query", "lang": "en"}
+{"text": "What should I know about MCV?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the normal range for hemoglobin?", "intent": "cbc_info", "lang": "en"}
+{"text": "can you explain your scope right now", "intent": "capability_query", "lang": "en"}
+{"text": "how should a trainee summarize a differential count", "intent": "differential_review", "lang": "en"}
+{"text": "How to handle redraw requests?", "intent": "sample_collection", "lang": "en"}
+{"text": "hi assistant friend", "intent": "greeting", "lang": "en"}
+{"text": "see you soon", "intent": "goodbye", "lang": "en"}
+{"text": "i need more detail on that now", "intent": "clarification", "lang": "en"}
+{"text": "morning again", "intent": "greeting", "lang": "en"}
+{"text": "What does CBC measure?", "intent": "cbc_info", "lang": "en"}
+{"text": "bye for now", "intent": "goodbye", "lang": "en"}
+{"text": "What should I know about RDW?", "intent": "cbc_info", "lang": "en"}
+{"text": "what broad role does preventive maintenance play in QC", "intent": "quality_control", "lang": "en"}
+{"text": "why is RDW not interpreted alone", "intent": "rbc_term", "lang": "en"}
+{"text": "what is shutdown maintenance workflow for hematology analyzer", "intent": "quality_control", "lang": "en"}
+{"text": "What does WBC mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "nice to meet you again", "intent": "greeting", "lang": "en"}
+{"text": "can you help with cbc questions today", "intent": "capability_query", "lang": "en"}
+{"text": "what does macrocytic pattern mean when MCV is high", "intent": "rbc_term", "lang": "en"}
+{"text": "what does INR standardization help compare", "intent": "coag_test", "lang": "en"}
+{"text": "What happens if an EDTA tube is overfilled?", "intent": "sample_collection", "lang": "en"}
+{"text": "What can a CBC test tell us?", "intent": "cbc_info", "lang": "en"}
+{"text": "what is the policy for critical platelet results", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "how is RBC count interpreted with hematocrit", "intent": "rbc_term", "lang": "en"}
+{"text": "i still do not understand the point", "intent": "clarification", "lang": "en"}
+{"text": "For CBC collection, when should I reject the sample?", "intent": "sample_collection", "lang": "en"}
+{"text": "How long can a coagulation sample wait before analysis?", "intent": "coag_test", "lang": "en"}
+{"text": "What is international normalized ratio?", "intent": "coag_test", "lang": "en"}
+{"text": "can you simplify that answer now", "intent": "clarification", "lang": "en"}
+{"text": "When should CBC sample be rejected?", "intent": "sample_collection", "lang": "en"}
+{"text": "why should patient samples wait when QC is out", "intent": "quality_control", "lang": "en"}
+{"text": "what is total white cell count in hematology", "intent": "wbc_term", "lang": "en"}
+{"text": "repeat the explanation please", "intent": "clarification", "lang": "en"}
+{"text": "how do you summarize monthly QC review", "intent": "quality_control", "lang": "en"}
+{"text": "How should I interpret high RDW?", "intent": "cbc_info", "lang": "en"}
+{"text": "hope u are well now", "intent": "small_talk", "lang": "en"}
+{"text": "When is a CBC report useful?", "intent": "cbc_info", "lang": "en"}
+{"text": "what can you do for Ava", "intent": "capability_query", "lang": "en"}
+{"text": "I need guidance on hematology", "intent": "help", "lang": "en"}
+{"text": "What color is the sodium citrate tube?", "intent": "coag_test", "lang": "en"}
+{"text": "In EDTA specimen processing, how do I reduce hemolysis risk?", "intent": "sample_collection", "lang": "en"}
+{"text": "what do you mean by that again", "intent": "clarification", "lang": "en"}
+{"text": "What is the proper mixing for EDTA?", "intent": "sample_collection", "lang": "en"}
+{"text": "How should I document CBC collection time?", "intent": "sample_collection", "lang": "en"}
+{"text": "can you diagnose this report for me", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "what broad situations may trigger high white cell concern", "intent": "wbc_term", "lang": "en"}
+{"text": "are you okay", "intent": "small_talk", "lang": "en"}
+{"text": "how do analyzer flags relate to QC troubleshooting", "intent": "quality_control", "lang": "en"}
+{"text": "what is the difference between total WBC and differential", "intent": "differential_review", "lang": "en"}
+{"text": "nice to meet you today", "intent": "greeting", "lang": "en"}
+{"text": "what broad information does total WBC count provide", "intent": "wbc_term", "lang": "en"}
+{"text": "what do you support in hematology", "intent": "capability_query", "lang": "en"}
+{"text": "what broad clues come from basophil increase", "intent": "wbc_term", "lang": "en"}
+{"text": "bye and take care", "intent": "goodbye", "lang": "en"}
+{"text": "During CBC specimen handling, what transport condition must be checked?", "intent": "sample_collection", "lang": "en"}
+{"text": "PT meaning please", "intent": "coag_test", "lang": "en"}
+{"text": "how should the patient be managed with drugs", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "which medicine is best for this patient now", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "unknown words", "intent": "fallback", "lang": "en"}
+{"text": "i will come back later today", "intent": "goodbye", "lang": "en"}
+{"text": "do you support blood smear questions in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "alright bye for now", "intent": "goodbye", "lang": "en"}
+{"text": "Tell me about MCHC.", "intent": "cbc_info", "lang": "en"}
+{"text": "what is the difference between abnormal and critical results", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "how should trainees understand panic values in hematology", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "what does monocytosis mean", "intent": "differential_review", "lang": "en"}
+{"text": "what should be documented after a critical value call", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "what should be communicated with a critical platelet count", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "what does high MCHC suggest generally", "intent": "rbc_term", "lang": "en"}
+{"text": "how should i read a differential report", "intent": "differential_review", "lang": "en"}
+{"text": "What does low hemoglobin suggest?", "intent": "cbc_info", "lang": "en"}
+{"text": "appreciate the clarification on that", "intent": "thanks", "lang": "en"}
+{"text": "morning", "intent": "greeting", "lang": "en"}
+{"text": "recommend a restaurant", "intent": "out_of_scope", "lang": "en"}
+{"text": "why is blood smear examination done", "intent": "blood_smear", "lang": "en"}
+{"text": "you alright", "intent": "small_talk", "lang": "en"}
+{"text": "why is sodium citrate used for coagulation samples", "intent": "coag_test", "lang": "en"}
+{"text": "how do i inject human body", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "do you answer report questions exactly", "intent": "capability_query", "lang": "en"}
+{"text": "i still dont follow what you mean", "intent": "clarification", "lang": "en"}
+{"text": "Why is a CBC test ordered?", "intent": "cbc_info", "lang": "en"}
+{"text": "how is platelet count connected to smear findings", "intent": "platelet_term", "lang": "en"}
+{"text": "what can schistocytes indicate on a smear review", "intent": "blood_smear", "lang": "en"}
+{"text": "Can you explain MCH?", "intent": "cbc_info", "lang": "en"}
+{"text": "what can this assistant do right now", "intent": "capability_query", "lang": "en"}
+{"text": "which tube is used for coagulation tests", "intent": "coag_test", "lang": "en"}
+{"text": "What parameters are included in a complete blood count?", "intent": "cbc_info", "lang": "en"}
+{"text": "alright thanks", "intent": "thanks", "lang": "en"}
+{"text": "how should a smear slide be labeled before staining", "intent": "blood_smear", "lang": "en"}
+{"text": "What is the correct specimen for aPTT testing?", "intent": "coag_test", "lang": "en"}
+{"text": "How to transport CBC samples?", "intent": "sample_collection", "lang": "en"}
+{"text": "which prescription is correct for this abnormal result", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "why is internal quality control important in hematology", "intent": "quality_control", "lang": "en"}
+{"text": "what broad role does specimen integrity check play before critical reporting", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "why is white blood cell count reviewed with differential", "intent": "wbc_term", "lang": "en"}
+{"text": "what broad situations lead to PT or aPTT review", "intent": "coag_test", "lang": "en"}
+{"text": "how do you feel today there", "intent": "small_talk", "lang": "en"}
+{"text": "how can i describe citrate tube requirements for training", "intent": "coag_test", "lang": "en"}
+{"text": "alright thanks really", "intent": "thanks", "lang": "en"}
+{"text": "why should coagulation SOP be followed strictly", "intent": "coag_test", "lang": "en"}
+{"text": "what kind of questions should Alex ask you", "intent": "capability_query", "lang": "en"}
+{"text": "What parameters are included in a CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does prolonged aPTT suggest in lab terms?", "intent": "coag_test", "lang": "en"}
+{"text": "What does RBC indices mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "What should I do with a clotted citrate sample?", "intent": "coag_test", "lang": "en"}
+{"text": "can you explain again for me", "intent": "clarification", "lang": "en"}
+{"text": "hello assistant again", "intent": "greeting", "lang": "en"}
+{"text": "can you break that answer down step by step", "intent": "clarification", "lang": "en"}
+{"text": "how do i cure this patient based on the results", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "what drug should be given for this blood disorder", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "what medical lab areas are in your scope right now", "intent": "capability_query", "lang": "en"}
+{"text": "What does RBC mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "what should be checked before rerunning failed QC", "intent": "quality_control", "lang": "en"}
+{"text": "can you simplify that answer for me", "intent": "clarification", "lang": "en"}
+{"text": "What does a complete blood count measure?", "intent": "cbc_info", "lang": "en"}
+{"text": "How is RBC measured?", "intent": "cbc_info", "lang": "en"}
+{"text": "I need help with specimen handling.", "intent": "help", "lang": "en"}
+{"text": "how are giant platelets noticed on a smear", "intent": "blood_smear", "lang": "en"}
+{"text": "bye Ava", "intent": "goodbye", "lang": "en"}
+{"text": "How to document collection time?", "intent": "sample_collection", "lang": "en"}
+{"text": "How many inversions are needed for an EDTA tube?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is the correct tube for PT and aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "how do you explain clotting time abnormalities simply", "intent": "coag_test", "lang": "en"}
+{"text": "thanks assistant there", "intent": "thanks", "lang": "en"}
+{"text": "what happens if the clinician cannot be reached for a critical result", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "How is a CBC report used in hematology?", "intent": "cbc_info", "lang": "en"}
+{"text": "please rephrase that in easier words", "intent": "clarification", "lang": "en"}
+{"text": "thanks assistant really", "intent": "thanks", "lang": "en"}
+{"text": "Please explain WBC.", "intent": "cbc_info", "lang": "en"}
+{"text": "what can cause thrombocytopenia in broad terms", "intent": "platelet_term", "lang": "en"}
+{"text": "What pathway does PT evaluate?", "intent": "coag_test", "lang": "en"}
+{"text": "what happens if a citrate tube is not completely filled", "intent": "coag_test", "lang": "en"}
+{"text": "can you clarify that", "intent": "clarification", "lang": "en"}
+{"text": "can you decide the best therapy from this CBC", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "evening", "intent": "greeting", "lang": "en"}
+{"text": "which antibiotic is best for this patient", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "what areas are covered by this chat today", "intent": "capability_query", "lang": "en"}
+{"text": "Can you explain PT?", "intent": "coag_test", "lang": "en"}
+{"text": "which injection should i choose for this patient now", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "how is specimen integrity checked before critical value release", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "okay thanks again", "intent": "thanks", "lang": "en"}
+{"text": "thanks for the answer", "intent": "thanks", "lang": "en"}
+{"text": "For a lavender top tube, how do I reduce hemolysis risk?", "intent": "sample_collection", "lang": "en"}
+{"text": "how does that connect", "intent": "incomplete_query", "lang": "en"}
+{"text": "what is background check on a hematology instrument", "intent": "quality_control", "lang": "en"}
+{"text": "i didnt understand that", "intent": "clarification", "lang": "en"}
+{"text": "what hematology questions can i ask exactly", "intent": "capability_query", "lang": "en"}
+{"text": "what does that mean exactly again", "intent": "clarification", "lang": "en"}
+{"text": "thanks really", "intent": "thanks", "lang": "en"}
+{"text": "what broad significance does repeated QC failure carry", "intent": "quality_control", "lang": "en"}
+{"text": "how is eosinophilia reported", "intent": "differential_review", "lang": "en"}
+{"text": "Should a CBC sample be refrigerated?", "intent": "sample_collection", "lang": "en"}
+{"text": "For a lavender top tube, what mixing step is required?", "intent": "sample_collection", "lang": "en"}
+{"text": "are you only for lab workflow and terminology", "intent": "capability_query", "lang": "en"}
+{"text": "what does left shift mean in differential review", "intent": "differential_review", "lang": "en"}
+{"text": "everything going okay there", "intent": "small_talk", "lang": "en"}
+{"text": "thanks for clarifying there", "intent": "thanks", "lang": "en"}
+{"text": "how is red cell morphology linked to RBC indices", "intent": "rbc_term", "lang": "en"}
+{"text": "what happens if citrate tube is underfilled", "intent": "coag_test", "lang": "en"}
+{"text": "who should receive notification for a critical hematology result", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "what does mean platelet volume", "intent": "cbc_info", "lang": "en"}
+{"text": "tell me a joke", "intent": "out_of_scope", "lang": "en"}
+{"text": "tell me about a CBC", "intent": "cbc_info", "lang": "en"}
+{"text": "that is all for now goodbye", "intent": "goodbye", "lang": "en"}
+{"text": "How to avoid short draw in EDTA tube?", "intent": "sample_collection", "lang": "en"}
+{"text": "What does RDW mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "what should be checked when platelet count is unexpectedly high", "intent": "platelet_term", "lang": "en"}
+{"text": "how do red cell indices work together", "intent": "rbc_term", "lang": "en"}
+{"text": "how do you explain total leukocyte count in simple language", "intent": "wbc_term", "lang": "en"}
+{"text": "what is the weather tomorrow", "intent": "out_of_scope", "lang": "en"}
+{"text": "what can this assistant help with during lab training", "intent": "capability_query", "lang": "en"}
+{"text": "hey there there", "intent": "greeting", "lang": "en"}
+{"text": "can you simplify that answer please", "intent": "clarification", "lang": "en"}
+{"text": "How to avoid platelet clumping?", "intent": "sample_collection", "lang": "en"}
+{"text": "how about that", "intent": "incomplete_query", "lang": "en"}
+{"text": "what broad meaning does instrument drift have", "intent": "quality_control", "lang": "en"}
+{"text": "how should i explain INR to a trainee", "intent": "coag_test", "lang": "en"}
+{"text": "What can a CBC tell us?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the correct specimen for PT testing?", "intent": "coag_test", "lang": "en"}
+{"text": "How is WBC measured?", "intent": "cbc_info", "lang": "en"}
+{"text": "why should lab staff follow policy exactly for panic values", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "How should I transport CBC in a cold chain workflow?", "intent": "sample_collection", "lang": "en"}
+{"text": "why can steroids influence white blood cell count broadly", "intent": "wbc_term", "lang": "en"}
+{"text": "nice to meet you there", "intent": "greeting", "lang": "en"}
+{"text": "what is the difference between total count and cell distribution", "intent": "wbc_term", "lang": "en"}
+{"text": "please clarify the last answer please", "intent": "clarification", "lang": "en"}
+{"text": "Can a coag sample be rejected for underfill?", "intent": "coag_test", "lang": "en"}
+{"text": "what about this", "intent": "incomplete_query", "lang": "en"}
+{"text": "what is the role of MPV next to platelet count", "intent": "platelet_term", "lang": "en"}
+{"text": "What does high WBC suggest?", "intent": "cbc_info", "lang": "en"}
+{"text": "what stains are used for blood smear", "intent": "blood_smear", "lang": "en"}
+{"text": "What is the full form of INR?", "intent": "coag_test", "lang": "en"}
+{"text": "What does a normal CBC look like?", "intent": "cbc_info", "lang": "en"}
+{"text": "can you explain that step by step", "intent": "clarification", "lang": "en"}
+{"text": "hi there today", "intent": "greeting", "lang": "en"}
+{"text": "thank you so much really", "intent": "thanks", "lang": "en"}
+{"text": "everything going okay", "intent": "small_talk", "lang": "en"}
+{"text": "what does left shift mean in differential explanation", "intent": "differential_review", "lang": "en"}
+{"text": "Why is prompt processing important for coag specimens?", "intent": "coag_test", "lang": "en"}
+{"text": "which therapy should i start for this patient", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "can you help with coagulation questions", "intent": "capability_query", "lang": "en"}
+{"text": "many thanks again", "intent": "thanks", "lang": "en"}
+{"text": "what kinds of hematology questions can you answer", "intent": "capability_query", "lang": "en"}
+{"text": "what does lymphocytosis usually suggest in lab review", "intent": "wbc_term", "lang": "en"}
+{"text": "what broad role do platelets play in hemostasis", "intent": "platelet_term", "lang": "en"}
+{"text": "thanks i got it", "intent": "thanks", "lang": "en"}
+{"text": "explain", "intent": "incomplete_query", "lang": "en"}
+{"text": "what does a lab trainee need to know about PT and aPTT", "intent": "coag_test", "lang": "en"}
+{"text": "hello from the chat window", "intent": "greeting", "lang": "en"}
+{"text": "good day", "intent": "greeting", "lang": "en"}
+{"text": "bye then", "intent": "goodbye", "lang": "en"}
+{"text": "How to handle difficult draw for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "explain it one more time please", "intent": "clarification", "lang": "en"}
+{"text": "what is the role of MPV in platelet review", "intent": "platelet_term", "lang": "en"}
+{"text": "thank you again", "intent": "thanks", "lang": "en"}
+{"text": "I need assistance with CBC sample rejection rules.", "intent": "help", "lang": "en"}
+{"text": "bye thanks for the lab help", "intent": "goodbye", "lang": "en"}
+{"text": "i didnt understand that please", "intent": "clarification", "lang": "en"}
+{"text": "bye assistant for now", "intent": "goodbye", "lang": "en"}
+{"text": "How should I handle a CBC sample with possible hemolysis?", "intent": "sample_collection", "lang": "en"}
+{"text": "Can you explain hematocrit?", "intent": "cbc_info", "lang": "en"}
+{"text": "I need an explanation of RBC.", "intent": "cbc_info", "lang": "en"}
+{"text": "can you diagnose this patient's condition", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "When is a CBC useful?", "intent": "cbc_info", "lang": "en"}
+{"text": "what is the price of gold today", "intent": "out_of_scope", "lang": "en"}
+{"text": "how should trainees understand neutrophil predominance", "intent": "differential_review", "lang": "en"}
+{"text": "do you support both sample handling and term explanations", "intent": "capability_query", "lang": "en"}
+{"text": "what questions can i ask", "intent": "capability_query", "lang": "en"}
+{"text": "how should trainees read hemoglobin on a CBC report", "intent": "rbc_term", "lang": "en"}
+{"text": "how do you explain monocytes to learners", "intent": "differential_review", "lang": "en"}
+{"text": "Define MCV.", "intent": "cbc_info", "lang": "en"}
+{"text": "what does lymphocytosis mean", "intent": "differential_review", "lang": "en"}
+{"text": "what's up today", "intent": "small_talk", "lang": "en"}
+{"text": "Tell me about hemoglobin.", "intent": "cbc_info", "lang": "en"}
+{"text": "what is instrument drift in QC review", "intent": "quality_control", "lang": "en"}
+{"text": "how do you explain leukocytosis to a student", "intent": "wbc_term", "lang": "en"}
+{"text": "okay bye for now", "intent": "goodbye", "lang": "en"}
+{"text": "can you answer questions about CBC and coagulation together", "intent": "capability_query", "lang": "en"}
+{"text": "asdf qwerty", "intent": "fallback", "lang": "en"}
+{"text": "how should coagulation specimens be transported", "intent": "coag_test", "lang": "en"}
+{"text": "can you recommend treatment for severe anemia", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "How to dispose sharps after CBC draw?", "intent": "sample_collection", "lang": "en"}
+{"text": "Explain MCHC on a CBC", "intent": "cbc_info", "lang": "en"}
+{"text": "can you handle red cell and white cell term questions", "intent": "capability_query", "lang": "en"}
+{"text": "how are you there", "intent": "small_talk", "lang": "en"}
+{"text": "goodbye then", "intent": "goodbye", "lang": "en"}
+{"text": "good afternoon friend", "intent": "greeting", "lang": "en"}
+{"text": "what next then", "intent": "incomplete_query", "lang": "en"}
+{"text": "what hematology tasks can you support", "intent": "capability_query", "lang": "en"}
+{"text": "Can I reuse a tube for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "thank you for your support", "intent": "thanks", "lang": "en"}
+{"text": "how is control target range used in daily QC review", "intent": "quality_control", "lang": "en"}
+{"text": "what do giant platelets suggest in broad review", "intent": "platelet_term", "lang": "en"}
+{"text": "What is specimen rejection criteria for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "what are screening coag assays in Tokyo lab", "intent": "coag_test", "lang": "en"}
+{"text": "What does prothrombin time measure?", "intent": "coag_test", "lang": "en"}
+{"text": "what does fragmented red cell appearance suggest broadly", "intent": "blood_smear", "lang": "en"}
+{"text": "Why is citrate tube fill volume important?", "intent": "coag_test", "lang": "en"}
+{"text": "what broad meaning does a QC trend have", "intent": "quality_control", "lang": "en"}
+{"text": "how do you explain blood smear workflow to new staff", "intent": "blood_smear", "lang": "en"}
+{"text": "can you explain the result term more clearly", "intent": "clarification", "lang": "en"}
+{"text": "What is hemoglobin?", "intent": "cbc_info", "lang": "en"}
+{"text": "who won the cricket match today", "intent": "out_of_scope", "lang": "en"}
+{"text": "why is hemoglobin reviewed with RBC count", "intent": "rbc_term", "lang": "en"}
+{"text": "Please explain MCV.", "intent": "cbc_info", "lang": "en"}
+{"text": "what do you know about hematology lab work right now", "intent": "capability_query", "lang": "en"}
+{"text": "why are band forms discussed in differential review", "intent": "wbc_term", "lang": "en"}
+{"text": "In EDTA specimen processing, what storage rule should I follow?", "intent": "sample_collection", "lang": "en"}
+{"text": "What does HGB mean in CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "what is the role of differential count after abnormal WBC", "intent": "wbc_term", "lang": "en"}
+{"text": "What is the correct patient ID labeling?", "intent": "sample_collection", "lang": "en"}
+{"text": "what broad checks are done before patient result release after QC issue", "intent": "quality_control", "lang": "en"}
+{"text": "appreciate the explanation today", "intent": "thanks", "lang": "en"}
+{"text": "What to do if sample is hemolyzed?", "intent": "sample_collection", "lang": "en"}
+{"text": "what injection is indicated by this report", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "what does a high platelet count mean", "intent": "platelet_term", "lang": "en"}
+{"text": "what is the role of differential count in infection screening", "intent": "differential_review", "lang": "en"}
+{"text": "i need more detail on that again", "intent": "clarification", "lang": "en"}
+{"text": "hey there today", "intent": "greeting", "lang": "en"}
+{"text": "how do you train staff on critical result reporting", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "what is the safest way to communicate a critical lab result", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "What does HCT mean in CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "please explain mean platelet volume", "intent": "cbc_info", "lang": "en"}
+{"text": "got it thank you", "intent": "thanks", "lang": "en"}
+{"text": "how should night shift handle critical values", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "what can you answer for Emma", "intent": "capability_query", "lang": "en"}
+{"text": "thank you very much again", "intent": "thanks", "lang": "en"}
+{"text": "can you restate that", "intent": "clarification", "lang": "en"}
+{"text": "thanks for your support today", "intent": "thanks", "lang": "en"}
+{"text": "What tube is used for intrinsic and extrinsic pathway tests?", "intent": "coag_test", "lang": "en"}
+{"text": "what is the role of local SOP in critical result reporting", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "What is the sample type for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "are you okay my friend", "intent": "small_talk", "lang": "en"}
+{"text": "i do not understand for me", "intent": "clarification", "lang": "en"}
+{"text": "how do you summarize differential review for new staff", "intent": "differential_review", "lang": "en"}
+{"text": "afternoon today", "intent": "greeting", "lang": "en"}
+{"text": "how are platelet comments added to hematology reports", "intent": "platelet_term", "lang": "en"}
+{"text": "when should a manual differential be done", "intent": "differential_review", "lang": "en"}
+{"text": "tell me the correct dose for this medication", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "can you explain again now", "intent": "clarification", "lang": "en"}
+{"text": "hello assistant", "intent": "greeting", "lang": "en"}
+{"text": "please explain more simply please", "intent": "clarification", "lang": "en"}
+{"text": "can you help me plan a vacation", "intent": "out_of_scope", "lang": "en"}
+{"text": "what are you trained for today", "intent": "capability_query", "lang": "en"}
+{"text": "Define MCH.", "intent": "cbc_info", "lang": "en"}
+{"text": "alright thanks today", "intent": "thanks", "lang": "en"}
+{"text": "Explain PLT", "intent": "cbc_info", "lang": "en"}
+{"text": "How should I interpret low platelet count?", "intent": "cbc_info", "lang": "en"}
+{"text": "what is Levy Jennings chart in lab QC", "intent": "quality_control", "lang": "en"}
+{"text": "how do you feel today today", "intent": "small_talk", "lang": "en"}
+{"text": "I need the definition of aPTT", "intent": "coag_test", "lang": "en"}
+{"text": "what is football", "intent": "out_of_scope", "lang": "en"}
+{"text": "how should coagulation samples be transported to the lab", "intent": "coag_test", "lang": "en"}
+{"text": "why are red cell indices included in a CBC", "intent": "cbc_info", "lang": "en"}
+{"text": "what broad significance does high MCV carry", "intent": "rbc_term", "lang": "en"}
+{"text": "What does low MCHC suggest?", "intent": "cbc_info", "lang": "en"}
+{"text": "whats up today", "intent": "small_talk", "lang": "en"}
+{"text": "great thanks really", "intent": "thanks", "lang": "en"}
+{"text": "How should I understand aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "good evening today", "intent": "greeting", "lang": "en"}
+{"text": "thanks a lot there", "intent": "thanks", "lang": "en"}
+{"text": "For a lavender top tube, what should I do for low volume?", "intent": "sample_collection", "lang": "en"}
+{"text": "What is aPTT?", "intent": "coag_test", "lang": "en"}
+{"text": "I need help with CBC reference ranges.", "intent": "help", "lang": "en"}
+{"text": "catch you later", "intent": "goodbye", "lang": "en"}
+{"text": "what is wedge smear technique", "intent": "blood_smear", "lang": "en"}
+{"text": "what are common reasons to recollect a coagulation specimen", "intent": "coag_test", "lang": "en"}
+{"text": "What is the PT test used for?", "intent": "coag_test", "lang": "en"}
+{"text": "i need more detail on that for me", "intent": "clarification", "lang": "en"}
+{"text": "How should a coag specimen be labeled?", "intent": "coag_test", "lang": "en"}
+{"text": "can you explain a CBC", "intent": "cbc_info", "lang": "en"}
+{"text": "What does a CBC measure?", "intent": "cbc_info", "lang": "en"}
+{"text": "hello assistant today", "intent": "greeting", "lang": "en"}
+{"text": "what broad significance does low MCV carry", "intent": "rbc_term", "lang": "en"}
+{"text": "What does low RBC suggest?", "intent": "cbc_info", "lang": "en"}
+{"text": "During CBC specimen handling, what mixing step is required?", "intent": "sample_collection", "lang": "en"}
+{"text": "what do you mean by that now", "intent": "clarification", "lang": "en"}
+{"text": "how are things", "intent": "small_talk", "lang": "en"}
+{"text": "Can I centrifuge EDTA for CBC?", "intent": "sample_collection", "lang": "en"}
+{"text": "what is neutropenia in simple terms", "intent": "wbc_term", "lang": "en"}
+{"text": "what does prolonged PT suggest", "intent": "coag_test", "lang": "en"}
+{"text": "what does erythrocyte mean on a CBC report", "intent": "rbc_term", "lang": "en"}
+{"text": "what do you help with exactly", "intent": "capability_query", "lang": "en"}
+{"text": "what does a broad low white count mean before clinical review", "intent": "wbc_term", "lang": "en"}

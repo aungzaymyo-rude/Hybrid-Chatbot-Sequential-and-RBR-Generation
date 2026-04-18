@@ -29,3 +29,8 @@ class AdminReviewRequest(BaseModel):
     review_status: str = Field(..., min_length=1, max_length=32)
     corrected_intent: str | None = Field(default=None, max_length=80)
     admin_notes: str | None = Field(default=None, max_length=4000)
+
+
+class TraceRequest(BaseModel):
+    text: str = Field(..., min_length=1)
+    model_key: str | None = None

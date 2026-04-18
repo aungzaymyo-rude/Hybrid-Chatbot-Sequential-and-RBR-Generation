@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, Optional, Tuple
+from typing import Dict, List, Optional, Tuple
 
 import torch
 
@@ -79,6 +79,13 @@ class Prediction:
     text: str
 
 
+@dataclass
+class RuleTrace:
+    intent: str
+    matched_pattern: str
+    stage: str
+
+
 class IntentPredictor:
     def __init__(
         self,
@@ -145,6 +152,25 @@ class IntentPredictor:
         model.load_state_dict(state)
         return model
 
+    def _match_rule(self, cleaned: str) -> RuleTrace | None:
+        for pattern in GREETING_PATTERNS:
+            if cleaned == pattern or cleaned.startswith(pattern + ' '):
+                return RuleTrace(intent='greeting', matched_pattern=pattern, stage='greeting_rule')
+
+        for pattern in SMALL_TALK_PATTERNS:
+            if cleaned == pattern or cleaned.startswith(pattern + ' '):
+                return RuleTrace(intent='small_talk', matched_pattern=pattern, stage='small_talk_rule')
+
+        if cleaned in INCOMPLETE_PATTERNS or (len(cleaned.split()) <= 2 and cleaned.split()[0] in {'what', 'how', 'why', 'which'}):
+            return RuleTrace(intent='incomplete_query', matched_pattern=cleaned, stage='incomplete_rule')
+
+        tokens = set(cleaned.split())
+        matched_unsafe = sorted(tokens & UNSAFE_KEYWORDS)
+        if matched_unsafe:
+            return RuleTrace(intent='unsafe_medical_request', matched_pattern=', '.join(matched_unsafe), stage='unsafe_rule')
+
+        return None
+
     @staticmethod
     def postprocess_logits(
         logits: torch.Tensor,
@@ -160,6 +186,96 @@ class IntentPredictor:
         return intent, confidence
 
     @torch.no_grad()
+    def trace(self, text: str, lang: Optional[str] = None, top_k: int = 5) -> Dict[str, object]:
+        cleaned = normalize_text(text)
+        tokens = cleaned.split() if cleaned else []
+        token_ids = self.vocab.encode(cleaned) if cleaned else []
+        token_map = [
+            {
+                'token': token,
+                'id': token_ids[idx] if idx < len(token_ids) else self.vocab.unk_id,
+                'known': token in self.vocab.stoi,
+            }
+            for idx, token in enumerate(tokens[: self.vocab.max_length])
+        ]
+
+        if not cleaned:
+            return {
+                'raw_text': text,
+                'normalized_text': cleaned,
+                'tokens': tokens,
+                'token_map': token_map,
+                'language': lang or 'unknown',
+                'rule_match': {'stage': 'empty_input', 'intent': 'fallback', 'matched_pattern': ''},
+                'threshold': self.threshold,
+                'top_predictions': [],
+                'final_intent': 'fallback',
+                'final_confidence': 0.0,
+            }
+
+        language = lang or detect_language(cleaned)
+        if language != 'en':
+            return {
+                'raw_text': text,
+                'normalized_text': cleaned,
+                'tokens': tokens,
+                'token_map': token_map,
+                'language': language,
+                'rule_match': {'stage': 'language_gate', 'intent': 'language_not_supported', 'matched_pattern': language},
+                'threshold': self.threshold,
+                'top_predictions': [],
+                'final_intent': 'language_not_supported',
+                'final_confidence': 1.0,
+            }
+
+        rule_match = self._match_rule(cleaned)
+        if rule_match is not None:
+            return {
+                'raw_text': text,
+                'normalized_text': cleaned,
+                'tokens': tokens,
+                'token_map': token_map,
+                'language': language,
+                'rule_match': {
+                    'stage': rule_match.stage,
+                    'intent': rule_match.intent,
+                    'matched_pattern': rule_match.matched_pattern,
+                },
+                'threshold': self.threshold,
+                'top_predictions': [],
+                'final_intent': rule_match.intent,
+                'final_confidence': 1.0,
+            }
+
+        encoded_ids = token_ids or [self.vocab.unk_id]
+        encoded = torch.tensor([encoded_ids], dtype=torch.long, device=self.device)
+        lengths = torch.tensor([len(encoded_ids)], dtype=torch.long, device=self.device)
+        logits = self.model(encoded, lengths)[0]
+        probs = torch.softmax(logits, dim=-1)
+        sorted_probs, sorted_indices = torch.sort(probs, descending=True)
+        top_predictions: List[Dict[str, object]] = []
+        for score, idx in zip(sorted_probs[:top_k], sorted_indices[:top_k]):
+            top_predictions.append(
+                {
+                    'intent': self.label_map[int(idx.item())],
+                    'confidence': float(score.item()),
+                }
+            )
+        final_intent, final_confidence = self.postprocess_logits(logits, self.label_map, self.threshold)
+        return {
+            'raw_text': text,
+            'normalized_text': cleaned,
+            'tokens': tokens,
+            'token_map': token_map,
+            'language': language,
+            'rule_match': None,
+            'threshold': self.threshold,
+            'top_predictions': top_predictions,
+            'final_intent': final_intent,
+            'final_confidence': final_confidence,
+        }
+
+    @torch.no_grad()
     def predict(self, text: str, lang: Optional[str] = None) -> Prediction:
         cleaned = normalize_text(text)
         if not cleaned:
@@ -169,20 +285,9 @@ class IntentPredictor:
         if language != 'en':
             return Prediction(intent='language_not_supported', confidence=1.0, language=language, text=text)
 
-        for pattern in GREETING_PATTERNS:
-            if cleaned == pattern or cleaned.startswith(pattern + ' '):
-                return Prediction(intent='greeting', confidence=1.0, language=language, text=text)
-
-        for pattern in SMALL_TALK_PATTERNS:
-            if cleaned == pattern or cleaned.startswith(pattern + ' '):
-                return Prediction(intent='small_talk', confidence=1.0, language=language, text=text)
-
-        if cleaned in INCOMPLETE_PATTERNS or (len(cleaned.split()) <= 2 and cleaned.split()[0] in {'what', 'how', 'why', 'which'}):
-            return Prediction(intent='incomplete_query', confidence=1.0, language=language, text=text)
-
-        tokens = set(cleaned.split())
-        if tokens & UNSAFE_KEYWORDS:
-            return Prediction(intent='unsafe_medical_request', confidence=1.0, language=language, text=text)
+        rule_match = self._match_rule(cleaned)
+        if rule_match is not None:
+            return Prediction(intent=rule_match.intent, confidence=1.0, language=language, text=text)
 
         encoded = torch.tensor([self.vocab.encode(cleaned)], dtype=torch.long, device=self.device)
         lengths = torch.tensor([encoded.shape[1]], dtype=torch.long, device=self.device)

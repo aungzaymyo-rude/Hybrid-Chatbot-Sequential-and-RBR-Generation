@@ -15,10 +15,10 @@ if str(PROJECT_ROOT) not in sys.path:
 import numpy as np
 import torch
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support
-from sklearn.model_selection import train_test_split
 from torch import nn
 from torch.utils.data import DataLoader
 
+from chatbot.data.split_utils import load_split_rows
 from chatbot.models.sequential_intent import (
     IntentTextDataset,
     SequentialIntentClassifier,
@@ -104,22 +104,24 @@ def main() -> None:
     set_seed(seed)
 
     dataset = load_intent_dataset(model_settings['dataset_path'])
-    records = [
-        {
-            'text': normalize_text(row['text']),
-            'intent': row['intent'],
-            'lang': row.get('lang', 'en'),
-        }
-        for row in dataset
-    ]
     label2id, id2label = build_label_maps(dataset)
-
-    train_records, eval_records = train_test_split(
-        records,
-        test_size=cfg['data']['test_size'],
-        random_state=seed,
-        stratify=[row['intent'] for row in records],
-    )
+    split_rows = load_split_rows(model_settings['split_paths'])
+    train_records = [
+        {
+            'text': normalize_text(str(row['text'])),
+            'intent': str(row['intent']),
+            'lang': str(row.get('lang', 'en')),
+        }
+        for row in split_rows['train']
+    ]
+    validation_records = [
+        {
+            'text': normalize_text(str(row['text'])),
+            'intent': str(row['intent']),
+            'lang': str(row.get('lang', 'en')),
+        }
+        for row in split_rows['validation']
+    ]
 
     model_cfg = cfg['model']
     training_cfg = cfg['training']
@@ -132,7 +134,7 @@ def main() -> None:
     )
 
     train_dataset = IntentTextDataset(train_records, vocab=vocab, label2id=label2id)
-    eval_dataset = IntentTextDataset(eval_records, vocab=vocab, label2id=label2id)
+    validation_dataset = IntentTextDataset(validation_records, vocab=vocab, label2id=label2id)
     collate = partial(collate_batch, pad_id=vocab.pad_id)
 
     train_loader = DataLoader(
@@ -141,8 +143,8 @@ def main() -> None:
         shuffle=True,
         collate_fn=collate,
     )
-    eval_loader = DataLoader(
-        eval_dataset,
+    validation_loader = DataLoader(
+        validation_dataset,
         batch_size=int(training_cfg['eval_batch_size']),
         shuffle=False,
         collate_fn=collate,
@@ -169,12 +171,14 @@ def main() -> None:
 
     best_state = None
     best_f1 = -1.0
+    best_epoch = 0
     history: List[Dict[str, float]] = []
 
     logger.info(
-        'Starting %s training with dataset=%s output_dir=%s',
+        'Starting %s training with dataset=%s split_dir=%s output_dir=%s',
         model_settings['model_key'],
         model_settings['dataset_path'],
+        model_settings['split_dir'],
         model_settings['output_dir'],
     )
     for epoch in range(1, int(training_cfg['epochs']) + 1):
@@ -197,23 +201,24 @@ def main() -> None:
             seen += labels.size(0)
 
         train_loss = running_loss / max(1, seen)
-        eval_loss, eval_labels, eval_preds = evaluate(model, eval_loader, device)
-        metrics = compute_metrics(eval_labels, eval_preds)
-        epoch_record = {'epoch': float(epoch), 'train_loss': train_loss, 'eval_loss': eval_loss, **metrics}
+        validation_loss, validation_labels, validation_preds = evaluate(model, validation_loader, device)
+        metrics = compute_metrics(validation_labels, validation_preds)
+        epoch_record = {'epoch': float(epoch), 'train_loss': train_loss, 'validation_loss': validation_loss, **metrics}
         history.append(epoch_record)
         logger.info('Epoch %s metrics: %s', epoch, epoch_record)
 
         if metrics['f1'] > best_f1:
             best_f1 = metrics['f1']
+            best_epoch = epoch
             best_state = {key: value.cpu() for key, value in model.state_dict().items()}
 
     if best_state is not None:
         model.load_state_dict(best_state)
 
-    final_eval_loss, final_labels, final_preds = evaluate(model, eval_loader, device)
+    final_validation_loss, final_labels, final_preds = evaluate(model, validation_loader, device)
     final_metrics = compute_metrics(final_labels, final_preds)
-    final_metrics['eval_loss'] = final_eval_loss
-    logger.info('Evaluation metrics: %s', final_metrics)
+    final_metrics['validation_loss'] = final_validation_loss
+    logger.info('Validation metrics: %s', final_metrics)
 
     output_dir = Path(model_settings['output_dir'])
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -237,10 +242,22 @@ def main() -> None:
             'unk_id': vocab.unk_id,
             'model_key': model_settings['model_key'],
             'dataset_path': model_settings['dataset_path'],
+            'split_dir': model_settings['split_dir'],
             'version': model_settings['version'],
         },
     )
-    save_json(output_dir / 'training_history.json', {'epochs': history, 'best_f1': best_f1})
+    save_json(
+        output_dir / 'training_history.json',
+        {
+            'epochs': history,
+            'best_f1': best_f1,
+            'best_epoch': best_epoch,
+            'split_paths': model_settings['split_paths'],
+            'train_size': len(train_records),
+            'validation_size': len(validation_records),
+            'seed': seed,
+        },
+    )
 
     logger.info('Model saved to %s', output_dir)
 
