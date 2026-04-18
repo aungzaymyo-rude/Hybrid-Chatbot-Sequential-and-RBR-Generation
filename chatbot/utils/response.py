@@ -6,6 +6,7 @@ from typing import Dict
 _RESPONSES: Dict[str, Dict[str, str]] = {
     'en': {
         'greeting': 'Hello! How can I help you today?',
+        'small_talk': 'I am here and ready to help with hematology lab questions. If you want, ask me about CBC, report terms, coagulation tests, blood smear workflow, or sample handling.',
         'help': 'I can help with CBC basics, report parameters, RBC and WBC terms, coagulation screening, blood smear workflow, platelet questions, quality control, critical value workflow, and hematology sample collection. What do you need?',
         'cbc_info': 'A CBC (complete blood count) measures RBC, WBC, hemoglobin, hematocrit, and platelets. Reference ranges vary by lab; follow your SOP.',
         'sample_collection': 'For CBC, collect in an EDTA (lavender top) tube, fill to the line, gently invert 8-10 times, label immediately, and avoid hemolysis. Follow local SOP for stability and transport.',

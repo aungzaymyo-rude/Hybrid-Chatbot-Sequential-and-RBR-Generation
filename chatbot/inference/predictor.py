@@ -23,6 +23,22 @@ GREETING_PATTERNS = (
     'greetings',
 )
 
+SMALL_TALK_PATTERNS = (
+    'how are you',
+    'how are u',
+    'how r u',
+    'how is it going',
+    'how is going',
+    'hows it going',
+    "how's it going",
+    'how are things',
+    'whats up',
+    "what's up",
+    'how have you been',
+    'hope you are well',
+    'are you okay',
+)
+
 INCOMPLETE_PATTERNS = {
     'what',
     'what is',
@@ -156,6 +172,10 @@ class IntentPredictor:
         for pattern in GREETING_PATTERNS:
             if cleaned == pattern or cleaned.startswith(pattern + ' '):
                 return Prediction(intent='greeting', confidence=1.0, language=language, text=text)
+
+        for pattern in SMALL_TALK_PATTERNS:
+            if cleaned == pattern or cleaned.startswith(pattern + ' '):
+                return Prediction(intent='small_talk', confidence=1.0, language=language, text=text)
 
         if cleaned in INCOMPLETE_PATTERNS or (len(cleaned.split()) <= 2 and cleaned.split()[0] in {'what', 'how', 'why', 'which'}):
             return Prediction(intent='incomplete_query', confidence=1.0, language=language, text=text)

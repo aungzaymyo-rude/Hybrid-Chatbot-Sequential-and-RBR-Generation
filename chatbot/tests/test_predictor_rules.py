@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from chatbot.inference.predictor import GREETING_PATTERNS, INCOMPLETE_PATTERNS, UNSAFE_KEYWORDS
+from chatbot.inference.predictor import GREETING_PATTERNS, INCOMPLETE_PATTERNS, SMALL_TALK_PATTERNS, UNSAFE_KEYWORDS
 
 
 def test_incomplete_patterns_cover_basic_short_queries():
@@ -18,3 +18,9 @@ def test_unsafe_keywords_cover_treatment_language():
 def test_greeting_patterns_still_include_basic_greetings():
     assert "hello" in GREETING_PATTERNS
     assert "hi" in GREETING_PATTERNS
+
+
+def test_small_talk_patterns_include_social_openers():
+    assert "how are you" in SMALL_TALK_PATTERNS
+    assert "how are u" in SMALL_TALK_PATTERNS
+    assert "how is going" in SMALL_TALK_PATTERNS

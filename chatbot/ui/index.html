@@ -13,7 +13,7 @@
   <main class="app-shell">
     <section class="hero-panel">
       <p class="eyebrow">Medical Lab Assistant</p>
-      <h1>Hematology Lab Assistant</h1>
+      <h1>Hematology Lab Chatbot</h1>
       <p class="hero-copy">
         It is English-only and designed for controlled hematology lab guidance, not diagnosis or prescribing.
       </p>
@@ -32,6 +32,10 @@
           <strong id="api-status">Checking...</strong>
         </article>
         <article>
+          <span class="label">Model</span>
+          <strong id="model-status">Loading...</strong>
+        </article>
+        <article>
           <span class="label">Session</span>
           <strong id="session-status">Local transcript enabled</strong>
         </article>
@@ -48,9 +52,14 @@
 
     <section class="chat-panel">
       <header class="chat-header">
-        <div>
+        <div class="chat-heading">
           <p class="chat-title">Assistant Console</p>
           <p class="chat-subtitle">Ask a hematology lab question in English.</p>
+          <div class="model-selector-row">
+            <label class="model-label" for="model-select">Model</label>
+            <select id="model-select" class="model-select"></select>
+            <span id="model-hint" class="model-hint">Loading model options...</span>
+          </div>
         </div>
         <div class="header-actions">
           <button id="export-chat" class="secondary-button" type="button">Export</button>

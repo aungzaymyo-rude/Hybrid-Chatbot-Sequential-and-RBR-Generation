@@ -26,7 +26,7 @@ from chatbot.models.sequential_intent import (
     collate_batch,
 )
 from chatbot.training.dataset import build_label_maps, load_intent_dataset
-from chatbot.utils.config import load_config
+from chatbot.utils.config import load_config, resolve_model_settings
 from chatbot.utils.logging import setup_logging
 from chatbot.utils.preprocessing import normalize_text
 
@@ -89,14 +89,21 @@ def main() -> None:
         default=str(Path(__file__).resolve().parents[1] / 'config.yaml'),
         help='Path to config file',
     )
+    parser.add_argument(
+        '--model-key',
+        type=str,
+        default=None,
+        help='Configured model key to train (for example: general or report).',
+    )
     args = parser.parse_args()
 
     cfg = load_config(args.config)
+    model_settings = resolve_model_settings(cfg, args.model_key)
     logger = setup_logging(cfg['logging']['log_file'], cfg['logging'].get('level', 'INFO'))
     seed = int(cfg['training'].get('seed', 42))
     set_seed(seed)
 
-    dataset = load_intent_dataset(cfg['data']['dataset_path'])
+    dataset = load_intent_dataset(model_settings['dataset_path'])
     records = [
         {
             'text': normalize_text(row['text']),
@@ -164,7 +171,12 @@ def main() -> None:
     best_f1 = -1.0
     history: List[Dict[str, float]] = []
 
-    logger.info('Starting BiLSTM training')
+    logger.info(
+        'Starting %s training with dataset=%s output_dir=%s',
+        model_settings['model_key'],
+        model_settings['dataset_path'],
+        model_settings['output_dir'],
+    )
     for epoch in range(1, int(training_cfg['epochs']) + 1):
         model.train()
         running_loss = 0.0
@@ -203,7 +215,7 @@ def main() -> None:
     final_metrics['eval_loss'] = final_eval_loss
     logger.info('Evaluation metrics: %s', final_metrics)
 
-    output_dir = Path(training_cfg['output_dir'])
+    output_dir = Path(model_settings['output_dir'])
     output_dir.mkdir(parents=True, exist_ok=True)
     torch.save(model.state_dict(), output_dir / 'model.pt')
     save_json(output_dir / 'label_map.json', label2id)
@@ -223,6 +235,9 @@ def main() -> None:
             'num_labels': len(label2id),
             'pad_id': vocab.pad_id,
             'unk_id': vocab.unk_id,
+            'model_key': model_settings['model_key'],
+            'dataset_path': model_settings['dataset_path'],
+            'version': model_settings['version'],
         },
     )
     save_json(output_dir / 'training_history.json', {'epochs': history, 'best_f1': best_f1})

@@ -30,6 +30,13 @@ def main() -> None:
     parser.add_argument('--export-only', action='store_true', help='Only export reviewed queries to CSV.')
     parser.add_argument('--skip-eval', action='store_true', help='Skip evaluation after training.')
     parser.add_argument('--limit', type=int, default=None, help='Optional maximum number of reviewed rows to export.')
+    parser.add_argument(
+        '--model-key',
+        action='append',
+        dest='model_keys',
+        default=None,
+        help='Specific model key(s) to rebuild, retrain, and evaluate. Defaults to all configured model profiles.',
+    )
     args = parser.parse_args()
 
     cfg = load_config(args.config)
@@ -58,15 +65,44 @@ def main() -> None:
         ],
         cwd=project_root,
     )
-    run_step(
-        [sys.executable, 'chatbot/training/train_intent.py', '--config', str(Path(args.config).resolve())],
-        cwd=project_root,
-    )
-    if not args.skip_eval:
+    build_command = [
+        sys.executable,
+        'chatbot/data/build_model_datasets.py',
+        '--config',
+        str(Path(args.config).resolve()),
+        '--overwrite',
+    ]
+    model_keys = args.model_keys or list(cfg.get('data', {}).get('model_profiles', {}).keys())
+    for model_key in model_keys:
+        build_command.extend(['--model-key', model_key])
+    run_step(build_command, cwd=project_root)
+
+    for model_key in model_keys:
         run_step(
-            [sys.executable, 'chatbot/evaluation/evaluate.py', '--config', str(Path(args.config).resolve())],
+            [
+                sys.executable,
+                'chatbot/training/train_intent.py',
+                '--config',
+                str(Path(args.config).resolve()),
+                '--model-key',
+                model_key,
+            ],
             cwd=project_root,
         )
+        if not args.skip_eval:
+            run_step(
+                [
+                    sys.executable,
+                    'chatbot/evaluation/evaluate.py',
+                    '--config',
+                    str(Path(args.config).resolve()),
+                    '--model-key',
+                    model_key,
+                    '--run-name',
+                    f'{model_key}_review_retrain_{timestamp}',
+                ],
+                cwd=project_root,
+            )
 
 
 if __name__ == '__main__':

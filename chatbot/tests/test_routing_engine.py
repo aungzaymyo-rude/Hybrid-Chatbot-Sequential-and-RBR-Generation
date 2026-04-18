@@ -60,6 +60,49 @@ def test_route_intent_uses_entity_detection_for_help_question():
     assert 'activated partial thromboplastin time' in response.lower()
 
 
+def test_route_intent_prioritizes_sample_collection_for_cbc_tube_question():
+    response = route_intent(
+        'sample_collection',
+        'en',
+        text='Which tube is used for CBC?',
+        config_path=CONFIG_PATH,
+    )
+    assert 'edta' in response.lower()
+
+
+def test_route_intent_returns_rejection_criteria_for_cbc_sample_question():
+    response = route_intent(
+        'sample_collection',
+        'en',
+        text='What are the rejection criteria for a CBC sample?',
+        config_path=CONFIG_PATH,
+    )
+    assert 'rejection criteria' in response.lower()
+    assert 'wrong tube' in response.lower()
+
+
+def test_route_intent_returns_clotted_sample_guidance():
+    response = route_intent(
+        'sample_collection',
+        'en',
+        text='What should I do with a clotted EDTA sample?',
+        config_path=CONFIG_PATH,
+    )
+    assert 'clotted edta sample' in response.lower() or 'clotted' in response.lower()
+    assert 'recollect' in response.lower() or 'request recollection' in response.lower()
+
+
+def test_route_intent_returns_cbc_stability_guidance():
+    response = route_intent(
+        'sample_collection',
+        'en',
+        text='How long is a CBC sample stable?',
+        config_path=CONFIG_PATH,
+    )
+    assert 'stability' in response.lower()
+    assert 'validated' in response.lower() or 'sop' in response.lower()
+
+
 def test_chat_store_logs_records():
     db_path = Path(__file__).resolve().parent / f'chat_history_test_{uuid4().hex}.db'
     store = ChatHistoryStore(str(db_path))

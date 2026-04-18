@@ -27,7 +27,30 @@
 
     <section class="metrics-grid" id="metrics-grid"></section>
 
-<section class="panel-grid visual-grid">
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Model Monitoring</h2>
+          <p class="panel-copy">Filter logs and summaries by deployed model while keeping the dashboard ready for more models later.</p>
+        </div>
+        <div class="filters">
+          <select id="model-filter">
+            <option value="">All deployed models</option>
+          </select>
+          <button id="apply-model-filter" class="secondary-button" type="button">Apply model filter</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Model</th><th>Traffic</th><th>Avg confidence</th><th>Fallback</th><th>Guardrail</th><th>Auto-switch</th><th>Retrieval</th></tr>
+          </thead>
+          <tbody id="model-table"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel-grid visual-grid">
       <article class="panel">
         <div class="panel-head">
           <h2>Monitoring Rates</h2>
@@ -47,6 +70,27 @@
           <h2>Top Intents</h2>
         </div>
         <div id="intent-chart" class="chart-stack"></div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-head">
+          <h2>Model Traffic</h2>
+        </div>
+        <div id="model-traffic-chart" class="chart-stack"></div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-head">
+          <h2>Model Quality</h2>
+        </div>
+        <div id="model-quality-chart" class="chart-stack"></div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-head">
+          <h2>Model Routing</h2>
+        </div>
+        <div id="model-routing-chart" class="chart-stack"></div>
       </article>
     </section>
 

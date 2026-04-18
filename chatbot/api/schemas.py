@@ -17,6 +17,12 @@ class ChatResponse(BaseModel):
     intent: str
     confidence: float
     response: str
+    model_key: str | None = None
+    model_version: str | None = None
+    requested_model_key: str | None = None
+    auto_switched: bool = False
+    advisory_message: str | None = None
+    suggested_model_key: str | None = None
 
 
 class AdminReviewRequest(BaseModel):

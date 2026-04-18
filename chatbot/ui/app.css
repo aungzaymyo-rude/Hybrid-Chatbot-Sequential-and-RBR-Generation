@@ -139,6 +139,11 @@ body {
   border-bottom: 1px solid var(--line);
 }
 
+.chat-heading {
+  display: grid;
+  gap: 8px;
+}
+
 .header-actions {
   display: flex;
   gap: 10px;
@@ -154,6 +159,40 @@ body {
   margin: 4px 0 0;
   color: var(--muted);
   font-size: 14px;
+}
+
+.model-selector-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.model-label,
+.model-hint {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.model-label {
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.model-select {
+  min-width: 220px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 10px 14px;
+  font: inherit;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.model-select:focus {
+  outline: 2px solid rgba(15, 122, 83, 0.22);
+  border-color: rgba(15, 122, 83, 0.24);
 }
 
 .messages {
@@ -234,6 +273,10 @@ body {
 .followup-block {
   display: grid;
   gap: 8px;
+}
+
+.followup-block[hidden] {
+  display: none;
 }
 
 .followup-title {
@@ -394,6 +437,15 @@ body {
   .composer-footer {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .model-selector-row {
+    align-items: stretch;
+  }
+
+  .model-select {
+    min-width: 0;
+    width: 100%;
   }
 
   .message {

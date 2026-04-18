@@ -1,7 +1,16 @@
 const STORAGE_KEY = "hematology_chat_history_v3";
 const SESSION_KEY = "hematology_chat_session_id_v1";
+const MODEL_PREF_KEY = "hematology_chat_model_pref_v1";
 const DEFAULT_BOT_MESSAGE =
   "I can help with CBC basics, coagulation tests, blood smear workflow, platelet and white-cell terms, quality control, and critical-value reporting. Ask in English.";
+const MODEL_LABELS = {
+  general: "General Hematology",
+  report: "Report Assistant",
+};
+const MODEL_HINTS = {
+  general: "Best for workflow, sample handling, coagulation, smear, QC, and general hematology questions.",
+  report: "Best for CBC report sections, parameter meanings, abnormal flags, and report-reading questions.",
+};
 
 const SUGGESTED_QUESTIONS = {
   cbc_info: [
@@ -34,6 +43,11 @@ const SUGGESTED_QUESTIONS = {
     "What is aPTT?",
     "What is hematology analyzer quality control?",
   ],
+  small_talk: [
+    "What can you do?",
+    "What is a CBC?",
+    "Which tube is used for CBC?",
+  ],
   clarification: [
     "Can you explain that more simply?",
     "What does MCV mean?",
@@ -62,16 +76,19 @@ const inputEl = document.getElementById("message-input");
 const clearEl = document.getElementById("clear-chat");
 const exportEl = document.getElementById("export-chat");
 const statusEl = document.getElementById("api-status");
+const modelStatusEl = document.getElementById("model-status");
 const sessionEl = document.getElementById("session-status");
 const counterEl = document.getElementById("input-counter");
 const sendButtonEl = document.getElementById("send-button");
 const templateEl = document.getElementById("message-template");
+const modelSelectEl = document.getElementById("model-select");
+const modelHintEl = document.getElementById("model-hint");
 
 function intentCategory(intent) {
   if (["unsafe_medical_request", "out_of_scope", "incomplete_query", "language_not_supported"].includes(intent)) {
     return "guardrail";
   }
-  if (["greeting", "thanks", "goodbye", "capability_query", "clarification"].includes(intent)) {
+  if (["greeting", "small_talk", "thanks", "goodbye", "capability_query", "clarification"].includes(intent)) {
     return "conversation";
   }
   if (intent === "fallback") {
@@ -88,7 +105,6 @@ function scrollToBottom() {
   messagesEl.scrollTop = messagesEl.scrollHeight;
 }
 
-
 function getSessionId() {
   const existing = window.localStorage.getItem(SESSION_KEY);
   if (existing) {
@@ -98,6 +114,33 @@ function getSessionId() {
   const generated = window.crypto?.randomUUID?.() || `session-${Date.now()}`;
   window.localStorage.setItem(SESSION_KEY, generated);
   return generated;
+}
+
+function friendlyModelLabel(modelKey) {
+  return MODEL_LABELS[modelKey] || modelKey || "Unknown";
+}
+
+function updateModelUI(modelKey) {
+  if (!modelKey) {
+    modelStatusEl.textContent = "Unavailable";
+    modelHintEl.textContent = "Model options are unavailable.";
+    return;
+  }
+  modelStatusEl.textContent = friendlyModelLabel(modelKey);
+  modelHintEl.textContent = MODEL_HINTS[modelKey] || `Using model: ${friendlyModelLabel(modelKey)}`;
+}
+
+function getSelectedModelKey() {
+  return modelSelectEl.value || window.localStorage.getItem(MODEL_PREF_KEY) || "general";
+}
+
+function setSelectedModelKey(modelKey) {
+  if (!modelKey) {
+    return;
+  }
+  modelSelectEl.value = modelKey;
+  window.localStorage.setItem(MODEL_PREF_KEY, modelKey);
+  updateModelUI(modelKey);
 }
 
 function getSuggestedQuestions(intent) {
@@ -233,18 +276,23 @@ async function checkHealth() {
 
 function buildMeta(payload) {
   const confidence = Number(payload.confidence || 0);
-  return `intent: ${payload.intent} | confidence: ${confidence.toFixed(3)} | lang: ${payload.lang}`;
+  const modelKey = payload.model_key ? ` | model: ${payload.model_key}` : "";
+  const switched = payload.auto_switched && payload.requested_model_key && payload.model_key
+    ? ` | auto-switched: ${payload.requested_model_key} -> ${payload.model_key}`
+    : "";
+  return `intent: ${payload.intent} | confidence: ${confidence.toFixed(3)} | lang: ${payload.lang}${modelKey}${switched}`;
 }
 
 async function sendMessage(text) {
   appendMessage("user", text, { category: "user" });
   const pendingNode = appendMessage("bot", "Thinking...", { category: "pending" });
+  const modelKey = getSelectedModelKey();
 
   try {
     const response = await fetch("/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text, session_id: getSessionId() }),
+      body: JSON.stringify({ text, session_id: getSessionId(), model_key: modelKey }),
     });
 
     if (!response.ok) {
@@ -274,6 +322,9 @@ async function sendMessage(text) {
     const metaEl = pendingNode.querySelector(".meta");
     metaEl.hidden = false;
     metaEl.textContent = buildMeta(payload);
+    if (payload.model_key && payload.model_key !== modelKey) {
+      setSelectedModelKey(payload.model_key);
+    }
     saveConversation();
   } catch (error) {
     pendingNode.querySelector(".bubble").textContent = "The assistant is unavailable right now.";
@@ -286,6 +337,32 @@ async function sendMessage(text) {
     metaEl.hidden = false;
     metaEl.textContent = "Network or server error";
     saveConversation();
+  }
+}
+
+async function loadModels() {
+  try {
+    const response = await fetch("/models");
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+    const payload = await response.json();
+    const models = payload.models || {};
+    modelSelectEl.innerHTML = "";
+    Object.entries(models).forEach(([key, entry]) => {
+      const option = document.createElement("option");
+      const version = entry.version ? ` (${entry.version})` : "";
+      option.value = key;
+      option.textContent = `${friendlyModelLabel(key)}${version}`;
+      modelSelectEl.appendChild(option);
+    });
+
+    const stored = window.localStorage.getItem(MODEL_PREF_KEY);
+    const defaultKey = stored && models[stored] ? stored : (payload.default || Object.keys(models)[0] || "general");
+    setSelectedModelKey(defaultKey);
+  } catch (error) {
+    modelSelectEl.innerHTML = '<option value="general">General Hematology</option><option value="report">Report Assistant</option>';
+    setSelectedModelKey(window.localStorage.getItem(MODEL_PREF_KEY) || "general");
   }
 }
 
@@ -331,6 +408,9 @@ inputEl.addEventListener("input", updateCounter);
 
 clearEl.addEventListener("click", clearConversation);
 exportEl.addEventListener("click", exportConversation);
+modelSelectEl.addEventListener("change", () => {
+  setSelectedModelKey(modelSelectEl.value);
+});
 
 document.querySelectorAll(".prompt-chip").forEach((button) => {
   button.addEventListener("click", async () => {
@@ -344,3 +424,4 @@ sessionEl.textContent = "Local transcript enabled";
 restoreConversation();
 updateCounter();
 checkHealth();
+loadModels();

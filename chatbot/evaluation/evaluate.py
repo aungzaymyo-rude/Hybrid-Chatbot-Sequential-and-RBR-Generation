@@ -22,7 +22,7 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from chatbot.models.sequential_intent import IntentTextDataset, SequentialIntentClassifier, Vocabulary, collate_batch
 from chatbot.training.dataset import build_label_maps, load_intent_dataset
-from chatbot.utils.config import load_config
+from chatbot.utils.config import load_config, resolve_model_settings
 from chatbot.utils.preprocessing import normalize_text
 
 
@@ -232,15 +232,17 @@ def _write_csv(path: Path, fieldnames: Sequence[str], rows: Sequence[Dict[str, o
 def main() -> None:
     parser = argparse.ArgumentParser(description='Evaluate intent model')
     parser.add_argument('--config', type=str, default=str(Path(__file__).resolve().parents[1] / 'config.yaml'))
+    parser.add_argument('--model-key', type=str, default=None)
     parser.add_argument('--model-dir', type=str, default=None)
     parser.add_argument('--run-name', type=str, default=None)
     parser.add_argument('--batch-size', type=int, default=None)
     args = parser.parse_args()
 
     cfg = load_config(args.config)
-    model_dir = Path(args.model_dir or cfg['training']['output_dir']).resolve()
+    model_settings = resolve_model_settings(cfg, args.model_key)
+    model_dir = Path(args.model_dir or model_settings['output_dir']).resolve()
 
-    dataset = load_intent_dataset(cfg['data']['dataset_path'])
+    dataset = load_intent_dataset(model_settings['dataset_path'])
     label2id, id2label = build_label_maps(dataset)
     split = dataset.train_test_split(test_size=cfg['data']['test_size'], seed=cfg['training'].get('seed', 42))
     full_records = [dict(row) for row in dataset]
@@ -267,8 +269,10 @@ def main() -> None:
         'run_name': run_name,
         'timestamp': datetime.now(timezone.utc).isoformat(),
         'model_dir': str(model_dir),
+        'model_key': model_settings['model_key'],
+        'model_version': model_settings['version'],
         'model_architecture': result['model_metadata'].get('architecture', cfg['model'].get('architecture', 'bilstm')),
-        'dataset_path': cfg['data']['dataset_path'],
+        'dataset_path': model_settings['dataset_path'],
         'test_size': cfg['data']['test_size'],
         'num_labels': len(label2id),
         'batch_size': batch_size,

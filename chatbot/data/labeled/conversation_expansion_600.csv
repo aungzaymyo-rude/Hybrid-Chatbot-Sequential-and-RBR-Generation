@@ -1,0 +1,601 @@
+text,intent,lang
+hello,greeting,en
+hello friend,greeting,en
+hello today,greeting,en
+hello there,greeting,en
+hello again,greeting,en
+hi,greeting,en
+hi friend,greeting,en
+hi today,greeting,en
+hi there,greeting,en
+hi again,greeting,en
+hey,greeting,en
+hey friend,greeting,en
+hey today,greeting,en
+hey there,greeting,en
+hey again,greeting,en
+good morning,greeting,en
+good morning friend,greeting,en
+good morning today,greeting,en
+good morning there,greeting,en
+good morning again,greeting,en
+good afternoon,greeting,en
+good afternoon friend,greeting,en
+good afternoon today,greeting,en
+good afternoon there,greeting,en
+good afternoon again,greeting,en
+good evening,greeting,en
+good evening friend,greeting,en
+good evening today,greeting,en
+good evening there,greeting,en
+good evening again,greeting,en
+greetings,greeting,en
+greetings friend,greeting,en
+greetings today,greeting,en
+greetings there,greeting,en
+greetings again,greeting,en
+hello there friend,greeting,en
+hello there today,greeting,en
+hello there there,greeting,en
+hello there again,greeting,en
+hi there friend,greeting,en
+hi there today,greeting,en
+hi there there,greeting,en
+hi there again,greeting,en
+hey there friend,greeting,en
+hey there today,greeting,en
+hey there there,greeting,en
+hey there again,greeting,en
+nice to meet you,greeting,en
+nice to meet you friend,greeting,en
+nice to meet you today,greeting,en
+nice to meet you there,greeting,en
+nice to meet you again,greeting,en
+good day,greeting,en
+good day friend,greeting,en
+good day today,greeting,en
+good day there,greeting,en
+good day again,greeting,en
+morning,greeting,en
+morning friend,greeting,en
+morning today,greeting,en
+morning there,greeting,en
+morning again,greeting,en
+afternoon,greeting,en
+afternoon friend,greeting,en
+afternoon today,greeting,en
+afternoon there,greeting,en
+afternoon again,greeting,en
+evening,greeting,en
+evening friend,greeting,en
+evening today,greeting,en
+evening there,greeting,en
+evening again,greeting,en
+hello assistant,greeting,en
+hello assistant friend,greeting,en
+hello assistant today,greeting,en
+hello assistant there,greeting,en
+hello assistant again,greeting,en
+hi assistant,greeting,en
+hi assistant friend,greeting,en
+hi assistant today,greeting,en
+hi assistant there,greeting,en
+hi assistant again,greeting,en
+hey assistant,greeting,en
+hey assistant friend,greeting,en
+hey assistant today,greeting,en
+hey assistant there,greeting,en
+hey assistant again,greeting,en
+hello lab assistant,greeting,en
+hello lab assistant friend,greeting,en
+hello lab assistant today,greeting,en
+hello lab assistant there,greeting,en
+hello lab assistant again,greeting,en
+hi hematology assistant,greeting,en
+hi hematology assistant friend,greeting,en
+hi hematology assistant today,greeting,en
+hi hematology assistant there,greeting,en
+hi hematology assistant again,greeting,en
+how are you,small_talk,en
+how are you today,small_talk,en
+how are you there,small_talk,en
+how are you now,small_talk,en
+how are you my friend,small_talk,en
+how are u,small_talk,en
+how are u today,small_talk,en
+how are u there,small_talk,en
+how are u now,small_talk,en
+how are u my friend,small_talk,en
+how r u,small_talk,en
+how r u today,small_talk,en
+how r u there,small_talk,en
+how r u now,small_talk,en
+how r u my friend,small_talk,en
+how is it going,small_talk,en
+how is it going today,small_talk,en
+how is it going there,small_talk,en
+how is it going now,small_talk,en
+how is it going my friend,small_talk,en
+how is going,small_talk,en
+how is going today,small_talk,en
+how is going there,small_talk,en
+how is going now,small_talk,en
+how is going my friend,small_talk,en
+how's it going,small_talk,en
+how's it going today,small_talk,en
+how's it going there,small_talk,en
+how's it going now,small_talk,en
+how's it going my friend,small_talk,en
+how are things,small_talk,en
+how are things today,small_talk,en
+how are things there,small_talk,en
+how are things now,small_talk,en
+how are things my friend,small_talk,en
+whats up,small_talk,en
+whats up today,small_talk,en
+whats up there,small_talk,en
+whats up now,small_talk,en
+whats up my friend,small_talk,en
+what's up,small_talk,en
+what's up today,small_talk,en
+what's up there,small_talk,en
+what's up now,small_talk,en
+what's up my friend,small_talk,en
+how have you been,small_talk,en
+how have you been today,small_talk,en
+how have you been there,small_talk,en
+how have you been now,small_talk,en
+how have you been my friend,small_talk,en
+hope you are well,small_talk,en
+hope you are well today,small_talk,en
+hope you are well there,small_talk,en
+hope you are well now,small_talk,en
+hope you are well my friend,small_talk,en
+hope u are well,small_talk,en
+hope u are well today,small_talk,en
+hope u are well there,small_talk,en
+hope u are well now,small_talk,en
+hope u are well my friend,small_talk,en
+are you okay,small_talk,en
+are you okay today,small_talk,en
+are you okay there,small_talk,en
+are you okay now,small_talk,en
+are you okay my friend,small_talk,en
+are you doing well,small_talk,en
+are you doing well today,small_talk,en
+are you doing well there,small_talk,en
+are you doing well now,small_talk,en
+are you doing well my friend,small_talk,en
+everything going okay,small_talk,en
+everything going okay today,small_talk,en
+everything going okay there,small_talk,en
+everything going okay now,small_talk,en
+everything going okay my friend,small_talk,en
+you doing fine,small_talk,en
+you doing fine today,small_talk,en
+you doing fine there,small_talk,en
+you doing fine now,small_talk,en
+you doing fine my friend,small_talk,en
+how are things today today,small_talk,en
+how are things today there,small_talk,en
+how are things today now,small_talk,en
+how are things today my friend,small_talk,en
+how is your day going,small_talk,en
+how is your day going today,small_talk,en
+how is your day going there,small_talk,en
+how is your day going now,small_talk,en
+how is your day going my friend,small_talk,en
+you alright,small_talk,en
+you alright today,small_talk,en
+you alright there,small_talk,en
+you alright now,small_talk,en
+you alright my friend,small_talk,en
+how do you feel today,small_talk,en
+how do you feel today today,small_talk,en
+how do you feel today there,small_talk,en
+how do you feel today now,small_talk,en
+how do you feel today my friend,small_talk,en
+thanks,thanks,en
+thanks today,thanks,en
+thanks there,thanks,en
+thanks really,thanks,en
+thanks again,thanks,en
+thank you,thanks,en
+thank you today,thanks,en
+thank you there,thanks,en
+thank you really,thanks,en
+thank you again,thanks,en
+thanks a lot,thanks,en
+thanks a lot today,thanks,en
+thanks a lot there,thanks,en
+thanks a lot really,thanks,en
+thanks a lot again,thanks,en
+many thanks,thanks,en
+many thanks today,thanks,en
+many thanks there,thanks,en
+many thanks really,thanks,en
+many thanks again,thanks,en
+appreciate it,thanks,en
+appreciate it today,thanks,en
+appreciate it there,thanks,en
+appreciate it really,thanks,en
+appreciate it again,thanks,en
+thanks for the help,thanks,en
+thanks for the help today,thanks,en
+thanks for the help there,thanks,en
+thanks for the help really,thanks,en
+thanks for the help again,thanks,en
+thank you for that,thanks,en
+thank you for that today,thanks,en
+thank you for that there,thanks,en
+thank you for that really,thanks,en
+thank you for that again,thanks,en
+thanks assistant,thanks,en
+thanks assistant today,thanks,en
+thanks assistant there,thanks,en
+thanks assistant really,thanks,en
+thanks assistant again,thanks,en
+thanks for explaining,thanks,en
+thanks for explaining today,thanks,en
+thanks for explaining there,thanks,en
+thanks for explaining really,thanks,en
+thanks for explaining again,thanks,en
+thank you so much,thanks,en
+thank you so much today,thanks,en
+thank you so much there,thanks,en
+thank you so much really,thanks,en
+thank you so much again,thanks,en
+thanks that helped,thanks,en
+thanks that helped today,thanks,en
+thanks that helped there,thanks,en
+thanks that helped really,thanks,en
+thanks that helped again,thanks,en
+appreciate the explanation,thanks,en
+appreciate the explanation today,thanks,en
+appreciate the explanation there,thanks,en
+appreciate the explanation really,thanks,en
+appreciate the explanation again,thanks,en
+thanks for clarifying,thanks,en
+thanks for clarifying today,thanks,en
+thanks for clarifying there,thanks,en
+thanks for clarifying really,thanks,en
+thanks for clarifying again,thanks,en
+thanks i got it,thanks,en
+thanks i got it today,thanks,en
+thanks i got it there,thanks,en
+thanks i got it really,thanks,en
+thanks i got it again,thanks,en
+okay thanks,thanks,en
+okay thanks today,thanks,en
+okay thanks there,thanks,en
+okay thanks really,thanks,en
+okay thanks again,thanks,en
+alright thanks,thanks,en
+alright thanks today,thanks,en
+alright thanks there,thanks,en
+alright thanks really,thanks,en
+alright thanks again,thanks,en
+great thanks,thanks,en
+great thanks today,thanks,en
+great thanks there,thanks,en
+great thanks really,thanks,en
+great thanks again,thanks,en
+thanks for the answer,thanks,en
+thanks for the answer today,thanks,en
+thanks for the answer there,thanks,en
+thanks for the answer really,thanks,en
+thanks for the answer again,thanks,en
+thank you very much,thanks,en
+thank you very much today,thanks,en
+thank you very much there,thanks,en
+thank you very much really,thanks,en
+thank you very much again,thanks,en
+thanks for your support,thanks,en
+thanks for your support today,thanks,en
+thanks for your support there,thanks,en
+thanks for your support really,thanks,en
+thanks for your support again,thanks,en
+goodbye,goodbye,en
+goodbye then,goodbye,en
+goodbye today,goodbye,en
+goodbye friend,goodbye,en
+goodbye for now,goodbye,en
+bye,goodbye,en
+bye then,goodbye,en
+bye today,goodbye,en
+bye friend,goodbye,en
+bye for now,goodbye,en
+see you later,goodbye,en
+see you later then,goodbye,en
+see you later today,goodbye,en
+see you later friend,goodbye,en
+see you later for now,goodbye,en
+talk to you later,goodbye,en
+talk to you later then,goodbye,en
+talk to you later today,goodbye,en
+talk to you later friend,goodbye,en
+talk to you later for now,goodbye,en
+bye for now then,goodbye,en
+bye for now today,goodbye,en
+bye for now friend,goodbye,en
+bye for now for now,goodbye,en
+see you,goodbye,en
+see you then,goodbye,en
+see you today,goodbye,en
+see you friend,goodbye,en
+see you for now,goodbye,en
+catch you later,goodbye,en
+catch you later then,goodbye,en
+catch you later today,goodbye,en
+catch you later friend,goodbye,en
+catch you later for now,goodbye,en
+have a good day,goodbye,en
+have a good day then,goodbye,en
+have a good day today,goodbye,en
+have a good day friend,goodbye,en
+have a good day for now,goodbye,en
+have a nice day,goodbye,en
+have a nice day then,goodbye,en
+have a nice day today,goodbye,en
+have a nice day friend,goodbye,en
+have a nice day for now,goodbye,en
+take care,goodbye,en
+take care then,goodbye,en
+take care today,goodbye,en
+take care friend,goodbye,en
+take care for now,goodbye,en
+bye assistant,goodbye,en
+bye assistant then,goodbye,en
+bye assistant today,goodbye,en
+bye assistant friend,goodbye,en
+bye assistant for now,goodbye,en
+goodbye assistant,goodbye,en
+goodbye assistant then,goodbye,en
+goodbye assistant today,goodbye,en
+goodbye assistant friend,goodbye,en
+goodbye assistant for now,goodbye,en
+see you next time,goodbye,en
+see you next time then,goodbye,en
+see you next time today,goodbye,en
+see you next time friend,goodbye,en
+see you next time for now,goodbye,en
+talk later,goodbye,en
+talk later then,goodbye,en
+talk later today,goodbye,en
+talk later friend,goodbye,en
+talk later for now,goodbye,en
+i will come back later,goodbye,en
+i will come back later then,goodbye,en
+i will come back later today,goodbye,en
+i will come back later friend,goodbye,en
+i will come back later for now,goodbye,en
+that is all for now,goodbye,en
+that is all for now then,goodbye,en
+that is all for now today,goodbye,en
+that is all for now friend,goodbye,en
+that is all for now for now,goodbye,en
+ending chat now,goodbye,en
+ending chat now then,goodbye,en
+ending chat now today,goodbye,en
+ending chat now friend,goodbye,en
+ending chat now for now,goodbye,en
+bye and thanks,goodbye,en
+bye and thanks then,goodbye,en
+bye and thanks today,goodbye,en
+bye and thanks friend,goodbye,en
+bye and thanks for now,goodbye,en
+see you soon,goodbye,en
+see you soon then,goodbye,en
+see you soon today,goodbye,en
+see you soon friend,goodbye,en
+see you soon for now,goodbye,en
+okay bye,goodbye,en
+okay bye then,goodbye,en
+okay bye today,goodbye,en
+okay bye friend,goodbye,en
+okay bye for now,goodbye,en
+what can you do,capability_query,en
+what can you do today,capability_query,en
+what can you do exactly,capability_query,en
+what can you do in this chat,capability_query,en
+what can you do right now,capability_query,en
+what can this assistant do,capability_query,en
+what can this assistant do today,capability_query,en
+what can this assistant do exactly,capability_query,en
+what can this assistant do in this chat,capability_query,en
+what can this assistant do right now,capability_query,en
+what do you help with,capability_query,en
+what do you help with today,capability_query,en
+what do you help with exactly,capability_query,en
+what do you help with in this chat,capability_query,en
+what do you help with right now,capability_query,en
+what topics do you cover,capability_query,en
+what topics do you cover today,capability_query,en
+what topics do you cover exactly,capability_query,en
+what topics do you cover in this chat,capability_query,en
+what topics do you cover right now,capability_query,en
+what hematology questions can i ask,capability_query,en
+what hematology questions can i ask today,capability_query,en
+what hematology questions can i ask exactly,capability_query,en
+what hematology questions can i ask in this chat,capability_query,en
+what hematology questions can i ask right now,capability_query,en
+which lab topics are supported,capability_query,en
+which lab topics are supported today,capability_query,en
+which lab topics are supported exactly,capability_query,en
+which lab topics are supported in this chat,capability_query,en
+which lab topics are supported right now,capability_query,en
+can you explain your scope,capability_query,en
+can you explain your scope today,capability_query,en
+can you explain your scope exactly,capability_query,en
+can you explain your scope in this chat,capability_query,en
+can you explain your scope right now,capability_query,en
+what are your capabilities,capability_query,en
+what are your capabilities today,capability_query,en
+what are your capabilities exactly,capability_query,en
+what are your capabilities in this chat,capability_query,en
+what are your capabilities right now,capability_query,en
+what are you trained for,capability_query,en
+what are you trained for today,capability_query,en
+what are you trained for exactly,capability_query,en
+what are you trained for in this chat,capability_query,en
+what are you trained for right now,capability_query,en
+what do you know about hematology lab work,capability_query,en
+what do you know about hematology lab work today,capability_query,en
+what do you know about hematology lab work exactly,capability_query,en
+what do you know about hematology lab work in this chat,capability_query,en
+what do you know about hematology lab work right now,capability_query,en
+can you help with cbc questions,capability_query,en
+can you help with cbc questions today,capability_query,en
+can you help with cbc questions exactly,capability_query,en
+can you help with cbc questions in this chat,capability_query,en
+can you help with cbc questions right now,capability_query,en
+can you help with coagulation questions,capability_query,en
+can you help with coagulation questions today,capability_query,en
+can you help with coagulation questions exactly,capability_query,en
+can you help with coagulation questions in this chat,capability_query,en
+can you help with coagulation questions right now,capability_query,en
+do you support blood smear questions,capability_query,en
+do you support blood smear questions today,capability_query,en
+do you support blood smear questions exactly,capability_query,en
+do you support blood smear questions in this chat,capability_query,en
+do you support blood smear questions right now,capability_query,en
+do you answer report questions,capability_query,en
+do you answer report questions today,capability_query,en
+do you answer report questions exactly,capability_query,en
+do you answer report questions in this chat,capability_query,en
+do you answer report questions right now,capability_query,en
+what sort of questions should i ask here,capability_query,en
+what sort of questions should i ask here today,capability_query,en
+what sort of questions should i ask here exactly,capability_query,en
+what sort of questions should i ask here in this chat,capability_query,en
+what sort of questions should i ask here right now,capability_query,en
+what can this chatbot answer,capability_query,en
+what can this chatbot answer today,capability_query,en
+what can this chatbot answer exactly,capability_query,en
+what can this chatbot answer in this chat,capability_query,en
+what can this chatbot answer right now,capability_query,en
+can you tell me your scope,capability_query,en
+can you tell me your scope today,capability_query,en
+can you tell me your scope exactly,capability_query,en
+can you tell me your scope in this chat,capability_query,en
+can you tell me your scope right now,capability_query,en
+what do you specialize in,capability_query,en
+what do you specialize in today,capability_query,en
+what do you specialize in exactly,capability_query,en
+what do you specialize in in this chat,capability_query,en
+what do you specialize in right now,capability_query,en
+what areas are covered by this chat,capability_query,en
+what areas are covered by this chat today,capability_query,en
+what areas are covered by this chat exactly,capability_query,en
+what areas are covered by this chat in this chat,capability_query,en
+what areas are covered by this chat right now,capability_query,en
+what are you built to assist with,capability_query,en
+what are you built to assist with today,capability_query,en
+what are you built to assist with exactly,capability_query,en
+what are you built to assist with in this chat,capability_query,en
+what are you built to assist with right now,capability_query,en
+can you explain again,clarification,en
+can you explain again please,clarification,en
+can you explain again for me,clarification,en
+can you explain again again,clarification,en
+can you explain again now,clarification,en
+i do not understand,clarification,en
+i do not understand please,clarification,en
+i do not understand for me,clarification,en
+i do not understand again,clarification,en
+i do not understand now,clarification,en
+i didnt understand that,clarification,en
+i didnt understand that please,clarification,en
+i didnt understand that for me,clarification,en
+i didnt understand that again,clarification,en
+i didnt understand that now,clarification,en
+please explain more simply,clarification,en
+please explain more simply please,clarification,en
+please explain more simply for me,clarification,en
+please explain more simply again,clarification,en
+please explain more simply now,clarification,en
+can you say that in simple words,clarification,en
+can you say that in simple words please,clarification,en
+can you say that in simple words for me,clarification,en
+can you say that in simple words again,clarification,en
+can you say that in simple words now,clarification,en
+what do you mean by that,clarification,en
+what do you mean by that please,clarification,en
+what do you mean by that for me,clarification,en
+what do you mean by that again,clarification,en
+what do you mean by that now,clarification,en
+can you clarify that,clarification,en
+can you clarify that please,clarification,en
+can you clarify that for me,clarification,en
+can you clarify that again,clarification,en
+can you clarify that now,clarification,en
+please explain that again,clarification,en
+please explain that again please,clarification,en
+please explain that again for me,clarification,en
+please explain that again again,clarification,en
+please explain that again now,clarification,en
+can you break that down,clarification,en
+can you break that down please,clarification,en
+can you break that down for me,clarification,en
+can you break that down again,clarification,en
+can you break that down now,clarification,en
+say that another way,clarification,en
+say that another way please,clarification,en
+say that another way for me,clarification,en
+say that another way again,clarification,en
+say that another way now,clarification,en
+i need a clearer explanation,clarification,en
+i need a clearer explanation please,clarification,en
+i need a clearer explanation for me,clarification,en
+i need a clearer explanation again,clarification,en
+i need a clearer explanation now,clarification,en
+can you make that easier to understand,clarification,en
+can you make that easier to understand please,clarification,en
+can you make that easier to understand for me,clarification,en
+can you make that easier to understand again,clarification,en
+can you make that easier to understand now,clarification,en
+what does that mean exactly,clarification,en
+what does that mean exactly please,clarification,en
+what does that mean exactly for me,clarification,en
+what does that mean exactly again,clarification,en
+what does that mean exactly now,clarification,en
+explain it one more time,clarification,en
+explain it one more time please,clarification,en
+explain it one more time for me,clarification,en
+explain it one more time again,clarification,en
+explain it one more time now,clarification,en
+can you simplify that answer,clarification,en
+can you simplify that answer please,clarification,en
+can you simplify that answer for me,clarification,en
+can you simplify that answer again,clarification,en
+can you simplify that answer now,clarification,en
+please clarify the last answer,clarification,en
+please clarify the last answer please,clarification,en
+please clarify the last answer for me,clarification,en
+please clarify the last answer again,clarification,en
+please clarify the last answer now,clarification,en
+i need more detail on that,clarification,en
+i need more detail on that please,clarification,en
+i need more detail on that for me,clarification,en
+i need more detail on that again,clarification,en
+i need more detail on that now,clarification,en
+can you restate that,clarification,en
+can you restate that please,clarification,en
+can you restate that for me,clarification,en
+can you restate that again,clarification,en
+can you restate that now,clarification,en
+can you explain that step by step,clarification,en
+can you explain that step by step please,clarification,en
+can you explain that step by step for me,clarification,en
+can you explain that step by step again,clarification,en
+can you explain that step by step now,clarification,en
+i am confused by that explanation,clarification,en
+i am confused by that explanation please,clarification,en
+i am confused by that explanation for me,clarification,en
+i am confused by that explanation again,clarification,en
+i am confused by that explanation now,clarification,en
+hello from the chat window,greeting,en
+hey there assistant today,greeting,en
+bye and take care now,goodbye,en
+see you again soon assistant,goodbye,en
+how are you doing in this chat,small_talk,en

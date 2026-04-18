@@ -1,0 +1,17 @@
+{
+  "model_type": "sequential",
+  "architecture": "bilstm",
+  "embedding_dim": 128,
+  "hidden_dim": 128,
+  "num_layers": 1,
+  "dropout": 0.2,
+  "max_length": 64,
+  "min_freq": 1,
+  "max_vocab_size": 10000,
+  "num_labels": 24,
+  "pad_id": 0,
+  "unk_id": 1,
+  "model_key": "report",
+  "dataset_path": "D:\\Multilingual Chatbot Design\\chatbot\\data\\train\\intent_dataset_report.jsonl",
+  "version": "bilstm-report-v1"
+}

@@ -19,6 +19,7 @@ class RouteResult:
 
 STATIC_INTENTS = {
     'greeting',
+    'small_talk',
     'thanks',
     'goodbye',
     'capability_query',
@@ -48,6 +49,14 @@ RETRIEVAL_INTENTS = {
     'report_structure_help',
 }
 
+ENTITY_OVERRIDE_FIRST_INTENTS = {
+    'fallback',
+    'help',
+    'clarification',
+}
+
+ENTITY_OVERRIDE_ALLOWED_INTENTS = ENTITY_OVERRIDE_FIRST_INTENTS.union({'cbc_info'})
+
 
 def resolve_route(
     intent: str,
@@ -60,34 +69,54 @@ def resolve_route(
         return RouteResult(response=render_response(intent, lang), source='static')
 
     entity: EntityRule | None = detect_medical_entity(text or '') if text else None
-    retrieval_intent = intent
-    retrieval_question = text
-
-    if entity and intent in RETRIEVAL_INTENTS.union({'clarification', 'fallback'}):
-        retrieval_intent = entity.intent
-        retrieval_question = entity.canonical_question
-
-    if retrieval_intent in RETRIEVAL_INTENTS and retrieval_question and config_path:
+    if config_path:
         cfg = load_config(config_path)
         retriever = get_response_retriever(
             knowledge_path=cfg['responses']['knowledge_path'],
             threshold=float(cfg['responses'].get('retrieval_threshold', 0.18)),
         )
-        retrieved = retriever.retrieve(question=retrieval_question, intent=retrieval_intent)
-        if retrieved:
-            return RouteResult(
-                response=retrieved,
-                source='retrieval',
-                retrieval_intent=retrieval_intent,
-                retrieval_question=retrieval_question,
-                entity_label=entity.label if entity else None,
-            )
+
+        # For broad or weak intents, let entity detection refine the retrieval target first.
+        if entity and intent in ENTITY_OVERRIDE_FIRST_INTENTS:
+            retrieved = retriever.retrieve(question=entity.canonical_question, intent=entity.intent)
+            if retrieved:
+                return RouteResult(
+                    response=retrieved,
+                    source='retrieval',
+                    retrieval_intent=entity.intent,
+                    retrieval_question=entity.canonical_question,
+                    entity_label=entity.label,
+                )
+
+        # For specific operational/domain intents, stay inside the predicted intent first.
+        if intent in RETRIEVAL_INTENTS and text:
+            retrieved = retriever.retrieve(question=text, intent=intent)
+            if retrieved:
+                return RouteResult(
+                    response=retrieved,
+                    source='retrieval',
+                    retrieval_intent=intent,
+                    retrieval_question=text,
+                    entity_label=entity.label if entity else None,
+                )
+
+        # Broad informational intents can still refine through entity detection if direct retrieval missed.
+        if entity and intent in ENTITY_OVERRIDE_ALLOWED_INTENTS:
+            retrieved = retriever.retrieve(question=entity.canonical_question, intent=entity.intent)
+            if retrieved:
+                return RouteResult(
+                    response=retrieved,
+                    source='retrieval',
+                    retrieval_intent=entity.intent,
+                    retrieval_question=entity.canonical_question,
+                    entity_label=entity.label,
+                )
 
     return RouteResult(
         response=render_response(intent, lang),
         source='static',
-        retrieval_intent=retrieval_intent if retrieval_intent != intent else None,
-        retrieval_question=retrieval_question if retrieval_question != text else None,
+        retrieval_intent=entity.intent if entity and intent in ENTITY_OVERRIDE_ALLOWED_INTENTS else None,
+        retrieval_question=entity.canonical_question if entity and intent in ENTITY_OVERRIDE_ALLOWED_INTENTS else None,
         entity_label=entity.label if entity else None,
     )
 

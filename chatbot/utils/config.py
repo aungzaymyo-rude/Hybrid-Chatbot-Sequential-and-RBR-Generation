@@ -18,6 +18,42 @@ def _env_override(current: Any, env_name: str) -> Any:
     return os.getenv(env_name, current)
 
 
+def resolve_model_settings(cfg: Dict[str, Any], model_key: str | None = None) -> Dict[str, Any]:
+    registry = cfg.get('model_registry', {})
+    default_key = cfg.get('model_default_key')
+    resolved_key = model_key or default_key
+
+    if not resolved_key:
+        if not registry:
+            raise ValueError('No model registry is configured.')
+        resolved_key = next(iter(registry.keys()))
+
+    if resolved_key not in registry:
+        raise ValueError(f'Unknown model_key: {resolved_key}')
+
+    entry = registry[resolved_key]
+    if isinstance(entry, dict):
+        output_dir = entry.get('path', cfg.get('training', {}).get('output_dir'))
+        version = entry.get('version', '')
+    else:
+        output_dir = entry
+        version = ''
+
+    data_cfg = cfg.get('data', {})
+    profiles = data_cfg.get('model_profiles', {})
+    profile = profiles.get(resolved_key, {})
+    dataset_path = profile.get('dataset_path', data_cfg.get('dataset_path'))
+    intents = list(profile.get('intents', []))
+
+    return {
+        'model_key': resolved_key,
+        'output_dir': output_dir,
+        'dataset_path': dataset_path,
+        'version': str(version),
+        'intents': intents,
+    }
+
+
 def load_config(path: str | Path) -> Dict[str, Any]:
     config_path = Path(path).resolve()
     with config_path.open('r', encoding='utf-8') as f:
@@ -28,6 +64,18 @@ def load_config(path: str | Path) -> Dict[str, Any]:
     data_cfg = cfg.get('data', {})
     if 'dataset_path' in data_cfg:
         data_cfg['dataset_path'] = _resolve_path(base_dir, data_cfg['dataset_path'])
+    model_profiles = data_cfg.get('model_profiles', {})
+    if isinstance(model_profiles, dict):
+        resolved_profiles: Dict[str, Any] = {}
+        for key, value in model_profiles.items():
+            if not isinstance(value, dict):
+                resolved_profiles[key] = value
+                continue
+            entry = dict(value)
+            if 'dataset_path' in entry and isinstance(entry['dataset_path'], str):
+                entry['dataset_path'] = _resolve_path(base_dir, entry['dataset_path'])
+            resolved_profiles[key] = entry
+        data_cfg['model_profiles'] = resolved_profiles
 
     training_cfg = cfg.get('training', {})
     if 'output_dir' in training_cfg:

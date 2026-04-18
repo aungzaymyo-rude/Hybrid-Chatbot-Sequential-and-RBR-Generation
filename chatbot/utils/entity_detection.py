@@ -221,6 +221,17 @@ _RULES: tuple[EntityRule, ...] = (
         patterns=(r'\blabel\b', r'\blabelling\b', r'\blabeling\b'),
     ),
     EntityRule(
+        label='cbc_tube_question',
+        intent='sample_collection',
+        canonical_question='Which tube is used for CBC?',
+        patterns=(
+            r'\bwhich tube is used for cbc\b',
+            r'\bwhat tube color is used for cbc\b',
+            r'\bcbc tube\b',
+            r'\bcbc collection tube\b',
+        ),
+    ),
+    EntityRule(
         label='cbc',
         intent='cbc_info',
         canonical_question='What is a CBC?',

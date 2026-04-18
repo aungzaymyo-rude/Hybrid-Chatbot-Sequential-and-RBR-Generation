@@ -3,6 +3,58 @@
 data:
   dataset_path: data/train/intent_dataset.jsonl
   test_size: 0.2
+  model_profiles:
+    general:
+      dataset_path: data/train/intent_dataset_general.jsonl
+      intents:
+        - greeting
+        - help
+        - cbc_info
+        - sample_collection
+        - rbc_term
+        - wbc_term
+        - platelet_term
+        - differential_review
+        - coag_test
+        - blood_smear
+        - quality_control
+        - critical_value_reporting
+        - capability_query
+        - small_talk
+        - thanks
+        - goodbye
+        - clarification
+        - out_of_scope
+        - unsafe_medical_request
+        - incomplete_query
+        - fallback
+    report:
+      dataset_path: data/train/intent_dataset_report.jsonl
+      intents:
+        - greeting
+        - help
+        - cbc_info
+        - rbc_term
+        - wbc_term
+        - platelet_term
+        - differential_review
+        - blood_smear
+        - critical_value_reporting
+        - capability_query
+        - small_talk
+        - thanks
+        - goodbye
+        - clarification
+        - out_of_scope
+        - unsafe_medical_request
+        - incomplete_query
+        - fallback
+        - cbc_result_parameter
+        - cbc_flag_explanation
+        - anemia_related_term
+        - platelet_abnormality
+        - differential_result_explanation
+        - report_structure_help
 
 model:
   type: sequential
@@ -14,12 +66,14 @@ model:
   dropout: 0.2
   min_freq: 1
   max_vocab_size: 10000
-  num_labels: 16
-model_default_key: default
+model_default_key: general
 model_registry:
-  default:
-    path: models/intent
-    version: bilstm-v3
+  general:
+    path: models/intent_general
+    version: bilstm-general-v1
+  report:
+    path: models/intent_report
+    version: bilstm-report-v1
 
 training:
   batch_size: 32
@@ -29,7 +83,7 @@ training:
   weight_decay: 1.0e-5
   warmup_steps: 0
   warmup_ratio: 0.0
-  output_dir: models/intent
+  output_dir: models/intent_general
   seed: 42
 
 inference:

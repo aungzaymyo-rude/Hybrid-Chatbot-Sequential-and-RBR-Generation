@@ -12,6 +12,7 @@ from chatbot.inference.registry import ModelRegistry
 from chatbot.utils.chat_store import ChatHistoryStore
 from chatbot.utils.config import load_config
 from chatbot.utils.logging import setup_logging
+from chatbot.utils.model_advisory import recommend_model_switch
 from chatbot.utils.routing_engine import STATIC_INTENTS, resolve_route
 
 CONFIG_PATH = str(Path(__file__).resolve().parents[1] / 'config.yaml')
@@ -64,13 +65,17 @@ def list_models(registry: ModelRegistry = Depends(get_registry)) -> dict:
 
 
 @app.get('/admin/api/summary')
-def admin_summary(chat_store: ChatHistoryStore = Depends(get_chat_store)) -> dict:
+def admin_summary(
+    model_key: str | None = Query(default=None),
+    chat_store: ChatHistoryStore = Depends(get_chat_store),
+) -> dict:
     cfg = get_config()
     threshold = float(cfg['admin'].get('low_confidence_threshold', 0.55))
     return {
-        'summary': chat_store.fetch_summary(low_confidence_threshold=threshold),
-        'intent_breakdown': chat_store.fetch_intent_breakdown(limit=20),
-        'flagged_phrases': chat_store.fetch_flagged_phrases(low_confidence_threshold=threshold, limit=15),
+        'summary': chat_store.fetch_summary(low_confidence_threshold=threshold, model_key=model_key),
+        'intent_breakdown': chat_store.fetch_intent_breakdown(limit=20, model_key=model_key),
+        'flagged_phrases': chat_store.fetch_flagged_phrases(low_confidence_threshold=threshold, limit=15, model_key=model_key),
+        'model_breakdown': chat_store.fetch_model_breakdown(low_confidence_threshold=threshold),
     }
 
 
@@ -79,6 +84,7 @@ def admin_logs(
     limit: int = Query(default=50, ge=1, le=200),
     flagged_only: bool = Query(default=False),
     review_status: str | None = Query(default=None),
+    model_key: str | None = Query(default=None),
     chat_store: ChatHistoryStore = Depends(get_chat_store),
 ) -> dict:
     cfg = get_config()
@@ -88,6 +94,7 @@ def admin_logs(
             limit=limit,
             flagged_only=flagged_only,
             review_status=review_status,
+            model_key=model_key,
             low_confidence_threshold=threshold,
         )
     }
@@ -128,8 +135,17 @@ def chat(
     registry: ModelRegistry = Depends(get_registry),
     chat_store: ChatHistoryStore = Depends(get_chat_store),
 ) -> ChatResponse:
+    requested_model_key = request.model_key or registry.config.get('model_default_key')
+    suggested_model_key = None
+    advisory_message = None
+    effective_model_key = requested_model_key
+    if not request.model_dir:
+        suggested_model_key, advisory_message = recommend_model_switch(request.text, requested_model_key)
+        if suggested_model_key:
+            effective_model_key = suggested_model_key
+
     try:
-        predictor = registry.get_predictor(model_key=request.model_key, model_dir=request.model_dir)
+        predictor = registry.get_predictor(model_key=effective_model_key, model_dir=request.model_dir)
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
     prediction = predictor.predict(request.text, lang=request.lang)
@@ -139,7 +155,8 @@ def chat(
         text=prediction.text,
         config_path=CONFIG_PATH,
     )
-    model_info = registry.resolve_model_info(request.model_key, request.model_dir)
+    model_info = registry.resolve_model_info(effective_model_key, request.model_dir)
+    auto_switched = bool(suggested_model_key and suggested_model_key != requested_model_key)
     try:
         chat_store.log_chat(
             session_id=request.session_id,
@@ -154,7 +171,9 @@ def chat(
             entity_label=route.entity_label,
             is_fallback=prediction.intent == 'fallback',
             is_guardrail=prediction.intent in STATIC_INTENTS,
-            model_key=model_info.get('model_key') or None,
+            model_key=effective_model_key,
+            requested_model_key=requested_model_key,
+            auto_switched=auto_switched,
             model_path=model_info['path'],
             model_version=model_info.get('version') or None,
         )
@@ -166,4 +185,10 @@ def chat(
         intent=prediction.intent,
         confidence=prediction.confidence,
         response=route.response,
+        model_key=effective_model_key,
+        model_version=model_info.get('version') or None,
+        requested_model_key=requested_model_key,
+        auto_switched=auto_switched,
+        advisory_message=advisory_message if auto_switched else None,
+        suggested_model_key=suggested_model_key if auto_switched else None,
     )

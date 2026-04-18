@@ -1,0 +1,23 @@
+{
+  "blood_smear": 0,
+  "capability_query": 1,
+  "cbc_info": 2,
+  "clarification": 3,
+  "coag_test": 4,
+  "critical_value_reporting": 5,
+  "differential_review": 6,
+  "fallback": 7,
+  "goodbye": 8,
+  "greeting": 9,
+  "help": 10,
+  "incomplete_query": 11,
+  "out_of_scope": 12,
+  "platelet_term": 13,
+  "quality_control": 14,
+  "rbc_term": 15,
+  "sample_collection": 16,
+  "small_talk": 17,
+  "thanks": 18,
+  "unsafe_medical_request": 19,
+  "wbc_term": 20
+}
