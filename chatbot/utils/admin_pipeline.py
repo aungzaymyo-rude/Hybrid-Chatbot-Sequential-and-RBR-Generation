@@ -5,6 +5,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from chatbot.deployment.ssl_utils import certificate_status
+
 
 def _relative_to_project(path: Path, project_root: Path) -> str:
     try:
@@ -62,8 +64,9 @@ def _load_json(path: Path) -> dict[str, Any]:
 
 
 def build_pipeline_snapshot(cfg: dict[str, Any], model_registry: dict[str, Any]) -> dict[str, Any]:
-    project_root = Path(cfg['logging']['log_file']).resolve().parents[1]
-    data_dir = project_root / 'chatbot' / 'data'
+    package_root = Path(cfg['logging']['log_file']).resolve().parents[1]
+    project_root = package_root.parent
+    data_dir = package_root / 'data'
     labeled_dir = data_dir / 'labeled'
     responses_path = Path(cfg['responses']['knowledge_path']).resolve()
 
@@ -152,8 +155,8 @@ def build_pipeline_snapshot(cfg: dict[str, Any], model_registry: dict[str, Any])
             },
             {
                 'component': 'config',
-                'version': _safe_isoformat(project_root / 'chatbot' / 'config.yaml') or 'missing',
-                'path': str(project_root / 'chatbot' / 'config.yaml'),
+                'version': _safe_isoformat(package_root / 'config.yaml') or 'missing',
+                'path': str(package_root / 'config.yaml'),
             },
         ]
     )
@@ -170,6 +173,7 @@ def build_pipeline_snapshot(cfg: dict[str, Any], model_registry: dict[str, Any])
             'fallback_threshold': cfg['inference'].get('threshold'),
             'split_dir': str(Path(cfg['data']['split_dir']).resolve()),
             'knowledge_path': str(responses_path),
+            'certificate': certificate_status(cfg),
             'components': versions,
         },
         'splits': {
@@ -200,4 +204,9 @@ def build_pipeline_snapshot(cfg: dict[str, Any], model_registry: dict[str, Any])
 
     snapshot['versioning']['knowledge_display_path'] = _relative_to_project(responses_path, project_root)
     snapshot['versioning']['split_display_path'] = _relative_to_project(Path(cfg['data']['split_dir']).resolve(), project_root)
+    certificate = snapshot['versioning']['certificate']
+    if certificate.get('certfile'):
+        certificate['certfile_display_path'] = _relative_to_project(Path(certificate['certfile']), project_root)
+    if certificate.get('keyfile'):
+        certificate['keyfile_display_path'] = _relative_to_project(Path(certificate['keyfile']), project_root)
     return snapshot

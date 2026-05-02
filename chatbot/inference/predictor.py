@@ -122,7 +122,7 @@ class IntentPredictor:
     def _load_label_map(self, model_dir: Path) -> Dict[int, str]:
         label_path = model_dir / 'label_map.json'
         if not label_path.exists():
-            raise FileNotFoundError('label_map.json not found in model directory')
+            raise FileNotFoundError(f'label_map.json not found in model directory: {model_dir}')
         with label_path.open('r', encoding='utf-8') as handle:
             raw = json.load(handle)
         return {int(value): key for key, value in raw.items()}
@@ -130,7 +130,7 @@ class IntentPredictor:
     def _load_vocab(self, model_dir: Path) -> Vocabulary:
         vocab_path = model_dir / 'vocab.json'
         if not vocab_path.exists():
-            raise FileNotFoundError('vocab.json not found in model directory')
+            raise FileNotFoundError(f'vocab.json not found in model directory: {model_dir}')
         with vocab_path.open('r', encoding='utf-8') as handle:
             payload = json.load(handle)
         itos = payload['itos']

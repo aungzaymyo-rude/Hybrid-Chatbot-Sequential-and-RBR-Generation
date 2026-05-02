@@ -239,6 +239,26 @@ textarea {
   padding: 14px;
 }
 
+.mini-metric.success {
+  background: rgba(15, 122, 83, 0.08);
+  border-color: rgba(15, 122, 83, 0.25);
+}
+
+.mini-metric.warn {
+  background: rgba(200, 138, 34, 0.10);
+  border-color: rgba(200, 138, 34, 0.28);
+}
+
+.mini-metric.danger {
+  background: rgba(179, 75, 67, 0.10);
+  border-color: rgba(179, 75, 67, 0.28);
+}
+
+.mini-metric.neutral {
+  background: rgba(121, 149, 138, 0.10);
+  border-color: rgba(121, 149, 138, 0.24);
+}
+
 .mini-metric span {
   display: block;
   color: var(--muted);

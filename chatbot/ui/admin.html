@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/ui/admin.css?v=20260418b">
+  <link rel="stylesheet" href="/ui/admin.css?v=20260502c">
 </head>
 <body>
   <div class="admin-layout">
@@ -21,9 +21,7 @@
       <nav class="sidebar-nav">
         <button class="sidebar-link active" data-section="overview-section" type="button">Overview</button>
         <button class="sidebar-link" data-section="trace-section" type="button">Inference Trace</button>
-        <button class="sidebar-link" data-section="ingestion-section" type="button">Data Ingestion</button>
-        <button class="sidebar-link" data-section="versioning-section" type="button">Versioning</button>
-        <button class="sidebar-link" data-section="splits-section" type="button">Splits</button>
+        <button class="sidebar-link" data-section="data-preprocessing-section" type="button">Data Preprocessing</button>
         <button class="sidebar-link" data-section="review-section" type="button">Review Queue</button>
       </nav>
 
@@ -237,9 +235,9 @@
         </section>
       </section>
 
-      <section class="admin-view" id="ingestion-section">
+      <section class="admin-view" id="data-preprocessing-section">
         <section class="panel-grid panel-grid-3">
-        <article class="panel">
+        <article class="panel" id="ingestion-section">
           <div class="panel-head">
             <div>
               <h2>Data Ingestion</h2>
@@ -276,11 +274,9 @@
           </div>
         </article>
         </section>
-      </section>
 
-      <section class="admin-view" id="versioning-section">
-        <section class="panel-grid panel-grid-2">
-        <article class="panel">
+        <section class="panel-grid panel-grid-3">
+        <article class="panel" id="versioning-section">
           <div class="panel-head">
             <div>
               <h2>Versioning</h2>
@@ -288,6 +284,16 @@
             </div>
           </div>
           <div class="mini-metrics" id="versioning-metrics"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <h2>Certificate Status</h2>
+              <p class="panel-copy">Current HTTPS and HTTP redirect state for direct-install and container deployment checks.</p>
+            </div>
+          </div>
+          <div class="mini-metrics" id="certificate-metrics"></div>
         </article>
 
         <article class="panel">
@@ -307,11 +313,9 @@
           </div>
         </article>
         </section>
-      </section>
 
-      <section class="admin-view" id="splits-section">
         <section class="panel-grid panel-grid-2">
-        <article class="panel">
+        <article class="panel" id="splits-section">
           <div class="panel-head">
             <div>
               <h2>Split Policy</h2>
@@ -364,6 +368,6 @@
     </main>
   </div>
 
-  <script src="/ui/admin.js?v=20260418b"></script>
+  <script src="/ui/admin.js?v=20260502c"></script>
 </body>
 </html>

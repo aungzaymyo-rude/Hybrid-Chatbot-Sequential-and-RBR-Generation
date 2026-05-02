@@ -120,6 +120,24 @@ def load_config(path: str | Path) -> Dict[str, Any]:
     admin_cfg['default_recent_limit'] = int(_env_override(admin_cfg.get('default_recent_limit', 50), 'ADMIN_RECENT_LIMIT'))
     admin_cfg['low_confidence_threshold'] = float(_env_override(admin_cfg.get('low_confidence_threshold', 0.55), 'ADMIN_LOW_CONFIDENCE_THRESHOLD'))
 
+    deployment_cfg = dict(cfg.get('deployment', {}))
+    deployment_cfg['host'] = _env_override(deployment_cfg.get('host', '0.0.0.0'), 'CHATBOT_HOST')
+    deployment_cfg['port'] = int(_env_override(deployment_cfg.get('port', 8000), 'CHATBOT_PORT'))
+    deployment_cfg['reload'] = str(_env_override(deployment_cfg.get('reload', False), 'CHATBOT_RELOAD')).lower() in {'1', 'true', 'yes', 'on'}
+    redirect_cfg = dict(deployment_cfg.get('http_redirect', {}))
+    redirect_cfg['enabled'] = str(_env_override(redirect_cfg.get('enabled', True), 'CHATBOT_HTTP_REDIRECT_ENABLED')).lower() in {'1', 'true', 'yes', 'on'}
+    redirect_cfg['port'] = int(_env_override(redirect_cfg.get('port', 8000), 'CHATBOT_HTTP_REDIRECT_PORT'))
+    deployment_cfg['http_redirect'] = redirect_cfg
+    ssl_cfg = dict(deployment_cfg.get('ssl', {}))
+    ssl_cfg['enabled'] = str(_env_override(ssl_cfg.get('enabled', False), 'CHATBOT_HTTPS_ENABLED')).lower() in {'1', 'true', 'yes', 'on'}
+    ssl_cfg['auto_generate'] = str(_env_override(ssl_cfg.get('auto_generate', True), 'CHATBOT_SSL_AUTO_GENERATE')).lower() in {'1', 'true', 'yes', 'on'}
+    ssl_cfg['common_name'] = _env_override(ssl_cfg.get('common_name', 'localhost'), 'CHATBOT_SSL_COMMON_NAME')
+    if 'certfile' in ssl_cfg:
+        ssl_cfg['certfile'] = _resolve_path(base_dir, _env_override(ssl_cfg.get('certfile', 'certs/server.crt'), 'CHATBOT_SSL_CERTFILE'))
+    if 'keyfile' in ssl_cfg:
+        ssl_cfg['keyfile'] = _resolve_path(base_dir, _env_override(ssl_cfg.get('keyfile', 'certs/server.key'), 'CHATBOT_SSL_KEYFILE'))
+    deployment_cfg['ssl'] = ssl_cfg
+
     model_registry = cfg.get('model_registry', {})
     if isinstance(model_registry, dict):
         resolved_registry: Dict[str, Any] = {}
@@ -142,5 +160,6 @@ def load_config(path: str | Path) -> Dict[str, Any]:
     cfg['responses'] = responses_cfg
     cfg['storage'] = storage_cfg
     cfg['admin'] = admin_cfg
+    cfg['deployment'] = deployment_cfg
 
     return cfg

@@ -14,7 +14,7 @@ from chatbot.utils.routing_engine import ENTITY_OVERRIDE_ALLOWED_INTENTS, ENTITY
 def build_trace(text: str, *, model_key: str | None, config_path: str) -> dict[str, Any]:
     cfg = load_config(config_path)
     registry = ModelRegistry(config_path)
-    requested_model_key = model_key or registry.config.get('model_default_key')
+    requested_model_key = registry._normalize_model_key(model_key) or registry.config.get('model_default_key')
     suggested_model_key, advisory_message = recommend_model_switch(text, requested_model_key)
     effective_model_key = suggested_model_key or requested_model_key
 

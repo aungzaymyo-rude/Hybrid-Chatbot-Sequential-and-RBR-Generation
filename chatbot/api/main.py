@@ -74,7 +74,10 @@ def admin_pipeline(registry: ModelRegistry = Depends(get_registry)) -> dict:
 
 @app.post('/admin/api/trace')
 def admin_trace(request: TraceRequest) -> dict:
-    return build_trace(request.text, model_key=request.model_key, config_path=CONFIG_PATH)
+    try:
+        return build_trace(request.text, model_key=request.model_key, config_path=CONFIG_PATH)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
 
 
 @app.get('/admin/api/summary')

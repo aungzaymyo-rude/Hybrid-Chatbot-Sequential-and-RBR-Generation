@@ -55,6 +55,31 @@ PostgreSQL defaults used by the application:
 
 These values can be overridden with `POSTGRES_HOST`, `POSTGRES_PORT`, `POSTGRES_DB`, `POSTGRES_USER`, and `POSTGRES_PASSWORD`.
 
+## HTTPS Deployment
+The project now supports optional HTTPS at runtime for both direct installation and Docker deployment.
+
+Deployment-related environment variables:
+- `CHATBOT_HOST`
+- `CHATBOT_PORT`
+- `CHATBOT_RELOAD`
+- `CHATBOT_HTTPS_ENABLED`
+- `CHATBOT_SSL_CERTFILE`
+- `CHATBOT_SSL_KEYFILE`
+- `CHATBOT_SSL_AUTO_GENERATE`
+- `CHATBOT_SSL_COMMON_NAME`
+
+Default behaviour:
+- direct install: HTTP on port `8000`
+- Docker Compose: HTTPS on port `8443`
+- if HTTPS is enabled and the certificate files do not exist, a self-signed certificate is generated automatically
+- if HTTPS is enabled and HTTP redirect is enabled, a lightweight HTTP listener redirects traffic from port `8000` to the HTTPS port
+
+Certificate defaults in `chatbot/config.yaml`:
+- cert file: `certs/server.crt`
+- key file: `certs/server.key`
+- auto-generate: `true`
+- common name: `localhost`
+
 ## Data Framework (Reusable)
 Data moves through stable stages so you can grow the model over time:
 - `chatbot/data/raw/` contains unprocessed sources (PDFs, notes, exports)
@@ -215,6 +240,90 @@ python chatbot/inference/run_inference.py --text "What is a CBC?" --config chatb
 python chatbot/inference/run_inference.py --text "How do I read this CBC report?" --config chatbot/config.yaml --model-key report
 ```
 
+## Run The Application Directly
+Recommended direct-install startup now uses the deployment runner instead of calling `uvicorn` manually:
+
+HTTP:
+```bash
+python -m chatbot.deployment.run_server
+```
+
+If the current working directory is already `chatbot/`, use:
+```bash
+python -m deployment.run_server
+```
+
+HTTPS with an auto-generated self-signed certificate:
+```bash
+$env:CHATBOT_HTTPS_ENABLED='true'
+$env:CHATBOT_PORT='8443'
+python -m chatbot.deployment.run_server
+```
+
+If the current working directory is already `chatbot/`, use:
+```bash
+$env:CHATBOT_HTTPS_ENABLED='true'
+$env:CHATBOT_PORT='8443'
+python -m deployment.run_server
+```
+
+If no files exist at `certs/server.crt` and `certs/server.key`, they are created automatically.
+If HTTP redirect remains enabled, `http://localhost:8000/` redirects to `https://localhost:8443/`.
+
+## Certificate Renewal
+### Renew the default self-signed certificate
+From the repository root:
+```bash
+python -m chatbot.deployment.renew_certificate
+```
+
+If the current working directory is already `chatbot/`, use:
+```bash
+python -m deployment.renew_certificate
+```
+
+Optional arguments:
+```bash
+python -m chatbot.deployment.renew_certificate --valid-days 365
+python -m chatbot.deployment.renew_certificate --common-name localhost
+python -m chatbot.deployment.renew_certificate --certfile D:\\certs\\server.crt --keyfile D:\\certs\\server.key
+```
+
+After renewal:
+1. restart the direct-install server or container
+2. hard refresh the browser
+3. confirm the new expiry state in the admin panel under `Data Preprocessing -> Certificate Status`
+
+### Renew a CA-issued certificate
+For a CA-issued certificate, do not use the self-signed renewal command.
+
+Instead:
+1. replace the certificate and key files mounted into the deployment
+2. keep:
+   - `CHATBOT_HTTPS_ENABLED=true`
+   - `CHATBOT_SSL_AUTO_GENERATE=false`
+3. restart the application or container
+
+### Expiry warning logic in admin
+The admin panel now highlights certificate status automatically:
+- `green`: more than 30 days remaining
+- `amber`: 30 days or less remaining
+- `red`: 7 days or less remaining, invalid, or missing
+
+Use these URLs:
+- HTTP: `http://localhost:8000/`
+- HTTPS: `https://localhost:8443/`
+
+For a custom certificate:
+```bash
+$env:CHATBOT_HTTPS_ENABLED='true'
+$env:CHATBOT_PORT='8443'
+$env:CHATBOT_SSL_CERTFILE='D:\\certs\\my_server.crt'
+$env:CHATBOT_SSL_KEYFILE='D:\\certs\\my_server.key'
+$env:CHATBOT_SSL_AUTO_GENERATE='false'
+python -m chatbot.deployment.run_server
+```
+
 ## Response Layer
 Intent classification is handled by the BiLSTM model. Responses for `cbc_info`, `sample_collection`, and `help` use a lightweight TF-IDF retrieval layer backed by:
 `chatbot/data/knowledge/hematology_responses.jsonl`
@@ -258,6 +367,43 @@ How to extend it:
 2. Keep the `intent` aligned with your trained intent taxonomy.
 3. Add several natural question variants for each concept.
 4. Retrain the classifier only when you add new intents, not when you only add more answer knowledge for existing intents.
+
+## Docker Deployment
+The provided `docker-compose.yml` is now configured for an HTTPS deployment scenario:
+- chatbot container listens on `8443`
+- HTTP redirect listener also runs on `8000`
+- HTTPS is enabled by default in the container
+- certificate files are stored under `./certs`
+- if those files do not exist, the container generates a self-signed certificate automatically
+
+Start:
+```bash
+docker compose up --build -d
+```
+
+Access:
+- `http://localhost:8000/` -> redirects to HTTPS
+- `https://localhost:8443/`
+- `https://localhost:8443/admin`
+- `https://localhost:8443/docs`
+
+Self-signed certificate notes:
+- browsers will warn because the certificate is not issued by a trusted CA
+- this is expected for local or internal deployment
+- for public production deployment, replace the self-signed files with CA-issued certificate files and set:
+  - `CHATBOT_SSL_CERTFILE`
+  - `CHATBOT_SSL_KEYFILE`
+  - `CHATBOT_SSL_AUTO_GENERATE=false`
+
+Example override with real certificate files:
+```bash
+$env:CHATBOT_HTTPS_ENABLED='true'
+$env:CHATBOT_PORT='8443'
+$env:CHATBOT_SSL_CERTFILE='/app/certs/fullchain.pem'
+$env:CHATBOT_SSL_KEYFILE='/app/certs/privkey.pem'
+$env:CHATBOT_SSL_AUTO_GENERATE='false'
+docker compose up --build -d
+```
 
 The current knowledge base now includes more operational coverage for:
 - CBC sample rejection criteria
@@ -307,9 +453,10 @@ The admin panel now supports multi-model monitoring for the current two-model se
 - per-model traffic, confidence, fallback, guardrail, auto-switch, and retrieval monitoring
 - model-aware recent log review showing requested model vs answered model
 - MLOps pipeline sections for:
-  - data ingestion and labeled-source tracking
-  - dataset / model / knowledge-base version snapshots
-  - fixed split policy and per-model split counts
+  - one `Data Preprocessing` view that groups:
+    - data ingestion and labeled-source tracking
+    - dataset / model / knowledge-base version snapshots
+    - fixed split policy and per-model split counts
 - Sidebar sections switch views inside the admin console instead of scrolling through one long page
 - `Inference Trace` can inspect a single phrase and show:
   - normalized text and token-to-vocabulary IDs

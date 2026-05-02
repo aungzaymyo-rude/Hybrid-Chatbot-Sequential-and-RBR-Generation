@@ -13,6 +13,15 @@ class ModelRegistry:
         self.config = load_config(config_path)
         self._cache: Dict[str, IntentPredictor] = {}
 
+    @staticmethod
+    def _normalize_model_key(model_key: Optional[str]) -> Optional[str]:
+        if model_key is None:
+            return None
+        cleaned = model_key.strip()
+        if cleaned in {'', 'string', 'null', 'none'}:
+            return None
+        return cleaned
+
     def resolve_model_dir(self, model_key: Optional[str], model_dir: Optional[str]) -> str:
         if model_dir:
             return str(Path(model_dir).resolve())
@@ -20,7 +29,7 @@ class ModelRegistry:
         registry = self.config.get('model_registry', {})
         default_key = self.config.get('model_default_key')
 
-        key = model_key or default_key
+        key = self._normalize_model_key(model_key) or default_key
         if key:
             if key not in registry:
                 raise ValueError(f'Unknown model_key: {key}')
@@ -41,11 +50,11 @@ class ModelRegistry:
     def resolve_model_info(self, model_key: Optional[str], model_dir: Optional[str]) -> Dict[str, str]:
         if model_dir:
             resolved = str(Path(model_dir).resolve())
-            return {'model_key': model_key or '', 'path': resolved, 'version': ''}
+            return {'model_key': self._normalize_model_key(model_key) or '', 'path': resolved, 'version': ''}
 
         registry = self.config.get('model_registry', {})
         default_key = self.config.get('model_default_key')
-        key = model_key or default_key
+        key = self._normalize_model_key(model_key) or default_key
         if key and key in registry:
             entry = registry[key]
             if isinstance(entry, dict):
@@ -60,7 +69,7 @@ class ModelRegistry:
         return {'model_key': key or '', 'path': resolved, 'version': ''}
 
     def get_predictor(self, model_key: Optional[str] = None, model_dir: Optional[str] = None) -> IntentPredictor:
-        resolved = self.resolve_model_dir(model_key, model_dir)
+        resolved = self.resolve_model_dir(self._normalize_model_key(model_key), model_dir)
         if resolved not in self._cache:
             self._cache[resolved] = IntentPredictor(model_dir=resolved, config_path=self.config_path)
         return self._cache[resolved]

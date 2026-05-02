@@ -116,3 +116,17 @@ storage:
 admin:
   default_recent_limit: 50
   low_confidence_threshold: 0.55
+
+deployment:
+  host: 0.0.0.0
+  port: 8000
+  reload: false
+  http_redirect:
+    enabled: true
+    port: 8000
+  ssl:
+    enabled: false
+    certfile: ../certs/server.crt
+    keyfile: ../certs/server.key
+    auto_generate: true
+    common_name: localhost

@@ -32,5 +32,5 @@ class AdminReviewRequest(BaseModel):
 
 
 class TraceRequest(BaseModel):
-    text: str = Field(..., min_length=1)
-    model_key: str | None = None
+    text: str = Field(..., min_length=1, examples=['What is aPTT?'])
+    model_key: str | None = Field(default=None, examples=['general'])

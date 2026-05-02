@@ -26,6 +26,7 @@ services:
         condition: service_healthy
     ports:
       - "8000:8000"
+      - "8443:8443"
     environment:
       HF_HOME: /root/.cache/huggingface
       POSTGRES_HOST: postgres
@@ -33,9 +34,16 @@ services:
       POSTGRES_DB: chatbot
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: P@ssw0rd
+      CHATBOT_PORT: 8443
+      CHATBOT_HTTPS_ENABLED: "true"
+      CHATBOT_SSL_AUTO_GENERATE: "true"
+      CHATBOT_SSL_COMMON_NAME: localhost
+      CHATBOT_SSL_CERTFILE: /app/certs/server.crt
+      CHATBOT_SSL_KEYFILE: /app/certs/server.key
     volumes:
       - ./:/app
       - hf_cache:/root/.cache/huggingface
+      - ./certs:/app/certs
 
 volumes:
   hf_cache:

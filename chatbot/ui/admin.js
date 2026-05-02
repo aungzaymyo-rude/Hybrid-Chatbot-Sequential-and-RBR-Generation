@@ -13,6 +13,7 @@ const ingestionMetrics = document.getElementById('ingestion-metrics');
 const datasetChart = document.getElementById('dataset-chart');
 const labeledFilesTable = document.getElementById('labeled-files-table');
 const versioningMetrics = document.getElementById('versioning-metrics');
+const certificateMetrics = document.getElementById('certificate-metrics');
 const versionTable = document.getElementById('version-table');
 const splitPolicyMetrics = document.getElementById('split-policy-metrics');
 const splitChart = document.getElementById('split-chart');
@@ -93,7 +94,7 @@ function renderMetrics(summary) {
 
 function renderMiniMetrics(target, rows) {
   target.innerHTML = rows.map((row) => `
-    <article class="mini-metric">
+    <article class="mini-metric ${row.tone || ''}">
       <span>${row.label}</span>
       <strong>${row.value}</strong>
       ${row.subLabel ? `<small>${row.subLabel}</small>` : ''}
@@ -304,11 +305,19 @@ function renderIngestion(pipeline) {
 
 function renderVersioning(pipeline) {
   const versioning = pipeline.versioning || {};
+  const certificate = versioning.certificate || {};
   renderMiniMetrics(versioningMetrics, [
     { label: 'Default model', value: friendlyModelLabel(versioning.default_model_key), subLabel: 'config default' },
     { label: 'Fallback threshold', value: Number(versioning.fallback_threshold || 0).toFixed(2), subLabel: 'inference threshold' },
     { label: 'Knowledge path', value: 'Configured', subLabel: versioning.knowledge_display_path || '-' },
     { label: 'Split directory', value: 'Configured', subLabel: versioning.split_display_path || '-' },
+  ]);
+
+  renderMiniMetrics(certificateMetrics, [
+    { label: 'HTTPS mode', value: certificate.https_enabled ? 'Enabled' : 'Disabled', subLabel: certificate.https_enabled ? `Port ${certificate.https_port}` : 'serving HTTP only', tone: certificate.https_enabled ? 'success' : 'neutral' },
+    { label: 'HTTP redirect', value: certificate.http_redirect_enabled ? 'Enabled' : 'Disabled', subLabel: certificate.http_redirect_enabled ? `Port ${certificate.http_redirect_port} → ${certificate.https_port}` : 'no redirect listener', tone: certificate.http_redirect_enabled ? 'success' : 'neutral' },
+    { label: 'Certificate', value: certificate.status || 'unknown', subLabel: certificate.certfile_display_path || '-', tone: certificate.warning_level || 'neutral' },
+    { label: 'Days remaining', value: certificate.days_remaining != null ? fmtNumber(certificate.days_remaining) : '-', subLabel: certificate.is_self_signed === true ? 'self-signed' : (certificate.is_self_signed === false ? 'CA or external issuer' : (certificate.keyfile_display_path || '-')), tone: certificate.warning_level || 'neutral' },
   ]);
 
   versionTable.innerHTML = (versioning.components || []).map((row) => `
@@ -402,6 +411,9 @@ function bindSidebarNavigation() {
     adminViews.forEach((view) => {
       view.classList.toggle('active', view.id === sectionId);
     });
+    if (window.location.hash !== `#${sectionId}`) {
+      history.replaceState(null, '', `#${sectionId}`);
+    }
   }
 
   sidebarLinks.forEach((button) => {
@@ -409,7 +421,10 @@ function bindSidebarNavigation() {
       activateSection(button.dataset.section);
     });
   });
-  activateSection('overview-section');
+
+  const initialSection = window.location.hash.replace('#', '');
+  const knownSection = adminViews.some((view) => view.id === initialSection);
+  activateSection(knownSection ? initialSection : 'overview-section');
 }
 
 async function loadModels() {
