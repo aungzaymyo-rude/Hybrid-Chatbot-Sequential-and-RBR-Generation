@@ -38,6 +38,16 @@ const SUGGESTED_QUESTIONS = {
     "What is Westgard rule in simple terms?",
     "What is Levy Jennings chart in lab QC?",
   ],
+  report_numeric_result_analysis: [
+    "WBC is 13.7",
+    "PLT is 365",
+    "MCV is 72",
+  ],
+  report_flag_result_analysis: [
+    "My report shows anemia",
+    "My report says thrombocytopenia",
+    "My report shows neutrophilia",
+  ],
   capability_query: [
     "What is a CBC?",
     "What is aPTT?",

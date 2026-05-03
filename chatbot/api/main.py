@@ -145,6 +145,28 @@ def admin_export_logs(chat_store: ChatHistoryStore = Depends(get_chat_store)) ->
     return FileResponse(written, media_type='text/csv', filename=written.name)
 
 
+@app.get('/admin/api/export-report-analysis-errors')
+def admin_export_report_analysis_errors(chat_store: ChatHistoryStore = Depends(get_chat_store)) -> FileResponse:
+    cfg = get_config()
+    export_path = Path(cfg['logging']['log_file']).resolve().parents[1] / 'review_exports' / 'report_analysis_errors.csv'
+    written = chat_store.export_report_analysis_errors_to_csv(
+        export_path,
+        limit=1500,
+        low_confidence_threshold=float(cfg['admin'].get('low_confidence_threshold', 0.55)),
+    )
+    return FileResponse(written, media_type='text/csv', filename=written.name)
+
+
+@app.get('/admin/api/report-analysis-preview')
+def admin_report_analysis_preview(chat_store: ChatHistoryStore = Depends(get_chat_store)) -> dict:
+    cfg = get_config()
+    rows = chat_store.fetch_report_analysis_error_preview(
+        limit=25,
+        low_confidence_threshold=float(cfg['admin'].get('low_confidence_threshold', 0.55)),
+    )
+    return {'rows': rows}
+
+
 @app.post('/chat', response_model=ChatResponse)
 def chat(
     request: ChatRequest,

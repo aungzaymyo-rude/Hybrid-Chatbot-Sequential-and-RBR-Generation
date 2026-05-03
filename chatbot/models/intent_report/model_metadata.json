@@ -8,7 +8,7 @@
   "max_length": 64,
   "min_freq": 1,
   "max_vocab_size": 10000,
-  "num_labels": 24,
+  "num_labels": 26,
   "pad_id": 0,
   "unk_id": 1,
   "model_key": "report",

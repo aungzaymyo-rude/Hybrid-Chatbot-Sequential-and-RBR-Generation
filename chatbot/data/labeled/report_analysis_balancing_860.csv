@@ -1,0 +1,861 @@
+text,intent,lang
+What does HGB mean in my CBC report?,cbc_result_parameter,en
+Explain hemoglobin in my CBC report.,cbc_result_parameter,en
+What does HGB mean in a hematology report?,cbc_result_parameter,en
+Explain hemoglobin in a hematology report.,cbc_result_parameter,en
+What does HGB mean on this blood report?,cbc_result_parameter,en
+Explain hemoglobin on this blood report.,cbc_result_parameter,en
+What does HGB mean on a complete blood count report?,cbc_result_parameter,en
+Explain hemoglobin on a complete blood count report.,cbc_result_parameter,en
+What does HGB mean in my lab result?,cbc_result_parameter,en
+Explain hemoglobin in my lab result.,cbc_result_parameter,en
+What does HCT mean in my CBC report?,cbc_result_parameter,en
+Explain hematocrit in my CBC report.,cbc_result_parameter,en
+What does HCT mean in a hematology report?,cbc_result_parameter,en
+Explain hematocrit in a hematology report.,cbc_result_parameter,en
+What does HCT mean on this blood report?,cbc_result_parameter,en
+Explain hematocrit on this blood report.,cbc_result_parameter,en
+What does HCT mean on a complete blood count report?,cbc_result_parameter,en
+Explain hematocrit on a complete blood count report.,cbc_result_parameter,en
+What does HCT mean in my lab result?,cbc_result_parameter,en
+Explain hematocrit in my lab result.,cbc_result_parameter,en
+What does MCV mean in my CBC report?,cbc_result_parameter,en
+Explain mean corpuscular volume in my CBC report.,cbc_result_parameter,en
+What does MCV mean in a hematology report?,cbc_result_parameter,en
+Explain mean corpuscular volume in a hematology report.,cbc_result_parameter,en
+What does MCV mean on this blood report?,cbc_result_parameter,en
+Explain mean corpuscular volume on this blood report.,cbc_result_parameter,en
+What does MCV mean on a complete blood count report?,cbc_result_parameter,en
+Explain mean corpuscular volume on a complete blood count report.,cbc_result_parameter,en
+What does MCV mean in my lab result?,cbc_result_parameter,en
+Explain mean corpuscular volume in my lab result.,cbc_result_parameter,en
+What does MCH mean in my CBC report?,cbc_result_parameter,en
+Explain mean corpuscular hemoglobin in my CBC report.,cbc_result_parameter,en
+What does MCH mean in a hematology report?,cbc_result_parameter,en
+Explain mean corpuscular hemoglobin in a hematology report.,cbc_result_parameter,en
+What does MCH mean on this blood report?,cbc_result_parameter,en
+Explain mean corpuscular hemoglobin on this blood report.,cbc_result_parameter,en
+What does MCH mean on a complete blood count report?,cbc_result_parameter,en
+Explain mean corpuscular hemoglobin on a complete blood count report.,cbc_result_parameter,en
+What does MCH mean in my lab result?,cbc_result_parameter,en
+Explain mean corpuscular hemoglobin in my lab result.,cbc_result_parameter,en
+What does MCHC mean in my CBC report?,cbc_result_parameter,en
+Explain mean corpuscular hemoglobin concentration in my CBC report.,cbc_result_parameter,en
+What does MCHC mean in a hematology report?,cbc_result_parameter,en
+Explain mean corpuscular hemoglobin concentration in a hematology report.,cbc_result_parameter,en
+What does MCHC mean on this blood report?,cbc_result_parameter,en
+Explain mean corpuscular hemoglobin concentration on this blood report.,cbc_result_parameter,en
+What does MCHC mean on a complete blood count report?,cbc_result_parameter,en
+Explain mean corpuscular hemoglobin concentration on a complete blood count report.,cbc_result_parameter,en
+What does MCHC mean in my lab result?,cbc_result_parameter,en
+Explain mean corpuscular hemoglobin concentration in my lab result.,cbc_result_parameter,en
+What does RDW mean in my CBC report?,cbc_result_parameter,en
+Explain red cell distribution width in my CBC report.,cbc_result_parameter,en
+What does RDW mean in a hematology report?,cbc_result_parameter,en
+Explain red cell distribution width in a hematology report.,cbc_result_parameter,en
+What does RDW mean on this blood report?,cbc_result_parameter,en
+Explain red cell distribution width on this blood report.,cbc_result_parameter,en
+What does RDW mean on a complete blood count report?,cbc_result_parameter,en
+Explain red cell distribution width on a complete blood count report.,cbc_result_parameter,en
+What does RDW mean in my lab result?,cbc_result_parameter,en
+Explain red cell distribution width in my lab result.,cbc_result_parameter,en
+What does PLT mean in my CBC report?,cbc_result_parameter,en
+Explain platelet count in my CBC report.,cbc_result_parameter,en
+What does PLT mean in a hematology report?,cbc_result_parameter,en
+Explain platelet count in a hematology report.,cbc_result_parameter,en
+What does PLT mean on this blood report?,cbc_result_parameter,en
+Explain platelet count on this blood report.,cbc_result_parameter,en
+What does PLT mean on a complete blood count report?,cbc_result_parameter,en
+Explain platelet count on a complete blood count report.,cbc_result_parameter,en
+What does PLT mean in my lab result?,cbc_result_parameter,en
+Explain platelet count in my lab result.,cbc_result_parameter,en
+What does MPV mean in my CBC report?,cbc_result_parameter,en
+Explain mean platelet volume in my CBC report.,cbc_result_parameter,en
+What does MPV mean in a hematology report?,cbc_result_parameter,en
+Explain mean platelet volume in a hematology report.,cbc_result_parameter,en
+What does MPV mean on this blood report?,cbc_result_parameter,en
+Explain mean platelet volume on this blood report.,cbc_result_parameter,en
+What does MPV mean on a complete blood count report?,cbc_result_parameter,en
+Explain mean platelet volume on a complete blood count report.,cbc_result_parameter,en
+What does MPV mean in my lab result?,cbc_result_parameter,en
+Explain mean platelet volume in my lab result.,cbc_result_parameter,en
+What does the H marker mean on a CBC report?,cbc_flag_explanation,en
+Explain the H marker on this blood report.,cbc_flag_explanation,en
+What is the meaning of the H marker in hematology?,cbc_flag_explanation,en
+How should the H marker be understood on a lab report?,cbc_flag_explanation,en
+What does a H marker show on a complete blood count?,cbc_flag_explanation,en
+Why does my CBC report have a H marker?,cbc_flag_explanation,en
+What is an example of a H marker on a hematology analyzer?,cbc_flag_explanation,en
+What is the purpose of the H marker in a report?,cbc_flag_explanation,en
+What does it mean when the report prints a H marker?,cbc_flag_explanation,en
+How is a H marker used during CBC review?,cbc_flag_explanation,en
+What does the L marker mean on a CBC report?,cbc_flag_explanation,en
+Explain the L marker on this blood report.,cbc_flag_explanation,en
+What is the meaning of the L marker in hematology?,cbc_flag_explanation,en
+How should the L marker be understood on a lab report?,cbc_flag_explanation,en
+What does a L marker show on a complete blood count?,cbc_flag_explanation,en
+Why does my CBC report have a L marker?,cbc_flag_explanation,en
+What is an example of a L marker on a hematology analyzer?,cbc_flag_explanation,en
+What is the purpose of the L marker in a report?,cbc_flag_explanation,en
+What does it mean when the report prints a L marker?,cbc_flag_explanation,en
+How is a L marker used during CBC review?,cbc_flag_explanation,en
+What does the analyzer flag mean on a CBC report?,cbc_flag_explanation,en
+Explain the analyzer flag on this blood report.,cbc_flag_explanation,en
+What is the meaning of the analyzer flag in hematology?,cbc_flag_explanation,en
+How should the analyzer flag be understood on a lab report?,cbc_flag_explanation,en
+What does a analyzer flag show on a complete blood count?,cbc_flag_explanation,en
+Why does my CBC report have a analyzer flag?,cbc_flag_explanation,en
+What is an example of a analyzer flag on a hematology analyzer?,cbc_flag_explanation,en
+What is the purpose of the analyzer flag in a report?,cbc_flag_explanation,en
+What does it mean when the report prints a analyzer flag?,cbc_flag_explanation,en
+How is a analyzer flag used during CBC review?,cbc_flag_explanation,en
+What does the abnormal distribution flag mean on a CBC report?,cbc_flag_explanation,en
+Explain the abnormal distribution flag on this blood report.,cbc_flag_explanation,en
+What is the meaning of the abnormal distribution flag in hematology?,cbc_flag_explanation,en
+How should the abnormal distribution flag be understood on a lab report?,cbc_flag_explanation,en
+What does a abnormal distribution flag show on a complete blood count?,cbc_flag_explanation,en
+Why does my CBC report have a abnormal distribution flag?,cbc_flag_explanation,en
+What is an example of a abnormal distribution flag on a hematology analyzer?,cbc_flag_explanation,en
+What is the purpose of the abnormal distribution flag in a report?,cbc_flag_explanation,en
+What does it mean when the report prints a abnormal distribution flag?,cbc_flag_explanation,en
+How is a abnormal distribution flag used during CBC review?,cbc_flag_explanation,en
+What does the RBC abnormal distribution mean on a CBC report?,cbc_flag_explanation,en
+Explain the RBC abnormal distribution on this blood report.,cbc_flag_explanation,en
+What is the meaning of the RBC abnormal distribution in hematology?,cbc_flag_explanation,en
+How should the RBC abnormal distribution be understood on a lab report?,cbc_flag_explanation,en
+What does a RBC abnormal distribution show on a complete blood count?,cbc_flag_explanation,en
+Why does my CBC report have a RBC abnormal distribution?,cbc_flag_explanation,en
+What is an example of a RBC abnormal distribution on a hematology analyzer?,cbc_flag_explanation,en
+What is the purpose of the RBC abnormal distribution in a report?,cbc_flag_explanation,en
+What does it mean when the report prints a RBC abnormal distribution?,cbc_flag_explanation,en
+How is a RBC abnormal distribution used during CBC review?,cbc_flag_explanation,en
+What does the PLT abnormal distribution mean on a CBC report?,cbc_flag_explanation,en
+Explain the PLT abnormal distribution on this blood report.,cbc_flag_explanation,en
+What is the meaning of the PLT abnormal distribution in hematology?,cbc_flag_explanation,en
+How should the PLT abnormal distribution be understood on a lab report?,cbc_flag_explanation,en
+What does a PLT abnormal distribution show on a complete blood count?,cbc_flag_explanation,en
+Why does my CBC report have a PLT abnormal distribution?,cbc_flag_explanation,en
+What is an example of a PLT abnormal distribution on a hematology analyzer?,cbc_flag_explanation,en
+What is the purpose of the PLT abnormal distribution in a report?,cbc_flag_explanation,en
+What does it mean when the report prints a PLT abnormal distribution?,cbc_flag_explanation,en
+How is a PLT abnormal distribution used during CBC review?,cbc_flag_explanation,en
+What does the WBC flag mean on a CBC report?,cbc_flag_explanation,en
+Explain the WBC flag on this blood report.,cbc_flag_explanation,en
+What is the meaning of the WBC flag in hematology?,cbc_flag_explanation,en
+How should the WBC flag be understood on a lab report?,cbc_flag_explanation,en
+What does a WBC flag show on a complete blood count?,cbc_flag_explanation,en
+Why does my CBC report have a WBC flag?,cbc_flag_explanation,en
+What is an example of a WBC flag on a hematology analyzer?,cbc_flag_explanation,en
+What is the purpose of the WBC flag in a report?,cbc_flag_explanation,en
+What does it mean when the report prints a WBC flag?,cbc_flag_explanation,en
+How is a WBC flag used during CBC review?,cbc_flag_explanation,en
+What does the critical flag mean on a CBC report?,cbc_flag_explanation,en
+Explain the critical flag on this blood report.,cbc_flag_explanation,en
+What is the meaning of the critical flag in hematology?,cbc_flag_explanation,en
+How should the critical flag be understood on a lab report?,cbc_flag_explanation,en
+What does a critical flag show on a complete blood count?,cbc_flag_explanation,en
+Why does my CBC report have a critical flag?,cbc_flag_explanation,en
+What is an example of a critical flag on a hematology analyzer?,cbc_flag_explanation,en
+What is the purpose of the critical flag in a report?,cbc_flag_explanation,en
+What does it mean when the report prints a critical flag?,cbc_flag_explanation,en
+How is a critical flag used during CBC review?,cbc_flag_explanation,en
+What does anemia mean in hematology?,anemia_related_term,en
+Explain anemia on a blood report.,anemia_related_term,en
+What is the meaning of anemia on CBC?,anemia_related_term,en
+How should anemia be described in a report?,anemia_related_term,en
+What does it mean if the report mentions anemia?,anemia_related_term,en
+Why would a report show anemia?,anemia_related_term,en
+How is anemia reviewed in a hematology lab?,anemia_related_term,en
+What parameters are checked when a report suggests anemia?,anemia_related_term,en
+What should be reviewed with anemia on CBC?,anemia_related_term,en
+How is anemia related to RBC indices?,anemia_related_term,en
+What does low hemoglobin mean in hematology?,anemia_related_term,en
+Explain low hemoglobin on a blood report.,anemia_related_term,en
+What is the meaning of low hemoglobin on CBC?,anemia_related_term,en
+How should low hemoglobin be described in a report?,anemia_related_term,en
+What does it mean if the report mentions low hemoglobin?,anemia_related_term,en
+Why would a report show low hemoglobin?,anemia_related_term,en
+How is low hemoglobin reviewed in a hematology lab?,anemia_related_term,en
+What parameters are checked when a report suggests low hemoglobin?,anemia_related_term,en
+What should be reviewed with low hemoglobin on CBC?,anemia_related_term,en
+How is low hemoglobin related to RBC indices?,anemia_related_term,en
+What does low haemoglobin mean in hematology?,anemia_related_term,en
+Explain low haemoglobin on a blood report.,anemia_related_term,en
+What is the meaning of low haemoglobin on CBC?,anemia_related_term,en
+How should low haemoglobin be described in a report?,anemia_related_term,en
+What does it mean if the report mentions low haemoglobin?,anemia_related_term,en
+Why would a report show low haemoglobin?,anemia_related_term,en
+How is low haemoglobin reviewed in a hematology lab?,anemia_related_term,en
+What parameters are checked when a report suggests low haemoglobin?,anemia_related_term,en
+What should be reviewed with low haemoglobin on CBC?,anemia_related_term,en
+How is low haemoglobin related to RBC indices?,anemia_related_term,en
+What does low hematocrit mean in hematology?,anemia_related_term,en
+Explain low hematocrit on a blood report.,anemia_related_term,en
+What is the meaning of low hematocrit on CBC?,anemia_related_term,en
+How should low hematocrit be described in a report?,anemia_related_term,en
+What does it mean if the report mentions low hematocrit?,anemia_related_term,en
+Why would a report show low hematocrit?,anemia_related_term,en
+How is low hematocrit reviewed in a hematology lab?,anemia_related_term,en
+What parameters are checked when a report suggests low hematocrit?,anemia_related_term,en
+What should be reviewed with low hematocrit on CBC?,anemia_related_term,en
+How is low hematocrit related to RBC indices?,anemia_related_term,en
+What does low HGB mean in hematology?,anemia_related_term,en
+Explain low HGB on a blood report.,anemia_related_term,en
+What is the meaning of low HGB on CBC?,anemia_related_term,en
+How should low HGB be described in a report?,anemia_related_term,en
+What does it mean if the report mentions low HGB?,anemia_related_term,en
+Why would a report show low HGB?,anemia_related_term,en
+How is low HGB reviewed in a hematology lab?,anemia_related_term,en
+What parameters are checked when a report suggests low HGB?,anemia_related_term,en
+What should be reviewed with low HGB on CBC?,anemia_related_term,en
+How is low HGB related to RBC indices?,anemia_related_term,en
+What does low HCT mean in hematology?,anemia_related_term,en
+Explain low HCT on a blood report.,anemia_related_term,en
+What is the meaning of low HCT on CBC?,anemia_related_term,en
+How should low HCT be described in a report?,anemia_related_term,en
+What does it mean if the report mentions low HCT?,anemia_related_term,en
+Why would a report show low HCT?,anemia_related_term,en
+How is low HCT reviewed in a hematology lab?,anemia_related_term,en
+What parameters are checked when a report suggests low HCT?,anemia_related_term,en
+What should be reviewed with low HCT on CBC?,anemia_related_term,en
+How is low HCT related to RBC indices?,anemia_related_term,en
+What does anemia pattern mean in hematology?,anemia_related_term,en
+Explain anemia pattern on a blood report.,anemia_related_term,en
+What is the meaning of anemia pattern on CBC?,anemia_related_term,en
+How should anemia pattern be described in a report?,anemia_related_term,en
+What does it mean if the report mentions anemia pattern?,anemia_related_term,en
+Why would a report show anemia pattern?,anemia_related_term,en
+How is anemia pattern reviewed in a hematology lab?,anemia_related_term,en
+What parameters are checked when a report suggests anemia pattern?,anemia_related_term,en
+What should be reviewed with anemia pattern on CBC?,anemia_related_term,en
+How is anemia pattern related to RBC indices?,anemia_related_term,en
+What does anemic report mean in hematology?,anemia_related_term,en
+Explain anemic report on a blood report.,anemia_related_term,en
+What is the meaning of anemic report on CBC?,anemia_related_term,en
+How should anemic report be described in a report?,anemia_related_term,en
+What does it mean if the report mentions anemic report?,anemia_related_term,en
+Why would a report show anemic report?,anemia_related_term,en
+How is anemic report reviewed in a hematology lab?,anemia_related_term,en
+What parameters are checked when a report suggests anemic report?,anemia_related_term,en
+What should be reviewed with anemic report on CBC?,anemia_related_term,en
+How is anemic report related to RBC indices?,anemia_related_term,en
+What does thrombocytopenia mean in a report?,platelet_abnormality,en
+Explain thrombocytopenia on CBC.,platelet_abnormality,en
+How should thrombocytopenia be reviewed in hematology?,platelet_abnormality,en
+What is the meaning of thrombocytopenia on a blood count?,platelet_abnormality,en
+What does it mean when the analyzer prints thrombocytopenia?,platelet_abnormality,en
+What should be checked when the report shows thrombocytopenia?,platelet_abnormality,en
+Why would a CBC report mention thrombocytopenia?,platelet_abnormality,en
+How is thrombocytopenia related to platelet count interpretation?,platelet_abnormality,en
+What can a laboratory assistant say about thrombocytopenia?,platelet_abnormality,en
+How is thrombocytopenia confirmed on smear review?,platelet_abnormality,en
+What does thrombocytosis mean in a report?,platelet_abnormality,en
+Explain thrombocytosis on CBC.,platelet_abnormality,en
+How should thrombocytosis be reviewed in hematology?,platelet_abnormality,en
+What is the meaning of thrombocytosis on a blood count?,platelet_abnormality,en
+What does it mean when the analyzer prints thrombocytosis?,platelet_abnormality,en
+What should be checked when the report shows thrombocytosis?,platelet_abnormality,en
+Why would a CBC report mention thrombocytosis?,platelet_abnormality,en
+How is thrombocytosis related to platelet count interpretation?,platelet_abnormality,en
+What can a laboratory assistant say about thrombocytosis?,platelet_abnormality,en
+How is thrombocytosis confirmed on smear review?,platelet_abnormality,en
+What does low platelet count mean in a report?,platelet_abnormality,en
+Explain low platelet count on CBC.,platelet_abnormality,en
+How should low platelet count be reviewed in hematology?,platelet_abnormality,en
+What is the meaning of low platelet count on a blood count?,platelet_abnormality,en
+What does it mean when the analyzer prints low platelet count?,platelet_abnormality,en
+What should be checked when the report shows low platelet count?,platelet_abnormality,en
+Why would a CBC report mention low platelet count?,platelet_abnormality,en
+How is low platelet count related to platelet count interpretation?,platelet_abnormality,en
+What can a laboratory assistant say about low platelet count?,platelet_abnormality,en
+How is low platelet count confirmed on smear review?,platelet_abnormality,en
+What does high platelet count mean in a report?,platelet_abnormality,en
+Explain high platelet count on CBC.,platelet_abnormality,en
+How should high platelet count be reviewed in hematology?,platelet_abnormality,en
+What is the meaning of high platelet count on a blood count?,platelet_abnormality,en
+What does it mean when the analyzer prints high platelet count?,platelet_abnormality,en
+What should be checked when the report shows high platelet count?,platelet_abnormality,en
+Why would a CBC report mention high platelet count?,platelet_abnormality,en
+How is high platelet count related to platelet count interpretation?,platelet_abnormality,en
+What can a laboratory assistant say about high platelet count?,platelet_abnormality,en
+How is high platelet count confirmed on smear review?,platelet_abnormality,en
+What does low PLT mean in a report?,platelet_abnormality,en
+Explain low PLT on CBC.,platelet_abnormality,en
+How should low PLT be reviewed in hematology?,platelet_abnormality,en
+What is the meaning of low PLT on a blood count?,platelet_abnormality,en
+What does it mean when the analyzer prints low PLT?,platelet_abnormality,en
+What should be checked when the report shows low PLT?,platelet_abnormality,en
+Why would a CBC report mention low PLT?,platelet_abnormality,en
+How is low PLT related to platelet count interpretation?,platelet_abnormality,en
+What can a laboratory assistant say about low PLT?,platelet_abnormality,en
+How is low PLT confirmed on smear review?,platelet_abnormality,en
+What does high PLT mean in a report?,platelet_abnormality,en
+Explain high PLT on CBC.,platelet_abnormality,en
+How should high PLT be reviewed in hematology?,platelet_abnormality,en
+What is the meaning of high PLT on a blood count?,platelet_abnormality,en
+What does it mean when the analyzer prints high PLT?,platelet_abnormality,en
+What should be checked when the report shows high PLT?,platelet_abnormality,en
+Why would a CBC report mention high PLT?,platelet_abnormality,en
+How is high PLT related to platelet count interpretation?,platelet_abnormality,en
+What can a laboratory assistant say about high PLT?,platelet_abnormality,en
+How is high PLT confirmed on smear review?,platelet_abnormality,en
+What does platelet abnormal distribution mean in a report?,platelet_abnormality,en
+Explain platelet abnormal distribution on CBC.,platelet_abnormality,en
+How should platelet abnormal distribution be reviewed in hematology?,platelet_abnormality,en
+What is the meaning of platelet abnormal distribution on a blood count?,platelet_abnormality,en
+What does it mean when the analyzer prints platelet abnormal distribution?,platelet_abnormality,en
+What should be checked when the report shows platelet abnormal distribution?,platelet_abnormality,en
+Why would a CBC report mention platelet abnormal distribution?,platelet_abnormality,en
+How is platelet abnormal distribution related to platelet count interpretation?,platelet_abnormality,en
+What can a laboratory assistant say about platelet abnormal distribution?,platelet_abnormality,en
+How is platelet abnormal distribution confirmed on smear review?,platelet_abnormality,en
+What does platelet clumping flag mean in a report?,platelet_abnormality,en
+Explain platelet clumping flag on CBC.,platelet_abnormality,en
+How should platelet clumping flag be reviewed in hematology?,platelet_abnormality,en
+What is the meaning of platelet clumping flag on a blood count?,platelet_abnormality,en
+What does it mean when the analyzer prints platelet clumping flag?,platelet_abnormality,en
+What should be checked when the report shows platelet clumping flag?,platelet_abnormality,en
+Why would a CBC report mention platelet clumping flag?,platelet_abnormality,en
+How is platelet clumping flag related to platelet count interpretation?,platelet_abnormality,en
+What can a laboratory assistant say about platelet clumping flag?,platelet_abnormality,en
+How is platelet clumping flag confirmed on smear review?,platelet_abnormality,en
+What does Neu# mean on a differential report?,differential_result_explanation,en
+Explain Neu# in a CBC differential.,differential_result_explanation,en
+What is the meaning of Neu# on this blood report?,differential_result_explanation,en
+How should Neu# be read in hematology?,differential_result_explanation,en
+Is Neu# an absolute count or a percentage?,differential_result_explanation,en
+How is Neu# used in differential review?,differential_result_explanation,en
+What is the difference between Neu# and the related white-cell result?,differential_result_explanation,en
+Why does the report print Neu#?,differential_result_explanation,en
+How should a laboratory assistant explain Neu#?,differential_result_explanation,en
+What section of the report contains Neu#?,differential_result_explanation,en
+What does Neu% mean on a differential report?,differential_result_explanation,en
+Explain Neu% in a CBC differential.,differential_result_explanation,en
+What is the meaning of Neu% on this blood report?,differential_result_explanation,en
+How should Neu% be read in hematology?,differential_result_explanation,en
+Is Neu% an absolute count or a percentage?,differential_result_explanation,en
+How is Neu% used in differential review?,differential_result_explanation,en
+What is the difference between Neu% and the related white-cell result?,differential_result_explanation,en
+Why does the report print Neu%?,differential_result_explanation,en
+How should a laboratory assistant explain Neu%?,differential_result_explanation,en
+What section of the report contains Neu%?,differential_result_explanation,en
+What does Lym# mean on a differential report?,differential_result_explanation,en
+Explain Lym# in a CBC differential.,differential_result_explanation,en
+What is the meaning of Lym# on this blood report?,differential_result_explanation,en
+How should Lym# be read in hematology?,differential_result_explanation,en
+Is Lym# an absolute count or a percentage?,differential_result_explanation,en
+How is Lym# used in differential review?,differential_result_explanation,en
+What is the difference between Lym# and the related white-cell result?,differential_result_explanation,en
+Why does the report print Lym#?,differential_result_explanation,en
+How should a laboratory assistant explain Lym#?,differential_result_explanation,en
+What section of the report contains Lym#?,differential_result_explanation,en
+What does Lym% mean on a differential report?,differential_result_explanation,en
+Explain Lym% in a CBC differential.,differential_result_explanation,en
+What is the meaning of Lym% on this blood report?,differential_result_explanation,en
+How should Lym% be read in hematology?,differential_result_explanation,en
+Is Lym% an absolute count or a percentage?,differential_result_explanation,en
+How is Lym% used in differential review?,differential_result_explanation,en
+What is the difference between Lym% and the related white-cell result?,differential_result_explanation,en
+Why does the report print Lym%?,differential_result_explanation,en
+How should a laboratory assistant explain Lym%?,differential_result_explanation,en
+What section of the report contains Lym%?,differential_result_explanation,en
+What does Mon# mean on a differential report?,differential_result_explanation,en
+Explain Mon# in a CBC differential.,differential_result_explanation,en
+What is the meaning of Mon# on this blood report?,differential_result_explanation,en
+How should Mon# be read in hematology?,differential_result_explanation,en
+Is Mon# an absolute count or a percentage?,differential_result_explanation,en
+How is Mon# used in differential review?,differential_result_explanation,en
+What is the difference between Mon# and the related white-cell result?,differential_result_explanation,en
+Why does the report print Mon#?,differential_result_explanation,en
+How should a laboratory assistant explain Mon#?,differential_result_explanation,en
+What section of the report contains Mon#?,differential_result_explanation,en
+What does Mon% mean on a differential report?,differential_result_explanation,en
+Explain Mon% in a CBC differential.,differential_result_explanation,en
+What is the meaning of Mon% on this blood report?,differential_result_explanation,en
+How should Mon% be read in hematology?,differential_result_explanation,en
+Is Mon% an absolute count or a percentage?,differential_result_explanation,en
+How is Mon% used in differential review?,differential_result_explanation,en
+What is the difference between Mon% and the related white-cell result?,differential_result_explanation,en
+Why does the report print Mon%?,differential_result_explanation,en
+How should a laboratory assistant explain Mon%?,differential_result_explanation,en
+What section of the report contains Mon%?,differential_result_explanation,en
+What does Eos# mean on a differential report?,differential_result_explanation,en
+Explain Eos# in a CBC differential.,differential_result_explanation,en
+What is the meaning of Eos# on this blood report?,differential_result_explanation,en
+How should Eos# be read in hematology?,differential_result_explanation,en
+Is Eos# an absolute count or a percentage?,differential_result_explanation,en
+How is Eos# used in differential review?,differential_result_explanation,en
+What is the difference between Eos# and the related white-cell result?,differential_result_explanation,en
+Why does the report print Eos#?,differential_result_explanation,en
+How should a laboratory assistant explain Eos#?,differential_result_explanation,en
+What section of the report contains Eos#?,differential_result_explanation,en
+What does Bas# mean on a differential report?,differential_result_explanation,en
+Explain Bas# in a CBC differential.,differential_result_explanation,en
+What is the meaning of Bas# on this blood report?,differential_result_explanation,en
+How should Bas# be read in hematology?,differential_result_explanation,en
+Is Bas# an absolute count or a percentage?,differential_result_explanation,en
+How is Bas# used in differential review?,differential_result_explanation,en
+What is the difference between Bas# and the related white-cell result?,differential_result_explanation,en
+Why does the report print Bas#?,differential_result_explanation,en
+How should a laboratory assistant explain Bas#?,differential_result_explanation,en
+What section of the report contains Bas#?,differential_result_explanation,en
+How do I read the result column on a CBC report?,report_structure_help,en
+What is the purpose of the result column on a hematology report?,report_structure_help,en
+Explain the result column in a blood report layout.,report_structure_help,en
+How should the result column be reviewed first?,report_structure_help,en
+What does the result column help the user understand?,report_structure_help,en
+How is the result column used when reading a report?,report_structure_help,en
+What should be checked in the result column of a CBC?,report_structure_help,en
+Why is the result column important in report reading?,report_structure_help,en
+How should a student interpret the result column?,report_structure_help,en
+What does the result column show on the printed report?,report_structure_help,en
+How do I read the unit column on a CBC report?,report_structure_help,en
+What is the purpose of the unit column on a hematology report?,report_structure_help,en
+Explain the unit column in a blood report layout.,report_structure_help,en
+How should the unit column be reviewed first?,report_structure_help,en
+What does the unit column help the user understand?,report_structure_help,en
+How is the unit column used when reading a report?,report_structure_help,en
+What should be checked in the unit column of a CBC?,report_structure_help,en
+Why is the unit column important in report reading?,report_structure_help,en
+How should a student interpret the unit column?,report_structure_help,en
+What does the unit column show on the printed report?,report_structure_help,en
+How do I read the reference range on a CBC report?,report_structure_help,en
+What is the purpose of the reference range on a hematology report?,report_structure_help,en
+Explain the reference range in a blood report layout.,report_structure_help,en
+How should the reference range be reviewed first?,report_structure_help,en
+What does the reference range help the user understand?,report_structure_help,en
+How is the reference range used when reading a report?,report_structure_help,en
+What should be checked in the reference range of a CBC?,report_structure_help,en
+Why is the reference range important in report reading?,report_structure_help,en
+How should a student interpret the reference range?,report_structure_help,en
+What does the reference range show on the printed report?,report_structure_help,en
+How do I read the H marker on a CBC report?,report_structure_help,en
+What is the purpose of the H marker on a hematology report?,report_structure_help,en
+Explain the H marker in a blood report layout.,report_structure_help,en
+How should the H marker be reviewed first?,report_structure_help,en
+What does the H marker help the user understand?,report_structure_help,en
+How is the H marker used when reading a report?,report_structure_help,en
+What should be checked in the H marker of a CBC?,report_structure_help,en
+Why is the H marker important in report reading?,report_structure_help,en
+How should a student interpret the H marker?,report_structure_help,en
+What does the H marker show on the printed report?,report_structure_help,en
+How do I read the L marker on a CBC report?,report_structure_help,en
+What is the purpose of the L marker on a hematology report?,report_structure_help,en
+Explain the L marker in a blood report layout.,report_structure_help,en
+How should the L marker be reviewed first?,report_structure_help,en
+What does the L marker help the user understand?,report_structure_help,en
+How is the L marker used when reading a report?,report_structure_help,en
+What should be checked in the L marker of a CBC?,report_structure_help,en
+Why is the L marker important in report reading?,report_structure_help,en
+How should a student interpret the L marker?,report_structure_help,en
+What does the L marker show on the printed report?,report_structure_help,en
+How do I read the WBC section on a CBC report?,report_structure_help,en
+What is the purpose of the WBC section on a hematology report?,report_structure_help,en
+Explain the WBC section in a blood report layout.,report_structure_help,en
+How should the WBC section be reviewed first?,report_structure_help,en
+What does the WBC section help the user understand?,report_structure_help,en
+How is the WBC section used when reading a report?,report_structure_help,en
+What should be checked in the WBC section of a CBC?,report_structure_help,en
+Why is the WBC section important in report reading?,report_structure_help,en
+How should a student interpret the WBC section?,report_structure_help,en
+What does the WBC section show on the printed report?,report_structure_help,en
+How do I read the RBC section on a CBC report?,report_structure_help,en
+What is the purpose of the RBC section on a hematology report?,report_structure_help,en
+Explain the RBC section in a blood report layout.,report_structure_help,en
+How should the RBC section be reviewed first?,report_structure_help,en
+What does the RBC section help the user understand?,report_structure_help,en
+How is the RBC section used when reading a report?,report_structure_help,en
+What should be checked in the RBC section of a CBC?,report_structure_help,en
+Why is the RBC section important in report reading?,report_structure_help,en
+How should a student interpret the RBC section?,report_structure_help,en
+What does the RBC section show on the printed report?,report_structure_help,en
+How do I read the platelet section on a CBC report?,report_structure_help,en
+What is the purpose of the platelet section on a hematology report?,report_structure_help,en
+Explain the platelet section in a blood report layout.,report_structure_help,en
+How should the platelet section be reviewed first?,report_structure_help,en
+What does the platelet section help the user understand?,report_structure_help,en
+How is the platelet section used when reading a report?,report_structure_help,en
+What should be checked in the platelet section of a CBC?,report_structure_help,en
+Why is the platelet section important in report reading?,report_structure_help,en
+How should a student interpret the platelet section?,report_structure_help,en
+What does the platelet section show on the printed report?,report_structure_help,en
+How do I read the flag area on a CBC report?,report_structure_help,en
+What is the purpose of the flag area on a hematology report?,report_structure_help,en
+Explain the flag area in a blood report layout.,report_structure_help,en
+How should the flag area be reviewed first?,report_structure_help,en
+What does the flag area help the user understand?,report_structure_help,en
+How is the flag area used when reading a report?,report_structure_help,en
+What should be checked in the flag area of a CBC?,report_structure_help,en
+Why is the flag area important in report reading?,report_structure_help,en
+How should a student interpret the flag area?,report_structure_help,en
+What does the flag area show on the printed report?,report_structure_help,en
+How do I read the differential area on a CBC report?,report_structure_help,en
+What is the purpose of the differential area on a hematology report?,report_structure_help,en
+Explain the differential area in a blood report layout.,report_structure_help,en
+How should the differential area be reviewed first?,report_structure_help,en
+What does the differential area help the user understand?,report_structure_help,en
+How is the differential area used when reading a report?,report_structure_help,en
+What should be checked in the differential area of a CBC?,report_structure_help,en
+Why is the differential area important in report reading?,report_structure_help,en
+How should a student interpret the differential area?,report_structure_help,en
+What does the differential area show on the printed report?,report_structure_help,en
+WBC is 2.8,report_numeric_result_analysis,en
+WBC is 4.8,report_numeric_result_analysis,en
+WBC is 13.7,report_numeric_result_analysis,en
+WBC is 22.4,report_numeric_result_analysis,en
+My report says WBC 2.8,report_numeric_result_analysis,en
+My report says WBC 4.8,report_numeric_result_analysis,en
+My report says WBC 13.7,report_numeric_result_analysis,en
+My report says WBC 22.4,report_numeric_result_analysis,en
+In my CBC report WBC is 2.8,report_numeric_result_analysis,en
+In my CBC report WBC is 4.8,report_numeric_result_analysis,en
+In my CBC report WBC is 13.7,report_numeric_result_analysis,en
+In my CBC report WBC is 22.4,report_numeric_result_analysis,en
+This blood report shows WBC 2.8,report_numeric_result_analysis,en
+This blood report shows WBC 4.8,report_numeric_result_analysis,en
+This blood report shows WBC 13.7,report_numeric_result_analysis,en
+This blood report shows WBC 22.4,report_numeric_result_analysis,en
+WBC: 2.8,report_numeric_result_analysis,en
+WBC: 4.8,report_numeric_result_analysis,en
+WBC: 13.7,report_numeric_result_analysis,en
+WBC: 22.4,report_numeric_result_analysis,en
+Please analyze WBC 2.8 in this report,report_numeric_result_analysis,en
+Please analyze WBC 4.8 in this report,report_numeric_result_analysis,en
+Please analyze WBC 13.7 in this report,report_numeric_result_analysis,en
+Please analyze WBC 22.4 in this report,report_numeric_result_analysis,en
+Can you analyze WBC value 2.8?,report_numeric_result_analysis,en
+Can you analyze WBC value 4.8?,report_numeric_result_analysis,en
+Can you analyze WBC value 13.7?,report_numeric_result_analysis,en
+Can you analyze WBC value 22.4?,report_numeric_result_analysis,en
+Report result WBC = 2.8,report_numeric_result_analysis,en
+Report result WBC = 4.8,report_numeric_result_analysis,en
+Report result WBC = 13.7,report_numeric_result_analysis,en
+Report result WBC = 22.4,report_numeric_result_analysis,en
+What does it mean if WBC is 2.8?,report_numeric_result_analysis,en
+What does it mean if WBC is 4.8?,report_numeric_result_analysis,en
+What does it mean if WBC is 13.7?,report_numeric_result_analysis,en
+What does it mean if WBC is 22.4?,report_numeric_result_analysis,en
+RBC is 2.9,report_numeric_result_analysis,en
+RBC is 4.7,report_numeric_result_analysis,en
+RBC is 6.4,report_numeric_result_analysis,en
+RBC is 5.1,report_numeric_result_analysis,en
+My report says RBC 2.9,report_numeric_result_analysis,en
+My report says RBC 4.7,report_numeric_result_analysis,en
+My report says RBC 6.4,report_numeric_result_analysis,en
+My report says RBC 5.1,report_numeric_result_analysis,en
+In my CBC report RBC is 2.9,report_numeric_result_analysis,en
+In my CBC report RBC is 4.7,report_numeric_result_analysis,en
+In my CBC report RBC is 6.4,report_numeric_result_analysis,en
+In my CBC report RBC is 5.1,report_numeric_result_analysis,en
+This blood report shows RBC 2.9,report_numeric_result_analysis,en
+This blood report shows RBC 4.7,report_numeric_result_analysis,en
+This blood report shows RBC 6.4,report_numeric_result_analysis,en
+This blood report shows RBC 5.1,report_numeric_result_analysis,en
+RBC: 2.9,report_numeric_result_analysis,en
+RBC: 4.7,report_numeric_result_analysis,en
+RBC: 6.4,report_numeric_result_analysis,en
+RBC: 5.1,report_numeric_result_analysis,en
+Please analyze RBC 2.9 in this report,report_numeric_result_analysis,en
+Please analyze RBC 4.7 in this report,report_numeric_result_analysis,en
+Please analyze RBC 6.4 in this report,report_numeric_result_analysis,en
+Please analyze RBC 5.1 in this report,report_numeric_result_analysis,en
+Can you analyze RBC value 2.9?,report_numeric_result_analysis,en
+Can you analyze RBC value 4.7?,report_numeric_result_analysis,en
+Can you analyze RBC value 6.4?,report_numeric_result_analysis,en
+Can you analyze RBC value 5.1?,report_numeric_result_analysis,en
+Report result RBC = 2.9,report_numeric_result_analysis,en
+Report result RBC = 4.7,report_numeric_result_analysis,en
+Report result RBC = 6.4,report_numeric_result_analysis,en
+Report result RBC = 5.1,report_numeric_result_analysis,en
+What does it mean if RBC is 2.9?,report_numeric_result_analysis,en
+What does it mean if RBC is 4.7?,report_numeric_result_analysis,en
+What does it mean if RBC is 6.4?,report_numeric_result_analysis,en
+What does it mean if RBC is 5.1?,report_numeric_result_analysis,en
+HGB is 7.4,report_numeric_result_analysis,en
+HGB is 11.2,report_numeric_result_analysis,en
+HGB is 13.8,report_numeric_result_analysis,en
+HGB is 18.2,report_numeric_result_analysis,en
+My report says HGB 7.4,report_numeric_result_analysis,en
+My report says HGB 11.2,report_numeric_result_analysis,en
+My report says HGB 13.8,report_numeric_result_analysis,en
+My report says HGB 18.2,report_numeric_result_analysis,en
+In my CBC report HGB is 7.4,report_numeric_result_analysis,en
+In my CBC report HGB is 11.2,report_numeric_result_analysis,en
+In my CBC report HGB is 13.8,report_numeric_result_analysis,en
+In my CBC report HGB is 18.2,report_numeric_result_analysis,en
+This blood report shows HGB 7.4,report_numeric_result_analysis,en
+This blood report shows HGB 11.2,report_numeric_result_analysis,en
+This blood report shows HGB 13.8,report_numeric_result_analysis,en
+This blood report shows HGB 18.2,report_numeric_result_analysis,en
+HGB: 7.4,report_numeric_result_analysis,en
+HGB: 11.2,report_numeric_result_analysis,en
+HGB: 13.8,report_numeric_result_analysis,en
+HGB: 18.2,report_numeric_result_analysis,en
+Please analyze HGB 7.4 in this report,report_numeric_result_analysis,en
+Please analyze HGB 11.2 in this report,report_numeric_result_analysis,en
+Please analyze HGB 13.8 in this report,report_numeric_result_analysis,en
+Please analyze HGB 18.2 in this report,report_numeric_result_analysis,en
+Can you analyze HGB value 7.4?,report_numeric_result_analysis,en
+Can you analyze HGB value 11.2?,report_numeric_result_analysis,en
+Can you analyze HGB value 13.8?,report_numeric_result_analysis,en
+Can you analyze HGB value 18.2?,report_numeric_result_analysis,en
+Report result HGB = 7.4,report_numeric_result_analysis,en
+Report result HGB = 11.2,report_numeric_result_analysis,en
+Report result HGB = 13.8,report_numeric_result_analysis,en
+Report result HGB = 18.2,report_numeric_result_analysis,en
+What does it mean if HGB is 7.4?,report_numeric_result_analysis,en
+What does it mean if HGB is 11.2?,report_numeric_result_analysis,en
+What does it mean if HGB is 13.8?,report_numeric_result_analysis,en
+What does it mean if HGB is 18.2?,report_numeric_result_analysis,en
+HCT is 22.8,report_numeric_result_analysis,en
+HCT is 35.9,report_numeric_result_analysis,en
+HCT is 42.1,report_numeric_result_analysis,en
+HCT is 55.5,report_numeric_result_analysis,en
+My report says HCT 22.8,report_numeric_result_analysis,en
+My report says HCT 35.9,report_numeric_result_analysis,en
+My report says HCT 42.1,report_numeric_result_analysis,en
+My report says HCT 55.5,report_numeric_result_analysis,en
+In my CBC report HCT is 22.8,report_numeric_result_analysis,en
+In my CBC report HCT is 35.9,report_numeric_result_analysis,en
+In my CBC report HCT is 42.1,report_numeric_result_analysis,en
+In my CBC report HCT is 55.5,report_numeric_result_analysis,en
+This blood report shows HCT 22.8,report_numeric_result_analysis,en
+This blood report shows HCT 35.9,report_numeric_result_analysis,en
+This blood report shows HCT 42.1,report_numeric_result_analysis,en
+This blood report shows HCT 55.5,report_numeric_result_analysis,en
+HCT: 22.8,report_numeric_result_analysis,en
+HCT: 35.9,report_numeric_result_analysis,en
+HCT: 42.1,report_numeric_result_analysis,en
+HCT: 55.5,report_numeric_result_analysis,en
+Please analyze HCT 22.8 in this report,report_numeric_result_analysis,en
+Please analyze HCT 35.9 in this report,report_numeric_result_analysis,en
+Please analyze HCT 42.1 in this report,report_numeric_result_analysis,en
+Please analyze HCT 55.5 in this report,report_numeric_result_analysis,en
+Can you analyze HCT value 22.8?,report_numeric_result_analysis,en
+Can you analyze HCT value 35.9?,report_numeric_result_analysis,en
+Can you analyze HCT value 42.1?,report_numeric_result_analysis,en
+Can you analyze HCT value 55.5?,report_numeric_result_analysis,en
+Report result HCT = 22.8,report_numeric_result_analysis,en
+Report result HCT = 35.9,report_numeric_result_analysis,en
+Report result HCT = 42.1,report_numeric_result_analysis,en
+Report result HCT = 55.5,report_numeric_result_analysis,en
+What does it mean if HCT is 22.8?,report_numeric_result_analysis,en
+What does it mean if HCT is 35.9?,report_numeric_result_analysis,en
+What does it mean if HCT is 42.1?,report_numeric_result_analysis,en
+What does it mean if HCT is 55.5?,report_numeric_result_analysis,en
+MCV is 63.5,report_numeric_result_analysis,en
+MCV is 72.0,report_numeric_result_analysis,en
+MCV is 89.4,report_numeric_result_analysis,en
+MCV is 106.8,report_numeric_result_analysis,en
+My report says MCV 63.5,report_numeric_result_analysis,en
+My report says MCV 72.0,report_numeric_result_analysis,en
+My report says MCV 89.4,report_numeric_result_analysis,en
+My report says MCV 106.8,report_numeric_result_analysis,en
+In my CBC report MCV is 63.5,report_numeric_result_analysis,en
+In my CBC report MCV is 72.0,report_numeric_result_analysis,en
+In my CBC report MCV is 89.4,report_numeric_result_analysis,en
+In my CBC report MCV is 106.8,report_numeric_result_analysis,en
+This blood report shows MCV 63.5,report_numeric_result_analysis,en
+This blood report shows MCV 72.0,report_numeric_result_analysis,en
+This blood report shows MCV 89.4,report_numeric_result_analysis,en
+This blood report shows MCV 106.8,report_numeric_result_analysis,en
+MCV: 63.5,report_numeric_result_analysis,en
+MCV: 72.0,report_numeric_result_analysis,en
+MCV: 89.4,report_numeric_result_analysis,en
+MCV: 106.8,report_numeric_result_analysis,en
+Please analyze MCV 63.5 in this report,report_numeric_result_analysis,en
+Please analyze MCV 72.0 in this report,report_numeric_result_analysis,en
+Please analyze MCV 89.4 in this report,report_numeric_result_analysis,en
+Please analyze MCV 106.8 in this report,report_numeric_result_analysis,en
+Can you analyze MCV value 63.5?,report_numeric_result_analysis,en
+Can you analyze MCV value 72.0?,report_numeric_result_analysis,en
+Can you analyze MCV value 89.4?,report_numeric_result_analysis,en
+Can you analyze MCV value 106.8?,report_numeric_result_analysis,en
+Report result MCV = 63.5,report_numeric_result_analysis,en
+Report result MCV = 72.0,report_numeric_result_analysis,en
+Report result MCV = 89.4,report_numeric_result_analysis,en
+Report result MCV = 106.8,report_numeric_result_analysis,en
+What does it mean if MCV is 63.5?,report_numeric_result_analysis,en
+What does it mean if MCV is 72.0?,report_numeric_result_analysis,en
+What does it mean if MCV is 89.4?,report_numeric_result_analysis,en
+What does it mean if MCV is 106.8?,report_numeric_result_analysis,en
+My report shows anemia,report_flag_result_analysis,en
+This CBC report says anemia,report_flag_result_analysis,en
+The blood report is flagged as anemia,report_flag_result_analysis,en
+Please explain the report flag anemia,report_flag_result_analysis,en
+What does it mean when my hematology report shows anemia?,report_flag_result_analysis,en
+The analyzer printed anemia on the report,report_flag_result_analysis,en
+Can you analyze a report that says anemia?,report_flag_result_analysis,en
+My result mentions anemia,report_flag_result_analysis,en
+Report comment: anemia,report_flag_result_analysis,en
+What should be understood from a report flag of anemia?,report_flag_result_analysis,en
+The CBC summary shows anemia,report_flag_result_analysis,en
+The printed flag on the blood report is anemia,report_flag_result_analysis,en
+How should I read a report that says anemia?,report_flag_result_analysis,en
+What does the report statement anemia mean?,report_flag_result_analysis,en
+The report conclusion mentions anemia,report_flag_result_analysis,en
+My lab result is marked anemia,report_flag_result_analysis,en
+The machine flagged the report with anemia,report_flag_result_analysis,en
+The hematology printout shows anemia,report_flag_result_analysis,en
+The report note says anemia,report_flag_result_analysis,en
+Please interpret the report phrase anemia,report_flag_result_analysis,en
+My report shows thrombocytopenia,report_flag_result_analysis,en
+This CBC report says thrombocytopenia,report_flag_result_analysis,en
+The blood report is flagged as thrombocytopenia,report_flag_result_analysis,en
+Please explain the report flag thrombocytopenia,report_flag_result_analysis,en
+What does it mean when my hematology report shows thrombocytopenia?,report_flag_result_analysis,en
+The analyzer printed thrombocytopenia on the report,report_flag_result_analysis,en
+Can you analyze a report that says thrombocytopenia?,report_flag_result_analysis,en
+My result mentions thrombocytopenia,report_flag_result_analysis,en
+Report comment: thrombocytopenia,report_flag_result_analysis,en
+What should be understood from a report flag of thrombocytopenia?,report_flag_result_analysis,en
+The CBC summary shows thrombocytopenia,report_flag_result_analysis,en
+The printed flag on the blood report is thrombocytopenia,report_flag_result_analysis,en
+How should I read a report that says thrombocytopenia?,report_flag_result_analysis,en
+What does the report statement thrombocytopenia mean?,report_flag_result_analysis,en
+The report conclusion mentions thrombocytopenia,report_flag_result_analysis,en
+My lab result is marked thrombocytopenia,report_flag_result_analysis,en
+The machine flagged the report with thrombocytopenia,report_flag_result_analysis,en
+The hematology printout shows thrombocytopenia,report_flag_result_analysis,en
+The report note says thrombocytopenia,report_flag_result_analysis,en
+Please interpret the report phrase thrombocytopenia,report_flag_result_analysis,en
+My report shows thrombocytosis,report_flag_result_analysis,en
+This CBC report says thrombocytosis,report_flag_result_analysis,en
+The blood report is flagged as thrombocytosis,report_flag_result_analysis,en
+Please explain the report flag thrombocytosis,report_flag_result_analysis,en
+What does it mean when my hematology report shows thrombocytosis?,report_flag_result_analysis,en
+The analyzer printed thrombocytosis on the report,report_flag_result_analysis,en
+Can you analyze a report that says thrombocytosis?,report_flag_result_analysis,en
+My result mentions thrombocytosis,report_flag_result_analysis,en
+Report comment: thrombocytosis,report_flag_result_analysis,en
+What should be understood from a report flag of thrombocytosis?,report_flag_result_analysis,en
+The CBC summary shows thrombocytosis,report_flag_result_analysis,en
+The printed flag on the blood report is thrombocytosis,report_flag_result_analysis,en
+How should I read a report that says thrombocytosis?,report_flag_result_analysis,en
+What does the report statement thrombocytosis mean?,report_flag_result_analysis,en
+The report conclusion mentions thrombocytosis,report_flag_result_analysis,en
+My lab result is marked thrombocytosis,report_flag_result_analysis,en
+The machine flagged the report with thrombocytosis,report_flag_result_analysis,en
+The hematology printout shows thrombocytosis,report_flag_result_analysis,en
+The report note says thrombocytosis,report_flag_result_analysis,en
+Please interpret the report phrase thrombocytosis,report_flag_result_analysis,en
+My report shows neutrophilia,report_flag_result_analysis,en
+This CBC report says neutrophilia,report_flag_result_analysis,en
+The blood report is flagged as neutrophilia,report_flag_result_analysis,en
+Please explain the report flag neutrophilia,report_flag_result_analysis,en
+What does it mean when my hematology report shows neutrophilia?,report_flag_result_analysis,en
+The analyzer printed neutrophilia on the report,report_flag_result_analysis,en
+Can you analyze a report that says neutrophilia?,report_flag_result_analysis,en
+My result mentions neutrophilia,report_flag_result_analysis,en
+Report comment: neutrophilia,report_flag_result_analysis,en
+What should be understood from a report flag of neutrophilia?,report_flag_result_analysis,en
+The CBC summary shows neutrophilia,report_flag_result_analysis,en
+The printed flag on the blood report is neutrophilia,report_flag_result_analysis,en
+How should I read a report that says neutrophilia?,report_flag_result_analysis,en
+What does the report statement neutrophilia mean?,report_flag_result_analysis,en
+The report conclusion mentions neutrophilia,report_flag_result_analysis,en
+My lab result is marked neutrophilia,report_flag_result_analysis,en
+The machine flagged the report with neutrophilia,report_flag_result_analysis,en
+The hematology printout shows neutrophilia,report_flag_result_analysis,en
+The report note says neutrophilia,report_flag_result_analysis,en
+Please interpret the report phrase neutrophilia,report_flag_result_analysis,en
+My report shows leukocytosis,report_flag_result_analysis,en
+This CBC report says leukocytosis,report_flag_result_analysis,en
+The blood report is flagged as leukocytosis,report_flag_result_analysis,en
+Please explain the report flag leukocytosis,report_flag_result_analysis,en
+What does it mean when my hematology report shows leukocytosis?,report_flag_result_analysis,en
+The analyzer printed leukocytosis on the report,report_flag_result_analysis,en
+Can you analyze a report that says leukocytosis?,report_flag_result_analysis,en
+My result mentions leukocytosis,report_flag_result_analysis,en
+Report comment: leukocytosis,report_flag_result_analysis,en
+What should be understood from a report flag of leukocytosis?,report_flag_result_analysis,en
+The CBC summary shows leukocytosis,report_flag_result_analysis,en
+The printed flag on the blood report is leukocytosis,report_flag_result_analysis,en
+How should I read a report that says leukocytosis?,report_flag_result_analysis,en
+What does the report statement leukocytosis mean?,report_flag_result_analysis,en
+The report conclusion mentions leukocytosis,report_flag_result_analysis,en
+My lab result is marked leukocytosis,report_flag_result_analysis,en
+The machine flagged the report with leukocytosis,report_flag_result_analysis,en
+The hematology printout shows leukocytosis,report_flag_result_analysis,en
+The report note says leukocytosis,report_flag_result_analysis,en
+Please interpret the report phrase leukocytosis,report_flag_result_analysis,en
+My report shows leukopenia,report_flag_result_analysis,en
+This CBC report says leukopenia,report_flag_result_analysis,en
+The blood report is flagged as leukopenia,report_flag_result_analysis,en
+Please explain the report flag leukopenia,report_flag_result_analysis,en
+What does it mean when my hematology report shows leukopenia?,report_flag_result_analysis,en
+The analyzer printed leukopenia on the report,report_flag_result_analysis,en
+Can you analyze a report that says leukopenia?,report_flag_result_analysis,en
+My result mentions leukopenia,report_flag_result_analysis,en
+Report comment: leukopenia,report_flag_result_analysis,en
+What should be understood from a report flag of leukopenia?,report_flag_result_analysis,en
+The CBC summary shows leukopenia,report_flag_result_analysis,en
+The printed flag on the blood report is leukopenia,report_flag_result_analysis,en
+How should I read a report that says leukopenia?,report_flag_result_analysis,en
+What does the report statement leukopenia mean?,report_flag_result_analysis,en
+The report conclusion mentions leukopenia,report_flag_result_analysis,en
+My lab result is marked leukopenia,report_flag_result_analysis,en
+The machine flagged the report with leukopenia,report_flag_result_analysis,en
+The hematology printout shows leukopenia,report_flag_result_analysis,en
+The report note says leukopenia,report_flag_result_analysis,en
+Please interpret the report phrase leukopenia,report_flag_result_analysis,en
+My report shows microcytosis,report_flag_result_analysis,en
+This CBC report says microcytosis,report_flag_result_analysis,en
+The blood report is flagged as microcytosis,report_flag_result_analysis,en
+Please explain the report flag microcytosis,report_flag_result_analysis,en
+What does it mean when my hematology report shows microcytosis?,report_flag_result_analysis,en
+The analyzer printed microcytosis on the report,report_flag_result_analysis,en
+Can you analyze a report that says microcytosis?,report_flag_result_analysis,en
+My result mentions microcytosis,report_flag_result_analysis,en
+Report comment: microcytosis,report_flag_result_analysis,en
+What should be understood from a report flag of microcytosis?,report_flag_result_analysis,en
+The CBC summary shows microcytosis,report_flag_result_analysis,en
+The printed flag on the blood report is microcytosis,report_flag_result_analysis,en
+How should I read a report that says microcytosis?,report_flag_result_analysis,en
+What does the report statement microcytosis mean?,report_flag_result_analysis,en
+The report conclusion mentions microcytosis,report_flag_result_analysis,en
+My lab result is marked microcytosis,report_flag_result_analysis,en
+The machine flagged the report with microcytosis,report_flag_result_analysis,en
+The hematology printout shows microcytosis,report_flag_result_analysis,en
+The report note says microcytosis,report_flag_result_analysis,en
+Please interpret the report phrase microcytosis,report_flag_result_analysis,en
+My report shows macrocytosis,report_flag_result_analysis,en
+This CBC report says macrocytosis,report_flag_result_analysis,en
+The blood report is flagged as macrocytosis,report_flag_result_analysis,en
+Please explain the report flag macrocytosis,report_flag_result_analysis,en
+What does it mean when my hematology report shows macrocytosis?,report_flag_result_analysis,en
+The analyzer printed macrocytosis on the report,report_flag_result_analysis,en
+Can you analyze a report that says macrocytosis?,report_flag_result_analysis,en
+My result mentions macrocytosis,report_flag_result_analysis,en
+Report comment: macrocytosis,report_flag_result_analysis,en
+What should be understood from a report flag of macrocytosis?,report_flag_result_analysis,en
+The CBC summary shows macrocytosis,report_flag_result_analysis,en
+The printed flag on the blood report is macrocytosis,report_flag_result_analysis,en
+How should I read a report that says macrocytosis?,report_flag_result_analysis,en
+What does the report statement macrocytosis mean?,report_flag_result_analysis,en
+The report conclusion mentions macrocytosis,report_flag_result_analysis,en
+My lab result is marked macrocytosis,report_flag_result_analysis,en
+The machine flagged the report with macrocytosis,report_flag_result_analysis,en
+The hematology printout shows macrocytosis,report_flag_result_analysis,en
+The report note says macrocytosis,report_flag_result_analysis,en
+Please interpret the report phrase macrocytosis,report_flag_result_analysis,en
+My report shows hypochromia,report_flag_result_analysis,en
+This CBC report says hypochromia,report_flag_result_analysis,en
+The blood report is flagged as hypochromia,report_flag_result_analysis,en
+Please explain the report flag hypochromia,report_flag_result_analysis,en
+What does it mean when my hematology report shows hypochromia?,report_flag_result_analysis,en
+The analyzer printed hypochromia on the report,report_flag_result_analysis,en
+Can you analyze a report that says hypochromia?,report_flag_result_analysis,en
+My result mentions hypochromia,report_flag_result_analysis,en
+Report comment: hypochromia,report_flag_result_analysis,en
+What should be understood from a report flag of hypochromia?,report_flag_result_analysis,en
+The CBC summary shows hypochromia,report_flag_result_analysis,en
+The printed flag on the blood report is hypochromia,report_flag_result_analysis,en
+How should I read a report that says hypochromia?,report_flag_result_analysis,en
+What does the report statement hypochromia mean?,report_flag_result_analysis,en
+The report conclusion mentions hypochromia,report_flag_result_analysis,en
+My lab result is marked hypochromia,report_flag_result_analysis,en
+The machine flagged the report with hypochromia,report_flag_result_analysis,en
+The hematology printout shows hypochromia,report_flag_result_analysis,en
+The report note says hypochromia,report_flag_result_analysis,en
+Please interpret the report phrase hypochromia,report_flag_result_analysis,en

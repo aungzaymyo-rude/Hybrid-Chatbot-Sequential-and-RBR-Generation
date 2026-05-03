@@ -1,0 +1,241 @@
+text,intent,lang
+child WBC is 3.8,report_numeric_result_analysis,en
+My child report shows WBC 3.8,report_numeric_result_analysis,en
+Please analyze child WBC 3.8,report_numeric_result_analysis,en
+What does it mean if a child report has WBC 3.8?,report_numeric_result_analysis,en
+The child blood report says WBC 3.8,report_numeric_result_analysis,en
+child WBC is 5.2,report_numeric_result_analysis,en
+My child report shows WBC 5.2,report_numeric_result_analysis,en
+Please analyze child WBC 5.2,report_numeric_result_analysis,en
+What does it mean if a child report has WBC 5.2?,report_numeric_result_analysis,en
+The child blood report says WBC 5.2,report_numeric_result_analysis,en
+child WBC is 9.6,report_numeric_result_analysis,en
+My child report shows WBC 9.6,report_numeric_result_analysis,en
+Please analyze child WBC 9.6,report_numeric_result_analysis,en
+What does it mean if a child report has WBC 9.6?,report_numeric_result_analysis,en
+The child blood report says WBC 9.6,report_numeric_result_analysis,en
+child WBC is 13.0,report_numeric_result_analysis,en
+My child report shows WBC 13.0,report_numeric_result_analysis,en
+Please analyze child WBC 13.0,report_numeric_result_analysis,en
+What does it mean if a child report has WBC 13.0?,report_numeric_result_analysis,en
+The child blood report says WBC 13.0,report_numeric_result_analysis,en
+child WBC is 16.2,report_numeric_result_analysis,en
+My child report shows WBC 16.2,report_numeric_result_analysis,en
+Please analyze child WBC 16.2,report_numeric_result_analysis,en
+What does it mean if a child report has WBC 16.2?,report_numeric_result_analysis,en
+The child blood report says WBC 16.2,report_numeric_result_analysis,en
+child RBC is 3.7,report_numeric_result_analysis,en
+My child report shows RBC 3.7,report_numeric_result_analysis,en
+Please analyze child RBC 3.7,report_numeric_result_analysis,en
+What does it mean if a child report has RBC 3.7?,report_numeric_result_analysis,en
+The child blood report says RBC 3.7,report_numeric_result_analysis,en
+child RBC is 4.1,report_numeric_result_analysis,en
+My child report shows RBC 4.1,report_numeric_result_analysis,en
+Please analyze child RBC 4.1,report_numeric_result_analysis,en
+What does it mean if a child report has RBC 4.1?,report_numeric_result_analysis,en
+The child blood report says RBC 4.1,report_numeric_result_analysis,en
+child RBC is 4.8,report_numeric_result_analysis,en
+My child report shows RBC 4.8,report_numeric_result_analysis,en
+Please analyze child RBC 4.8,report_numeric_result_analysis,en
+What does it mean if a child report has RBC 4.8?,report_numeric_result_analysis,en
+The child blood report says RBC 4.8,report_numeric_result_analysis,en
+child RBC is 5.3,report_numeric_result_analysis,en
+My child report shows RBC 5.3,report_numeric_result_analysis,en
+Please analyze child RBC 5.3,report_numeric_result_analysis,en
+What does it mean if a child report has RBC 5.3?,report_numeric_result_analysis,en
+The child blood report says RBC 5.3,report_numeric_result_analysis,en
+child HGB is 9.8,report_numeric_result_analysis,en
+My child report shows HGB 9.8,report_numeric_result_analysis,en
+Please analyze child HGB 9.8,report_numeric_result_analysis,en
+What does it mean if a child report has HGB 9.8?,report_numeric_result_analysis,en
+The child blood report says HGB 9.8,report_numeric_result_analysis,en
+child HGB is 10.5,report_numeric_result_analysis,en
+My child report shows HGB 10.5,report_numeric_result_analysis,en
+Please analyze child HGB 10.5,report_numeric_result_analysis,en
+What does it mean if a child report has HGB 10.5?,report_numeric_result_analysis,en
+The child blood report says HGB 10.5,report_numeric_result_analysis,en
+child HGB is 11.7,report_numeric_result_analysis,en
+My child report shows HGB 11.7,report_numeric_result_analysis,en
+Please analyze child HGB 11.7,report_numeric_result_analysis,en
+What does it mean if a child report has HGB 11.7?,report_numeric_result_analysis,en
+The child blood report says HGB 11.7,report_numeric_result_analysis,en
+child HGB is 13.4,report_numeric_result_analysis,en
+My child report shows HGB 13.4,report_numeric_result_analysis,en
+Please analyze child HGB 13.4,report_numeric_result_analysis,en
+What does it mean if a child report has HGB 13.4?,report_numeric_result_analysis,en
+The child blood report says HGB 13.4,report_numeric_result_analysis,en
+child HGB is 15.2,report_numeric_result_analysis,en
+My child report shows HGB 15.2,report_numeric_result_analysis,en
+Please analyze child HGB 15.2,report_numeric_result_analysis,en
+What does it mean if a child report has HGB 15.2?,report_numeric_result_analysis,en
+The child blood report says HGB 15.2,report_numeric_result_analysis,en
+child HCT is 31,report_numeric_result_analysis,en
+My child report shows HCT 31,report_numeric_result_analysis,en
+Please analyze child HCT 31,report_numeric_result_analysis,en
+What does it mean if a child report has HCT 31?,report_numeric_result_analysis,en
+The child blood report says HCT 31,report_numeric_result_analysis,en
+child HCT is 35,report_numeric_result_analysis,en
+My child report shows HCT 35,report_numeric_result_analysis,en
+Please analyze child HCT 35,report_numeric_result_analysis,en
+What does it mean if a child report has HCT 35?,report_numeric_result_analysis,en
+The child blood report says HCT 35,report_numeric_result_analysis,en
+child HCT is 40,report_numeric_result_analysis,en
+My child report shows HCT 40,report_numeric_result_analysis,en
+Please analyze child HCT 40,report_numeric_result_analysis,en
+What does it mean if a child report has HCT 40?,report_numeric_result_analysis,en
+The child blood report says HCT 40,report_numeric_result_analysis,en
+child HCT is 44,report_numeric_result_analysis,en
+My child report shows HCT 44,report_numeric_result_analysis,en
+Please analyze child HCT 44,report_numeric_result_analysis,en
+What does it mean if a child report has HCT 44?,report_numeric_result_analysis,en
+The child blood report says HCT 44,report_numeric_result_analysis,en
+child HCT is 47,report_numeric_result_analysis,en
+My child report shows HCT 47,report_numeric_result_analysis,en
+Please analyze child HCT 47,report_numeric_result_analysis,en
+What does it mean if a child report has HCT 47?,report_numeric_result_analysis,en
+The child blood report says HCT 47,report_numeric_result_analysis,en
+child MCV is 72,report_numeric_result_analysis,en
+My child report shows MCV 72,report_numeric_result_analysis,en
+Please analyze child MCV 72,report_numeric_result_analysis,en
+What does it mean if a child report has MCV 72?,report_numeric_result_analysis,en
+The child blood report says MCV 72,report_numeric_result_analysis,en
+child MCV is 78,report_numeric_result_analysis,en
+My child report shows MCV 78,report_numeric_result_analysis,en
+Please analyze child MCV 78,report_numeric_result_analysis,en
+What does it mean if a child report has MCV 78?,report_numeric_result_analysis,en
+The child blood report says MCV 78,report_numeric_result_analysis,en
+child MCV is 88,report_numeric_result_analysis,en
+My child report shows MCV 88,report_numeric_result_analysis,en
+Please analyze child MCV 88,report_numeric_result_analysis,en
+What does it mean if a child report has MCV 88?,report_numeric_result_analysis,en
+The child blood report says MCV 88,report_numeric_result_analysis,en
+child MCV is 96,report_numeric_result_analysis,en
+My child report shows MCV 96,report_numeric_result_analysis,en
+Please analyze child MCV 96,report_numeric_result_analysis,en
+What does it mean if a child report has MCV 96?,report_numeric_result_analysis,en
+The child blood report says MCV 96,report_numeric_result_analysis,en
+child PLT is 110,report_numeric_result_analysis,en
+My child report shows PLT 110,report_numeric_result_analysis,en
+Please analyze child PLT 110,report_numeric_result_analysis,en
+What does it mean if a child report has PLT 110?,report_numeric_result_analysis,en
+The child blood report says PLT 110,report_numeric_result_analysis,en
+child PLT is 165,report_numeric_result_analysis,en
+My child report shows PLT 165,report_numeric_result_analysis,en
+Please analyze child PLT 165,report_numeric_result_analysis,en
+What does it mean if a child report has PLT 165?,report_numeric_result_analysis,en
+The child blood report says PLT 165,report_numeric_result_analysis,en
+child PLT is 280,report_numeric_result_analysis,en
+My child report shows PLT 280,report_numeric_result_analysis,en
+Please analyze child PLT 280,report_numeric_result_analysis,en
+What does it mean if a child report has PLT 280?,report_numeric_result_analysis,en
+The child blood report says PLT 280,report_numeric_result_analysis,en
+child PLT is 430,report_numeric_result_analysis,en
+My child report shows PLT 430,report_numeric_result_analysis,en
+Please analyze child PLT 430,report_numeric_result_analysis,en
+What does it mean if a child report has PLT 430?,report_numeric_result_analysis,en
+The child blood report says PLT 430,report_numeric_result_analysis,en
+child PLT is 480,report_numeric_result_analysis,en
+My child report shows PLT 480,report_numeric_result_analysis,en
+Please analyze child PLT 480,report_numeric_result_analysis,en
+What does it mean if a child report has PLT 480?,report_numeric_result_analysis,en
+The child blood report says PLT 480,report_numeric_result_analysis,en
+pediatric WBC is 3.8,report_numeric_result_analysis,en
+My pediatric report shows WBC 3.8,report_numeric_result_analysis,en
+Please analyze pediatric WBC 3.8,report_numeric_result_analysis,en
+What does it mean if a pediatric report has WBC 3.8?,report_numeric_result_analysis,en
+The pediatric blood report says WBC 3.8,report_numeric_result_analysis,en
+pediatric WBC is 5.2,report_numeric_result_analysis,en
+My pediatric report shows WBC 5.2,report_numeric_result_analysis,en
+Please analyze pediatric WBC 5.2,report_numeric_result_analysis,en
+What does it mean if a pediatric report has WBC 5.2?,report_numeric_result_analysis,en
+The pediatric blood report says WBC 5.2,report_numeric_result_analysis,en
+pediatric WBC is 9.6,report_numeric_result_analysis,en
+My pediatric report shows WBC 9.6,report_numeric_result_analysis,en
+Please analyze pediatric WBC 9.6,report_numeric_result_analysis,en
+What does it mean if a pediatric report has WBC 9.6?,report_numeric_result_analysis,en
+The pediatric blood report says WBC 9.6,report_numeric_result_analysis,en
+pediatric WBC is 13.0,report_numeric_result_analysis,en
+My pediatric report shows WBC 13.0,report_numeric_result_analysis,en
+Please analyze pediatric WBC 13.0,report_numeric_result_analysis,en
+What does it mean if a pediatric report has WBC 13.0?,report_numeric_result_analysis,en
+The pediatric blood report says WBC 13.0,report_numeric_result_analysis,en
+pediatric WBC is 16.2,report_numeric_result_analysis,en
+My pediatric report shows WBC 16.2,report_numeric_result_analysis,en
+Please analyze pediatric WBC 16.2,report_numeric_result_analysis,en
+What does it mean if a pediatric report has WBC 16.2?,report_numeric_result_analysis,en
+The pediatric blood report says WBC 16.2,report_numeric_result_analysis,en
+pediatric RBC is 3.7,report_numeric_result_analysis,en
+My pediatric report shows RBC 3.7,report_numeric_result_analysis,en
+Please analyze pediatric RBC 3.7,report_numeric_result_analysis,en
+What does it mean if a pediatric report has RBC 3.7?,report_numeric_result_analysis,en
+The pediatric blood report says RBC 3.7,report_numeric_result_analysis,en
+pediatric RBC is 4.1,report_numeric_result_analysis,en
+My pediatric report shows RBC 4.1,report_numeric_result_analysis,en
+Please analyze pediatric RBC 4.1,report_numeric_result_analysis,en
+What does it mean if a pediatric report has RBC 4.1?,report_numeric_result_analysis,en
+The pediatric blood report says RBC 4.1,report_numeric_result_analysis,en
+pediatric RBC is 4.8,report_numeric_result_analysis,en
+My pediatric report shows RBC 4.8,report_numeric_result_analysis,en
+Please analyze pediatric RBC 4.8,report_numeric_result_analysis,en
+What does it mean if a pediatric report has RBC 4.8?,report_numeric_result_analysis,en
+The pediatric blood report says RBC 4.8,report_numeric_result_analysis,en
+pediatric RBC is 5.3,report_numeric_result_analysis,en
+My pediatric report shows RBC 5.3,report_numeric_result_analysis,en
+Please analyze pediatric RBC 5.3,report_numeric_result_analysis,en
+What does it mean if a pediatric report has RBC 5.3?,report_numeric_result_analysis,en
+The pediatric blood report says RBC 5.3,report_numeric_result_analysis,en
+pediatric HGB is 9.8,report_numeric_result_analysis,en
+My pediatric report shows HGB 9.8,report_numeric_result_analysis,en
+Please analyze pediatric HGB 9.8,report_numeric_result_analysis,en
+What does it mean if a pediatric report has HGB 9.8?,report_numeric_result_analysis,en
+The pediatric blood report says HGB 9.8,report_numeric_result_analysis,en
+pediatric HGB is 10.5,report_numeric_result_analysis,en
+My pediatric report shows HGB 10.5,report_numeric_result_analysis,en
+Please analyze pediatric HGB 10.5,report_numeric_result_analysis,en
+What does it mean if a pediatric report has HGB 10.5?,report_numeric_result_analysis,en
+The pediatric blood report says HGB 10.5,report_numeric_result_analysis,en
+pediatric HGB is 11.7,report_numeric_result_analysis,en
+My pediatric report shows HGB 11.7,report_numeric_result_analysis,en
+Please analyze pediatric HGB 11.7,report_numeric_result_analysis,en
+What does it mean if a pediatric report has HGB 11.7?,report_numeric_result_analysis,en
+The pediatric blood report says HGB 11.7,report_numeric_result_analysis,en
+pediatric HGB is 13.4,report_numeric_result_analysis,en
+My pediatric report shows HGB 13.4,report_numeric_result_analysis,en
+Please analyze pediatric HGB 13.4,report_numeric_result_analysis,en
+What does it mean if a pediatric report has HGB 13.4?,report_numeric_result_analysis,en
+The pediatric blood report says HGB 13.4,report_numeric_result_analysis,en
+pediatric HGB is 15.2,report_numeric_result_analysis,en
+My pediatric report shows HGB 15.2,report_numeric_result_analysis,en
+Please analyze pediatric HGB 15.2,report_numeric_result_analysis,en
+What does it mean if a pediatric report has HGB 15.2?,report_numeric_result_analysis,en
+The pediatric blood report says HGB 15.2,report_numeric_result_analysis,en
+pediatric HCT is 31,report_numeric_result_analysis,en
+My pediatric report shows HCT 31,report_numeric_result_analysis,en
+Please analyze pediatric HCT 31,report_numeric_result_analysis,en
+What does it mean if a pediatric report has HCT 31?,report_numeric_result_analysis,en
+The pediatric blood report says HCT 31,report_numeric_result_analysis,en
+pediatric HCT is 35,report_numeric_result_analysis,en
+My pediatric report shows HCT 35,report_numeric_result_analysis,en
+Please analyze pediatric HCT 35,report_numeric_result_analysis,en
+What does it mean if a pediatric report has HCT 35?,report_numeric_result_analysis,en
+The pediatric blood report says HCT 35,report_numeric_result_analysis,en
+pediatric HCT is 40,report_numeric_result_analysis,en
+My pediatric report shows HCT 40,report_numeric_result_analysis,en
+Please analyze pediatric HCT 40,report_numeric_result_analysis,en
+What does it mean if a pediatric report has HCT 40?,report_numeric_result_analysis,en
+The pediatric blood report says HCT 40,report_numeric_result_analysis,en
+pediatric HCT is 44,report_numeric_result_analysis,en
+My pediatric report shows HCT 44,report_numeric_result_analysis,en
+Please analyze pediatric HCT 44,report_numeric_result_analysis,en
+What does it mean if a pediatric report has HCT 44?,report_numeric_result_analysis,en
+The pediatric blood report says HCT 44,report_numeric_result_analysis,en
+pediatric HCT is 47,report_numeric_result_analysis,en
+My pediatric report shows HCT 47,report_numeric_result_analysis,en
+Please analyze pediatric HCT 47,report_numeric_result_analysis,en
+What does it mean if a pediatric report has HCT 47?,report_numeric_result_analysis,en
+The pediatric blood report says HCT 47,report_numeric_result_analysis,en
+pediatric MCV is 72,report_numeric_result_analysis,en
+My pediatric report shows MCV 72,report_numeric_result_analysis,en
+Please analyze pediatric MCV 72,report_numeric_result_analysis,en
+What does it mean if a pediatric report has MCV 72?,report_numeric_result_analysis,en
+The pediatric blood report says MCV 72,report_numeric_result_analysis,en

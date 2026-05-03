@@ -4,6 +4,7 @@ from typing import Optional, Tuple
 
 from chatbot.utils.entity_detection import detect_medical_entity
 from chatbot.utils.preprocessing import normalize_text
+from chatbot.utils.report_analysis import analyze_report_input
 
 GENERAL_MODEL_KEY = 'general'
 REPORT_MODEL_KEY = 'report'
@@ -15,6 +16,8 @@ REPORT_FOCUSED_INTENTS = {
     'platelet_abnormality',
     'differential_result_explanation',
     'report_structure_help',
+    'report_numeric_result_analysis',
+    'report_flag_result_analysis',
 }
 
 GENERAL_WORKFLOW_INTENTS = {
@@ -27,6 +30,13 @@ GENERAL_WORKFLOW_INTENTS = {
 def recommend_model_switch(text: str, selected_model_key: Optional[str]) -> Tuple[Optional[str], Optional[str]]:
     model_key = (selected_model_key or GENERAL_MODEL_KEY).strip() or GENERAL_MODEL_KEY
     normalized = normalize_text(text)
+    report_analysis = analyze_report_input(text)
+    if report_analysis is not None and model_key == GENERAL_MODEL_KEY:
+        return (
+            REPORT_MODEL_KEY,
+            'This looks like a hematology report-result question. The Report model is a better fit for numeric CBC values and report flags.',
+        )
+
     entity = detect_medical_entity(text)
     if entity is None:
         if model_key == REPORT_MODEL_KEY and any(

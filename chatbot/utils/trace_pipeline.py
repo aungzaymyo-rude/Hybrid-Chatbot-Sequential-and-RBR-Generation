@@ -44,6 +44,8 @@ def build_trace(text: str, *, model_key: str | None, config_path: str) -> dict[s
                 route_explanation = 'Predicted intent retrieved directly from the user question.'
             else:
                 route_explanation = 'Entity detection refined the retrieval target after prediction.'
+        elif route.source == 'analysis':
+            route_explanation = 'A report-analysis layer interpreted the numeric CBC value or printed report flag using bounded reference criteria after prediction.'
         else:
             route_explanation = 'No retrieval candidate passed threshold, so the static response template was used.'
 
@@ -73,6 +75,7 @@ def build_trace(text: str, *, model_key: str | None, config_path: str) -> dict[s
             'top_predictions': prediction_trace['top_predictions'],
             'final_intent': prediction.intent,
             'final_confidence': prediction.confidence,
+            'domain_assist': prediction_trace.get('domain_assist'),
         },
         'entity_detection': {
             'matched': entity is not None,

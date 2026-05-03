@@ -1,0 +1,521 @@
+text,intent,lang
+adult male HGB is 11.8,report_numeric_result_analysis,en
+My report says adult male hemoglobin 11.8,report_numeric_result_analysis,en
+Please analyze adult male HGB 11.8,report_numeric_result_analysis,en
+adult male HGB is 13.0,report_numeric_result_analysis,en
+My report says adult male hemoglobin 13.0,report_numeric_result_analysis,en
+Please analyze adult male HGB 13.0,report_numeric_result_analysis,en
+adult male HGB is 14.2,report_numeric_result_analysis,en
+My report says adult male hemoglobin 14.2,report_numeric_result_analysis,en
+Please analyze adult male HGB 14.2,report_numeric_result_analysis,en
+adult male HGB is 16.8,report_numeric_result_analysis,en
+My report says adult male hemoglobin 16.8,report_numeric_result_analysis,en
+Please analyze adult male HGB 16.8,report_numeric_result_analysis,en
+adult male HGB is 18.1,report_numeric_result_analysis,en
+My report says adult male hemoglobin 18.1,report_numeric_result_analysis,en
+Please analyze adult male HGB 18.1,report_numeric_result_analysis,en
+adult male HCT is 31,report_numeric_result_analysis,en
+My report says adult male hematocrit 31,report_numeric_result_analysis,en
+Please analyze adult male HCT 31,report_numeric_result_analysis,en
+adult male HCT is 38,report_numeric_result_analysis,en
+My report says adult male hematocrit 38,report_numeric_result_analysis,en
+Please analyze adult male HCT 38,report_numeric_result_analysis,en
+adult male HCT is 45,report_numeric_result_analysis,en
+My report says adult male hematocrit 45,report_numeric_result_analysis,en
+Please analyze adult male HCT 45,report_numeric_result_analysis,en
+adult male HCT is 49,report_numeric_result_analysis,en
+My report says adult male hematocrit 49,report_numeric_result_analysis,en
+Please analyze adult male HCT 49,report_numeric_result_analysis,en
+adult male HCT is 55,report_numeric_result_analysis,en
+My report says adult male hematocrit 55,report_numeric_result_analysis,en
+Please analyze adult male HCT 55,report_numeric_result_analysis,en
+male HGB is 11.8,report_numeric_result_analysis,en
+My report says male hemoglobin 11.8,report_numeric_result_analysis,en
+Please analyze male HGB 11.8,report_numeric_result_analysis,en
+male HGB is 13.0,report_numeric_result_analysis,en
+My report says male hemoglobin 13.0,report_numeric_result_analysis,en
+Please analyze male HGB 13.0,report_numeric_result_analysis,en
+male HGB is 14.2,report_numeric_result_analysis,en
+My report says male hemoglobin 14.2,report_numeric_result_analysis,en
+Please analyze male HGB 14.2,report_numeric_result_analysis,en
+male HGB is 16.8,report_numeric_result_analysis,en
+My report says male hemoglobin 16.8,report_numeric_result_analysis,en
+Please analyze male HGB 16.8,report_numeric_result_analysis,en
+male HGB is 18.1,report_numeric_result_analysis,en
+My report says male hemoglobin 18.1,report_numeric_result_analysis,en
+Please analyze male HGB 18.1,report_numeric_result_analysis,en
+male HCT is 31,report_numeric_result_analysis,en
+My report says male hematocrit 31,report_numeric_result_analysis,en
+Please analyze male HCT 31,report_numeric_result_analysis,en
+male HCT is 38,report_numeric_result_analysis,en
+My report says male hematocrit 38,report_numeric_result_analysis,en
+Please analyze male HCT 38,report_numeric_result_analysis,en
+male HCT is 45,report_numeric_result_analysis,en
+My report says male hematocrit 45,report_numeric_result_analysis,en
+Please analyze male HCT 45,report_numeric_result_analysis,en
+male HCT is 49,report_numeric_result_analysis,en
+My report says male hematocrit 49,report_numeric_result_analysis,en
+Please analyze male HCT 49,report_numeric_result_analysis,en
+male HCT is 55,report_numeric_result_analysis,en
+My report says male hematocrit 55,report_numeric_result_analysis,en
+Please analyze male HCT 55,report_numeric_result_analysis,en
+adult female HGB is 11.8,report_numeric_result_analysis,en
+My report says adult female hemoglobin 11.8,report_numeric_result_analysis,en
+Please analyze adult female HGB 11.8,report_numeric_result_analysis,en
+adult female HGB is 13.0,report_numeric_result_analysis,en
+My report says adult female hemoglobin 13.0,report_numeric_result_analysis,en
+Please analyze adult female HGB 13.0,report_numeric_result_analysis,en
+adult female HGB is 14.2,report_numeric_result_analysis,en
+My report says adult female hemoglobin 14.2,report_numeric_result_analysis,en
+Please analyze adult female HGB 14.2,report_numeric_result_analysis,en
+adult female HGB is 16.8,report_numeric_result_analysis,en
+My report says adult female hemoglobin 16.8,report_numeric_result_analysis,en
+Please analyze adult female HGB 16.8,report_numeric_result_analysis,en
+adult female HGB is 18.1,report_numeric_result_analysis,en
+My report says adult female hemoglobin 18.1,report_numeric_result_analysis,en
+Please analyze adult female HGB 18.1,report_numeric_result_analysis,en
+adult female HCT is 31,report_numeric_result_analysis,en
+My report says adult female hematocrit 31,report_numeric_result_analysis,en
+Please analyze adult female HCT 31,report_numeric_result_analysis,en
+adult female HCT is 38,report_numeric_result_analysis,en
+My report says adult female hematocrit 38,report_numeric_result_analysis,en
+Please analyze adult female HCT 38,report_numeric_result_analysis,en
+adult female HCT is 45,report_numeric_result_analysis,en
+My report says adult female hematocrit 45,report_numeric_result_analysis,en
+Please analyze adult female HCT 45,report_numeric_result_analysis,en
+adult female HCT is 49,report_numeric_result_analysis,en
+My report says adult female hematocrit 49,report_numeric_result_analysis,en
+Please analyze adult female HCT 49,report_numeric_result_analysis,en
+adult female HCT is 55,report_numeric_result_analysis,en
+My report says adult female hematocrit 55,report_numeric_result_analysis,en
+Please analyze adult female HCT 55,report_numeric_result_analysis,en
+female HGB is 11.8,report_numeric_result_analysis,en
+My report says female hemoglobin 11.8,report_numeric_result_analysis,en
+Please analyze female HGB 11.8,report_numeric_result_analysis,en
+female HGB is 13.0,report_numeric_result_analysis,en
+My report says female hemoglobin 13.0,report_numeric_result_analysis,en
+Please analyze female HGB 13.0,report_numeric_result_analysis,en
+female HGB is 14.2,report_numeric_result_analysis,en
+My report says female hemoglobin 14.2,report_numeric_result_analysis,en
+Please analyze female HGB 14.2,report_numeric_result_analysis,en
+female HGB is 16.8,report_numeric_result_analysis,en
+My report says female hemoglobin 16.8,report_numeric_result_analysis,en
+Please analyze female HGB 16.8,report_numeric_result_analysis,en
+female HGB is 18.1,report_numeric_result_analysis,en
+My report says female hemoglobin 18.1,report_numeric_result_analysis,en
+Please analyze female HGB 18.1,report_numeric_result_analysis,en
+female HCT is 31,report_numeric_result_analysis,en
+My report says female hematocrit 31,report_numeric_result_analysis,en
+Please analyze female HCT 31,report_numeric_result_analysis,en
+female HCT is 38,report_numeric_result_analysis,en
+My report says female hematocrit 38,report_numeric_result_analysis,en
+Please analyze female HCT 38,report_numeric_result_analysis,en
+female HCT is 45,report_numeric_result_analysis,en
+My report says female hematocrit 45,report_numeric_result_analysis,en
+Please analyze female HCT 45,report_numeric_result_analysis,en
+female HCT is 49,report_numeric_result_analysis,en
+My report says female hematocrit 49,report_numeric_result_analysis,en
+Please analyze female HCT 49,report_numeric_result_analysis,en
+female HCT is 55,report_numeric_result_analysis,en
+My report says female hematocrit 55,report_numeric_result_analysis,en
+Please analyze female HCT 55,report_numeric_result_analysis,en
+RBC is 2.8,report_numeric_result_analysis,en
+My CBC report shows RBC 2.8,report_numeric_result_analysis,en
+Can you analyze RBC 2.8 in my blood report?,report_numeric_result_analysis,en
+Report value RBC = 2.8,report_numeric_result_analysis,en
+What does it mean if RBC is 2.8 on my report?,report_numeric_result_analysis,en
+RBC is 3.6,report_numeric_result_analysis,en
+My CBC report shows RBC 3.6,report_numeric_result_analysis,en
+Can you analyze RBC 3.6 in my blood report?,report_numeric_result_analysis,en
+Report value RBC = 3.6,report_numeric_result_analysis,en
+What does it mean if RBC is 3.6 on my report?,report_numeric_result_analysis,en
+RBC is 4.8,report_numeric_result_analysis,en
+My CBC report shows RBC 4.8,report_numeric_result_analysis,en
+Can you analyze RBC 4.8 in my blood report?,report_numeric_result_analysis,en
+Report value RBC = 4.8,report_numeric_result_analysis,en
+What does it mean if RBC is 4.8 on my report?,report_numeric_result_analysis,en
+RBC is 5.9,report_numeric_result_analysis,en
+My CBC report shows RBC 5.9,report_numeric_result_analysis,en
+Can you analyze RBC 5.9 in my blood report?,report_numeric_result_analysis,en
+Report value RBC = 5.9,report_numeric_result_analysis,en
+What does it mean if RBC is 5.9 on my report?,report_numeric_result_analysis,en
+RBC is 6.5,report_numeric_result_analysis,en
+My CBC report shows RBC 6.5,report_numeric_result_analysis,en
+Can you analyze RBC 6.5 in my blood report?,report_numeric_result_analysis,en
+Report value RBC = 6.5,report_numeric_result_analysis,en
+What does it mean if RBC is 6.5 on my report?,report_numeric_result_analysis,en
+HGB is 7.4,report_numeric_result_analysis,en
+My CBC report shows HGB 7.4,report_numeric_result_analysis,en
+Can you analyze HGB 7.4 in my blood report?,report_numeric_result_analysis,en
+Report value HGB = 7.4,report_numeric_result_analysis,en
+What does it mean if HGB is 7.4 on my report?,report_numeric_result_analysis,en
+HGB is 10.5,report_numeric_result_analysis,en
+My CBC report shows HGB 10.5,report_numeric_result_analysis,en
+Can you analyze HGB 10.5 in my blood report?,report_numeric_result_analysis,en
+Report value HGB = 10.5,report_numeric_result_analysis,en
+What does it mean if HGB is 10.5 on my report?,report_numeric_result_analysis,en
+HGB is 12.9,report_numeric_result_analysis,en
+My CBC report shows HGB 12.9,report_numeric_result_analysis,en
+Can you analyze HGB 12.9 in my blood report?,report_numeric_result_analysis,en
+Report value HGB = 12.9,report_numeric_result_analysis,en
+What does it mean if HGB is 12.9 on my report?,report_numeric_result_analysis,en
+HGB is 14.8,report_numeric_result_analysis,en
+My CBC report shows HGB 14.8,report_numeric_result_analysis,en
+Can you analyze HGB 14.8 in my blood report?,report_numeric_result_analysis,en
+Report value HGB = 14.8,report_numeric_result_analysis,en
+What does it mean if HGB is 14.8 on my report?,report_numeric_result_analysis,en
+HGB is 17.9,report_numeric_result_analysis,en
+My CBC report shows HGB 17.9,report_numeric_result_analysis,en
+Can you analyze HGB 17.9 in my blood report?,report_numeric_result_analysis,en
+Report value HGB = 17.9,report_numeric_result_analysis,en
+What does it mean if HGB is 17.9 on my report?,report_numeric_result_analysis,en
+RDW is 10.8,report_numeric_result_analysis,en
+My CBC report shows RDW 10.8,report_numeric_result_analysis,en
+Can you analyze RDW 10.8 in my blood report?,report_numeric_result_analysis,en
+Report value RDW = 10.8,report_numeric_result_analysis,en
+What does it mean if RDW is 10.8 on my report?,report_numeric_result_analysis,en
+RDW is 12.4,report_numeric_result_analysis,en
+My CBC report shows RDW 12.4,report_numeric_result_analysis,en
+Can you analyze RDW 12.4 in my blood report?,report_numeric_result_analysis,en
+Report value RDW = 12.4,report_numeric_result_analysis,en
+What does it mean if RDW is 12.4 on my report?,report_numeric_result_analysis,en
+RDW is 14.3,report_numeric_result_analysis,en
+My CBC report shows RDW 14.3,report_numeric_result_analysis,en
+Can you analyze RDW 14.3 in my blood report?,report_numeric_result_analysis,en
+Report value RDW = 14.3,report_numeric_result_analysis,en
+What does it mean if RDW is 14.3 on my report?,report_numeric_result_analysis,en
+RDW is 16.9,report_numeric_result_analysis,en
+My CBC report shows RDW 16.9,report_numeric_result_analysis,en
+Can you analyze RDW 16.9 in my blood report?,report_numeric_result_analysis,en
+Report value RDW = 16.9,report_numeric_result_analysis,en
+What does it mean if RDW is 16.9 on my report?,report_numeric_result_analysis,en
+RDW is 21.2,report_numeric_result_analysis,en
+My CBC report shows RDW 21.2,report_numeric_result_analysis,en
+Can you analyze RDW 21.2 in my blood report?,report_numeric_result_analysis,en
+Report value RDW = 21.2,report_numeric_result_analysis,en
+What does it mean if RDW is 21.2 on my report?,report_numeric_result_analysis,en
+MPV is 6.7,report_numeric_result_analysis,en
+My CBC report shows MPV 6.7,report_numeric_result_analysis,en
+Can you analyze MPV 6.7 in my blood report?,report_numeric_result_analysis,en
+Report value MPV = 6.7,report_numeric_result_analysis,en
+What does it mean if MPV is 6.7 on my report?,report_numeric_result_analysis,en
+MPV is 8.1,report_numeric_result_analysis,en
+My CBC report shows MPV 8.1,report_numeric_result_analysis,en
+Can you analyze MPV 8.1 in my blood report?,report_numeric_result_analysis,en
+Report value MPV = 8.1,report_numeric_result_analysis,en
+What does it mean if MPV is 8.1 on my report?,report_numeric_result_analysis,en
+MPV is 9.8,report_numeric_result_analysis,en
+My CBC report shows MPV 9.8,report_numeric_result_analysis,en
+Can you analyze MPV 9.8 in my blood report?,report_numeric_result_analysis,en
+Report value MPV = 9.8,report_numeric_result_analysis,en
+What does it mean if MPV is 9.8 on my report?,report_numeric_result_analysis,en
+MPV is 11.4,report_numeric_result_analysis,en
+My CBC report shows MPV 11.4,report_numeric_result_analysis,en
+Can you analyze MPV 11.4 in my blood report?,report_numeric_result_analysis,en
+Report value MPV = 11.4,report_numeric_result_analysis,en
+What does it mean if MPV is 11.4 on my report?,report_numeric_result_analysis,en
+MPV is 13.9,report_numeric_result_analysis,en
+My CBC report shows MPV 13.9,report_numeric_result_analysis,en
+Can you analyze MPV 13.9 in my blood report?,report_numeric_result_analysis,en
+Report value MPV = 13.9,report_numeric_result_analysis,en
+What does it mean if MPV is 13.9 on my report?,report_numeric_result_analysis,en
+PLT is 22,report_numeric_result_analysis,en
+My CBC report shows PLT 22,report_numeric_result_analysis,en
+Can you analyze PLT 22 in my blood report?,report_numeric_result_analysis,en
+Report value PLT = 22,report_numeric_result_analysis,en
+What does it mean if PLT is 22 on my report?,report_numeric_result_analysis,en
+PLT is 96,report_numeric_result_analysis,en
+My CBC report shows PLT 96,report_numeric_result_analysis,en
+Can you analyze PLT 96 in my blood report?,report_numeric_result_analysis,en
+Report value PLT = 96,report_numeric_result_analysis,en
+What does it mean if PLT is 96 on my report?,report_numeric_result_analysis,en
+PLT is 180,report_numeric_result_analysis,en
+My CBC report shows PLT 180,report_numeric_result_analysis,en
+Can you analyze PLT 180 in my blood report?,report_numeric_result_analysis,en
+Report value PLT = 180,report_numeric_result_analysis,en
+What does it mean if PLT is 180 on my report?,report_numeric_result_analysis,en
+PLT is 365,report_numeric_result_analysis,en
+My CBC report shows PLT 365,report_numeric_result_analysis,en
+Can you analyze PLT 365 in my blood report?,report_numeric_result_analysis,en
+Report value PLT = 365,report_numeric_result_analysis,en
+What does it mean if PLT is 365 on my report?,report_numeric_result_analysis,en
+PLT is 520,report_numeric_result_analysis,en
+My CBC report shows PLT 520,report_numeric_result_analysis,en
+Can you analyze PLT 520 in my blood report?,report_numeric_result_analysis,en
+Report value PLT = 520,report_numeric_result_analysis,en
+What does it mean if PLT is 520 on my report?,report_numeric_result_analysis,en
+WBC is 2.6,report_numeric_result_analysis,en
+My CBC report shows WBC 2.6,report_numeric_result_analysis,en
+Can you analyze WBC 2.6 in my blood report?,report_numeric_result_analysis,en
+Report value WBC = 2.6,report_numeric_result_analysis,en
+What does it mean if WBC is 2.6 on my report?,report_numeric_result_analysis,en
+WBC is 4.9,report_numeric_result_analysis,en
+My CBC report shows WBC 4.9,report_numeric_result_analysis,en
+Can you analyze WBC 4.9 in my blood report?,report_numeric_result_analysis,en
+Report value WBC = 4.9,report_numeric_result_analysis,en
+What does it mean if WBC is 4.9 on my report?,report_numeric_result_analysis,en
+WBC is 9.8,report_numeric_result_analysis,en
+My CBC report shows WBC 9.8,report_numeric_result_analysis,en
+Can you analyze WBC 9.8 in my blood report?,report_numeric_result_analysis,en
+Report value WBC = 9.8,report_numeric_result_analysis,en
+What does it mean if WBC is 9.8 on my report?,report_numeric_result_analysis,en
+What does RBC mean in report analysis?,cbc_result_parameter,en
+Explain RBC in a CBC report.,cbc_result_parameter,en
+How should RBC be described on a blood report?,cbc_result_parameter,en
+What is the role of RBC in hematology interpretation?,cbc_result_parameter,en
+Why is RBC printed on a CBC report?,cbc_result_parameter,en
+What does HGB mean in report analysis?,cbc_result_parameter,en
+Explain HGB in a CBC report.,cbc_result_parameter,en
+How should HGB be described on a blood report?,cbc_result_parameter,en
+What is the role of HGB in hematology interpretation?,cbc_result_parameter,en
+Why is HGB printed on a CBC report?,cbc_result_parameter,en
+What does HCT mean in report analysis?,cbc_result_parameter,en
+Explain HCT in a CBC report.,cbc_result_parameter,en
+How should HCT be described on a blood report?,cbc_result_parameter,en
+What is the role of HCT in hematology interpretation?,cbc_result_parameter,en
+Why is HCT printed on a CBC report?,cbc_result_parameter,en
+What does RDW mean in report analysis?,cbc_result_parameter,en
+Explain RDW in a CBC report.,cbc_result_parameter,en
+How should RDW be described on a blood report?,cbc_result_parameter,en
+What is the role of RDW in hematology interpretation?,cbc_result_parameter,en
+Why is RDW printed on a CBC report?,cbc_result_parameter,en
+What does MPV mean in report analysis?,cbc_result_parameter,en
+Explain MPV in a CBC report.,cbc_result_parameter,en
+How should MPV be described on a blood report?,cbc_result_parameter,en
+What is the role of MPV in hematology interpretation?,cbc_result_parameter,en
+Why is MPV printed on a CBC report?,cbc_result_parameter,en
+What does PLT mean in report analysis?,cbc_result_parameter,en
+Explain PLT in a CBC report.,cbc_result_parameter,en
+How should PLT be described on a blood report?,cbc_result_parameter,en
+What is the role of PLT in hematology interpretation?,cbc_result_parameter,en
+Why is PLT printed on a CBC report?,cbc_result_parameter,en
+What does MCHC mean in report analysis?,cbc_result_parameter,en
+Explain MCHC in a CBC report.,cbc_result_parameter,en
+How should MCHC be described on a blood report?,cbc_result_parameter,en
+What is the role of MCHC in hematology interpretation?,cbc_result_parameter,en
+Why is MCHC printed on a CBC report?,cbc_result_parameter,en
+What does MCH mean in report analysis?,cbc_result_parameter,en
+Explain MCH in a CBC report.,cbc_result_parameter,en
+How should MCH be described on a blood report?,cbc_result_parameter,en
+What is the role of MCH in hematology interpretation?,cbc_result_parameter,en
+Why is MCH printed on a CBC report?,cbc_result_parameter,en
+What does the anemia flag mean?,cbc_flag_explanation,en
+Explain the anemia flag on my report.,cbc_flag_explanation,en
+How should the anemia flag be reviewed?,cbc_flag_explanation,en
+Why is there a anemia flag on the analyzer printout?,cbc_flag_explanation,en
+What does the anemia flag tell the laboratory user?,cbc_flag_explanation,en
+What does the leukocytosis flag mean?,cbc_flag_explanation,en
+Explain the leukocytosis flag on my report.,cbc_flag_explanation,en
+How should the leukocytosis flag be reviewed?,cbc_flag_explanation,en
+Why is there a leukocytosis flag on the analyzer printout?,cbc_flag_explanation,en
+What does the leukocytosis flag tell the laboratory user?,cbc_flag_explanation,en
+What does the microcytosis flag mean?,cbc_flag_explanation,en
+Explain the microcytosis flag on my report.,cbc_flag_explanation,en
+How should the microcytosis flag be reviewed?,cbc_flag_explanation,en
+Why is there a microcytosis flag on the analyzer printout?,cbc_flag_explanation,en
+What does the microcytosis flag tell the laboratory user?,cbc_flag_explanation,en
+What does the hypochromia flag mean?,cbc_flag_explanation,en
+Explain the hypochromia flag on my report.,cbc_flag_explanation,en
+How should the hypochromia flag be reviewed?,cbc_flag_explanation,en
+Why is there a hypochromia flag on the analyzer printout?,cbc_flag_explanation,en
+What does the hypochromia flag tell the laboratory user?,cbc_flag_explanation,en
+What does the PLT abnormal distribution mean?,cbc_flag_explanation,en
+Explain the PLT abnormal distribution on my report.,cbc_flag_explanation,en
+How should the PLT abnormal distribution be reviewed?,cbc_flag_explanation,en
+Why is there a PLT abnormal distribution on the analyzer printout?,cbc_flag_explanation,en
+What does the PLT abnormal distribution tell the laboratory user?,cbc_flag_explanation,en
+What does the RBC abnormal distribution mean?,cbc_flag_explanation,en
+Explain the RBC abnormal distribution on my report.,cbc_flag_explanation,en
+How should the RBC abnormal distribution be reviewed?,cbc_flag_explanation,en
+Why is there a RBC abnormal distribution on the analyzer printout?,cbc_flag_explanation,en
+What does the RBC abnormal distribution tell the laboratory user?,cbc_flag_explanation,en
+What does the H marker mean?,cbc_flag_explanation,en
+Explain the H marker on my report.,cbc_flag_explanation,en
+How should the H marker be reviewed?,cbc_flag_explanation,en
+Why is there a H marker on the analyzer printout?,cbc_flag_explanation,en
+What does the H marker tell the laboratory user?,cbc_flag_explanation,en
+What does the L marker mean?,cbc_flag_explanation,en
+Explain the L marker on my report.,cbc_flag_explanation,en
+How should the L marker be reviewed?,cbc_flag_explanation,en
+Why is there a L marker on the analyzer printout?,cbc_flag_explanation,en
+What does the L marker tell the laboratory user?,cbc_flag_explanation,en
+What should be reviewed when a report shows anemia?,anemia_related_term,en
+Explain anemia in report interpretation.,anemia_related_term,en
+How is anemia discussed in the lab?,anemia_related_term,en
+What indices matter when the report suggests anemia?,anemia_related_term,en
+What does anemia mean on a hematology report?,anemia_related_term,en
+What should be reviewed when a report shows low HGB?,anemia_related_term,en
+Explain low HGB in report interpretation.,anemia_related_term,en
+How is low HGB discussed in the lab?,anemia_related_term,en
+What indices matter when the report suggests low HGB?,anemia_related_term,en
+What does low HGB mean on a hematology report?,anemia_related_term,en
+What should be reviewed when a report shows low HCT?,anemia_related_term,en
+Explain low HCT in report interpretation.,anemia_related_term,en
+How is low HCT discussed in the lab?,anemia_related_term,en
+What indices matter when the report suggests low HCT?,anemia_related_term,en
+What does low HCT mean on a hematology report?,anemia_related_term,en
+What should be reviewed when a report shows anemia pattern?,anemia_related_term,en
+Explain anemia pattern in report interpretation.,anemia_related_term,en
+How is anemia pattern discussed in the lab?,anemia_related_term,en
+What indices matter when the report suggests anemia pattern?,anemia_related_term,en
+What does anemia pattern mean on a hematology report?,anemia_related_term,en
+What should be reviewed when a report shows microcytic anemia?,anemia_related_term,en
+Explain microcytic anemia in report interpretation.,anemia_related_term,en
+How is microcytic anemia discussed in the lab?,anemia_related_term,en
+What indices matter when the report suggests microcytic anemia?,anemia_related_term,en
+What does microcytic anemia mean on a hematology report?,anemia_related_term,en
+What should be reviewed when a report shows macrocytic anemia?,anemia_related_term,en
+Explain macrocytic anemia in report interpretation.,anemia_related_term,en
+How is macrocytic anemia discussed in the lab?,anemia_related_term,en
+What indices matter when the report suggests macrocytic anemia?,anemia_related_term,en
+What does macrocytic anemia mean on a hematology report?,anemia_related_term,en
+What should be reviewed when a report shows hypochromic pattern?,anemia_related_term,en
+Explain hypochromic pattern in report interpretation.,anemia_related_term,en
+How is hypochromic pattern discussed in the lab?,anemia_related_term,en
+What indices matter when the report suggests hypochromic pattern?,anemia_related_term,en
+What does hypochromic pattern mean on a hematology report?,anemia_related_term,en
+What should be reviewed when a report shows anemia on report?,anemia_related_term,en
+Explain anemia on report in report interpretation.,anemia_related_term,en
+How is anemia on report discussed in the lab?,anemia_related_term,en
+What indices matter when the report suggests anemia on report?,anemia_related_term,en
+What does anemia on report mean on a hematology report?,anemia_related_term,en
+What should be reviewed when a report shows thrombocytopenia?,platelet_abnormality,en
+Explain thrombocytopenia in report interpretation.,platelet_abnormality,en
+How is thrombocytopenia discussed in the lab?,platelet_abnormality,en
+What CBC findings matter with thrombocytopenia?,platelet_abnormality,en
+What does thrombocytopenia mean on a hematology report?,platelet_abnormality,en
+What should be reviewed when a report shows thrombocytosis?,platelet_abnormality,en
+Explain thrombocytosis in report interpretation.,platelet_abnormality,en
+How is thrombocytosis discussed in the lab?,platelet_abnormality,en
+What CBC findings matter with thrombocytosis?,platelet_abnormality,en
+What does thrombocytosis mean on a hematology report?,platelet_abnormality,en
+What should be reviewed when a report shows low PLT?,platelet_abnormality,en
+Explain low PLT in report interpretation.,platelet_abnormality,en
+How is low PLT discussed in the lab?,platelet_abnormality,en
+What CBC findings matter with low PLT?,platelet_abnormality,en
+What does low PLT mean on a hematology report?,platelet_abnormality,en
+What should be reviewed when a report shows high PLT?,platelet_abnormality,en
+Explain high PLT in report interpretation.,platelet_abnormality,en
+How is high PLT discussed in the lab?,platelet_abnormality,en
+What CBC findings matter with high PLT?,platelet_abnormality,en
+What does high PLT mean on a hematology report?,platelet_abnormality,en
+What should be reviewed when a report shows platelet clumping?,platelet_abnormality,en
+Explain platelet clumping in report interpretation.,platelet_abnormality,en
+How is platelet clumping discussed in the lab?,platelet_abnormality,en
+What CBC findings matter with platelet clumping?,platelet_abnormality,en
+What does platelet clumping mean on a hematology report?,platelet_abnormality,en
+What should be reviewed when a report shows platelet abnormality?,platelet_abnormality,en
+Explain platelet abnormality in report interpretation.,platelet_abnormality,en
+How is platelet abnormality discussed in the lab?,platelet_abnormality,en
+What CBC findings matter with platelet abnormality?,platelet_abnormality,en
+What does platelet abnormality mean on a hematology report?,platelet_abnormality,en
+What should be reviewed when a report shows low platelet count?,platelet_abnormality,en
+Explain low platelet count in report interpretation.,platelet_abnormality,en
+How is low platelet count discussed in the lab?,platelet_abnormality,en
+What CBC findings matter with low platelet count?,platelet_abnormality,en
+What does low platelet count mean on a hematology report?,platelet_abnormality,en
+What should be reviewed when a report shows high platelet count?,platelet_abnormality,en
+Explain high platelet count in report interpretation.,platelet_abnormality,en
+How is high platelet count discussed in the lab?,platelet_abnormality,en
+What CBC findings matter with high platelet count?,platelet_abnormality,en
+What does high platelet count mean on a hematology report?,platelet_abnormality,en
+My report shows anemia,report_flag_result_analysis,en
+The analyzer flagged anemia,report_flag_result_analysis,en
+The printed report says anemia,report_flag_result_analysis,en
+Can you interpret report flag anemia?,report_flag_result_analysis,en
+What does report comment anemia mean?,report_flag_result_analysis,en
+The CBC summary mentions anemia,report_flag_result_analysis,en
+This blood report is flagged as anemia,report_flag_result_analysis,en
+How should a report saying anemia be explained?,report_flag_result_analysis,en
+What does the result note anemia mean?,report_flag_result_analysis,en
+The hematology report comment is anemia,report_flag_result_analysis,en
+Please explain report statement anemia,report_flag_result_analysis,en
+What should be understood from report flag anemia?,report_flag_result_analysis,en
+My lab result is marked anemia,report_flag_result_analysis,en
+My report shows thrombocytopenia,report_flag_result_analysis,en
+The analyzer flagged thrombocytopenia,report_flag_result_analysis,en
+The printed report says thrombocytopenia,report_flag_result_analysis,en
+Can you interpret report flag thrombocytopenia?,report_flag_result_analysis,en
+What does report comment thrombocytopenia mean?,report_flag_result_analysis,en
+The CBC summary mentions thrombocytopenia,report_flag_result_analysis,en
+This blood report is flagged as thrombocytopenia,report_flag_result_analysis,en
+How should a report saying thrombocytopenia be explained?,report_flag_result_analysis,en
+What does the result note thrombocytopenia mean?,report_flag_result_analysis,en
+The hematology report comment is thrombocytopenia,report_flag_result_analysis,en
+Please explain report statement thrombocytopenia,report_flag_result_analysis,en
+What should be understood from report flag thrombocytopenia?,report_flag_result_analysis,en
+My lab result is marked thrombocytopenia,report_flag_result_analysis,en
+My report shows thrombocytosis,report_flag_result_analysis,en
+The analyzer flagged thrombocytosis,report_flag_result_analysis,en
+The printed report says thrombocytosis,report_flag_result_analysis,en
+Can you interpret report flag thrombocytosis?,report_flag_result_analysis,en
+What does report comment thrombocytosis mean?,report_flag_result_analysis,en
+The CBC summary mentions thrombocytosis,report_flag_result_analysis,en
+This blood report is flagged as thrombocytosis,report_flag_result_analysis,en
+How should a report saying thrombocytosis be explained?,report_flag_result_analysis,en
+What does the result note thrombocytosis mean?,report_flag_result_analysis,en
+The hematology report comment is thrombocytosis,report_flag_result_analysis,en
+Please explain report statement thrombocytosis,report_flag_result_analysis,en
+What should be understood from report flag thrombocytosis?,report_flag_result_analysis,en
+My lab result is marked thrombocytosis,report_flag_result_analysis,en
+My report shows neutrophilia,report_flag_result_analysis,en
+The analyzer flagged neutrophilia,report_flag_result_analysis,en
+The printed report says neutrophilia,report_flag_result_analysis,en
+Can you interpret report flag neutrophilia?,report_flag_result_analysis,en
+What does report comment neutrophilia mean?,report_flag_result_analysis,en
+The CBC summary mentions neutrophilia,report_flag_result_analysis,en
+This blood report is flagged as neutrophilia,report_flag_result_analysis,en
+How should a report saying neutrophilia be explained?,report_flag_result_analysis,en
+What does the result note neutrophilia mean?,report_flag_result_analysis,en
+The hematology report comment is neutrophilia,report_flag_result_analysis,en
+Please explain report statement neutrophilia,report_flag_result_analysis,en
+What should be understood from report flag neutrophilia?,report_flag_result_analysis,en
+My lab result is marked neutrophilia,report_flag_result_analysis,en
+My report shows leukocytosis,report_flag_result_analysis,en
+The analyzer flagged leukocytosis,report_flag_result_analysis,en
+The printed report says leukocytosis,report_flag_result_analysis,en
+Can you interpret report flag leukocytosis?,report_flag_result_analysis,en
+What does report comment leukocytosis mean?,report_flag_result_analysis,en
+The CBC summary mentions leukocytosis,report_flag_result_analysis,en
+This blood report is flagged as leukocytosis,report_flag_result_analysis,en
+How should a report saying leukocytosis be explained?,report_flag_result_analysis,en
+What does the result note leukocytosis mean?,report_flag_result_analysis,en
+The hematology report comment is leukocytosis,report_flag_result_analysis,en
+Please explain report statement leukocytosis,report_flag_result_analysis,en
+What should be understood from report flag leukocytosis?,report_flag_result_analysis,en
+My lab result is marked leukocytosis,report_flag_result_analysis,en
+My report shows leukopenia,report_flag_result_analysis,en
+The analyzer flagged leukopenia,report_flag_result_analysis,en
+The printed report says leukopenia,report_flag_result_analysis,en
+Can you interpret report flag leukopenia?,report_flag_result_analysis,en
+What does report comment leukopenia mean?,report_flag_result_analysis,en
+The CBC summary mentions leukopenia,report_flag_result_analysis,en
+This blood report is flagged as leukopenia,report_flag_result_analysis,en
+How should a report saying leukopenia be explained?,report_flag_result_analysis,en
+What does the result note leukopenia mean?,report_flag_result_analysis,en
+The hematology report comment is leukopenia,report_flag_result_analysis,en
+Please explain report statement leukopenia,report_flag_result_analysis,en
+What should be understood from report flag leukopenia?,report_flag_result_analysis,en
+My lab result is marked leukopenia,report_flag_result_analysis,en
+My report shows microcytosis,report_flag_result_analysis,en
+The analyzer flagged microcytosis,report_flag_result_analysis,en
+The printed report says microcytosis,report_flag_result_analysis,en
+Can you interpret report flag microcytosis?,report_flag_result_analysis,en
+What does report comment microcytosis mean?,report_flag_result_analysis,en
+The CBC summary mentions microcytosis,report_flag_result_analysis,en
+This blood report is flagged as microcytosis,report_flag_result_analysis,en
+How should a report saying microcytosis be explained?,report_flag_result_analysis,en
+What does the result note microcytosis mean?,report_flag_result_analysis,en
+The hematology report comment is microcytosis,report_flag_result_analysis,en
+Please explain report statement microcytosis,report_flag_result_analysis,en
+What should be understood from report flag microcytosis?,report_flag_result_analysis,en
+My lab result is marked microcytosis,report_flag_result_analysis,en
+My report shows hypochromia,report_flag_result_analysis,en
+The analyzer flagged hypochromia,report_flag_result_analysis,en
+The printed report says hypochromia,report_flag_result_analysis,en
+Can you interpret report flag hypochromia?,report_flag_result_analysis,en
+What does report comment hypochromia mean?,report_flag_result_analysis,en
+The CBC summary mentions hypochromia,report_flag_result_analysis,en
+This blood report is flagged as hypochromia,report_flag_result_analysis,en
+How should a report saying hypochromia be explained?,report_flag_result_analysis,en
+What does the result note hypochromia mean?,report_flag_result_analysis,en

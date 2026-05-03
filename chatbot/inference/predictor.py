@@ -11,6 +11,7 @@ from chatbot.models.sequential_intent import SequentialIntentClassifier, Vocabul
 from chatbot.utils.config import load_config
 from chatbot.utils.language import detect_language
 from chatbot.utils.preprocessing import normalize_text
+from chatbot.utils.report_analysis import analyze_report_input, extract_age_years
 
 GREETING_PATTERNS = (
     'hello',
@@ -112,6 +113,7 @@ class IntentPredictor:
         self.model = self._load_sequential_model()
         self.model.to(self.device)
         self.model.eval()
+        self.available_intents = set(self.label_map.values())
 
     def _load_json(self, path: Path, default: Dict[str, object]) -> Dict[str, object]:
         if not path.exists():
@@ -184,6 +186,17 @@ class IntentPredictor:
         if confidence < threshold:
             intent = 'fallback'
         return intent, confidence
+
+    def _apply_domain_assist(self, cleaned: str, intent: str, confidence: float) -> Tuple[str, float]:
+        if intent in {'report_numeric_result_analysis', 'report_flag_result_analysis'} and analyze_report_input(cleaned) is None:
+            if extract_age_years(cleaned) is not None:
+                return 'incomplete_query', max(confidence, 0.80)
+        if intent != 'fallback':
+            return intent, confidence
+        analysis = analyze_report_input(cleaned)
+        if analysis is None or analysis.intent not in self.available_intents:
+            return intent, confidence
+        return analysis.intent, max(confidence, 0.80)
 
     @torch.no_grad()
     def trace(self, text: str, lang: Optional[str] = None, top_k: int = 5) -> Dict[str, object]:
@@ -262,6 +275,7 @@ class IntentPredictor:
                 }
             )
         final_intent, final_confidence = self.postprocess_logits(logits, self.label_map, self.threshold)
+        assisted_intent, assisted_confidence = self._apply_domain_assist(cleaned, final_intent, final_confidence)
         return {
             'raw_text': text,
             'normalized_text': cleaned,
@@ -271,8 +285,14 @@ class IntentPredictor:
             'rule_match': None,
             'threshold': self.threshold,
             'top_predictions': top_predictions,
-            'final_intent': final_intent,
-            'final_confidence': final_confidence,
+            'final_intent': assisted_intent,
+            'final_confidence': assisted_confidence,
+            'domain_assist': {
+                'applied': assisted_intent != final_intent,
+                'assisted_intent': assisted_intent if assisted_intent != final_intent else None,
+                'base_intent': final_intent,
+                'base_confidence': final_confidence,
+            },
         }
 
     @torch.no_grad()
@@ -293,4 +313,5 @@ class IntentPredictor:
         lengths = torch.tensor([encoded.shape[1]], dtype=torch.long, device=self.device)
         logits = self.model(encoded, lengths)[0]
         intent, confidence = self.postprocess_logits(logits, self.label_map, self.threshold)
+        intent, confidence = self._apply_domain_assist(cleaned, intent, confidence)
         return Prediction(intent=intent, confidence=confidence, language=language, text=text)

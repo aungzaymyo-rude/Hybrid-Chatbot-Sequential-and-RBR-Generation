@@ -1,0 +1,361 @@
+text,intent,lang
+in my report WBC is 3.9 age is 20,report_numeric_result_analysis,en
+WBC is 3.9 and age is 20,report_numeric_result_analysis,en
+My blood report says WBC 3.9 age 20,report_numeric_result_analysis,en
+Please analyze WBC 3.9; age is 20,report_numeric_result_analysis,en
+in my report WBC is 6.2 age is 20,report_numeric_result_analysis,en
+WBC is 6.2 and age is 20,report_numeric_result_analysis,en
+My blood report says WBC 6.2 age 20,report_numeric_result_analysis,en
+Please analyze WBC 6.2; age is 20,report_numeric_result_analysis,en
+in my report WBC is 11.4 age is 20,report_numeric_result_analysis,en
+WBC is 11.4 and age is 20,report_numeric_result_analysis,en
+My blood report says WBC 11.4 age 20,report_numeric_result_analysis,en
+Please analyze WBC 11.4; age is 20,report_numeric_result_analysis,en
+in my report WBC is 13.37 age is 20,report_numeric_result_analysis,en
+WBC is 13.37 and age is 20,report_numeric_result_analysis,en
+My blood report says WBC 13.37 age 20,report_numeric_result_analysis,en
+Please analyze WBC 13.37; age is 20,report_numeric_result_analysis,en
+in my report RBC is 3.2 age is 20,report_numeric_result_analysis,en
+RBC is 3.2 and age is 20,report_numeric_result_analysis,en
+My blood report says RBC 3.2 age 20,report_numeric_result_analysis,en
+Please analyze RBC 3.2; age is 20,report_numeric_result_analysis,en
+in my report RBC is 4.6 age is 20,report_numeric_result_analysis,en
+RBC is 4.6 and age is 20,report_numeric_result_analysis,en
+My blood report says RBC 4.6 age 20,report_numeric_result_analysis,en
+Please analyze RBC 4.6; age is 20,report_numeric_result_analysis,en
+in my report RBC is 5.8 age is 20,report_numeric_result_analysis,en
+RBC is 5.8 and age is 20,report_numeric_result_analysis,en
+My blood report says RBC 5.8 age 20,report_numeric_result_analysis,en
+Please analyze RBC 5.8; age is 20,report_numeric_result_analysis,en
+in my report HGB is 10.8 age is 20,report_numeric_result_analysis,en
+HGB is 10.8 and age is 20,report_numeric_result_analysis,en
+My blood report says HGB 10.8 age 20,report_numeric_result_analysis,en
+Please analyze HGB 10.8; age is 20,report_numeric_result_analysis,en
+in my report HGB is 13.0 age is 20,report_numeric_result_analysis,en
+HGB is 13.0 and age is 20,report_numeric_result_analysis,en
+My blood report says HGB 13.0 age 20,report_numeric_result_analysis,en
+Please analyze HGB 13.0; age is 20,report_numeric_result_analysis,en
+in my report HGB is 15.4 age is 20,report_numeric_result_analysis,en
+HGB is 15.4 and age is 20,report_numeric_result_analysis,en
+My blood report says HGB 15.4 age 20,report_numeric_result_analysis,en
+Please analyze HGB 15.4; age is 20,report_numeric_result_analysis,en
+in my report HGB is 17.8 age is 20,report_numeric_result_analysis,en
+HGB is 17.8 and age is 20,report_numeric_result_analysis,en
+My blood report says HGB 17.8 age 20,report_numeric_result_analysis,en
+Please analyze HGB 17.8; age is 20,report_numeric_result_analysis,en
+in my report HCT is 31 age is 20,report_numeric_result_analysis,en
+HCT is 31 and age is 20,report_numeric_result_analysis,en
+My blood report says HCT 31 age 20,report_numeric_result_analysis,en
+Please analyze HCT 31; age is 20,report_numeric_result_analysis,en
+in my report HCT is 40 age is 20,report_numeric_result_analysis,en
+HCT is 40 and age is 20,report_numeric_result_analysis,en
+My blood report says HCT 40 age 20,report_numeric_result_analysis,en
+Please analyze HCT 40; age is 20,report_numeric_result_analysis,en
+in my report HCT is 47 age is 20,report_numeric_result_analysis,en
+HCT is 47 and age is 20,report_numeric_result_analysis,en
+My blood report says HCT 47 age 20,report_numeric_result_analysis,en
+Please analyze HCT 47; age is 20,report_numeric_result_analysis,en
+in my report HCT is 55 age is 20,report_numeric_result_analysis,en
+HCT is 55 and age is 20,report_numeric_result_analysis,en
+My blood report says HCT 55 age 20,report_numeric_result_analysis,en
+Please analyze HCT 55; age is 20,report_numeric_result_analysis,en
+in my report RDW is 12.4 age is 20,report_numeric_result_analysis,en
+RDW is 12.4 and age is 20,report_numeric_result_analysis,en
+My blood report says RDW 12.4 age 20,report_numeric_result_analysis,en
+Please analyze RDW 12.4; age is 20,report_numeric_result_analysis,en
+in my report RDW is 16.8 age is 20,report_numeric_result_analysis,en
+RDW is 16.8 and age is 20,report_numeric_result_analysis,en
+My blood report says RDW 16.8 age 20,report_numeric_result_analysis,en
+Please analyze RDW 16.8; age is 20,report_numeric_result_analysis,en
+in my report RDW is 21.1 age is 20,report_numeric_result_analysis,en
+RDW is 21.1 and age is 20,report_numeric_result_analysis,en
+My blood report says RDW 21.1 age 20,report_numeric_result_analysis,en
+Please analyze RDW 21.1; age is 20,report_numeric_result_analysis,en
+in my report MPV is 7.1 age is 20,report_numeric_result_analysis,en
+MPV is 7.1 and age is 20,report_numeric_result_analysis,en
+My blood report says MPV 7.1 age 20,report_numeric_result_analysis,en
+Please analyze MPV 7.1; age is 20,report_numeric_result_analysis,en
+in my report MPV is 10.2 age is 20,report_numeric_result_analysis,en
+MPV is 10.2 and age is 20,report_numeric_result_analysis,en
+My blood report says MPV 10.2 age 20,report_numeric_result_analysis,en
+Please analyze MPV 10.2; age is 20,report_numeric_result_analysis,en
+in my report MPV is 13.4 age is 20,report_numeric_result_analysis,en
+MPV is 13.4 and age is 20,report_numeric_result_analysis,en
+My blood report says MPV 13.4 age 20,report_numeric_result_analysis,en
+Please analyze MPV 13.4; age is 20,report_numeric_result_analysis,en
+in my report WBC is 3.9 age is 27,report_numeric_result_analysis,en
+WBC is 3.9 and age is 27,report_numeric_result_analysis,en
+My blood report says WBC 3.9 age 27,report_numeric_result_analysis,en
+Please analyze WBC 3.9; age is 27,report_numeric_result_analysis,en
+in my report WBC is 6.2 age is 27,report_numeric_result_analysis,en
+WBC is 6.2 and age is 27,report_numeric_result_analysis,en
+My blood report says WBC 6.2 age 27,report_numeric_result_analysis,en
+Please analyze WBC 6.2; age is 27,report_numeric_result_analysis,en
+in my report WBC is 11.4 age is 27,report_numeric_result_analysis,en
+WBC is 11.4 and age is 27,report_numeric_result_analysis,en
+My blood report says WBC 11.4 age 27,report_numeric_result_analysis,en
+Please analyze WBC 11.4; age is 27,report_numeric_result_analysis,en
+in my report WBC is 13.37 age is 27,report_numeric_result_analysis,en
+WBC is 13.37 and age is 27,report_numeric_result_analysis,en
+My blood report says WBC 13.37 age 27,report_numeric_result_analysis,en
+Please analyze WBC 13.37; age is 27,report_numeric_result_analysis,en
+in my report RBC is 3.2 age is 27,report_numeric_result_analysis,en
+RBC is 3.2 and age is 27,report_numeric_result_analysis,en
+My blood report says RBC 3.2 age 27,report_numeric_result_analysis,en
+Please analyze RBC 3.2; age is 27,report_numeric_result_analysis,en
+in my report RBC is 4.6 age is 27,report_numeric_result_analysis,en
+RBC is 4.6 and age is 27,report_numeric_result_analysis,en
+My blood report says RBC 4.6 age 27,report_numeric_result_analysis,en
+Please analyze RBC 4.6; age is 27,report_numeric_result_analysis,en
+in my report RBC is 5.8 age is 27,report_numeric_result_analysis,en
+RBC is 5.8 and age is 27,report_numeric_result_analysis,en
+My blood report says RBC 5.8 age 27,report_numeric_result_analysis,en
+Please analyze RBC 5.8; age is 27,report_numeric_result_analysis,en
+in my report HGB is 10.8 age is 27,report_numeric_result_analysis,en
+HGB is 10.8 and age is 27,report_numeric_result_analysis,en
+My blood report says HGB 10.8 age 27,report_numeric_result_analysis,en
+Please analyze HGB 10.8; age is 27,report_numeric_result_analysis,en
+in my report HGB is 13.0 age is 27,report_numeric_result_analysis,en
+HGB is 13.0 and age is 27,report_numeric_result_analysis,en
+My blood report says HGB 13.0 age 27,report_numeric_result_analysis,en
+Please analyze HGB 13.0; age is 27,report_numeric_result_analysis,en
+in my report HGB is 15.4 age is 27,report_numeric_result_analysis,en
+HGB is 15.4 and age is 27,report_numeric_result_analysis,en
+My blood report says HGB 15.4 age 27,report_numeric_result_analysis,en
+Please analyze HGB 15.4; age is 27,report_numeric_result_analysis,en
+in my report HGB is 17.8 age is 27,report_numeric_result_analysis,en
+HGB is 17.8 and age is 27,report_numeric_result_analysis,en
+My blood report says HGB 17.8 age 27,report_numeric_result_analysis,en
+Please analyze HGB 17.8; age is 27,report_numeric_result_analysis,en
+in my report HCT is 31 age is 27,report_numeric_result_analysis,en
+HCT is 31 and age is 27,report_numeric_result_analysis,en
+My blood report says HCT 31 age 27,report_numeric_result_analysis,en
+Please analyze HCT 31; age is 27,report_numeric_result_analysis,en
+in my report HCT is 40 age is 27,report_numeric_result_analysis,en
+HCT is 40 and age is 27,report_numeric_result_analysis,en
+My blood report says HCT 40 age 27,report_numeric_result_analysis,en
+Please analyze HCT 40; age is 27,report_numeric_result_analysis,en
+in my report HCT is 47 age is 27,report_numeric_result_analysis,en
+HCT is 47 and age is 27,report_numeric_result_analysis,en
+My blood report says HCT 47 age 27,report_numeric_result_analysis,en
+Please analyze HCT 47; age is 27,report_numeric_result_analysis,en
+in my report HCT is 55 age is 27,report_numeric_result_analysis,en
+HCT is 55 and age is 27,report_numeric_result_analysis,en
+My blood report says HCT 55 age 27,report_numeric_result_analysis,en
+Please analyze HCT 55; age is 27,report_numeric_result_analysis,en
+in my report RDW is 12.4 age is 27,report_numeric_result_analysis,en
+RDW is 12.4 and age is 27,report_numeric_result_analysis,en
+My blood report says RDW 12.4 age 27,report_numeric_result_analysis,en
+Please analyze RDW 12.4; age is 27,report_numeric_result_analysis,en
+in my report RDW is 16.8 age is 27,report_numeric_result_analysis,en
+RDW is 16.8 and age is 27,report_numeric_result_analysis,en
+My blood report says RDW 16.8 age 27,report_numeric_result_analysis,en
+Please analyze RDW 16.8; age is 27,report_numeric_result_analysis,en
+in my report RDW is 21.1 age is 27,report_numeric_result_analysis,en
+RDW is 21.1 and age is 27,report_numeric_result_analysis,en
+My blood report says RDW 21.1 age 27,report_numeric_result_analysis,en
+Please analyze RDW 21.1; age is 27,report_numeric_result_analysis,en
+in my report MPV is 7.1 age is 27,report_numeric_result_analysis,en
+MPV is 7.1 and age is 27,report_numeric_result_analysis,en
+My blood report says MPV 7.1 age 27,report_numeric_result_analysis,en
+Please analyze MPV 7.1; age is 27,report_numeric_result_analysis,en
+in my report MPV is 10.2 age is 27,report_numeric_result_analysis,en
+MPV is 10.2 and age is 27,report_numeric_result_analysis,en
+My blood report says MPV 10.2 age 27,report_numeric_result_analysis,en
+Please analyze MPV 10.2; age is 27,report_numeric_result_analysis,en
+in my report MPV is 13.4 age is 27,report_numeric_result_analysis,en
+MPV is 13.4 and age is 27,report_numeric_result_analysis,en
+My blood report says MPV 13.4 age 27,report_numeric_result_analysis,en
+Please analyze MPV 13.4; age is 27,report_numeric_result_analysis,en
+in my report WBC is 3.9 age is 35,report_numeric_result_analysis,en
+WBC is 3.9 and age is 35,report_numeric_result_analysis,en
+My blood report says WBC 3.9 age 35,report_numeric_result_analysis,en
+Please analyze WBC 3.9; age is 35,report_numeric_result_analysis,en
+in my report WBC is 6.2 age is 35,report_numeric_result_analysis,en
+WBC is 6.2 and age is 35,report_numeric_result_analysis,en
+My blood report says WBC 6.2 age 35,report_numeric_result_analysis,en
+Please analyze WBC 6.2; age is 35,report_numeric_result_analysis,en
+in my report WBC is 11.4 age is 35,report_numeric_result_analysis,en
+WBC is 11.4 and age is 35,report_numeric_result_analysis,en
+My blood report says WBC 11.4 age 35,report_numeric_result_analysis,en
+Please analyze WBC 11.4; age is 35,report_numeric_result_analysis,en
+in my report WBC is 13.37 age is 35,report_numeric_result_analysis,en
+WBC is 13.37 and age is 35,report_numeric_result_analysis,en
+My blood report says WBC 13.37 age 35,report_numeric_result_analysis,en
+Please analyze WBC 13.37; age is 35,report_numeric_result_analysis,en
+in my report RBC is 3.2 age is 35,report_numeric_result_analysis,en
+RBC is 3.2 and age is 35,report_numeric_result_analysis,en
+My blood report says RBC 3.2 age 35,report_numeric_result_analysis,en
+Please analyze RBC 3.2; age is 35,report_numeric_result_analysis,en
+in my report RBC is 4.6 age is 35,report_numeric_result_analysis,en
+RBC is 4.6 and age is 35,report_numeric_result_analysis,en
+My blood report says RBC 4.6 age 35,report_numeric_result_analysis,en
+Please analyze RBC 4.6; age is 35,report_numeric_result_analysis,en
+in my report RBC is 5.8 age is 35,report_numeric_result_analysis,en
+RBC is 5.8 and age is 35,report_numeric_result_analysis,en
+My blood report says RBC 5.8 age 35,report_numeric_result_analysis,en
+Please analyze RBC 5.8; age is 35,report_numeric_result_analysis,en
+in my report HGB is 10.8 age is 35,report_numeric_result_analysis,en
+HGB is 10.8 and age is 35,report_numeric_result_analysis,en
+My blood report says HGB 10.8 age 35,report_numeric_result_analysis,en
+Please analyze HGB 10.8; age is 35,report_numeric_result_analysis,en
+in my report HGB is 13.0 age is 35,report_numeric_result_analysis,en
+HGB is 13.0 and age is 35,report_numeric_result_analysis,en
+My blood report says HGB 13.0 age 35,report_numeric_result_analysis,en
+Please analyze HGB 13.0; age is 35,report_numeric_result_analysis,en
+in my report HGB is 15.4 age is 35,report_numeric_result_analysis,en
+HGB is 15.4 and age is 35,report_numeric_result_analysis,en
+My blood report says HGB 15.4 age 35,report_numeric_result_analysis,en
+Please analyze HGB 15.4; age is 35,report_numeric_result_analysis,en
+in my report HGB is 17.8 age is 35,report_numeric_result_analysis,en
+HGB is 17.8 and age is 35,report_numeric_result_analysis,en
+My blood report says HGB 17.8 age 35,report_numeric_result_analysis,en
+Please analyze HGB 17.8; age is 35,report_numeric_result_analysis,en
+in my report HCT is 31 age is 35,report_numeric_result_analysis,en
+HCT is 31 and age is 35,report_numeric_result_analysis,en
+My blood report says HCT 31 age 35,report_numeric_result_analysis,en
+Please analyze HCT 31; age is 35,report_numeric_result_analysis,en
+in my report HCT is 40 age is 35,report_numeric_result_analysis,en
+HCT is 40 and age is 35,report_numeric_result_analysis,en
+My blood report says HCT 40 age 35,report_numeric_result_analysis,en
+Please analyze HCT 40; age is 35,report_numeric_result_analysis,en
+in my report HCT is 47 age is 35,report_numeric_result_analysis,en
+HCT is 47 and age is 35,report_numeric_result_analysis,en
+My blood report says HCT 47 age 35,report_numeric_result_analysis,en
+Please analyze HCT 47; age is 35,report_numeric_result_analysis,en
+in my report HCT is 55 age is 35,report_numeric_result_analysis,en
+HCT is 55 and age is 35,report_numeric_result_analysis,en
+My blood report says HCT 55 age 35,report_numeric_result_analysis,en
+Please analyze HCT 55; age is 35,report_numeric_result_analysis,en
+in my report RDW is 12.4 age is 35,report_numeric_result_analysis,en
+RDW is 12.4 and age is 35,report_numeric_result_analysis,en
+My blood report says RDW 12.4 age 35,report_numeric_result_analysis,en
+Please analyze RDW 12.4; age is 35,report_numeric_result_analysis,en
+in my report RDW is 16.8 age is 35,report_numeric_result_analysis,en
+RDW is 16.8 and age is 35,report_numeric_result_analysis,en
+My blood report says RDW 16.8 age 35,report_numeric_result_analysis,en
+Please analyze RDW 16.8; age is 35,report_numeric_result_analysis,en
+in my report RDW is 21.1 age is 35,report_numeric_result_analysis,en
+RDW is 21.1 and age is 35,report_numeric_result_analysis,en
+My blood report says RDW 21.1 age 35,report_numeric_result_analysis,en
+Please analyze RDW 21.1; age is 35,report_numeric_result_analysis,en
+in my report MPV is 7.1 age is 35,report_numeric_result_analysis,en
+MPV is 7.1 and age is 35,report_numeric_result_analysis,en
+My blood report says MPV 7.1 age 35,report_numeric_result_analysis,en
+Please analyze MPV 7.1; age is 35,report_numeric_result_analysis,en
+in my report MPV is 10.2 age is 35,report_numeric_result_analysis,en
+MPV is 10.2 and age is 35,report_numeric_result_analysis,en
+My blood report says MPV 10.2 age 35,report_numeric_result_analysis,en
+Please analyze MPV 10.2; age is 35,report_numeric_result_analysis,en
+in my report MPV is 13.4 age is 35,report_numeric_result_analysis,en
+MPV is 13.4 and age is 35,report_numeric_result_analysis,en
+My blood report says MPV 13.4 age 35,report_numeric_result_analysis,en
+Please analyze MPV 13.4; age is 35,report_numeric_result_analysis,en
+in my report WBC is 3.9 age is 43,report_numeric_result_analysis,en
+WBC is 3.9 and age is 43,report_numeric_result_analysis,en
+My blood report says WBC 3.9 age 43,report_numeric_result_analysis,en
+Please analyze WBC 3.9; age is 43,report_numeric_result_analysis,en
+in my report WBC is 6.2 age is 43,report_numeric_result_analysis,en
+WBC is 6.2 and age is 43,report_numeric_result_analysis,en
+My blood report says WBC 6.2 age 43,report_numeric_result_analysis,en
+Please analyze WBC 6.2; age is 43,report_numeric_result_analysis,en
+in my report WBC is 11.4 age is 43,report_numeric_result_analysis,en
+WBC is 11.4 and age is 43,report_numeric_result_analysis,en
+My blood report says WBC 11.4 age 43,report_numeric_result_analysis,en
+Please analyze WBC 11.4; age is 43,report_numeric_result_analysis,en
+in my report WBC is 13.37 age is 43,report_numeric_result_analysis,en
+WBC is 13.37 and age is 43,report_numeric_result_analysis,en
+My blood report says WBC 13.37 age 43,report_numeric_result_analysis,en
+Please analyze WBC 13.37; age is 43,report_numeric_result_analysis,en
+in my report RBC is 3.2 age is 43,report_numeric_result_analysis,en
+RBC is 3.2 and age is 43,report_numeric_result_analysis,en
+My blood report says RBC 3.2 age 43,report_numeric_result_analysis,en
+Please analyze RBC 3.2; age is 43,report_numeric_result_analysis,en
+in my report RBC is 4.6 age is 43,report_numeric_result_analysis,en
+RBC is 4.6 and age is 43,report_numeric_result_analysis,en
+My blood report says RBC 4.6 age 43,report_numeric_result_analysis,en
+Please analyze RBC 4.6; age is 43,report_numeric_result_analysis,en
+in my report RBC is 5.8 age is 43,report_numeric_result_analysis,en
+RBC is 5.8 and age is 43,report_numeric_result_analysis,en
+My blood report says RBC 5.8 age 43,report_numeric_result_analysis,en
+Please analyze RBC 5.8; age is 43,report_numeric_result_analysis,en
+in my report HGB is 10.8 age is 43,report_numeric_result_analysis,en
+HGB is 10.8 and age is 43,report_numeric_result_analysis,en
+My blood report says HGB 10.8 age 43,report_numeric_result_analysis,en
+Please analyze HGB 10.8; age is 43,report_numeric_result_analysis,en
+in my report HGB is 13.0 age is 43,report_numeric_result_analysis,en
+HGB is 13.0 and age is 43,report_numeric_result_analysis,en
+My blood report says HGB 13.0 age 43,report_numeric_result_analysis,en
+Please analyze HGB 13.0; age is 43,report_numeric_result_analysis,en
+in my report HGB is 15.4 age is 43,report_numeric_result_analysis,en
+HGB is 15.4 and age is 43,report_numeric_result_analysis,en
+My blood report says HGB 15.4 age 43,report_numeric_result_analysis,en
+Please analyze HGB 15.4; age is 43,report_numeric_result_analysis,en
+in my report HGB is 17.8 age is 43,report_numeric_result_analysis,en
+HGB is 17.8 and age is 43,report_numeric_result_analysis,en
+My blood report says HGB 17.8 age 43,report_numeric_result_analysis,en
+Please analyze HGB 17.8; age is 43,report_numeric_result_analysis,en
+in my report HCT is 31 age is 43,report_numeric_result_analysis,en
+HCT is 31 and age is 43,report_numeric_result_analysis,en
+My blood report says HCT 31 age 43,report_numeric_result_analysis,en
+Please analyze HCT 31; age is 43,report_numeric_result_analysis,en
+in my report HCT is 40 age is 43,report_numeric_result_analysis,en
+HCT is 40 and age is 43,report_numeric_result_analysis,en
+My blood report says HCT 40 age 43,report_numeric_result_analysis,en
+Please analyze HCT 40; age is 43,report_numeric_result_analysis,en
+in my report HCT is 47 age is 43,report_numeric_result_analysis,en
+HCT is 47 and age is 43,report_numeric_result_analysis,en
+My blood report says HCT 47 age 43,report_numeric_result_analysis,en
+Please analyze HCT 47; age is 43,report_numeric_result_analysis,en
+in my report HCT is 55 age is 43,report_numeric_result_analysis,en
+HCT is 55 and age is 43,report_numeric_result_analysis,en
+My blood report says HCT 55 age 43,report_numeric_result_analysis,en
+Please analyze HCT 55; age is 43,report_numeric_result_analysis,en
+in my report RDW is 12.4 age is 43,report_numeric_result_analysis,en
+RDW is 12.4 and age is 43,report_numeric_result_analysis,en
+My blood report says RDW 12.4 age 43,report_numeric_result_analysis,en
+Please analyze RDW 12.4; age is 43,report_numeric_result_analysis,en
+in my report RDW is 16.8 age is 43,report_numeric_result_analysis,en
+RDW is 16.8 and age is 43,report_numeric_result_analysis,en
+My blood report says RDW 16.8 age 43,report_numeric_result_analysis,en
+Please analyze RDW 16.8; age is 43,report_numeric_result_analysis,en
+in my report RDW is 21.1 age is 43,report_numeric_result_analysis,en
+RDW is 21.1 and age is 43,report_numeric_result_analysis,en
+My blood report says RDW 21.1 age 43,report_numeric_result_analysis,en
+Please analyze RDW 21.1; age is 43,report_numeric_result_analysis,en
+in my report MPV is 7.1 age is 43,report_numeric_result_analysis,en
+MPV is 7.1 and age is 43,report_numeric_result_analysis,en
+My blood report says MPV 7.1 age 43,report_numeric_result_analysis,en
+Please analyze MPV 7.1; age is 43,report_numeric_result_analysis,en
+in my report MPV is 10.2 age is 43,report_numeric_result_analysis,en
+MPV is 10.2 and age is 43,report_numeric_result_analysis,en
+My blood report says MPV 10.2 age 43,report_numeric_result_analysis,en
+Please analyze MPV 10.2; age is 43,report_numeric_result_analysis,en
+in my report MPV is 13.4 age is 43,report_numeric_result_analysis,en
+MPV is 13.4 and age is 43,report_numeric_result_analysis,en
+My blood report says MPV 13.4 age 43,report_numeric_result_analysis,en
+Please analyze MPV 13.4; age is 43,report_numeric_result_analysis,en
+in my report WBC is 3.9 age is 51,report_numeric_result_analysis,en
+WBC is 3.9 and age is 51,report_numeric_result_analysis,en
+My blood report says WBC 3.9 age 51,report_numeric_result_analysis,en
+Please analyze WBC 3.9; age is 51,report_numeric_result_analysis,en
+in my report WBC is 6.2 age is 51,report_numeric_result_analysis,en
+WBC is 6.2 and age is 51,report_numeric_result_analysis,en
+My blood report says WBC 6.2 age 51,report_numeric_result_analysis,en
+Please analyze WBC 6.2; age is 51,report_numeric_result_analysis,en
+in my report WBC is 11.4 age is 51,report_numeric_result_analysis,en
+WBC is 11.4 and age is 51,report_numeric_result_analysis,en
+My blood report says WBC 11.4 age 51,report_numeric_result_analysis,en
+Please analyze WBC 11.4; age is 51,report_numeric_result_analysis,en
+in my report WBC is 13.37 age is 51,report_numeric_result_analysis,en
+WBC is 13.37 and age is 51,report_numeric_result_analysis,en
+My blood report says WBC 13.37 age 51,report_numeric_result_analysis,en
+Please analyze WBC 13.37; age is 51,report_numeric_result_analysis,en
+in my report RBC is 3.2 age is 51,report_numeric_result_analysis,en
+RBC is 3.2 and age is 51,report_numeric_result_analysis,en
+My blood report says RBC 3.2 age 51,report_numeric_result_analysis,en
+Please analyze RBC 3.2; age is 51,report_numeric_result_analysis,en
+in my report RBC is 4.6 age is 51,report_numeric_result_analysis,en
+RBC is 4.6 and age is 51,report_numeric_result_analysis,en
+My blood report says RBC 4.6 age 51,report_numeric_result_analysis,en
+Please analyze RBC 4.6; age is 51,report_numeric_result_analysis,en

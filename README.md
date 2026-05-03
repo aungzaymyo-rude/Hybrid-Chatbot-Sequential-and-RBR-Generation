@@ -4,7 +4,7 @@ Hybrid chatbot system using BiLSTM sequential intent classifiers, medical term d
 
 Configured local models:
 - `general`: the main hematology assistant for workflow, CBC, coagulation, smear, QC, and communication intents
-- `report`: a blood-report-focused assistant for CBC parameter, flag, abnormality, and report-structure questions
+- `report`: a blood-report-focused assistant for CBC parameter, report flag, abnormality, report-structure, and bounded numeric-result analysis questions
 
 Current `general` model intents:
 - `greeting`
@@ -36,6 +36,8 @@ Current `report` model adds these report-scope intents on top of the shared comm
 - `platelet_abnormality`
 - `differential_result_explanation`
 - `report_structure_help`
+- `report_numeric_result_analysis`
+- `report_flag_result_analysis`
 
 Non-English input returns: "Only English is supported. Please ask in English."
 
@@ -94,20 +96,28 @@ Labeled file format (CSV/JSONL):
 - `lang` (optional, defaults to `en`)
 
 Master dataset snapshot (`chatbot/data/train/intent_dataset.jsonl`):
-- Total samples: `3250`
-- Total intents: `27`
+- Total samples: `5211`
+- Total intents: `29`
 - Largest classes: `cbc_info=312`, `coag_test=300`, `sample_collection=214`, `wbc_term=140`, `rbc_term=140`
-- Report-expansion classes merged at `100` each: `cbc_result_parameter`, `cbc_flag_explanation`, `anemia_related_term`, `platelet_abnormality`, `differential_result_explanation`
+- Report-analysis classes now include:
+  - `cbc_result_parameter=220`
+  - `cbc_flag_explanation=220`
+  - `anemia_related_term=220`
+  - `platelet_abnormality=220`
+  - `differential_result_explanation=180`
+  - `report_structure_help=177`
+  - `report_numeric_result_analysis=1039`
+  - `report_flag_result_analysis=265`
 - Communication/safety examples now include: `capability_query=164`, `clarification=144`, `thanks=141`, `goodbye=136`, `greeting=106`, `small_talk=100`, `unsafe_medical_request=108`, `out_of_scope=48`, `incomplete_query=47`, `fallback=20`
 
 Derived model datasets:
 - `chatbot/data/train/intent_dataset_general.jsonl`: `2670` samples across `21` intents
-- `chatbot/data/train/intent_dataset_report.jsonl`: `2636` samples across `24` intents
+- `chatbot/data/train/intent_dataset_report.jsonl`: `4597` samples across `26` intents
 
 Fixed split policy:
 - Train / validation / test = `70 / 15 / 15`
 - `chatbot/data/splits/general/`: train `1868`, validation `401`, test `401`
-- `chatbot/data/splits/report/`: train `1844`, validation `396`, test `396`
+- `chatbot/data/splits/report/`: train `3217`, validation `690`, test `690`
 
 Two-model dataset count summary:
 - `general`: includes workflow and assistant intents such as `sample_collection`, `coag_test`, `quality_control`, `cbc_info`, `rbc_term`, `wbc_term`, `blood_smear`, plus communication/safety intents
@@ -120,6 +130,17 @@ Conversation expansion data:
 Focused coagulation expansion:
 - `chatbot/data/labeled/coag_test_aptt_expansion_160.csv`: `160` new `coag_test` rows
 - Expanded aPTT, PT, INR, citrate tube, underfill, delay, and coag specimen handling phrasing
+
+Focused report-analysis expansion:
+- `chatbot/data/labeled/report_analysis_balancing_860.csv`: `860` new labeled report rows
+- Added bounded report-result intents for numeric CBC values and printed report flags
+- The report model now supports phrases such as `WBC is 13.7`, `PLT is 365`, `MCV is 72`, and `My report shows anemia`
+- `chatbot/data/labeled/report_analysis_sex_specific_expansion_520.csv`: `520` additional report rows
+- Added sex-aware phrasing for `HGB` and `HCT`, plus focused result phrases for `RBC`, `RDW`, `MPV`, and additional report flags
+- `chatbot/data/labeled/report_analysis_pediatric_expansion_240.csv`: `240` additional pediatric-style report rows
+- Added child and pediatric phrasing for `WBC`, `RBC`, `HGB`, `HCT`, `MCV`, and `PLT`
+- `chatbot/data/labeled/report_analysis_age_context_expansion_360.csv`: `360` additional age-context report rows
+- Added phrases such as `WBC is 13.37 age is 51` and `WBC is 13 age is 10` so the report model learns age-aware report analysis language
 
 ## Build Training Dataset
 Training uses one master file first:
@@ -231,8 +252,28 @@ Each evaluation run now exports paper-ready artifacts inside `chatbot/evaluation
 Latest evaluation snapshots:
 - `general_model_eval_split_701515`: test samples `401`, accuracy `0.8928`, macro F1 `0.8649`
 - `report_model_eval_split_701515`: test samples `396`, accuracy `0.9040`, macro F1 `0.8604`
+- `report_model_eval_report_analysis_20260503`: test samples `524`, accuracy `0.9218`, macro F1 `0.8551`
+- `report_model_eval_report_analysis_sex_20260503_posttrain`: test samples `600`, accuracy `0.9417`, macro F1 `0.8875`
+- `report_model_eval_report_analysis_pediatric_20260503_posttrain`: test samples `636`, accuracy `0.9387`, macro F1 `0.9133`
+- `report_model_eval_age_context_20260503_posttrain`: test samples `690`, accuracy `0.9333`, macro F1 `0.8805`
 
 The split-aware scores are lower than the older single-holdout numbers. That is expected. They are the stronger paper metrics because the models are now selected on validation and reported on an untouched test set.
+
+## Admin Review And Next Retraining Cycle
+Admin exports now include:
+- `/admin/api/export-logs`: recent production logs
+- `/admin/api/export-reviewed`: accepted reviewed queries for retraining
+- `/admin/api/export-report-analysis-errors`: report-model phrases that look like numeric report values or printed report flags but were fallback, low-confidence, or still waiting for review
+- `/admin/api/report-analysis-preview`: admin-side preview table for report-analysis retraining candidates before download
+
+The report-analysis error export is intended for the next retraining cycle. It helps isolate phrases such as:
+- `WBC is 13.7`
+- `Adult male HGB is 13.0`
+- `Child HGB is 10.5`
+- `WBC is 13.37 age is 51`
+- `My report says hypochromia`
+
+so they can be corrected, reviewed, and merged back into `chatbot/data/labeled/`.
 
 ## Inference (CLI)
 ```bash

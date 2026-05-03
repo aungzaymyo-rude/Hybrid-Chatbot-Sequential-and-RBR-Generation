@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import asyncio
+import importlib
 from pathlib import Path
 import sys
 from threading import Thread
@@ -21,8 +22,26 @@ CONFIG_PATH = Path(__file__).resolve().parents[1] / 'config.yaml'
 
 
 def configure_event_loop_policy() -> None:
+    # Python 3.14 deprecates manual event-loop policy changes. Keep the Windows
+    # selector workaround only on older runtimes where it still reduces HTTPS
+    # socket-noise without emitting startup warnings.
+    if sys.version_info >= (3, 14):
+        return
     if sys.platform == 'win32' and hasattr(asyncio, 'WindowsSelectorEventLoopPolicy'):
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
+
+def preflight_import_app() -> None:
+    try:
+        importlib.import_module('chatbot.api.main')
+    except ModuleNotFoundError as exc:
+        if exc.name == 'torch':
+            raise SystemExit(
+                'PyTorch is not installed in this Python environment. Start the server with the project virtual environment '
+                '(for example: .\\chatbot\\.venv\\Scripts\\python.exe -m chatbot.deployment.run_server) or install the '
+                'requirements into the current interpreter with `pip install -r requirements.txt`.'
+            ) from exc
+        raise
 
 
 def build_https_redirect_url(request: Request, https_port: int) -> str:
@@ -56,6 +75,7 @@ def start_http_redirect_server(host: str, port: int, https_port: int) -> Thread:
 
 def main() -> None:
     configure_event_loop_policy()
+    preflight_import_app()
     cfg = load_config(CONFIG_PATH)
     deploy_cfg = cfg.get('deployment', {})
     host = str(deploy_cfg.get('host', '0.0.0.0'))

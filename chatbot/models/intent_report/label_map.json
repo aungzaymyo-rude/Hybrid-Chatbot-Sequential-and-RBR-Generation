@@ -18,9 +18,11 @@
   "platelet_abnormality": 16,
   "platelet_term": 17,
   "rbc_term": 18,
-  "report_structure_help": 19,
-  "small_talk": 20,
-  "thanks": 21,
-  "unsafe_medical_request": 22,
-  "wbc_term": 23
+  "report_flag_result_analysis": 19,
+  "report_numeric_result_analysis": 20,
+  "report_structure_help": 21,
+  "small_talk": 22,
+  "thanks": 23,
+  "unsafe_medical_request": 24,
+  "wbc_term": 25
 }

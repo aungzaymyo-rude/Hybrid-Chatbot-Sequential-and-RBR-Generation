@@ -103,6 +103,29 @@ def test_route_intent_returns_cbc_stability_guidance():
     assert 'validated' in response.lower() or 'sop' in response.lower()
 
 
+def test_route_intent_analyzes_numeric_report_result():
+    response = route_intent(
+        'fallback',
+        'en',
+        text='WBC is 13.7',
+        config_path=CONFIG_PATH,
+    )
+    assert '13.7' in response
+    assert 'above range' in response.lower()
+    assert 'reference range' in response.lower()
+
+
+def test_route_intent_analyzes_report_flag():
+    response = route_intent(
+        'fallback',
+        'en',
+        text='My report shows anemia',
+        config_path=CONFIG_PATH,
+    )
+    assert 'anemia' in response.lower()
+    assert 'not diagnosis' in response.lower() or 'not a diagnosis' in response.lower()
+
+
 def test_chat_store_logs_records():
     db_path = Path(__file__).resolve().parent / f'chat_history_test_{uuid4().hex}.db'
     store = ChatHistoryStore(str(db_path))

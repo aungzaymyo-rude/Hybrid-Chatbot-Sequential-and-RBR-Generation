@@ -9,6 +9,8 @@ from typing import Any
 from psycopg import connect
 from psycopg.rows import dict_row
 
+from chatbot.utils.report_analysis import analyze_report_input
+
 
 class ChatHistoryStore:
     def __init__(self, postgres_cfg: dict[str, Any] | str) -> None:
@@ -429,3 +431,89 @@ class ChatHistoryStore:
                     'admin_notes': row.get('admin_notes'),
                 })
         return output
+
+    def fetch_report_analysis_error_rows(
+        self,
+        *,
+        limit: int = 1000,
+        low_confidence_threshold: float = 0.55,
+    ) -> list[dict[str, Any]]:
+        rows = self.fetch_recent_logs(limit=limit, model_key='report', low_confidence_threshold=low_confidence_threshold)
+        output: list[dict[str, Any]] = []
+        for row in rows:
+            analysis = analyze_report_input(str(row.get('user_text') or ''))
+            if analysis is None:
+                continue
+            intent = str(row.get('intent') or '')
+            corrected_intent = str(row.get('corrected_intent') or '')
+            confidence = float(row.get('confidence') or 0.0)
+            review_status = str(row.get('review_status') or '')
+            if (
+                intent == 'fallback'
+                or confidence < low_confidence_threshold
+                or (corrected_intent and corrected_intent != intent)
+                or review_status in {'unreviewed', 'rejected'}
+            ):
+                output.append({
+                    'created_at': row.get('created_at'),
+                    'user_text': row.get('user_text'),
+                    'detected_lang': row.get('detected_lang'),
+                    'intent': intent,
+                    'confidence': confidence,
+                    'response': row.get('response'),
+                    'model_key': row.get('model_key'),
+                    'review_status': review_status,
+                    'corrected_intent': corrected_intent,
+                    'admin_notes': row.get('admin_notes'),
+                    'recommended_analysis_intent': analysis.intent,
+                    'analysis_label': analysis.label,
+                    'analysis_criteria': analysis.criteria,
+                    'analysis_status': analysis.status,
+                    'analysis_demographic_hint': analysis.demographic_hint,
+                    'analysis_age_years': analysis.age_years,
+                })
+        return output
+
+    def export_report_analysis_errors_to_csv(
+        self,
+        output_path: str | Path,
+        *,
+        limit: int = 1000,
+        low_confidence_threshold: float = 0.55,
+    ) -> Path:
+        rows = self.fetch_report_analysis_error_rows(limit=limit, low_confidence_threshold=low_confidence_threshold)
+        output = Path(output_path).resolve()
+        output.parent.mkdir(parents=True, exist_ok=True)
+        with output.open('w', encoding='utf-8', newline='') as handle:
+            writer = csv.DictWriter(
+                handle,
+                fieldnames=[
+                    'created_at',
+                    'user_text',
+                    'detected_lang',
+                    'intent',
+                    'confidence',
+                    'response',
+                    'model_key',
+                    'review_status',
+                    'corrected_intent',
+                    'admin_notes',
+                    'recommended_analysis_intent',
+                    'analysis_label',
+                    'analysis_criteria',
+                    'analysis_status',
+                    'analysis_demographic_hint',
+                    'analysis_age_years',
+                ],
+            )
+            writer.writeheader()
+            writer.writerows(rows)
+        return output
+
+    def fetch_report_analysis_error_preview(
+        self,
+        *,
+        limit: int = 25,
+        low_confidence_threshold: float = 0.55,
+    ) -> list[dict[str, Any]]:
+        return self.fetch_report_analysis_error_rows(limit=limit, low_confidence_threshold=low_confidence_threshold)

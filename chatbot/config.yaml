@@ -58,6 +58,8 @@ data:
         - platelet_abnormality
         - differential_result_explanation
         - report_structure_help
+        - report_numeric_result_analysis
+        - report_flag_result_analysis
 
 model:
   type: sequential

@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/ui/admin.css?v=20260502c">
+  <link rel="stylesheet" href="/ui/admin.css?v=20260503a">
 </head>
 <body>
   <div class="admin-layout">
@@ -30,6 +30,7 @@
         <div class="sidebar-actions">
           <a class="secondary-button" href="/">Open Chat UI</a>
           <a id="export-logs" class="secondary-button" href="/admin/api/export-logs">Export current logs</a>
+          <a id="export-report-analysis-errors" class="secondary-button" href="/admin/api/export-report-analysis-errors">Export report-analysis errors</a>
           <a id="export-reviewed" class="secondary-button" href="/admin/api/export-reviewed">Export reviewed CSV</a>
         </div>
       </section>
@@ -349,6 +350,23 @@
         <section class="panel">
           <div class="panel-head">
             <div>
+              <h2>Report-Analysis Retraining Preview</h2>
+              <p class="panel-copy">Preview report-model phrases that look like numeric report values or printed report flags before exporting them for the next retraining cycle.</p>
+            </div>
+          </div>
+          <div class="table-wrap compact-table">
+            <table>
+              <thead>
+                <tr><th>Phrase</th><th>Current intent</th><th>Suggested intent</th><th>Label</th><th>Confidence</th></tr>
+              </thead>
+              <tbody id="report-analysis-preview-table"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <div>
               <h2>Recent Conversations</h2>
               <p class="panel-copy">Review fallback, guardrail, and low-confidence traffic for retraining.</p>
             </div>
@@ -368,6 +386,6 @@
     </main>
   </div>
 
-  <script src="/ui/admin.js?v=20260502c"></script>
+  <script src="/ui/admin.js?v=20260503a"></script>
 </body>
 </html>

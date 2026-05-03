@@ -18,6 +18,7 @@ const versionTable = document.getElementById('version-table');
 const splitPolicyMetrics = document.getElementById('split-policy-metrics');
 const splitChart = document.getElementById('split-chart');
 const artifactTable = document.getElementById('artifact-table');
+const reportAnalysisPreviewTable = document.getElementById('report-analysis-preview-table');
 const refreshDashboardButton = document.getElementById('refresh-dashboard');
 const reloadLogsButton = document.getElementById('reload-logs');
 const flaggedOnlyInput = document.getElementById('flagged-only');
@@ -266,6 +267,23 @@ function renderLogs(logs) {
 
     logsList.appendChild(article);
   });
+}
+
+function renderReportAnalysisPreview(rows) {
+  if (!reportAnalysisPreviewTable) return;
+  if (!rows.length) {
+    reportAnalysisPreviewTable.innerHTML = '<tr><td colspan="5">No report-analysis retry candidates found.</td></tr>';
+    return;
+  }
+  reportAnalysisPreviewTable.innerHTML = rows.map((row) => `
+    <tr>
+      <td>${row.user_text}</td>
+      <td>${row.intent || '-'}</td>
+      <td>${row.recommended_analysis_intent || '-'}</td>
+      <td>${row.analysis_label || '-'}</td>
+      <td>${Number(row.confidence || 0).toFixed(3)}</td>
+    </tr>
+  `).join('');
 }
 
 function renderIngestion(pipeline) {
@@ -524,6 +542,16 @@ function renderTrace(payload) {
     })));
   }
 
+  const domainAssist = payload.classifier.domain_assist;
+  if (domainAssist?.applied) {
+    traceClassifier.insertAdjacentHTML('beforeend', `
+      <article class="trace-block">
+        <h3>Domain assist applied</h3>
+        <p>The base classifier fell below threshold for this phrase, so the report-analysis layer promoted the final intent from ${domainAssist.base_intent} to ${domainAssist.assisted_intent}. This keeps numeric report phrases and printed report flags inside the report-analysis path.</p>
+      </article>
+    `);
+  }
+
   if (payload.entity_detection.matched) {
     renderTraceDetail(traceEntity, [
       {
@@ -603,8 +631,14 @@ async function loadLogs() {
   renderLogs(payload.logs || []);
 }
 
+async function loadReportAnalysisPreview() {
+  const response = await fetch('/admin/api/report-analysis-preview');
+  const payload = await response.json();
+  renderReportAnalysisPreview(payload.rows || []);
+}
+
 async function refreshAll() {
-  await Promise.all([loadPipeline(), loadSummary(), loadLogs()]);
+  await Promise.all([loadPipeline(), loadSummary(), loadLogs(), loadReportAnalysisPreview()]);
 }
 
 refreshDashboardButton.addEventListener('click', refreshAll);

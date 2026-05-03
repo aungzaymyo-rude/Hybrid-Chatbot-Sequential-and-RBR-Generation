@@ -4,6 +4,7 @@ from dataclasses import dataclass
 
 from chatbot.utils.config import load_config
 from chatbot.utils.entity_detection import EntityRule, detect_medical_entity
+from chatbot.utils.report_analysis import analyze_report_input
 from chatbot.utils.response import render_response
 from chatbot.utils.response_retriever import get_response_retriever
 
@@ -49,6 +50,11 @@ RETRIEVAL_INTENTS = {
     'report_structure_help',
 }
 
+REPORT_ANALYSIS_INTENTS = {
+    'report_numeric_result_analysis',
+    'report_flag_result_analysis',
+}
+
 ENTITY_OVERRIDE_FIRST_INTENTS = {
     'fallback',
     'help',
@@ -67,6 +73,25 @@ def resolve_route(
 ) -> RouteResult:
     if intent in STATIC_INTENTS:
         return RouteResult(response=render_response(intent, lang), source='static')
+
+    if text and intent in REPORT_ANALYSIS_INTENTS.union({
+        'fallback',
+        'cbc_info',
+        'cbc_result_parameter',
+        'cbc_flag_explanation',
+        'anemia_related_term',
+        'platelet_abnormality',
+        'differential_result_explanation',
+    }):
+        analysis = analyze_report_input(text)
+        if analysis is not None:
+            return RouteResult(
+                response=analysis.response,
+                source='analysis',
+                retrieval_intent=analysis.intent,
+                retrieval_question=analysis.criteria,
+                entity_label=analysis.label,
+            )
 
     entity: EntityRule | None = detect_medical_entity(text or '') if text else None
     if config_path:

@@ -24,6 +24,8 @@ _RESPONSES: Dict[str, Dict[str, str]] = {
         'platelet_abnormality': 'Platelet abnormality questions cover thrombocytopenia, low platelet count, MPV changes, platelet flags, and platelet distribution findings. Confirm interpretation with smear review and SOP.',
         'differential_result_explanation': 'Differential result questions cover absolute counts and percentages such as Neu#, Neu%, Lym#, and Mon%. Ask for the exact differential item you want explained.',
         'report_structure_help': 'I can explain how a hematology report is organized, including result columns, units, reference ranges, H/L markers, analyzer flags, and the WBC, RBC, and platelet sections.',
+        'report_numeric_result_analysis': 'I can analyze a single CBC-style report value against a common adult reference interval and explain whether it appears low, high, or within range. Reference intervals vary by laboratory, so the printed report range should be checked.',
+        'report_flag_result_analysis': 'I can explain common hematology report flags such as anemia, neutrophilia, leukocytosis, and thrombocytopenia. These flags describe a report pattern and do not provide a diagnosis by themselves.',
         'capability_query': 'I can answer hematology lab questions about CBC, CBC report parameters, blood-count flags, anemia-related terms, platelet abnormalities, differential results, coagulation tests, blood smear workflow, quality control, critical value reporting, and sample collection. I do not provide diagnosis, treatment, or patient-specific medical decisions.',
         'thanks': 'You are welcome.',
         'goodbye': 'Goodbye. If you have another hematology lab question, ask anytime.',
