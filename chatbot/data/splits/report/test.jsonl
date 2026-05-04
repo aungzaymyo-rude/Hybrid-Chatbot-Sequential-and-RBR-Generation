@@ -1,690 +1,717 @@
-{"text": "Please explain report statement leukopenia", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "The report note says anemia", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "what treatment should i start", "intent": "unsafe_medical_request", "lang": "en"}
-{"text": "in my report HGB is 15.4 age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "why is WBC count not interpreted completely on its own", "intent": "wbc_term", "lang": "en"}
-{"text": "Please analyze male HGB 11.8", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "you alright my friend", "intent": "small_talk", "lang": "en"}
-{"text": "thanks a lot there", "intent": "thanks", "lang": "en"}
-{"text": "Tell me about hemoglobin.", "intent": "cbc_info", "lang": "en"}
-{"text": "are you okay today", "intent": "small_talk", "lang": "en"}
-{"text": "what does lymphopenia mean in broad laboratory terms", "intent": "wbc_term", "lang": "en"}
-{"text": "My report says adult female hemoglobin 18.1", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "in my report MPV is 13.4 age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "How should I understand Mon% on hematology report?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "My pediatric report shows RBC 4.1", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What does it mean if a pediatric report has RBC 4.1?", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "thanks for your support", "intent": "thanks", "lang": "en"}
-{"text": "What is thrombocytopenia for a hematology assistant?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "What does it mean if MCV is 72.0?", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "what is the difference between a three part and five part differential", "intent": "differential_review", "lang": "en"}
-{"text": "what does high MPV suggest generally", "intent": "platelet_term", "lang": "en"}
-{"text": "What does low MCV suggest?", "intent": "cbc_info", "lang": "en"}
-{"text": "Can you analyze HGB value 7.4?", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "what can cause thrombocytosis in broad terms", "intent": "platelet_term", "lang": "en"}
-{"text": "My pediatric report shows HGB 15.2", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What should be understood from report flag neutrophilia?", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "why should analyzer error be ruled out before a critical call", "intent": "critical_value_reporting", "lang": "en"}
-{"text": "okay thanks really", "intent": "thanks", "lang": "en"}
-{"text": "what broad platelet issues are seen on blood smear", "intent": "platelet_term", "lang": "en"}
-{"text": "What is anemia flag in hematology?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "whats up there", "intent": "small_talk", "lang": "en"}
-{"text": "i am confused by that explanation now", "intent": "clarification", "lang": "en"}
-{"text": "What is the purpose of a CBC report?", "intent": "cbc_info", "lang": "en"}
-{"text": "okay thanks there", "intent": "thanks", "lang": "en"}
-{"text": "Explain the RBC abnormal distribution on my report.", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "thanks for clarifying this", "intent": "thanks", "lang": "en"}
-{"text": "hello there", "intent": "greeting", "lang": "en"}
-{"text": "what is differential white cell count", "intent": "wbc_term", "lang": "en"}
-{"text": "What is high WBC flag in blood count interpretation?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "in my report WBC is 3.9 age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What does PLT mean in report analysis?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "Explain the RBC section in a blood report layout.", "intent": "report_structure_help", "lang": "en"}
-{"text": "greetings again", "intent": "greeting", "lang": "en"}
-{"text": "What is platelet count low in blood count interpretation?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "many thanks again", "intent": "thanks", "lang": "en"}
-{"text": "What does low HGB mean on a hematology report?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "how about that", "intent": "incomplete_query", "lang": "en"}
-{"text": "what can you do today", "intent": "capability_query", "lang": "en"}
-{"text": "how should trainees understand eosinophils in differential review", "intent": "wbc_term", "lang": "en"}
-{"text": "what morphology findings are commonly communicated to clinicians", "intent": "blood_smear", "lang": "en"}
-{"text": "How do I read the RBC section for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
-{"text": "what can you do for Ava", "intent": "capability_query", "lang": "en"}
-{"text": "thanks i got it again", "intent": "thanks", "lang": "en"}
-{"text": "What does Eos# mean in blood report?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "What does anemia pattern mean in hematology?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "The analyzer printed leukopenia on the report", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "What is the meaning of Mon# on this blood report?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "what next", "intent": "incomplete_query", "lang": "en"}
-{"text": "What is anemia pattern on a CBC report?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "what should be checked when platelet count is unexpectedly high", "intent": "platelet_term", "lang": "en"}
-{"text": "what medication should i give for anemia", "intent": "unsafe_medical_request", "lang": "en"}
-{"text": "What is platelet abnormality?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "how does critical value communication support laboratory patient safety", "intent": "critical_value_reporting", "lang": "en"}
-{"text": "Define MCH.", "intent": "cbc_info", "lang": "en"}
-{"text": "what about the other result", "intent": "incomplete_query", "lang": "en"}
-{"text": "My report says WBC 22.4", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "Please analyze WBC 13.37; age is 27", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "child HGB is 9.8", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "The pediatric blood report says RBC 4.8", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What is CBC analyzer flag?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "My report says RBC 5.1", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "in my report WBC is 3.9 age is 20", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "can you tell me a joke", "intent": "out_of_scope", "lang": "en"}
-{"text": "talk later", "intent": "goodbye", "lang": "en"}
-{"text": "what is the difference between RBC count and hemoglobin", "intent": "rbc_term", "lang": "en"}
-{"text": "Please analyze child HCT 47", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "How should the L marker be understood on a lab report?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "How do you explain WBC?", "intent": "cbc_info", "lang": "en"}
-{"text": "thanks a lot today", "intent": "thanks", "lang": "en"}
-{"text": "What does RBC mean?", "intent": "cbc_info", "lang": "en"}
-{"text": "HCT is 22.8", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "MPV is 10.2 and age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What is HCT on a CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "How do I read this CBC report on a CBC report?", "intent": "report_structure_help", "lang": "en"}
-{"text": "what are eosinophils", "intent": "differential_review", "lang": "en"}
-{"text": "What is MCV on a CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "What is low platelet count for a hematology assistant?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "Please analyze HCT 55; age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "My blood report says HCT 40 age 27", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "how should a critical coagulation result be escalated broadly", "intent": "critical_value_reporting", "lang": "en"}
-{"text": "explain", "intent": "incomplete_query", "lang": "en"}
-{"text": "Please analyze child PLT 280", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "Explain MPV in a CBC report.", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "What does it mean when my hematology report shows anemia?", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "Explain mean corpuscular hemoglobin in a hematology report.", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "The child blood report says MCV 78", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "what are target cells on a peripheral smear", "intent": "blood_smear", "lang": "en"}
-{"text": "Please explain platelet count.", "intent": "cbc_info", "lang": "en"}
-{"text": "i need more detail on that", "intent": "clarification", "lang": "en"}
-{"text": "Please analyze adult male HCT 55", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "Why is MCHC printed on a CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "Please analyze HGB 10.8; age is 27", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "what should i ask you about in the hematology lab", "intent": "capability_query", "lang": "en"}
-{"text": "empty meaning", "intent": "fallback", "lang": "en"}
-{"text": "My report says adult female hematocrit 38", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What is low platelet count in a lab result?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "who won the football game tonight", "intent": "out_of_scope", "lang": "en"}
-{"text": "Please explain the report flag neutrophilia", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "how should a peripheral smear slide be handled", "intent": "blood_smear", "lang": "en"}
-{"text": "can you help with cbc questions", "intent": "capability_query", "lang": "en"}
-{"text": "Can you analyze MPV 6.7 in my blood report?", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "Explain the PLT abnormal distribution on my report.", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "what is the broad meaning of thrombocytosis", "intent": "platelet_term", "lang": "en"}
-{"text": "How do I read the RBC section?", "intent": "report_structure_help", "lang": "en"}
-{"text": "Explain PLT in a CBC report.", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "goodbye assistant then", "intent": "goodbye", "lang": "en"}
-{"text": "Report result HGB = 11.2", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "thanks for the answer today", "intent": "thanks", "lang": "en"}
-{"text": "How should RBC be described on a blood report?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "what does immature granulocyte mean", "intent": "differential_review", "lang": "en"}
-{"text": "good day friend", "intent": "greeting", "lang": "en"}
-{"text": "Please analyze female HCT 49", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "thanks that helped really", "intent": "thanks", "lang": "en"}
-{"text": "What is hemoglobin in a lab result?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "My blood report says MPV 10.2 age 20", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "how is normocytic pattern described in simple hematology language", "intent": "rbc_term", "lang": "en"}
-{"text": "HCT is 55 and age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "in my report HGB is 13.0 age is 27", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "what are you built to assist with right now", "intent": "capability_query", "lang": "en"}
-{"text": "what broad information does RDW provide", "intent": "rbc_term", "lang": "en"}
-{"text": "how should Emma understand RBC count", "intent": "rbc_term", "lang": "en"}
-{"text": "What is reduced MPV in this hematology report?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "What is anemia in CBC for a hematology assistant?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "are you doing well now", "intent": "small_talk", "lang": "en"}
-{"text": "Tell me about platelet count.", "intent": "cbc_info", "lang": "en"}
-{"text": "asdf qwerty", "intent": "fallback", "lang": "en"}
-{"text": "hey there friend", "intent": "greeting", "lang": "en"}
-{"text": "Please analyze WBC 11.4; age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "how do i treat bleeding in a patient", "intent": "unsafe_medical_request", "lang": "en"}
-{"text": "What does Lym# mean on a differential report?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "hope you are well there", "intent": "small_talk", "lang": "en"}
-{"text": "What is HCT for a hematology assistant?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "greetings today", "intent": "greeting", "lang": "en"}
-{"text": "How is a analyzer flag used during CBC review?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "what antibiotic should i order for this patient", "intent": "unsafe_medical_request", "lang": "en"}
-{"text": "male HGB is 13.0", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "good evening friend", "intent": "greeting", "lang": "en"}
-{"text": "Please explain the report flag thrombocytosis", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "how should platelet review be summarized for routine CBC verification", "intent": "platelet_term", "lang": "en"}
-{"text": "Please analyze child WBC 5.2", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What is RDW-CV in this report?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "do you support blood smear questions today", "intent": "capability_query", "lang": "en"}
-{"text": "My CBC report shows RBC 3.6", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What is HGB in a lab result?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "The blood report is flagged as thrombocytopenia", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "HGB is 10.8 and age is 20", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "what can drying artifacts do to blood smear quality", "intent": "blood_smear", "lang": "en"}
-{"text": "What can a full blood count tell us?", "intent": "cbc_info", "lang": "en"}
-{"text": "How is thrombocytosis related to platelet count interpretation?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "Can you analyze MPV 8.1 in my blood report?", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "what is the difference between platelet count and MPV", "intent": "platelet_term", "lang": "en"}
-{"text": "Explain low platelet count on CBC.", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "What is platelet flag in this hematology report?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "why can EDTA cause platelet clumping artifacts", "intent": "platelet_term", "lang": "en"}
-{"text": "My child report shows HGB 15.2", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "what does high MCHC suggest generally", "intent": "rbc_term", "lang": "en"}
-{"text": "What is abnormal distribution flag in a lab result?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "how do i prescribe for this condition", "intent": "unsafe_medical_request", "lang": "en"}
-{"text": "child HCT is 40", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "How is anemia pattern related to RBC indices?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "What is FBC vs CBC?", "intent": "cbc_info", "lang": "en"}
-{"text": "The pediatric blood report says HGB 15.2", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What is reduced HCT in a lab result?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "how is anisopoikilocytosis seen on a blood film", "intent": "blood_smear", "lang": "en"}
-{"text": "What does hypochromic pattern mean on a hematology report?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "What parameters are checked when a report suggests anemia?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "What is hemoglobin in this hematology report?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "i do not understand please", "intent": "clarification", "lang": "en"}
-{"text": "How is the result column used when reading a report?", "intent": "report_structure_help", "lang": "en"}
-{"text": "Report result HGB = 18.2", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "can you simplify that answer now", "intent": "clarification", "lang": "en"}
-{"text": "What does it mean when the analyzer prints platelet clumping flag?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "What is anemia flag in this report?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "The CBC summary shows leukopenia", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "Explain hemoglobin in a hematology report.", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "What is platelet abnormal distribution in this report?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "What is Neu%?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "My child report shows PLT 165", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "thanks assistant again", "intent": "thanks", "lang": "en"}
-{"text": "WBC is 9.8", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "hope u are well my friend", "intent": "small_talk", "lang": "en"}
-{"text": "My blood report says HCT 31 age 20", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "My child report shows PLT 430", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "what are your capabilities in this chat", "intent": "capability_query", "lang": "en"}
-{"text": "My blood report says RBC 3.2 age 27", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What is MCH in complete blood count?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "What is the purpose of the WBC flag in a report?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "tell me the latest celebrity news", "intent": "out_of_scope", "lang": "en"}
-{"text": "What does it mean if the report mentions anemic report?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "What is anemia in a blood report?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "What is red cell deficiency in blood count interpretation?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "adult female HCT is 38", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What is MCHC?", "intent": "cbc_info", "lang": "en"}
-{"text": "My CBC report shows MPV 8.1", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What does low platelet count mean in a report?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "What is anemia finding in this hematology report?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "what is the difference between abnormal and critical result", "intent": "critical_value_reporting", "lang": "en"}
-{"text": "do you only handle lab workflow questions", "intent": "capability_query", "lang": "en"}
-{"text": "The child blood report says HGB 13.4", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What is the purpose of the abnormal distribution flag in a report?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "male HGB is 16.8", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "How should anemia be described in a report?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "thanks i understand the term now", "intent": "thanks", "lang": "en"}
-{"text": "why would a CBC trigger differential review", "intent": "wbc_term", "lang": "en"}
-{"text": "Give me a simple explanation of hematocrit.", "intent": "cbc_info", "lang": "en"}
-{"text": "what can schistocytes indicate on a smear review", "intent": "blood_smear", "lang": "en"}
-{"text": "This blood report shows WBC 22.4", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "How should a student interpret the unit column?", "intent": "report_structure_help", "lang": "en"}
-{"text": "What does Eos% mean in blood report?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "MPV is 7.1 and age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What is platelet abnormality in this hematology report?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "how should trainees read hemoglobin on a CBC report", "intent": "rbc_term", "lang": "en"}
-{"text": "hope you are well now", "intent": "small_talk", "lang": "en"}
-{"text": "What should be understood from a report flag of thrombocytosis?", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "what does a good wedge smear look like", "intent": "blood_smear", "lang": "en"}
-{"text": "MPV is 13.4 and age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "pediatric HCT is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "MPV is 7.1 and age is 27", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "what is the capital of france", "intent": "out_of_scope", "lang": "en"}
-{"text": "how do you explain total leukocyte count in simple language", "intent": "wbc_term", "lang": "en"}
-{"text": "Why is a CBC ordered?", "intent": "cbc_info", "lang": "en"}
-{"text": "Can you interpret report flag leukocytosis?", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "alright thanks there", "intent": "thanks", "lang": "en"}
-{"text": "Give me a simple explanation of MPV.", "intent": "cbc_info", "lang": "en"}
-{"text": "bye assistant then", "intent": "goodbye", "lang": "en"}
-{"text": "what does leukocyte count tell us generally", "intent": "wbc_term", "lang": "en"}
-{"text": "Please analyze pediatric WBC 13.0", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "how do you read a low WBC count at a basic level", "intent": "wbc_term", "lang": "en"}
-{"text": "Report result WBC = 22.4", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "why can steroids influence white blood cell count broadly", "intent": "wbc_term", "lang": "en"}
-{"text": "Can you analyze WBC 2.6 in my blood report?", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "what broad information does hematocrit provide", "intent": "rbc_term", "lang": "en"}
-{"text": "what does platelet count tell us in hematology", "intent": "cbc_info", "lang": "en"}
-{"text": "What does Lym% represent in differential count?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "What does the hypochromia flag mean?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "How should I interpret high RBC?", "intent": "cbc_info", "lang": "en"}
-{"text": "pediatric HGB is 15.2", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What is the normal range for RBC?", "intent": "cbc_info", "lang": "en"}
-{"text": "what is read back policy for critical values", "intent": "critical_value_reporting", "lang": "en"}
-{"text": "how do you summarize CBC basics for new staff", "intent": "cbc_info", "lang": "en"}
-{"text": "I need help with specimen handling.", "intent": "help", "lang": "en"}
-{"text": "what does this term mean exactly", "intent": "clarification", "lang": "en"}
-{"text": "My pediatric report shows HCT 44", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What does Mon% represent in differential count?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "how do new staff learn differential interpretation", "intent": "differential_review", "lang": "en"}
-{"text": "pediatric HCT is 47", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What is the purpose of CBC?", "intent": "cbc_info", "lang": "en"}
-{"text": "What does RBC indices mean?", "intent": "cbc_info", "lang": "en"}
-{"text": "What does Bas# mean on a differential report?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "how do you explain hematocrit to a student", "intent": "rbc_term", "lang": "en"}
-{"text": "can you explain that to Alex", "intent": "clarification", "lang": "en"}
-{"text": "The hematology printout shows leukopenia", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "What is the normal range for hemoglobin?", "intent": "cbc_info", "lang": "en"}
-{"text": "Can you analyze RDW 21.2 in my blood report?", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "can you help?", "intent": "incomplete_query", "lang": "en"}
-{"text": "What does MCH mean on this blood report?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "what are you built to assist with today", "intent": "capability_query", "lang": "en"}
-{"text": "The machine flagged the report with macrocytosis", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "How should the flag area be reviewed first?", "intent": "report_structure_help", "lang": "en"}
-{"text": "I need guidance on hematology.", "intent": "help", "lang": "en"}
-{"text": "in my report HGB is 15.4 age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "My report says HGB 13.8", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "The printed flag on the blood report is microcytosis", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "what does red cell count show in screening", "intent": "rbc_term", "lang": "en"}
-{"text": "My CBC report shows MPV 6.7", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "I need help with laboratory workflow for CBC.", "intent": "help", "lang": "en"}
-{"text": "thanks assistant", "intent": "thanks", "lang": "en"}
-{"text": "how does delayed smear preparation affect morphology", "intent": "blood_smear", "lang": "en"}
-{"text": "in my report WBC is 11.4 age is 20", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "The pediatric blood report says WBC 16.2", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What is HCT in blood count interpretation?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "What does a low Eos% suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "Why is RBC printed on a CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "how are u my friend", "intent": "small_talk", "lang": "en"}
-{"text": "What does it mean when my hematology report shows thrombocytopenia?", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "what does morphology review mean on a smear", "intent": "blood_smear", "lang": "en"}
-{"text": "Explain high PLT on CBC.", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "can you recommend treatment for severe anemia", "intent": "unsafe_medical_request", "lang": "en"}
-{"text": "what does eosinophilia mean in broad laboratory terms", "intent": "wbc_term", "lang": "en"}
-{"text": "I need assistance with hematology workflow.", "intent": "help", "lang": "en"}
-{"text": "please explain that again please", "intent": "clarification", "lang": "en"}
-{"text": "how are white cell abnormalities followed up on smear", "intent": "blood_smear", "lang": "en"}
-{"text": "What does RDW mean on a complete blood count report?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "can you help me", "intent": "greeting", "lang": "en"}
-{"text": "Please analyze RDW 12.4; age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What is PLT flag in a blood report?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "The hematology report comment is anemia", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "what broad importance does differential review have in leukemia patterns", "intent": "differential_review", "lang": "en"}
-{"text": "My blood report says WBC 6.2 age 43", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "Give me a simple explanation of hemoglobin.", "intent": "cbc_info", "lang": "en"}
-{"text": "What is MCH in this report?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "Please analyze HCT 55; age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "Define RBC.", "intent": "cbc_info", "lang": "en"}
-{"text": "what are basophils", "intent": "differential_review", "lang": "en"}
-{"text": "The CBC summary mentions leukocytosis", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "What does the unit column help the user understand?", "intent": "report_structure_help", "lang": "en"}
-{"text": "Please analyze child RBC 4.8", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "what hematology tasks can you support", "intent": "capability_query", "lang": "en"}
-{"text": "explain it again for Maya", "intent": "clarification", "lang": "en"}
-{"text": "What is platelet abnormal distribution?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "What is low hemoglobin in a lab result?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "My result mentions microcytosis", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "What is PLT abnormal distribution in a lab result?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "how is hypochromia appreciated on a smear", "intent": "blood_smear", "lang": "en"}
-{"text": "MPV is 13.9", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What is Eos#?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "male HCT is 55", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What does it mean if HGB is 14.8 on my report?", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "what should i know about red cell indices", "intent": "rbc_term", "lang": "en"}
-{"text": "pediatric HGB is 13.4", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What is anemia pattern for a hematology assistant?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "what is the purpose of manual differential review", "intent": "differential_review", "lang": "en"}
-{"text": "What does it mean if MPV is 6.7 on my report?", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What is MPV?", "intent": "cbc_info", "lang": "en"}
-{"text": "The child blood report says HCT 40", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "Can you analyze HGB value 11.2?", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "please clarify that term once more", "intent": "clarification", "lang": "en"}
-{"text": "How do I read CBC report structure on a CBC report?", "intent": "report_structure_help", "lang": "en"}
-{"text": "how do red cell values support general laboratory review", "intent": "rbc_term", "lang": "en"}
-{"text": "what does smear staining help you see", "intent": "blood_smear", "lang": "en"}
-{"text": "what should be communicated with a very high white count", "intent": "critical_value_reporting", "lang": "en"}
-{"text": "what can cause thrombocytopenia in broad terms", "intent": "platelet_term", "lang": "en"}
-{"text": "Explain HCT in a CBC report.", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "The analyzer flagged hypochromia", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "ending chat now for now", "intent": "goodbye", "lang": "en"}
-{"text": "good afternoon friend", "intent": "greeting", "lang": "en"}
-{"text": "What does the microcytosis flag mean?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "How is a L marker used during CBC review?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "My CBC report shows RDW 16.9", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "Please analyze HCT 40; age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "what does red cell size variation mean in broad terms", "intent": "rbc_term", "lang": "en"}
-{"text": "what antibiotic should i prescribe after this result", "intent": "unsafe_medical_request", "lang": "en"}
-{"text": "What is the purpose of a full blood count?", "intent": "cbc_info", "lang": "en"}
-{"text": "what is leukopenia", "intent": "wbc_term", "lang": "en"}
-{"text": "have a good day", "intent": "goodbye", "lang": "en"}
-{"text": "Explain Eos% in CBC.", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "how are u today", "intent": "small_talk", "lang": "en"}
-{"text": "What should I know about hemoglobin?", "intent": "cbc_info", "lang": "en"}
-{"text": "How should I interpret high hematocrit?", "intent": "cbc_info", "lang": "en"}
-{"text": "what do you mean", "intent": "clarification", "lang": "en"}
-{"text": "Why would a CBC report mention low PLT?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "in my report RDW is 12.4 age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "what can you answer for Noah", "intent": "capability_query", "lang": "en"}
-{"text": "Please analyze HCT 22.8 in this report", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "Explain the unit column in a blood report layout.", "intent": "report_structure_help", "lang": "en"}
-{"text": "I need help with CBC testing.", "intent": "help", "lang": "en"}
-{"text": "What does it mean if RBC is 5.1?", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What does a low Lym% suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "catch you later friend", "intent": "goodbye", "lang": "en"}
-{"text": "adult female HGB is 14.2", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "what medication should be ordered from this report", "intent": "unsafe_medical_request", "lang": "en"}
-{"text": "Please explain MCV.", "intent": "cbc_info", "lang": "en"}
-{"text": "How do you explain RBC?", "intent": "cbc_info", "lang": "en"}
-{"text": "how should i prescribe for this blood result", "intent": "unsafe_medical_request", "lang": "en"}
-{"text": "Explain platelet count in a hematology report.", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "how do you explain leukopenia to a trainee", "intent": "wbc_term", "lang": "en"}
-{"text": "What is low hematocrit?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "Explain the WBC flag on this blood report.", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "What does the RBC abnormal distribution mean on a CBC report?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "ending chat now then", "intent": "goodbye", "lang": "en"}
-{"text": "Report value MPV = 8.1", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "Explain Eos# in CBC.", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "Why would a CBC report mention high platelet count?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "What does it mean when the analyzer prints low platelet count?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "what areas are covered by this chat in this chat", "intent": "capability_query", "lang": "en"}
-{"text": "What does a L marker show on a complete blood count?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "How do I read reference ranges in a hematology report?", "intent": "report_structure_help", "lang": "en"}
-{"text": "This blood report is flagged as anemia", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "What is platelet count low for a hematology assistant?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "what is the best football team this year", "intent": "out_of_scope", "lang": "en"}
-{"text": "Please analyze RBC 4.6; age is 27", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "what broad situations may trigger high white cell concern", "intent": "wbc_term", "lang": "en"}
-{"text": "talk later friend", "intent": "goodbye", "lang": "en"}
-{"text": "what should Maya know about blood film preparation", "intent": "blood_smear", "lang": "en"}
-{"text": "why would a smear be reviewed for platelets", "intent": "platelet_term", "lang": "en"}
-{"text": "Explain platelet abnormality in report interpretation.", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "What should I know about MPV?", "intent": "cbc_info", "lang": "en"}
-{"text": "Please analyze pediatric HGB 11.7", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "say that another way for me", "intent": "clarification", "lang": "en"}
-{"text": "What does low hematocrit mean in hematology?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "HGB is 10.8 and age is 27", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "explain it again for Emma", "intent": "clarification", "lang": "en"}
-{"text": "When is a complete blood count useful?", "intent": "cbc_info", "lang": "en"}
-{"text": "are you doing well my friend", "intent": "small_talk", "lang": "en"}
-{"text": "in my report MPV is 7.1 age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "thanks that answered the lab question", "intent": "thanks", "lang": "en"}
-{"text": "The report conclusion mentions leukocytosis", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "What is the difference between Neu% and the related white-cell result?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "why are band forms discussed in differential review", "intent": "wbc_term", "lang": "en"}
-{"text": "okay bye for now", "intent": "goodbye", "lang": "en"}
-{"text": "?", "intent": "incomplete_query", "lang": "en"}
-{"text": "in my report RDW is 16.8 age is 20", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What does a CBC include?", "intent": "cbc_info", "lang": "en"}
-{"text": "How do I read report columns on a CBC report?", "intent": "report_structure_help", "lang": "en"}
-{"text": "in my report HGB is 10.8 age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "im not sure i understood your answer", "intent": "clarification", "lang": "en"}
-{"text": "Explain MCH in a CBC report.", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "in my report HCT is 31 age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "thanks today", "intent": "thanks", "lang": "en"}
-{"text": "in my report MPV is 13.4 age is 20", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "How is Bas# used in differential review?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "tell me the correct dose for this medication", "intent": "unsafe_medical_request", "lang": "en"}
-{"text": "hi hematology assistant friend", "intent": "greeting", "lang": "en"}
-{"text": "How do I read report columns?", "intent": "report_structure_help", "lang": "en"}
-{"text": "Please analyze HCT 47; age is 20", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "how should a trainee summarize a differential count", "intent": "differential_review", "lang": "en"}
-{"text": "what do you specialize in exactly", "intent": "capability_query", "lang": "en"}
-{"text": "What is anemia flag on a CBC report?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "why is differential review part of hematology verification", "intent": "differential_review", "lang": "en"}
-{"text": "HGB is 13.0 and age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What is neutrophilia in blood count interpretation?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "What information does a complete blood count provide?", "intent": "cbc_info", "lang": "en"}
-{"text": "which lab topics are supported exactly", "intent": "capability_query", "lang": "en"}
-{"text": "My child report shows HGB 9.8", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "Report comment: microcytosis", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "How do I read the RBC section on a CBC report?", "intent": "report_structure_help", "lang": "en"}
-{"text": "What does low hematocrit suggest?", "intent": "cbc_info", "lang": "en"}
-{"text": "what's up", "intent": "small_talk", "lang": "en"}
-{"text": "have a good day friend", "intent": "goodbye", "lang": "en"}
-{"text": "bye Ava", "intent": "goodbye", "lang": "en"}
-{"text": "Why does the report print Mon#?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "The CBC summary shows hypochromia", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "How should RDW be described on a blood report?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "Explain anemia on report in report interpretation.", "intent": "anemia_related_term", "lang": "en"}
-{"text": "How should Lym# be read in hematology?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "How do I read this hematology blood report on a CBC report?", "intent": "report_structure_help", "lang": "en"}
-{"text": "What is low hematocrit in a blood report?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "What does report comment anemia mean?", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "HCT is 31 and age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "My CBC report shows MPV 9.8", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "okay bye then", "intent": "goodbye", "lang": "en"}
-{"text": "How is anemia on report discussed in the lab?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "What is high RDW flag in a lab result?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "what does toxic granulation relate to in white cell review", "intent": "wbc_term", "lang": "en"}
-{"text": "what is the meaning of RBC count on a report", "intent": "rbc_term", "lang": "en"}
-{"text": "what broad role does time stamping have in critical value reporting", "intent": "critical_value_reporting", "lang": "en"}
-{"text": "how do you explain monocytes to learners", "intent": "differential_review", "lang": "en"}
-{"text": "in my report HGB is 17.8 age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "why must critical values be documented", "intent": "critical_value_reporting", "lang": "en"}
-{"text": "The printed report says thrombocytopenia", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "My blood report says HGB 10.8 age 35", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What is red cell deficiency for a hematology assistant?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "My blood report says MPV 10.2 age 27", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What is reduced MPV for a hematology assistant?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "explain it one more time for me", "intent": "clarification", "lang": "en"}
-{"text": "The child blood report says PLT 110", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "i need more detail on that now", "intent": "clarification", "lang": "en"}
-{"text": "My lab result is marked microcytosis", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "What does a abnormal distribution flag show on a complete blood count?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "thanks for the answer", "intent": "thanks", "lang": "en"}
-{"text": "Please analyze MPV 7.1; age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "Explain CBC reference ranges", "intent": "cbc_info", "lang": "en"}
-{"text": "What should be reviewed when a report shows platelet abnormality?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "what should trainees know first about critical values", "intent": "critical_value_reporting", "lang": "en"}
-{"text": "What is low RBC in blood count interpretation?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "What does it mean if a pediatric report has WBC 5.2?", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "male HGB is 11.8", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "can you simplify that hematology explanation", "intent": "clarification", "lang": "en"}
-{"text": "The report note says thrombocytopenia", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "What should be understood from a report flag of thrombocytopenia?", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "are you built for hematology only", "intent": "capability_query", "lang": "en"}
-{"text": "How is low haemoglobin related to RBC indices?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "Please analyze adult female HGB 11.8", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "RBC is 5.1", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What does a high Mon# suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "how is leukocyte count used in routine hematology workflow", "intent": "wbc_term", "lang": "en"}
-{"text": "HGB is 10.8 and age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "How do I read CBC report structure for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
-{"text": "How should the WBC flag be understood on a lab report?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "What does it mean if WBC is 4.9 on my report?", "intent": "report_numeric_result_analysis", "lang": "en"}
 {"text": "what is the purpose of platelet review in CBC interpretation", "intent": "platelet_term", "lang": "en"}
-{"text": "What does MPV mean in my lab result?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "see you then", "intent": "goodbye", "lang": "en"}
-{"text": "My CBC report shows MPV 11.4", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "talk to you later friend", "intent": "goodbye", "lang": "en"}
-{"text": "What is CBC analyzer flag in this hematology report?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "Please explain the report flag leukopenia", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "can you define WBC count simply", "intent": "wbc_term", "lang": "en"}
-{"text": "MCV: 72.0", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "do you support both sample handling and term explanations", "intent": "capability_query", "lang": "en"}
-{"text": "goodbye then", "intent": "goodbye", "lang": "en"}
-{"text": "What does the result note microcytosis mean?", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "have a good day then", "intent": "goodbye", "lang": "en"}
-{"text": "What does high RBC suggest?", "intent": "cbc_info", "lang": "en"}
-{"text": "hi, I have a CBC question", "intent": "greeting", "lang": "en"}
-{"text": "Report comment: thrombocytopenia", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "can you provide a diagnosis from this hematology report", "intent": "unsafe_medical_request", "lang": "en"}
-{"text": "okay bye friend", "intent": "goodbye", "lang": "en"}
-{"text": "What section of the report contains Lym%?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "I need an explanation of MCH.", "intent": "cbc_info", "lang": "en"}
-{"text": "How do I read absolute counts and percentages on a CBC report?", "intent": "report_structure_help", "lang": "en"}
-{"text": "My report says adult female hematocrit 55", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "Please analyze HGB 15.4; age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What does Bas% mean in blood report?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "adult female HCT is 55", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "I need assistance with CBC sample rejection rules.", "intent": "help", "lang": "en"}
-{"text": "do you support blood smear questions exactly", "intent": "capability_query", "lang": "en"}
-{"text": "Report value RDW = 10.8", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "How should the PLT abnormal distribution be understood on a lab report?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "What indices matter when the report suggests microcytic anemia?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "what does atypical lymphocyte mean", "intent": "differential_review", "lang": "en"}
-{"text": "When is a full blood count useful?", "intent": "cbc_info", "lang": "en"}
-{"text": "Can you support me with CBC specimen handling?", "intent": "help", "lang": "en"}
-{"text": "see you later after the next case", "intent": "goodbye", "lang": "en"}
-{"text": "What is the meaning of platelet abnormal distribution on a blood count?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "What does HCT mean in my CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "i am confused by that explanation for me", "intent": "clarification", "lang": "en"}
-{"text": "how does local policy define critical limits in broad terms", "intent": "critical_value_reporting", "lang": "en"}
-{"text": "who is the president now", "intent": "out_of_scope", "lang": "en"}
-{"text": "What does it mean if a child report has RBC 3.7?", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "what is the meaning of erythrocyte count", "intent": "rbc_term", "lang": "en"}
-{"text": "child PLT is 480", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "My pediatric report shows WBC 5.2", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What is RBC count in a blood report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is low RBC in blood count interpretation?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "RBC is 5.1", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "in my report WBC is 3.9 age is 20", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What should be reviewed when a report shows hypochromic pattern?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "Report result WBC = 22.4", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "HCT is 31 and age is 20", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "adult female HCT is 38", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report RBC is 4.8, HGB is 13.9, and age is 50", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "how should trainees understand monocytes in differential review", "intent": "wbc_term", "lang": "en"}
+{"text": "What is the normal range for RBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "how is WBC count interpreted", "intent": "wbc_term", "lang": "en"}
+{"text": "hope you are well now", "intent": "small_talk", "lang": "en"}
+{"text": "The report conclusion mentions leukocytosis", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "asdf qwerty", "intent": "fallback", "lang": "en"}
+{"text": "why is differential review part of hematology verification", "intent": "differential_review", "lang": "en"}
 {"text": "what does lymphopenia mean", "intent": "differential_review", "lang": "en"}
-{"text": "My report says male hematocrit 31", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "female HGB is 18.1", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "How is low HGB discussed in the lab?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "in my report RDW is 16.8 age is 27", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "why must communication details be audited for critical results", "intent": "critical_value_reporting", "lang": "en"}
-{"text": "what broad significance does low neutrophil count have", "intent": "wbc_term", "lang": "en"}
-{"text": "say that another way please", "intent": "clarification", "lang": "en"}
-{"text": "What is RDW-SD in complete blood count?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "what dose should be given for this condition", "intent": "unsafe_medical_request", "lang": "en"}
-{"text": "in my report WBC is 11.4 age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "Report result RBC = 5.1", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "My result mentions leukopenia", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "What does it mean if a child report has HCT 47?", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "how is macrocytosis described in simple hematology language", "intent": "rbc_term", "lang": "en"}
-{"text": "what do you mean by that", "intent": "clarification", "lang": "en"}
-{"text": "how is eosinophilia reported", "intent": "differential_review", "lang": "en"}
-{"text": "What should be checked when the report shows low PLT?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "hey again", "intent": "greeting", "lang": "en"}
-{"text": "what broad situations may lead to thrombocytopenia", "intent": "platelet_term", "lang": "en"}
-{"text": "What is anemia pattern in blood count interpretation?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "in my report WBC is 13.37 age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "How should a student interpret the platelet section?", "intent": "report_structure_help", "lang": "en"}
-{"text": "Please analyze HCT 42.1 in this report", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "Explain low HCT on a blood report.", "intent": "anemia_related_term", "lang": "en"}
-{"text": "how is microcytosis described in simple hematology language", "intent": "rbc_term", "lang": "en"}
-{"text": "My pediatric report shows WBC 16.2", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "how do you recognize smudge cells in broad terms", "intent": "blood_smear", "lang": "en"}
-{"text": "what about this", "intent": "incomplete_query", "lang": "en"}
-{"text": "how do you summarize differential count basics", "intent": "differential_review", "lang": "en"}
-{"text": "What parameters are checked when a report suggests low HCT?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "What is low PLT in complete blood count?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "what can cause raised RBC count", "intent": "rbc_term", "lang": "en"}
-{"text": "what do you support in hematology", "intent": "capability_query", "lang": "en"}
-{"text": "Please analyze RDW 16.8; age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What is RBC abnormal distribution for a hematology assistant?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "thanks for the coagulation explanation", "intent": "thanks", "lang": "en"}
+{"text": "can you decide the treatment plan for me", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "Can you analyze HGB value 11.2?", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "male HGB is 13.0", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "My blood report says RBC 4.6 age 20", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "thanks that helped", "intent": "thanks", "lang": "en"}
+{"text": "male HCT is 55", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze RBC 6.5 and HGB 17.8 for age 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my CBC report MCV is 72.0", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "how's it going now", "intent": "small_talk", "lang": "en"}
+{"text": "How do I read reference ranges for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
+{"text": "what can you answer for Noah", "intent": "capability_query", "lang": "en"}
+{"text": "What is anemia pattern on a CBC report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "what is the best football team this year", "intent": "out_of_scope", "lang": "en"}
+{"text": "What does it mean if HGB is 14.8 on my report?", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What is FBC vs CBC?", "intent": "cbc_info", "lang": "en"}
 {"text": "What is anemia pattern?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "My CBC report shows WBC 9.8", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "hope u are well today", "intent": "small_talk", "lang": "en"}
-{"text": "what is packed cell volume in relation to hematocrit", "intent": "rbc_term", "lang": "en"}
-{"text": "What is the meaning of high PLT on a blood count?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "My child report shows RBC 4.8", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "How is microcytic anemia discussed in the lab?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "what broad difference exists between routine reporting and critical reporting", "intent": "critical_value_reporting", "lang": "en"}
-{"text": "What parameters are included in a full blood count?", "intent": "cbc_info", "lang": "en"}
-{"text": "What does the WBC section help the user understand?", "intent": "report_structure_help", "lang": "en"}
-{"text": "The blood report is flagged as anemia", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "How is platelet abnormal distribution confirmed on smear review?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "female HGB is 14.2", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "test noise", "intent": "fallback", "lang": "en"}
-{"text": "What does a H marker show on a complete blood count?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "How do I read a hematology analyzer report?", "intent": "report_structure_help", "lang": "en"}
-{"text": "can you help with coagulation questions in this chat", "intent": "capability_query", "lang": "en"}
-{"text": "What does MPV mean in report analysis?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "How do I read this hematology blood report?", "intent": "report_structure_help", "lang": "en"}
-{"text": "good morning again", "intent": "greeting", "lang": "en"}
-{"text": "What does Mon# represent in differential count?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "How should I understand Neu# on hematology report?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "What is RBC abnormal distribution?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "How do I read report columns in this report?", "intent": "report_structure_help", "lang": "en"}
-{"text": "What does the result column show on the printed report?", "intent": "report_structure_help", "lang": "en"}
-{"text": "Explain low HCT in report interpretation.", "intent": "anemia_related_term", "lang": "en"}
-{"text": "My result mentions leukocytosis", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "The pediatric blood report says MCV 72", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "whats up my friend", "intent": "small_talk", "lang": "en"}
+{"text": "Report result MCV = 63.5", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What should be reviewed when a report shows microcytic anemia?", "intent": "anemia_related_term", "lang": "en"}
 {"text": "Please analyze RBC 4.7 in this report", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "can you clarify that again", "intent": "clarification", "lang": "en"}
-{"text": "what does macrocytic pattern mean in CBC review", "intent": "rbc_term", "lang": "en"}
-{"text": "how should trainees understand platelet clumps on smear", "intent": "platelet_term", "lang": "en"}
-{"text": "bye and thanks today", "intent": "goodbye", "lang": "en"}
-{"text": "The printed flag on the blood report is neutrophilia", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "What is the absolute neutrophil count?", "intent": "cbc_info", "lang": "en"}
-{"text": "what does RBC tell us for Ava", "intent": "rbc_term", "lang": "en"}
-{"text": "in my report WBC is 3.9 age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "many thanks for the clarification", "intent": "thanks", "lang": "en"}
-{"text": "Please analyze child PLT 430", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "hi again", "intent": "greeting", "lang": "en"}
-{"text": "Why would a CBC report mention platelet abnormal distribution?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "The child blood report says WBC 9.6", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "i do not follow that explanation yet", "intent": "clarification", "lang": "en"}
-{"text": "My blood report says WBC 11.4 age 27", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "Explain Mon% in CBC.", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "The child blood report says MCV 96", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What does RDW mean on this blood report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "great thanks today", "intent": "thanks", "lang": "en"}
+{"text": "RDW is 21.1 and age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What does Mon# represent in differential count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How should the reference range be reviewed first?", "intent": "report_structure_help", "lang": "en"}
+{"text": "Please analyze child WBC 13.0", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "I need an explanation of MCH.", "intent": "cbc_info", "lang": "en"}
+{"text": "in my report HGB is 10.8 age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What should be understood from a report flag of thrombocytopenia?", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "What does it mean if a child report has HCT 47?", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "How should I interpret high RBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "How is thrombocytopenia discussed in the lab?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "My report says female hemoglobin 11.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What is thrombocytopenia for a hematology assistant?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "The machine flagged the report with leukocytosis", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "explain it one more time for me", "intent": "clarification", "lang": "en"}
+{"text": "Age is 50 WBC is 13.0 PLT is 365", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What is red cell deficiency in blood count interpretation?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "My report says RBC 2.9", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report comment: thrombocytopenia", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "What does PLT mean in report analysis?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "how do i treat bleeding in a patient", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "The CBC summary shows hypochromia", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "Tell me about hemoglobin.", "intent": "cbc_info", "lang": "en"}
+{"text": "what is the meaning of erythrocyte count", "intent": "rbc_term", "lang": "en"}
+{"text": "Give me a simple explanation of hemoglobin.", "intent": "cbc_info", "lang": "en"}
+{"text": "What does low hematocrit suggest?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does low HGB mean on a hematology report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "how do you explain differential count in simple language", "intent": "differential_review", "lang": "en"}
+{"text": "what is packed cell volume in relation to hematocrit", "intent": "rbc_term", "lang": "en"}
+{"text": "what should be checked when platelet count is unexpectedly high", "intent": "platelet_term", "lang": "en"}
+{"text": "hey there friend", "intent": "greeting", "lang": "en"}
+{"text": "in my report WBC is 6.2 age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "How do I read H and L markers in this report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "What is platelet count low in blood count interpretation?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "how should platelet review be summarized for routine CBC verification", "intent": "platelet_term", "lang": "en"}
+{"text": "What does RDW mean on a complete blood count report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What does Bas% mean in blood report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "in my report MPV is 10.2 age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What is low hematocrit?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "how should i inject this patient", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "HCT is 40 and age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "please clarify that term once more", "intent": "clarification", "lang": "en"}
+{"text": "The hematology report comment is anemia", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "Explain platelet abnormality in report interpretation.", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "RBC is 4.6 and age is 20", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please explain report statement leukopenia", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "thank you so much there", "intent": "thanks", "lang": "en"}
+{"text": "How should Lym# be read in hematology?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "My blood report says HCT 40 age 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "how is macrocytosis described in simple hematology language", "intent": "rbc_term", "lang": "en"}
+{"text": "Please explain the report flag neutrophilia", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "Why would a CBC report mention high platelet count?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "how should a peripheral smear slide be handled", "intent": "blood_smear", "lang": "en"}
+{"text": "Please analyze WBC 7.8 and PLT 220 for age 12", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "do you support blood smear questions exactly", "intent": "capability_query", "lang": "en"}
+{"text": "What does the WBC flag mean on a CBC report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "Please explain platelet count.", "intent": "cbc_info", "lang": "en"}
+{"text": "What does RBC indices mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "How do I read the platelet section?", "intent": "report_structure_help", "lang": "en"}
+{"text": "can you tell me what this lab assistant covers", "intent": "capability_query", "lang": "en"}
+{"text": "can you help with cbc questions today", "intent": "capability_query", "lang": "en"}
+{"text": "My report says adult female hematocrit 38", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What does RBC stand for?", "intent": "cbc_info", "lang": "en"}
+{"text": "greetings today", "intent": "greeting", "lang": "en"}
+{"text": "My report says adult female hemoglobin 14.2", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze female HGB 14.2", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "what hematology questions can i ask", "intent": "capability_query", "lang": "en"}
+{"text": "What does HCT mean in my CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "The child blood report says MCV 78", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "okay bye for now", "intent": "goodbye", "lang": "en"}
+{"text": "My blood report says HCT 40 age 27", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "The report note says anemia", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "My blood report says WBC 13.37 age 35", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "How is low hemoglobin reviewed in a hematology lab?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "The printed report says thrombocytopenia", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "how is hypochromia appreciated on a smear", "intent": "blood_smear", "lang": "en"}
+{"text": "What is RBC abnormal distribution?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "Report comment: microcytosis", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "what is the meaning of RBC count on a report", "intent": "rbc_term", "lang": "en"}
+{"text": "how do you feel today there", "intent": "small_talk", "lang": "en"}
 {"text": "how do you summarize critical value workflow for staff", "intent": "critical_value_reporting", "lang": "en"}
-{"text": "which lab topics are supported right now", "intent": "capability_query", "lang": "en"}
-{"text": "can you explain that to Ava", "intent": "clarification", "lang": "en"}
-{"text": "good day", "intent": "greeting", "lang": "en"}
-{"text": "Can you analyze WBC value 4.8?", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What is thrombocytopenia in this hematology report?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "Please analyze RBC 5.8; age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "thanks for your support today", "intent": "thanks", "lang": "en"}
+{"text": "My CBC report shows MPV 11.4", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What is abnormal distribution flag in a lab result?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "in my report MPV is 10.2 age is 27", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What is platelet abnormality?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What section of the report contains Lym%?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Please explain the report flag leukopenia", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "goodbye assistant then", "intent": "goodbye", "lang": "en"}
+{"text": "MCV: 106.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "i do not understand please", "intent": "clarification", "lang": "en"}
+{"text": "MPV is 7.1 and age is 27", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "good afternoon friend", "intent": "greeting", "lang": "en"}
+{"text": "good day friend", "intent": "greeting", "lang": "en"}
+{"text": "what does smear staining help you see", "intent": "blood_smear", "lang": "en"}
+{"text": "Please analyze male HGB 14.2", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "When is a full blood count useful?", "intent": "cbc_info", "lang": "en"}
+{"text": "hope you are well there", "intent": "small_talk", "lang": "en"}
+{"text": "My blood report says HCT 55 age 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "The blood report is flagged as anemia", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "How is a L marker used during CBC review?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What does it mean if MPV is 6.7 on my report?", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze WBC 6.2; age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
 {"text": "how do you feel today", "intent": "small_talk", "lang": "en"}
 {"text": "How should MCHC be described on a blood report?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "Please analyze WBC 11.4; age is 27", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "How should I interpret high MCHC?", "intent": "cbc_info", "lang": "en"}
-{"text": "What CBC findings matter with low platelet count?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What does it mean if HCT is 35.9?", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "how do you summarize differential count basics", "intent": "differential_review", "lang": "en"}
+{"text": "My result mentions microcytosis", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "what broad information does hematocrit provide", "intent": "rbc_term", "lang": "en"}
+{"text": "The child blood report says HGB 13.4", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "My CBC report shows RBC 3.6", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "hi hematology assistant friend", "intent": "greeting", "lang": "en"}
+{"text": "My blood report says RBC 3.2 age 27", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "which lab topics are supported exactly", "intent": "capability_query", "lang": "en"}
+{"text": "What is anemia flag in this report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "what next", "intent": "incomplete_query", "lang": "en"}
+{"text": "what about this", "intent": "incomplete_query", "lang": "en"}
+{"text": "Explain the RBC abnormal distribution on my report.", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is low PLT in complete blood count?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "Please analyze child HCT 47", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Explain CBC reference ranges", "intent": "cbc_info", "lang": "en"}
+{"text": "how do i inject human body", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "what does high MPV suggest generally", "intent": "platelet_term", "lang": "en"}
+{"text": "who won the football game tonight", "intent": "out_of_scope", "lang": "en"}
+{"text": "My child report shows HGB 13.4", "intent": "report_numeric_result_analysis", "lang": "en"}
 {"text": "Please explain the report flag macrocytosis", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "how much of this antibiotic should the patient get", "intent": "unsafe_medical_request", "lang": "en"}
-{"text": "How is low HGB related to RBC indices?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "Why is RDW printed on a CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "hello friend", "intent": "greeting", "lang": "en"}
-{"text": "What is WBC count?", "intent": "cbc_info", "lang": "en"}
-{"text": "afternoon today", "intent": "greeting", "lang": "en"}
-{"text": "What is abnormal platelet result for a hematology assistant?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "What does it mean if a child report has HGB 15.2?", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "How is low hemoglobin reviewed in a hematology lab?", "intent": "anemia_related_term", "lang": "en"}
-{"text": "In my CBC report MCV is 72.0", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "How do I read hematology report format for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
-{"text": "What is abnormal distribution flag on a CBC report?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "What does platelet count mean?", "intent": "cbc_info", "lang": "en"}
-{"text": "adult male HCT is 31", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "Why is the reference range important in report reading?", "intent": "report_structure_help", "lang": "en"}
-{"text": "What information does a full blood count provide?", "intent": "cbc_info", "lang": "en"}
-{"text": "please explain mean platelet volume", "intent": "cbc_info", "lang": "en"}
-{"text": "RBC is 3.2 and age is 51", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "how can platelet clumps affect CBC results", "intent": "platelet_term", "lang": "en"}
-{"text": "How is thrombocytopenia discussed in the lab?", "intent": "platelet_abnormality", "lang": "en"}
-{"text": "How do I read reference ranges in this report?", "intent": "report_structure_help", "lang": "en"}
-{"text": "how is read back verified during critical result communication", "intent": "critical_value_reporting", "lang": "en"}
-{"text": "tell me a joke", "intent": "out_of_scope", "lang": "en"}
-{"text": "What should be understood from report flag leukopenia?", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "My pediatric report shows HGB 9.8", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "What should be understood from report flag thrombocytosis?", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "adult female HCT is 49", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "how is going there", "intent": "small_talk", "lang": "en"}
-{"text": "How should I interpret high RDW?", "intent": "cbc_info", "lang": "en"}
-{"text": "why would a CBC flag trigger smear examination", "intent": "blood_smear", "lang": "en"}
-{"text": "why is the white cell differential important", "intent": "wbc_term", "lang": "en"}
-{"text": "can you tell me what this lab assistant covers", "intent": "capability_query", "lang": "en"}
-{"text": "How should a laboratory assistant explain Eos#?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "what do you know about hematology lab work in this chat", "intent": "capability_query", "lang": "en"}
-{"text": "What is an example of a PLT abnormal distribution on a hematology analyzer?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "MCV: 106.8", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "how do you explain differential count in simple language", "intent": "differential_review", "lang": "en"}
-{"text": "Can you analyze MPV 9.8 in my blood report?", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "how do you explain RBC indices during training", "intent": "rbc_term", "lang": "en"}
-{"text": "What is the meaning of Mon% on this blood report?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "thanks for walking me through it", "intent": "thanks", "lang": "en"}
-{"text": "How do I read a complete blood count report?", "intent": "report_structure_help", "lang": "en"}
-{"text": "What is high RDW flag in hematology?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "Please analyze child MCV 72", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "what therapy should be initiated immediately", "intent": "unsafe_medical_request", "lang": "en"}
-{"text": "What does it mean if a pediatric report has HGB 9.8?", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "talk later then", "intent": "goodbye", "lang": "en"}
-{"text": "What is leucocytosis in a blood report?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "thanks that helped there", "intent": "thanks", "lang": "en"}
-{"text": "Please analyze RBC 5.8; age is 27", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "why are band forms discussed in differential review", "intent": "wbc_term", "lang": "en"}
+{"text": "How is low HGB discussed in the lab?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What does the flag area help the user understand?", "intent": "report_structure_help", "lang": "en"}
+{"text": "Please analyze child WBC 3.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Explain the PLT abnormal distribution on my report.", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "tell me the latest celebrity news", "intent": "out_of_scope", "lang": "en"}
+{"text": "how should i treat low platelets in this patient", "intent": "unsafe_medical_request", "lang": "en"}
 {"text": "How do I read Bas# in a blood count?", "intent": "differential_result_explanation", "lang": "en"}
-{"text": "What does RBC stand for?", "intent": "cbc_info", "lang": "en"}
-{"text": "can you explain your scope in this chat", "intent": "capability_query", "lang": "en"}
-{"text": "What is the role of HCT in hematology interpretation?", "intent": "cbc_result_parameter", "lang": "en"}
-{"text": "RBC is 4.6 and age is 20", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "can you help with cbc questions today", "intent": "capability_query", "lang": "en"}
-{"text": "The machine flagged the report with leukocytosis", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "please recommend a drug regimen for this patient", "intent": "unsafe_medical_request", "lang": "en"}
-{"text": "what broad role does specimen integrity check play before critical reporting", "intent": "critical_value_reporting", "lang": "en"}
-{"text": "What does the WBC flag mean on a CBC report?", "intent": "cbc_flag_explanation", "lang": "en"}
-{"text": "how is white cell morphology connected to differential review", "intent": "wbc_term", "lang": "en"}
-{"text": "what hematology questions can i ask", "intent": "capability_query", "lang": "en"}
-{"text": "RDW is 21.1 and age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
-{"text": "thank you for that really", "intent": "thanks", "lang": "en"}
-{"text": "what is pseudothrombocytopenia", "intent": "platelet_term", "lang": "en"}
-{"text": "What should be understood from report flag anemia?", "intent": "report_flag_result_analysis", "lang": "en"}
-{"text": "how do you summarize leukocytosis for new staff", "intent": "wbc_term", "lang": "en"}
-{"text": "can you choose the medicine based on the result", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "what broad platelet issues are seen on blood smear", "intent": "platelet_term", "lang": "en"}
+{"text": "What is low hemoglobin in a lab result?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "Explain low platelet count on CBC.", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "My child report shows PLT 165", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What does it mean if the report mentions anemic report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "have a good day friend", "intent": "goodbye", "lang": "en"}
+{"text": "What CBC findings matter with low platelet count?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What does the result note microcytosis mean?", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "pediatric HGB is 15.2", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What is hemoglobin in a lab result?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "adult female HCT is 49", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "catch you later friend", "intent": "goodbye", "lang": "en"}
+{"text": "Give me a simple explanation of MPV.", "intent": "cbc_info", "lang": "en"}
 {"text": "Report result RBC = 4.7", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "My result mentions leukocytosis", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "HCT is 31 and age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What does it mean when my hematology report shows thrombocytopenia?", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "What does a abnormal distribution flag show on a complete blood count?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "what does a left shift mean in simple terms", "intent": "wbc_term", "lang": "en"}
+{"text": "How should the platelet section be reviewed first?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How should I interpret high MCHC?", "intent": "cbc_info", "lang": "en"}
+{"text": "afternoon today", "intent": "greeting", "lang": "en"}
+{"text": "What is low hematocrit in a blood report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What parameters are checked when a report suggests low HCT?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "how can platelet clumps affect CBC results", "intent": "platelet_term", "lang": "en"}
+{"text": "My blood report says HGB 13.0 age 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "can you simplify that answer now", "intent": "clarification", "lang": "en"}
+{"text": "appreciate the clarification on that", "intent": "thanks", "lang": "en"}
+{"text": "The pediatric blood report says RBC 4.1", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "My pediatric report shows WBC 13.0", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "in my report HGB is 15.4 age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What is reduced HCT in a lab result?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is low platelet count in a lab result?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "How do I read this CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "Explain platelet count in a hematology report.", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "Why is the result column important in report reading?", "intent": "report_structure_help", "lang": "en"}
+{"text": "?", "intent": "incomplete_query", "lang": "en"}
+{"text": "Age is 16 WBC is 7.8 PLT is 220", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What is the role of HCT in hematology interpretation?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "do you only handle lab workflow questions", "intent": "capability_query", "lang": "en"}
+{"text": "I need assistance with CBC sample rejection rules.", "intent": "help", "lang": "en"}
+{"text": "what is the difference between a three part and five part differential", "intent": "differential_review", "lang": "en"}
+{"text": "how do new staff learn differential interpretation", "intent": "differential_review", "lang": "en"}
+{"text": "Report value RDW = 10.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What is RDW-CV in this report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "Please explain MCV.", "intent": "cbc_info", "lang": "en"}
+{"text": "What is thrombocytopenia in this hematology report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "what should be communicated with a very high white count", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "What does Lym# mean on a differential report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "what can you do for Ava", "intent": "capability_query", "lang": "en"}
+{"text": "What is anemia finding in this hematology report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "what can you do today", "intent": "capability_query", "lang": "en"}
+{"text": "can you clarify that again", "intent": "clarification", "lang": "en"}
+{"text": "what broad role does specimen integrity check play before critical reporting", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "please explain that again please", "intent": "clarification", "lang": "en"}
+{"text": "Please analyze pediatric HGB 11.7", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "what broad significance does high neutrophil count have", "intent": "wbc_term", "lang": "en"}
+{"text": "what is the difference between WBC count and differential count", "intent": "wbc_term", "lang": "en"}
+{"text": "What is the meaning of platelet abnormal distribution on a blood count?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What does it mean when my hematology report shows anemia?", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "What is anemia flag in hematology?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "Age is 43 MCV is 104 RDW is 11.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "how should trainees read hemoglobin on a CBC report", "intent": "rbc_term", "lang": "en"}
+{"text": "what does platelet count tell us in hematology", "intent": "cbc_info", "lang": "en"}
+{"text": "What is RBC count in a blood report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is the absolute neutrophil count?", "intent": "cbc_info", "lang": "en"}
+{"text": "How should the L marker be understood on a lab report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "The machine flagged the report with macrocytosis", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "How should the WBC flag be understood on a lab report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "child HGB is 9.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "what does RBC tell us for Ava", "intent": "rbc_term", "lang": "en"}
+{"text": "what do you mean", "intent": "clarification", "lang": "en"}
+{"text": "How is microcytic anemia discussed in the lab?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is the purpose of the reference range on a hematology report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "Age is 12 WBC is 13.2 PLT is 410", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "what does immature granulocyte mean", "intent": "differential_review", "lang": "en"}
+{"text": "What does report comment anemia mean?", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "What does the microcytosis flag mean?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "do you support both sample handling and term explanations", "intent": "capability_query", "lang": "en"}
+{"text": "Explain low HCT in report interpretation.", "intent": "anemia_related_term", "lang": "en"}
+{"text": "in my report WBC is 11.4 age is 51", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "child WBC is 16.2", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze HCT 40; age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "what does atypical lymphocyte mean", "intent": "differential_review", "lang": "en"}
+{"text": "Age is 24 WBC is 13.0 PLT is 365", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "appreciate it", "intent": "thanks", "lang": "en"}
+{"text": "How should RBC be described on a blood report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "Report value HGB = 12.9", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "HCT is 55 and age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze HGB 12.6 and HCT 39 for age 10", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "great thanks again", "intent": "thanks", "lang": "en"}
+{"text": "What should be understood from a report flag of thrombocytosis?", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "what broad difference exists between routine reporting and critical reporting", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "I need help with CBC testing.", "intent": "help", "lang": "en"}
+{"text": "what are target cells on a peripheral smear", "intent": "blood_smear", "lang": "en"}
+{"text": "MPV is 13.4 and age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "adult male HCT is 31", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "How do I read the reference range on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "What is CBC analyzer flag?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "MPV is 13.4 and age is 27", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "how does critical value communication support laboratory patient safety", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "What does it mean if a pediatric report has WBC 5.2?", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "My report says male hematocrit 31", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "How should anemia be described in a report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "thank you i can continue now", "intent": "thanks", "lang": "en"}
+{"text": "which therapy is appropriate for this blood smear result", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "have a good day then", "intent": "goodbye", "lang": "en"}
+{"text": "My blood report says WBC 6.2 age 51", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "do you support blood smear questions today", "intent": "capability_query", "lang": "en"}
+{"text": "What does platelet count mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is MCHC?", "intent": "cbc_info", "lang": "en"}
+{"text": "you alright today", "intent": "small_talk", "lang": "en"}
+{"text": "I need guidance on hematology.", "intent": "help", "lang": "en"}
+{"text": "Explain HCT in a CBC report.", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "In my CBC report MCV is 106.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "My child report shows PLT 430", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "say that another way please", "intent": "clarification", "lang": "en"}
+{"text": "okay bye then", "intent": "goodbye", "lang": "en"}
+{"text": "which drug should i prescribe for this case", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "What does the hypochromia flag mean?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "how is microcytosis described in simple hematology language", "intent": "rbc_term", "lang": "en"}
+{"text": "What is high WBC flag in blood count interpretation?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "see you then", "intent": "goodbye", "lang": "en"}
+{"text": "how is anisopoikilocytosis seen on a blood film", "intent": "blood_smear", "lang": "en"}
+{"text": "Age is 43 MCV is 88 RDW is 13.2", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "The analyzer printed leukopenia on the report", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "child MCV is 96", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "The CBC summary shows leukopenia", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "what does WBC count represent on the report", "intent": "wbc_term", "lang": "en"}
+{"text": "What does MCH mean on this blood report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "How do I read CBC report structure on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "test noise", "intent": "fallback", "lang": "en"}
+{"text": "Explain PLT in a CBC report.", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "female HGB is 14.2", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Why does the report print Mon#?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "My blood report says MPV 10.2 age 27", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "female HGB is 18.1", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "how do you summarize CBC basics for new staff", "intent": "cbc_info", "lang": "en"}
+{"text": "what morphology findings are commonly communicated to clinicians", "intent": "blood_smear", "lang": "en"}
+{"text": "MPV is 13.4 and age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "tell me the dosage to use for this patient", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "What does it mean if a child report has RBC 5.3?", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "what does morphology review mean on a smear", "intent": "blood_smear", "lang": "en"}
+{"text": "who is the president now", "intent": "out_of_scope", "lang": "en"}
+{"text": "why must communication details be audited for critical results", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "How should I interpret high RDW?", "intent": "cbc_info", "lang": "en"}
+{"text": "can you simplify that hematology explanation", "intent": "clarification", "lang": "en"}
+{"text": "How do I read the H marker on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "RBC is 4.6 and age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "can you help?", "intent": "incomplete_query", "lang": "en"}
+{"text": "how should this patient be treated medically", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "My report says female hemoglobin 16.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "The analyzer flagged hypochromia", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "in my report WBC is 11.4 age is 20", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What does Bas# mean on a differential report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "why would a CBC flag trigger smear examination", "intent": "blood_smear", "lang": "en"}
+{"text": "what are your capabilities in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "Can you interpret report flag leukocytosis?", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "ending chat now then", "intent": "goodbye", "lang": "en"}
+{"text": "male HGB is 16.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "My blood report says WBC 11.4 age 27", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze female HGB 11.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Why is RBC printed on a CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "How should RDW be described on a blood report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "How do I read this hematology blood report in a hematology report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "My pediatric report shows RBC 4.1", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Why would a CBC report mention platelet abnormal distribution?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "Why is MCHC printed on a CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "Please analyze pediatric RBC 4.1", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "adult female HCT is 55", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "female HCT is 38", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What does it mean if a child report has RBC 3.7?", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "what can drying artifacts do to blood smear quality", "intent": "blood_smear", "lang": "en"}
+{"text": "The pediatric blood report says WBC 16.2", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "say that another way for me", "intent": "clarification", "lang": "en"}
+{"text": "how about that", "intent": "incomplete_query", "lang": "en"}
+{"text": "What does it mean if a child report has HGB 15.2?", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "goodbye then", "intent": "goodbye", "lang": "en"}
+{"text": "please explain mean platelet volume", "intent": "cbc_info", "lang": "en"}
+{"text": "can you explain your scope in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "How do I read this hematology blood report for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
+{"text": "How is the unit column used when reading a report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "My CBC report shows RDW 16.9", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What is MCV on a CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "can you decide the treatment for me", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "What does a low Lym% suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What is PLT flag in a blood report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What does it mean if a pediatric report has HGB 9.8?", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "many thanks again", "intent": "thanks", "lang": "en"}
+{"text": "How do you explain WBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "what does leukocyte mean on the report", "intent": "wbc_term", "lang": "en"}
+{"text": "what about the other result", "intent": "incomplete_query", "lang": "en"}
+{"text": "What is the meaning of Mon# on this blood report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Explain MCH in a CBC report.", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What does Mon% represent in differential count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "what does neutrophilia usually suggest in lab review", "intent": "wbc_term", "lang": "en"}
+{"text": "What is HCT in blood count interpretation?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "alright thanks", "intent": "thanks", "lang": "en"}
+{"text": "in my report MPV is 13.4 age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What does a CBC include?", "intent": "cbc_info", "lang": "en"}
+{"text": "In my report WBC is 3.5, PLT is 450, and age is 50", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "what broad clues come from lymphocyte increase", "intent": "wbc_term", "lang": "en"}
+{"text": "what are the main parts of the white cell differential", "intent": "wbc_term", "lang": "en"}
+{"text": "Please analyze male HGB 11.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "How is a analyzer flag used during CBC review?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is MCH in complete blood count?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "are you built for hematology only", "intent": "capability_query", "lang": "en"}
+{"text": "My child report shows HGB 9.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What should be checked when the report shows low PLT?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "hello there", "intent": "greeting", "lang": "en"}
+{"text": "in my report HCT is 40 age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "what's up", "intent": "small_talk", "lang": "en"}
+{"text": "in my report RDW is 16.8 age is 20", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze WBC 3.5 and PLT 450 for age 24", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What does MPV mean in my lab result?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "Can you analyze MPV 9.8 in my blood report?", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What does RDW mean on this blood report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "My child report shows RBC 4.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "How is anemia on report discussed in the lab?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "i am confused by that explanation for me", "intent": "clarification", "lang": "en"}
+{"text": "RBC is 3.2 and age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "How is low haemoglobin related to RBC indices?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is anemia in a blood report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "Please analyze adult male HCT 55", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "what are eosinophils", "intent": "differential_review", "lang": "en"}
+{"text": "How should I interpret high hematocrit?", "intent": "cbc_info", "lang": "en"}
+{"text": "which lab topics are supported right now", "intent": "capability_query", "lang": "en"}
+{"text": "pediatric HCT is 47", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "how should Emma understand RBC count", "intent": "rbc_term", "lang": "en"}
+{"text": "The pediatric blood report says MCV 72", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "HGB is 10.8 and age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "in my report HCT is 40 age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "My pediatric report shows WBC 16.2", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "How is the platelet section used when reading a report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "What does a high Mon# suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "in my report WBC is 11.4 age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "i am confused by that explanation now", "intent": "clarification", "lang": "en"}
+{"text": "My report says WBC 22.4", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What is low platelet count for a hematology assistant?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "Please analyze WBC 13.37; age is 27", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What is abnormal distribution flag on a CBC report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "what do you know about hematology lab work in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "child PLT is 480", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "what does high MCHC suggest generally", "intent": "rbc_term", "lang": "en"}
+{"text": "What does a L marker show on a complete blood count?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "alright thanks today", "intent": "thanks", "lang": "en"}
+{"text": "what should Maya know about blood film preparation", "intent": "blood_smear", "lang": "en"}
+{"text": "What is HCT on a CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What does the flag area show on the printed report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "Report values: age 24, RBC 4.8, HGB 13.9", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "how do you explain white cell abnormalities without diagnosis", "intent": "wbc_term", "lang": "en"}
+{"text": "What should be understood from report flag anemia?", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "What does it mean when the analyzer prints platelet clumping flag?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "thanks assistant really", "intent": "thanks", "lang": "en"}
+{"text": "What is leucocytosis in a blood report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "which drug should i start today", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "What does it mean if HCT is 42.1?", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "good day", "intent": "greeting", "lang": "en"}
+{"text": "how should i start treatment for leukemia", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "Please analyze child PLT 280", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "what can cause raised RBC count", "intent": "rbc_term", "lang": "en"}
+{"text": "The child blood report says PLT 110", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "many thanks there", "intent": "thanks", "lang": "en"}
+{"text": "how is normocytic pattern described in simple hematology language", "intent": "rbc_term", "lang": "en"}
+{"text": "The child blood report says WBC 9.6", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "thanks a lot today", "intent": "thanks", "lang": "en"}
+{"text": "What does hypochromic pattern mean on a hematology report?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "When is a complete blood count useful?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does a H marker show on a complete blood count?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "pediatric HGB is 13.4", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What does high RBC suggest?", "intent": "cbc_info", "lang": "en"}
+{"text": "How is platelet abnormal distribution confirmed on smear review?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "okay bye friend", "intent": "goodbye", "lang": "en"}
+{"text": "why can EDTA cause platelet clumping artifacts", "intent": "platelet_term", "lang": "en"}
+{"text": "What is the difference between Neu% and the related white-cell result?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does low hematocrit mean in hematology?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "i need more detail on that", "intent": "clarification", "lang": "en"}
+{"text": "What is platelet abnormal distribution?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What does RBC mean?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is HGB in a lab result?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "The pediatric blood report says HGB 15.2", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Explain low haemoglobin on a blood report.", "intent": "anemia_related_term", "lang": "en"}
+{"text": "How do I read the RBC section on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "what is read back policy for critical values", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "What is the purpose of a CBC report?", "intent": "cbc_info", "lang": "en"}
+{"text": "The CBC summary mentions leukocytosis", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "in my report MPV is 13.4 age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report value MPV = 8.1", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "How do you explain RBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "Please analyze MPV 13.4; age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "adult male HGB is 16.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "how do abnormal lymphocytes fit into differential review", "intent": "wbc_term", "lang": "en"}
+{"text": "What is WBC count?", "intent": "cbc_info", "lang": "en"}
+{"text": "What does low MCV suggest?", "intent": "cbc_info", "lang": "en"}
+{"text": "how should the patient be managed with drugs", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "what does lymphocytosis mean in broad laboratory terms", "intent": "wbc_term", "lang": "en"}
+{"text": "Explain high PLT on CBC.", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "greetings again", "intent": "greeting", "lang": "en"}
+{"text": "how do you explain hematocrit to a student", "intent": "rbc_term", "lang": "en"}
+{"text": "Please analyze WBC 13.37; age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 16, HGB 10.4, HCT 31", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "how is it going now", "intent": "small_talk", "lang": "en"}
+{"text": "My report says adult female hematocrit 55", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Can you analyze PLT 96 in my blood report?", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Explain Mon% in CBC.", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How should the PLT abnormal distribution be understood on a lab report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "How do I read a complete blood count report for a blood result sheet?", "intent": "report_structure_help", "lang": "en"}
+{"text": "can you help with cbc questions", "intent": "capability_query", "lang": "en"}
+{"text": "how should trainees understand platelet clumps on smear", "intent": "platelet_term", "lang": "en"}
+{"text": "How should I understand Neu# on hematology report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "what do you specialize in exactly", "intent": "capability_query", "lang": "en"}
+{"text": "Define MCH.", "intent": "cbc_info", "lang": "en"}
+{"text": "How do I read absolute counts and percentages?", "intent": "report_structure_help", "lang": "en"}
+{"text": "what does neutrophilia mean in broad terms", "intent": "wbc_term", "lang": "en"}
+{"text": "how's it going my friend", "intent": "small_talk", "lang": "en"}
+{"text": "can you explain that to Ava", "intent": "clarification", "lang": "en"}
+{"text": "What is CBC analyzer flag in this hematology report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "Please analyze MCV 72 and RDW 18.5 for age 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "HGB is 13.0 and age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my CBC report HGB is 13.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Why would a CBC report mention low PLT?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "Please analyze adult male HCT 38", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "My CBC report shows MPV 6.7", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Define RBC.", "intent": "cbc_info", "lang": "en"}
+{"text": "What is high RDW flag in a lab result?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "Please analyze MPV 13.4; age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "i need more detail on that now", "intent": "clarification", "lang": "en"}
+{"text": "What is the meaning of high PLT on a blood count?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "Please analyze WBC 11.4; age is 27", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "How is thrombocytosis related to platelet count interpretation?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "My result mentions leukopenia", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "What is HCT for a hematology assistant?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is abnormal platelet result for a hematology assistant?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "hey again", "intent": "greeting", "lang": "en"}
+{"text": "My blood report says HCT 47 age 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "empty meaning", "intent": "fallback", "lang": "en"}
+{"text": "what's up there", "intent": "small_talk", "lang": "en"}
+{"text": "how do you explain monocytes to learners", "intent": "differential_review", "lang": "en"}
+{"text": "what is the difference between RBC count and hemoglobin", "intent": "rbc_term", "lang": "en"}
+{"text": "whats up now", "intent": "small_talk", "lang": "en"}
+{"text": "what should i ask you about in the hematology lab", "intent": "capability_query", "lang": "en"}
+{"text": "what should i know about red cell indices", "intent": "rbc_term", "lang": "en"}
+{"text": "what is the difference between platelet count and MPV", "intent": "platelet_term", "lang": "en"}
+{"text": "why must critical values be documented", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "Explain the L marker in a blood report layout.", "intent": "report_structure_help", "lang": "en"}
+{"text": "Explain MPV in a CBC report.", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What does it mean if PLT is 520 on my report?", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What is anemia pattern in blood count interpretation?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "what is the difference between abnormal and critical result", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "Explain mean corpuscular hemoglobin in a hematology report.", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "how should trainees understand eosinophils in differential review", "intent": "wbc_term", "lang": "en"}
+{"text": "i do not follow that explanation yet", "intent": "clarification", "lang": "en"}
+{"text": "What is the meaning of Mon% on this blood report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "what is pseudothrombocytopenia", "intent": "platelet_term", "lang": "en"}
+{"text": "adult female HGB is 14.2", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "what does red cell size variation mean in broad terms", "intent": "rbc_term", "lang": "en"}
+{"text": "in my report WBC is 3.9 age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What does Eos# mean in blood report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "talk to you later friend", "intent": "goodbye", "lang": "en"}
+{"text": "what are you built to assist with right now", "intent": "capability_query", "lang": "en"}
+{"text": "What information does a full blood count provide?", "intent": "cbc_info", "lang": "en"}
+{"text": "Age is 10 HGB is 14.8 HCT is 46", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "How do I read the result column on a CBC report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "The printed flag on the blood report is neutrophilia", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "what do you mean by that", "intent": "clarification", "lang": "en"}
+{"text": "Tell me about platelet count.", "intent": "cbc_info", "lang": "en"}
+{"text": "Age is 24 RBC is 4.8 HGB is 13.9", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What is red cell deficiency for a hematology assistant?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "what does red cell count show in screening", "intent": "rbc_term", "lang": "en"}
+{"text": "I need help with specimen handling.", "intent": "help", "lang": "en"}
+{"text": "What is RDW-SD in complete blood count?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "bye Ava", "intent": "goodbye", "lang": "en"}
+{"text": "What is an example of a PLT abnormal distribution on a hematology analyzer?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What does it mean when the analyzer prints low platelet count?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "what should trainees know first about critical values", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "The hematology printout shows leukopenia", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "What should I know about hemoglobin?", "intent": "cbc_info", "lang": "en"}
+{"text": "how do you recognize smudge cells in broad terms", "intent": "blood_smear", "lang": "en"}
+{"text": "in my report RDW is 16.8 age is 27", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "HGB is 10.8 and age is 20", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What is anemia in CBC for a hematology assistant?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "talk later then", "intent": "goodbye", "lang": "en"}
+{"text": "good morning again", "intent": "greeting", "lang": "en"}
+{"text": "What can a full blood count tell us?", "intent": "cbc_info", "lang": "en"}
+{"text": "tell me a joke", "intent": "out_of_scope", "lang": "en"}
+{"text": "ending chat now for now", "intent": "goodbye", "lang": "en"}
+{"text": "I need assistance with hematology workflow.", "intent": "help", "lang": "en"}
+{"text": "My report says female hemoglobin 18.1", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "My child report shows MCV 96", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "im not sure i understood your answer", "intent": "clarification", "lang": "en"}
+{"text": "what should trainees know about leukocyte count reporting", "intent": "wbc_term", "lang": "en"}
+{"text": "Explain the WBC flag on this blood report.", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "how do red cell values support general laboratory review", "intent": "rbc_term", "lang": "en"}
+{"text": "What information does a complete blood count provide?", "intent": "cbc_info", "lang": "en"}
+{"text": "good evening friend", "intent": "greeting", "lang": "en"}
+{"text": "My CBC report shows MPV 9.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze WBC 11.4; age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "hi, I have a CBC question", "intent": "greeting", "lang": "en"}
+{"text": "My child report shows MCV 88", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Explain Eos# in CBC.", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "how should a trainee summarize a differential count", "intent": "differential_review", "lang": "en"}
+{"text": "What is hemoglobin in this hematology report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "how much medicine should this patient receive", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "What is high RDW flag in hematology?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is the normal range for hemoglobin?", "intent": "cbc_info", "lang": "en"}
+{"text": "Please analyze child WBC 5.2", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "How is anemia pattern related to RBC indices?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "Please analyze adult female HCT 55", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Explain hemoglobin in a hematology report.", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "What is Neu%?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "How should I understand Mon% on hematology report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does low platelet count mean in a report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What should be checked in the L marker of a CBC?", "intent": "report_structure_help", "lang": "en"}
+{"text": "what are basophils", "intent": "differential_review", "lang": "en"}
+{"text": "what should i give a patient with very high WBC", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "thanks i got it today", "intent": "thanks", "lang": "en"}
+{"text": "why should analyzer error be ruled out before a critical call", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "What should be understood from report flag thrombocytosis?", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "Please analyze WBC 13.0 and PLT 365 for age 50", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "how does differential count support leukemia screening", "intent": "wbc_term", "lang": "en"}
+{"text": "What is the purpose of the WBC flag in a report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "How is low HGB related to RBC indices?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "What is reduced MPV in this hematology report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "how do you explain RBC indices during training", "intent": "rbc_term", "lang": "en"}
+{"text": "how should a critical coagulation result be escalated broadly", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "bye assistant then", "intent": "goodbye", "lang": "en"}
+{"text": "Why is a CBC ordered?", "intent": "cbc_info", "lang": "en"}
+{"text": "can you tell me a joke", "intent": "out_of_scope", "lang": "en"}
+{"text": "explain it again for Emma", "intent": "clarification", "lang": "en"}
+{"text": "What is the purpose of the abnormal distribution flag in a report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What does it mean if a pediatric report has RBC 4.1?", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What is platelet abnormality in this hematology report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "What is platelet flag in this hematology report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "Give me a simple explanation of hematocrit.", "intent": "cbc_info", "lang": "en"}
+{"text": "what can schistocytes indicate on a smear review", "intent": "blood_smear", "lang": "en"}
+{"text": "In my report WBC is 5.8, PLT is 120, and age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "My report says HGB 13.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What does a low Eos% suggest in lab terms?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "Why is RDW printed on a CBC report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "what does a good wedge smear look like", "intent": "blood_smear", "lang": "en"}
+{"text": "how is read back verified during critical result communication", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "What parameters are included in a full blood count?", "intent": "cbc_info", "lang": "en"}
+{"text": "hi again", "intent": "greeting", "lang": "en"}
+{"text": "how is basophilia described in a differential report", "intent": "wbc_term", "lang": "en"}
+{"text": "what do you support in hematology", "intent": "capability_query", "lang": "en"}
+{"text": "What should be understood from report flag leukopenia?", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "thank you Alex", "intent": "thanks", "lang": "en"}
+{"text": "why would a smear be reviewed for platelets", "intent": "platelet_term", "lang": "en"}
+{"text": "What does it mean if a child report has PLT 110?", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "My report says adult male hemoglobin 16.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "thank you for that there", "intent": "thanks", "lang": "en"}
+{"text": "What does Lym% represent in differential count?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "in my report HGB is 15.4 age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What does Eos% mean in blood report?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "what can cause thrombocytopenia in broad terms", "intent": "platelet_term", "lang": "en"}
+{"text": "what does this term mean exactly", "intent": "clarification", "lang": "en"}
+{"text": "What does the WBC section show on the printed report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "My lab result is marked microcytosis", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "What is the purpose of CBC?", "intent": "cbc_info", "lang": "en"}
+{"text": "what can cause thrombocytosis in broad terms", "intent": "platelet_term", "lang": "en"}
+{"text": "pediatric RBC is 5.3", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "in my report HCT is 31 age is 20", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "what areas are covered by this chat in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "Report value MPV = 11.4", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "male HGB is 11.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "This blood report shows HCT 55.5", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "can you explain that to Alex", "intent": "clarification", "lang": "en"}
+{"text": "What is neutrophilia in blood count interpretation?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "How do I read a hematology analyzer report in this report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "What is anemia pattern for a hematology assistant?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "hello friend", "intent": "greeting", "lang": "en"}
+{"text": "Please analyze pediatric HCT 40", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "talk later friend", "intent": "goodbye", "lang": "en"}
+{"text": "what are you built to assist with today", "intent": "capability_query", "lang": "en"}
+{"text": "What is anemia flag on a CBC report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "What is platelet count low for a hematology assistant?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "talk later", "intent": "goodbye", "lang": "en"}
+{"text": "What is platelet abnormal distribution in this report?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "Can you support me with CBC specimen handling?", "intent": "help", "lang": "en"}
+{"text": "how is eosinophilia reported", "intent": "differential_review", "lang": "en"}
+{"text": "What does the RBC abnormal distribution mean on a CBC report?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "WBC is 2.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "in my report HGB is 17.8 age is 35", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "I need help with laboratory workflow for CBC.", "intent": "help", "lang": "en"}
+{"text": "can you diagnose this report for me", "intent": "unsafe_medical_request", "lang": "en"}
+{"text": "What is the purpose of a full blood count?", "intent": "cbc_info", "lang": "en"}
+{"text": "What is the purpose of the L marker on a hematology report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "how are things today my friend", "intent": "small_talk", "lang": "en"}
+{"text": "thank you for that", "intent": "thanks", "lang": "en"}
+{"text": "In my report WBC is 5.8, PLT is 120, and age is 50", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "explain it again for Maya", "intent": "clarification", "lang": "en"}
+{"text": "what does macrocytic pattern mean in CBC review", "intent": "rbc_term", "lang": "en"}
+{"text": "how does delayed smear preparation affect morphology", "intent": "blood_smear", "lang": "en"}
+{"text": "Please analyze adult female HGB 11.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What should I know about MPV?", "intent": "cbc_info", "lang": "en"}
+{"text": "My child report shows HCT 35", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "what broad information does RDW provide", "intent": "rbc_term", "lang": "en"}
+{"text": "appreciate the explanation really", "intent": "thanks", "lang": "en"}
+{"text": "what is the broad meaning of thrombocytosis", "intent": "platelet_term", "lang": "en"}
+{"text": "explain", "intent": "incomplete_query", "lang": "en"}
+{"text": "Age is 50 MCV is 88 RDW is 13.2", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "have a good day", "intent": "goodbye", "lang": "en"}
+{"text": "what is the capital of france", "intent": "out_of_scope", "lang": "en"}
+{"text": "Explain low HCT on a blood report.", "intent": "anemia_related_term", "lang": "en"}
+{"text": "what is leukopenia", "intent": "wbc_term", "lang": "en"}
+{"text": "how are white cell abnormalities followed up on smear", "intent": "blood_smear", "lang": "en"}
+{"text": "can you help me", "intent": "greeting", "lang": "en"}
+{"text": "see you later after the next case", "intent": "goodbye", "lang": "en"}
+{"text": "Explain Eos% in CBC.", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "bye and thanks today", "intent": "goodbye", "lang": "en"}
+{"text": "what broad importance does differential review have in leukemia patterns", "intent": "differential_review", "lang": "en"}
+{"text": "What is reduced MPV for a hematology assistant?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "how is WBC count interpreted with differential pattern", "intent": "wbc_term", "lang": "en"}
+{"text": "What should be reviewed when a report shows platelet abnormality?", "intent": "platelet_abnormality", "lang": "en"}
+{"text": "The report note says thrombocytopenia", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "What does MPV mean in report analysis?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "Please explain the report flag thrombocytosis", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "how is it going my friend", "intent": "small_talk", "lang": "en"}
+{"text": "What is MCH in this report?", "intent": "cbc_result_parameter", "lang": "en"}
+{"text": "what broad role does time stamping have in critical value reporting", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "are you doing well", "intent": "small_talk", "lang": "en"}
+{"text": "In my report RBC is 4.8, HGB is 13.9, and age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "This blood report is flagged as anemia", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "The printed flag on the blood report is microcytosis", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "How is Bas# used in differential review?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What does anemia pattern mean in hematology?", "intent": "anemia_related_term", "lang": "en"}
+{"text": "WBC is 9.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What should be understood from report flag neutrophilia?", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "what hematology tasks can you support", "intent": "capability_query", "lang": "en"}
+{"text": "how does local policy define critical limits in broad terms", "intent": "critical_value_reporting", "lang": "en"}
+{"text": "My blood report says MPV 13.4 age 35", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "How should a laboratory assistant explain Eos#?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "What is PLT abnormal distribution in a lab result?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "The child blood report says MCV 96", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "My pediatric report shows HGB 15.2", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "What is Eos#?", "intent": "differential_result_explanation", "lang": "en"}
+{"text": "hope you are well my friend", "intent": "small_talk", "lang": "en"}
+{"text": "thanks really", "intent": "thanks", "lang": "en"}
+{"text": "What is RBC abnormal distribution for a hematology assistant?", "intent": "cbc_flag_explanation", "lang": "en"}
+{"text": "The blood report is flagged as thrombocytopenia", "intent": "report_flag_result_analysis", "lang": "en"}
+{"text": "what broad situations may lead to thrombocytopenia", "intent": "platelet_term", "lang": "en"}
+{"text": "What is the purpose of the platelet section on a hematology report?", "intent": "report_structure_help", "lang": "en"}
+{"text": "Please analyze HCT 42.1 in this report", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "what is the purpose of manual differential review", "intent": "differential_review", "lang": "en"}
+{"text": "can you help with coagulation questions in this chat", "intent": "capability_query", "lang": "en"}
+{"text": "What is MPV?", "intent": "cbc_info", "lang": "en"}

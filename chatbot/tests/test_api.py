@@ -52,6 +52,7 @@ def test_chat_endpoint_returns_response():
     payload = resp.json()
     assert payload['intent'] == 'greeting'
     assert payload['response']
+    assert payload['support_note'] is None
     app.dependency_overrides.clear()
 
 

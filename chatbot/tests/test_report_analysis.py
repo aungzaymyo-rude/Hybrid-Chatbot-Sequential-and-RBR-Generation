@@ -10,6 +10,9 @@ def test_analyze_report_input_marks_high_wbc():
     assert result.label == "WBC"
     assert result.status == "high"
     assert "above range" in result.response.lower()
+    assert result.support_note
+    assert "diagnosis or treatment advice" in result.support_note.lower()
+    assert "diagnosis or treatment advice" not in result.response.lower()
 
 
 def test_analyze_report_input_marks_low_mcv():
@@ -27,6 +30,7 @@ def test_analyze_report_input_handles_report_flag():
     assert result.intent == "report_flag_result_analysis"
     assert result.label == "anemia"
     assert "hemoglobin" in result.response.lower()
+    assert result.support_note
 
 
 def test_analyze_report_input_uses_male_hgb_range_when_present():
@@ -88,3 +92,15 @@ def test_analyze_report_input_uses_age_as_pediatric_context():
     assert result.demographic_hint == "pediatric"
     assert "pediatric range" in result.response.lower()
     assert "age 10" not in result.response.lower()
+
+
+def test_analyze_report_input_handles_multiple_numeric_values():
+    result = analyze_report_input("Age is 50 WBC is 13 MCV is 73 PLT is 1")
+    assert result is not None
+    assert result.intent == "report_numeric_result_analysis"
+    assert result.observation_count == 3
+    assert result.demographic_hint == "adult"
+    assert "report review summary" in result.response.lower()
+    assert "wbc 13" in result.response.lower()
+    assert "mcv 73" in result.response.lower()
+    assert "plt 1" in result.response.lower()

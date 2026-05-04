@@ -10,7 +10,7 @@
   "seed": 42,
   "counts": {
     "train": {
-      "rows": 3217,
+      "rows": 3343,
       "intent_counts": {
         "anemia_related_term": 154,
         "blood_smear": 70,
@@ -32,7 +32,7 @@
         "platelet_term": 70,
         "rbc_term": 98,
         "report_flag_result_analysis": 185,
-        "report_numeric_result_analysis": 727,
+        "report_numeric_result_analysis": 853,
         "report_structure_help": 124,
         "small_talk": 70,
         "thanks": 99,
@@ -41,7 +41,7 @@
       }
     },
     "validation": {
-      "rows": 690,
+      "rows": 717,
       "intent_counts": {
         "anemia_related_term": 33,
         "blood_smear": 15,
@@ -63,7 +63,7 @@
         "platelet_term": 15,
         "rbc_term": 21,
         "report_flag_result_analysis": 40,
-        "report_numeric_result_analysis": 156,
+        "report_numeric_result_analysis": 183,
         "report_structure_help": 26,
         "small_talk": 15,
         "thanks": 21,
@@ -72,7 +72,7 @@
       }
     },
     "test": {
-      "rows": 690,
+      "rows": 717,
       "intent_counts": {
         "anemia_related_term": 33,
         "blood_smear": 15,
@@ -94,7 +94,7 @@
         "platelet_term": 15,
         "rbc_term": 21,
         "report_flag_result_analysis": 40,
-        "report_numeric_result_analysis": 156,
+        "report_numeric_result_analysis": 183,
         "report_structure_help": 27,
         "small_talk": 15,
         "thanks": 21,

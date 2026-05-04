@@ -31,16 +31,17 @@ body {
 }
 
 .app-shell {
-  width: min(1200px, calc(100% - 32px));
+  width: min(1480px, calc(100% - 32px));
   margin: 32px auto;
   height: calc(100vh - 64px);
   display: grid;
-  grid-template-columns: 0.95fr 1.25fr;
+  grid-template-columns: 0.9fr 1.2fr 0.85fr;
   gap: 24px;
 }
 
 .hero-panel,
-.chat-panel {
+.chat-panel,
+.coverage-panel {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 28px;
@@ -129,6 +130,127 @@ body {
   min-height: 0;
   height: 100%;
   overflow: hidden;
+}
+
+.coverage-panel {
+  overflow: hidden;
+}
+
+.coverage-shell {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  gap: 18px;
+  height: 100%;
+  padding: 28px 24px;
+}
+
+.coverage-header h2 {
+  margin: 0 0 12px;
+  font-size: 32px;
+  line-height: 1.05;
+}
+
+.coverage-eyebrow {
+  margin: 0 0 10px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-strong);
+}
+
+.coverage-copy,
+.coverage-card-copy,
+.coverage-active-copy,
+.coverage-note-copy {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.coverage-active,
+.coverage-note {
+  padding: 16px 18px;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.coverage-active-label,
+.coverage-note-title {
+  display: block;
+  margin-bottom: 8px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-strong);
+}
+
+.coverage-active strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 20px;
+}
+
+.coverage-groups {
+  display: grid;
+  gap: 16px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.coverage-card {
+  padding: 18px;
+  border-radius: 22px;
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(246, 250, 248, 0.96));
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.coverage-card.active {
+  border-color: rgba(15, 122, 83, 0.34);
+  box-shadow: 0 16px 34px rgba(15, 122, 83, 0.14);
+  transform: translateY(-1px);
+}
+
+.coverage-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.coverage-card-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.coverage-pill {
+  border-radius: 999px;
+  padding: 5px 10px;
+  background: rgba(15, 122, 83, 0.1);
+  color: var(--accent-strong);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+}
+
+.coverage-chip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.coverage-chip {
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+  color: var(--ink);
 }
 
 .chat-header {
@@ -407,7 +529,8 @@ body {
     height: auto;
   }
 
-  .chat-panel {
+  .chat-panel,
+  .coverage-panel {
     min-height: 74vh;
   }
 }
@@ -420,7 +543,8 @@ body {
   }
 
   .hero-panel,
-  .chat-panel {
+  .chat-panel,
+  .coverage-panel {
     border-radius: 22px;
   }
 
@@ -428,7 +552,8 @@ body {
   .chat-header,
   .messages,
   .quick-prompts,
-  .composer {
+  .composer,
+  .coverage-shell {
     padding-left: 16px;
     padding-right: 16px;
   }

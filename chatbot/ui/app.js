@@ -93,6 +93,15 @@ const sendButtonEl = document.getElementById("send-button");
 const templateEl = document.getElementById("message-template");
 const modelSelectEl = document.getElementById("model-select");
 const modelHintEl = document.getElementById("model-hint");
+const coverageActiveModelEl = document.getElementById("coverage-active-model");
+const coverageActiveCopyEl = document.getElementById("coverage-active-copy");
+
+const COVERAGE_SUMMARIES = {
+  general:
+    "Best for workflow, coagulation, blood smear, sample handling, and quality-control questions.",
+  report:
+    "Best for CBC report structure, numeric result review, report flags, and parameter interpretation.",
+};
 
 function intentCategory(intent) {
   if (["unsafe_medical_request", "out_of_scope", "incomplete_query", "language_not_supported"].includes(intent)) {
@@ -134,10 +143,18 @@ function updateModelUI(modelKey) {
   if (!modelKey) {
     modelStatusEl.textContent = "Unavailable";
     modelHintEl.textContent = "Model options are unavailable.";
+    coverageActiveModelEl.textContent = "Unavailable";
+    coverageActiveCopyEl.textContent = "Topic coverage could not be loaded.";
     return;
   }
   modelStatusEl.textContent = friendlyModelLabel(modelKey);
   modelHintEl.textContent = MODEL_HINTS[modelKey] || `Using model: ${friendlyModelLabel(modelKey)}`;
+  coverageActiveModelEl.textContent = friendlyModelLabel(modelKey);
+  coverageActiveCopyEl.textContent =
+    COVERAGE_SUMMARIES[modelKey] || `Using ${friendlyModelLabel(modelKey)} topic coverage.`;
+  document.querySelectorAll("[data-model-card]").forEach((card) => {
+    card.classList.toggle("active", card.dataset.modelCard === modelKey);
+  });
 }
 
 function getSelectedModelKey() {

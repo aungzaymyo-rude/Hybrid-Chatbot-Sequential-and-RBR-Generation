@@ -223,6 +223,7 @@ def chat(
         intent=prediction.intent,
         confidence=prediction.confidence,
         response=route.response,
+        support_note=route.support_note,
         model_key=effective_model_key,
         model_version=model_info.get('version') or None,
         requested_model_key=requested_model_key,

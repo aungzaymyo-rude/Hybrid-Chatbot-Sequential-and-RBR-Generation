@@ -17,6 +17,7 @@ class ChatResponse(BaseModel):
     intent: str
     confidence: float
     response: str
+    support_note: str | None = None
     model_key: str | None = None
     model_version: str | None = None
     requested_model_key: str | None = None

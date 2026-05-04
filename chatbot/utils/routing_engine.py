@@ -13,6 +13,7 @@ from chatbot.utils.response_retriever import get_response_retriever
 class RouteResult:
     response: str
     source: str
+    support_note: str | None = None
     retrieval_intent: str | None = None
     retrieval_question: str | None = None
     entity_label: str | None = None
@@ -88,6 +89,7 @@ def resolve_route(
             return RouteResult(
                 response=analysis.response,
                 source='analysis',
+                support_note=analysis.support_note,
                 retrieval_intent=analysis.intent,
                 retrieval_question=analysis.criteria,
                 entity_label=analysis.label,

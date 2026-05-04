@@ -91,6 +91,7 @@ def build_trace(text: str, *, model_key: str | None, config_path: str) -> dict[s
         },
         'route': {
             'source': route.source,
+            'support_note': route.support_note,
             'retrieval_intent': route.retrieval_intent,
             'retrieval_question': route.retrieval_question,
             'entity_label': route.entity_label,

@@ -27,3 +27,10 @@ def test_report_predictor_does_not_treat_age_only_as_report_analysis():
     predictor = IntentPredictor(model_dir=REPORT_MODEL_DIR, config_path=CONFIG_PATH)
     prediction = predictor.predict('age is 43')
     assert prediction.intent == 'incomplete_query'
+
+
+def test_report_predictor_handles_multi_value_phrase():
+    predictor = IntentPredictor(model_dir=REPORT_MODEL_DIR, config_path=CONFIG_PATH)
+    prediction = predictor.predict('Age is 50 WBC is 13 MCV is 73 PLT is 1')
+    assert prediction.intent == 'report_numeric_result_analysis'
+    assert prediction.confidence >= 0.8

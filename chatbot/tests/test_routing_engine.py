@@ -4,7 +4,7 @@ from pathlib import Path
 from uuid import uuid4
 
 from chatbot.utils.chat_store import ChatHistoryStore
-from chatbot.utils.routing_engine import route_intent
+from chatbot.utils.routing_engine import resolve_route, route_intent
 
 
 CONFIG_PATH = str(Path(__file__).resolve().parents[1] / 'config.yaml')
@@ -104,26 +104,30 @@ def test_route_intent_returns_cbc_stability_guidance():
 
 
 def test_route_intent_analyzes_numeric_report_result():
-    response = route_intent(
+    route = resolve_route(
         'fallback',
         'en',
         text='WBC is 13.7',
         config_path=CONFIG_PATH,
     )
+    response = route.response
     assert '13.7' in response
     assert 'above range' in response.lower()
-    assert 'reference range' in response.lower()
+    assert route.support_note
+    assert 'printed report range' in route.support_note.lower()
 
 
 def test_route_intent_analyzes_report_flag():
-    response = route_intent(
+    route = resolve_route(
         'fallback',
         'en',
         text='My report shows anemia',
         config_path=CONFIG_PATH,
     )
+    response = route.response
     assert 'anemia' in response.lower()
-    assert 'not diagnosis' in response.lower() or 'not a diagnosis' in response.lower()
+    assert 'diagnosis' not in response.lower() or 'rather than a diagnosis' in response.lower()
+    assert route.support_note
 
 
 def test_chat_store_logs_records():

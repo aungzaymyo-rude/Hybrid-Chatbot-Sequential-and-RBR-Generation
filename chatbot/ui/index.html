@@ -32,10 +32,6 @@
           <strong id="api-status">Checking...</strong>
         </article>
         <article>
-          <span class="label">Model</span>
-          <strong id="model-status">Loading...</strong>
-        </article>
-        <article>
           <span class="label">Session</span>
           <strong id="session-status">Local transcript enabled</strong>
         </article>
@@ -90,6 +86,79 @@
         </div>
       </form>
     </section>
+
+    <aside class="coverage-panel" aria-label="Supported hematology topics">
+      <div class="coverage-shell">
+        <div class="coverage-header">
+          <p class="coverage-eyebrow">Supported Topics</p>
+          <h2>Hematology Coverage Guide</h2>
+          <p class="coverage-copy">
+            The chatbot uses two focused models. Each one supports a different side of hematology laboratory work.
+          </p>
+        </div>
+
+        <div class="coverage-active">
+          <span class="coverage-active-label">Active model</span>
+          <strong id="coverage-active-model">General</strong>
+          <p id="coverage-active-copy" class="coverage-active-copy">
+            Best for workflow, coagulation, blood smear, sample handling, and quality-control questions.
+          </p>
+        </div>
+
+        <div class="coverage-groups">
+          <article class="coverage-card" data-model-card="general">
+            <div class="coverage-card-head">
+              <p class="coverage-card-title">General</p>
+              <span class="coverage-pill">Workflow model</span>
+            </div>
+            <p class="coverage-card-copy">
+              Use this model for operational laboratory guidance and routine hematology terminology.
+            </p>
+            <div class="coverage-chip-grid">
+              <span class="coverage-chip">CBC basics</span>
+              <span class="coverage-chip">CBC tube selection</span>
+              <span class="coverage-chip">Sample rejection criteria</span>
+              <span class="coverage-chip">EDTA handling</span>
+              <span class="coverage-chip">Coagulation tests</span>
+              <span class="coverage-chip">PT / aPTT / INR</span>
+              <span class="coverage-chip">Blood smear workflow</span>
+              <span class="coverage-chip">Analyzer QC</span>
+              <span class="coverage-chip">Critical value reporting</span>
+              <span class="coverage-chip">RBC / WBC / platelet terms</span>
+            </div>
+          </article>
+
+          <article class="coverage-card" data-model-card="report">
+            <div class="coverage-card-head">
+              <p class="coverage-card-title">Report Assistant</p>
+              <span class="coverage-pill">Report model</span>
+            </div>
+            <p class="coverage-card-copy">
+              Use this model for CBC report reading, parameter meaning, result-pattern support, and printed flags.
+            </p>
+            <div class="coverage-chip-grid">
+              <span class="coverage-chip">CBC report structure</span>
+              <span class="coverage-chip">HGB / HCT / RBC values</span>
+              <span class="coverage-chip">WBC / PLT values</span>
+              <span class="coverage-chip">MCV / MCH / MCHC / RDW</span>
+              <span class="coverage-chip">Anemia report flags</span>
+              <span class="coverage-chip">Thrombocytopenia flags</span>
+              <span class="coverage-chip">Neutrophilia / leukocytosis</span>
+              <span class="coverage-chip">Age-aware result review</span>
+              <span class="coverage-chip">Sex-specific HGB / HCT</span>
+              <span class="coverage-chip">Multi-value report phrases</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="coverage-note">
+          <p class="coverage-note-title">Boundaries</p>
+          <p class="coverage-note-copy">
+            Both models provide bounded laboratory support. They do not diagnose disease or recommend treatment.
+          </p>
+        </div>
+      </div>
+    </aside>
   </main>
 
   <template id="message-template">

@@ -188,12 +188,27 @@ class IntentPredictor:
         return intent, confidence
 
     def _apply_domain_assist(self, cleaned: str, intent: str, confidence: float) -> Tuple[str, float]:
-        if intent in {'report_numeric_result_analysis', 'report_flag_result_analysis'} and analyze_report_input(cleaned) is None:
+        analysis = analyze_report_input(cleaned)
+        if intent in {'report_numeric_result_analysis', 'report_flag_result_analysis'} and analysis is None:
             if extract_age_years(cleaned) is not None:
                 return 'incomplete_query', max(confidence, 0.80)
+        if (
+            analysis is not None
+            and analysis.intent in self.available_intents
+            and intent in {
+                'fallback',
+                'cbc_info',
+                'cbc_result_parameter',
+                'cbc_flag_explanation',
+                'anemia_related_term',
+                'platelet_abnormality',
+                'differential_result_explanation',
+                'report_structure_help',
+            }
+        ):
+            return analysis.intent, max(confidence, 0.85)
         if intent != 'fallback':
             return intent, confidence
-        analysis = analyze_report_input(cleaned)
         if analysis is None or analysis.intent not in self.available_intents:
             return intent, confidence
         return analysis.intent, max(confidence, 0.80)

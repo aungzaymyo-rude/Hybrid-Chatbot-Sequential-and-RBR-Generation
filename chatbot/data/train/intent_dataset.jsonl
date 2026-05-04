@@ -5209,3 +5209,183 @@
 {"text": "RBC is 4.6 and age is 51", "intent": "report_numeric_result_analysis", "lang": "en"}
 {"text": "My blood report says RBC 4.6 age 51", "intent": "report_numeric_result_analysis", "lang": "en"}
 {"text": "Please analyze RBC 4.6; age is 51", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 24 WBC is 13.0 PLT is 365", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report WBC is 13.0, PLT is 365, and age is 24", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze WBC 13.0 and PLT 365 for age 24", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 24, WBC 13.0, PLT 365", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 24 WBC is 5.8 PLT is 120", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report WBC is 5.8, PLT is 120, and age is 24", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze WBC 5.8 and PLT 120 for age 24", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 24, WBC 5.8, PLT 120", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 24 WBC is 3.5 PLT is 450", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report WBC is 3.5, PLT is 450, and age is 24", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze WBC 3.5 and PLT 450 for age 24", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 24, WBC 3.5, PLT 450", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 24 MCV is 72 RDW is 18.5", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report MCV is 72, RDW is 18.5, and age is 24", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze MCV 72 and RDW 18.5 for age 24", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 24, MCV 72, RDW 18.5", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 24 MCV is 88 RDW is 13.2", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report MCV is 88, RDW is 13.2, and age is 24", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze MCV 88 and RDW 13.2 for age 24", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 24, MCV 88, RDW 13.2", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 24 MCV is 104 RDW is 11.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report MCV is 104, RDW is 11.8, and age is 24", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze MCV 104 and RDW 11.8 for age 24", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 24, MCV 104, RDW 11.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 24 RBC is 3.1 HGB is 9.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report RBC is 3.1, HGB is 9.8, and age is 24", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze RBC 3.1 and HGB 9.8 for age 24", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 24, RBC 3.1, HGB 9.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 24 RBC is 4.8 HGB is 13.9", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report RBC is 4.8, HGB is 13.9, and age is 24", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze RBC 4.8 and HGB 13.9 for age 24", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 24, RBC 4.8, HGB 13.9", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 24 RBC is 6.5 HGB is 17.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report RBC is 6.5, HGB is 17.8, and age is 24", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze RBC 6.5 and HGB 17.8 for age 24", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 24, RBC 6.5, HGB 17.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 43 WBC is 13.0 PLT is 365", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report WBC is 13.0, PLT is 365, and age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze WBC 13.0 and PLT 365 for age 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 43, WBC 13.0, PLT 365", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 43 WBC is 5.8 PLT is 120", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report WBC is 5.8, PLT is 120, and age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze WBC 5.8 and PLT 120 for age 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 43, WBC 5.8, PLT 120", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 43 WBC is 3.5 PLT is 450", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report WBC is 3.5, PLT is 450, and age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze WBC 3.5 and PLT 450 for age 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 43, WBC 3.5, PLT 450", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 43 MCV is 72 RDW is 18.5", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report MCV is 72, RDW is 18.5, and age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze MCV 72 and RDW 18.5 for age 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 43, MCV 72, RDW 18.5", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 43 MCV is 88 RDW is 13.2", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report MCV is 88, RDW is 13.2, and age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze MCV 88 and RDW 13.2 for age 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 43, MCV 88, RDW 13.2", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 43 MCV is 104 RDW is 11.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report MCV is 104, RDW is 11.8, and age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze MCV 104 and RDW 11.8 for age 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 43, MCV 104, RDW 11.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 43 RBC is 3.1 HGB is 9.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report RBC is 3.1, HGB is 9.8, and age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze RBC 3.1 and HGB 9.8 for age 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 43, RBC 3.1, HGB 9.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 43 RBC is 4.8 HGB is 13.9", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report RBC is 4.8, HGB is 13.9, and age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze RBC 4.8 and HGB 13.9 for age 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 43, RBC 4.8, HGB 13.9", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 43 RBC is 6.5 HGB is 17.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report RBC is 6.5, HGB is 17.8, and age is 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze RBC 6.5 and HGB 17.8 for age 43", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 43, RBC 6.5, HGB 17.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 50 WBC is 13.0 PLT is 365", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report WBC is 13.0, PLT is 365, and age is 50", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze WBC 13.0 and PLT 365 for age 50", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 50, WBC 13.0, PLT 365", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 50 WBC is 5.8 PLT is 120", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report WBC is 5.8, PLT is 120, and age is 50", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze WBC 5.8 and PLT 120 for age 50", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 50, WBC 5.8, PLT 120", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 50 WBC is 3.5 PLT is 450", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report WBC is 3.5, PLT is 450, and age is 50", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze WBC 3.5 and PLT 450 for age 50", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 50, WBC 3.5, PLT 450", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 50 MCV is 72 RDW is 18.5", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report MCV is 72, RDW is 18.5, and age is 50", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze MCV 72 and RDW 18.5 for age 50", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 50, MCV 72, RDW 18.5", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 50 MCV is 88 RDW is 13.2", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report MCV is 88, RDW is 13.2, and age is 50", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze MCV 88 and RDW 13.2 for age 50", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 50, MCV 88, RDW 13.2", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 50 MCV is 104 RDW is 11.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report MCV is 104, RDW is 11.8, and age is 50", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze MCV 104 and RDW 11.8 for age 50", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 50, MCV 104, RDW 11.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 50 RBC is 3.1 HGB is 9.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report RBC is 3.1, HGB is 9.8, and age is 50", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze RBC 3.1 and HGB 9.8 for age 50", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 50, RBC 3.1, HGB 9.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 50 RBC is 4.8 HGB is 13.9", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report RBC is 4.8, HGB is 13.9, and age is 50", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze RBC 4.8 and HGB 13.9 for age 50", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 50, RBC 4.8, HGB 13.9", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 50 RBC is 6.5 HGB is 17.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report RBC is 6.5, HGB is 17.8, and age is 50", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze RBC 6.5 and HGB 17.8 for age 50", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 50, RBC 6.5, HGB 17.8", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 10 WBC is 13.2 PLT is 410", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report WBC is 13.2, PLT is 410, and age is 10", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze WBC 13.2 and PLT 410 for age 10", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 10, WBC 13.2, PLT 410", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 10 WBC is 7.8 PLT is 220", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report WBC is 7.8, PLT is 220, and age is 10", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze WBC 7.8 and PLT 220 for age 10", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 10, WBC 7.8, PLT 220", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 10 WBC is 4.2 PLT is 140", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report WBC is 4.2, PLT is 140, and age is 10", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze WBC 4.2 and PLT 140 for age 10", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 10, WBC 4.2, PLT 140", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 10 HGB is 10.4 HCT is 31", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report HGB is 10.4, HCT is 31, and age is 10", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze HGB 10.4 and HCT 31 for age 10", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 10, HGB 10.4, HCT 31", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 10 HGB is 12.6 HCT is 39", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report HGB is 12.6, HCT is 39, and age is 10", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze HGB 12.6 and HCT 39 for age 10", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 10, HGB 12.6, HCT 39", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 10 HGB is 14.8 HCT is 46", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report HGB is 14.8, HCT is 46, and age is 10", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze HGB 14.8 and HCT 46 for age 10", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 10, HGB 14.8, HCT 46", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 12 WBC is 13.2 PLT is 410", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report WBC is 13.2, PLT is 410, and age is 12", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze WBC 13.2 and PLT 410 for age 12", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 12, WBC 13.2, PLT 410", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 12 WBC is 7.8 PLT is 220", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report WBC is 7.8, PLT is 220, and age is 12", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze WBC 7.8 and PLT 220 for age 12", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 12, WBC 7.8, PLT 220", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 12 WBC is 4.2 PLT is 140", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report WBC is 4.2, PLT is 140, and age is 12", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze WBC 4.2 and PLT 140 for age 12", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 12, WBC 4.2, PLT 140", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 12 HGB is 10.4 HCT is 31", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report HGB is 10.4, HCT is 31, and age is 12", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze HGB 10.4 and HCT 31 for age 12", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 12, HGB 10.4, HCT 31", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 12 HGB is 12.6 HCT is 39", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report HGB is 12.6, HCT is 39, and age is 12", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze HGB 12.6 and HCT 39 for age 12", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 12, HGB 12.6, HCT 39", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 12 HGB is 14.8 HCT is 46", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report HGB is 14.8, HCT is 46, and age is 12", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze HGB 14.8 and HCT 46 for age 12", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 12, HGB 14.8, HCT 46", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 16 WBC is 13.2 PLT is 410", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report WBC is 13.2, PLT is 410, and age is 16", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze WBC 13.2 and PLT 410 for age 16", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 16, WBC 13.2, PLT 410", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 16 WBC is 7.8 PLT is 220", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report WBC is 7.8, PLT is 220, and age is 16", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze WBC 7.8 and PLT 220 for age 16", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 16, WBC 7.8, PLT 220", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 16 WBC is 4.2 PLT is 140", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report WBC is 4.2, PLT is 140, and age is 16", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze WBC 4.2 and PLT 140 for age 16", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 16, WBC 4.2, PLT 140", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 16 HGB is 10.4 HCT is 31", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report HGB is 10.4, HCT is 31, and age is 16", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze HGB 10.4 and HCT 31 for age 16", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 16, HGB 10.4, HCT 31", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 16 HGB is 12.6 HCT is 39", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report HGB is 12.6, HCT is 39, and age is 16", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze HGB 12.6 and HCT 39 for age 16", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 16, HGB 12.6, HCT 39", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Age is 16 HGB is 14.8 HCT is 46", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "In my report HGB is 14.8, HCT is 46, and age is 16", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Please analyze HGB 14.8 and HCT 46 for age 16", "intent": "report_numeric_result_analysis", "lang": "en"}
+{"text": "Report values: age 16, HGB 14.8, HCT 46", "intent": "report_numeric_result_analysis", "lang": "en"}
