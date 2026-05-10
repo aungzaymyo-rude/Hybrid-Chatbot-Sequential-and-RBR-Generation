@@ -1,0 +1,47 @@
+\subsection{Background to the Project}
+
+Conversational systems have been adopted widely across healthcare, education, commerce, and customer support. In healthcare, such systems have been used for education, triage support, adherence reminders, self-management, service navigation, and patient communication. However, the literature has shown that many healthcare conversational agents remain limited in evaluation maturity, safety evidence, and usability standardisation (Milne-Ives \textit{et al.}, 2020; Denecke and May, 2022). The problem becomes more acute when the system is expected to operate in a technical environment such as a haematology laboratory, where terminology is specialised and responses must remain controlled.
+
+The project was therefore framed around a narrower and more defensible use case: a medical haematology assistant for laboratory-oriented questions. The purpose was not to produce an autonomous diagnostic system or a treatment recommendation engine. Instead, the aim was to support users with explanations of complete blood count terminology, specimen collection guidance, coagulation sample handling, blood smear concepts, quality control questions, report-structure explanations, and controlled fallback behaviour. This bounded scope was important because the clinical consequences of hallucinated or overly broad medical advice would have been unacceptable.
+
+The project also had an engineering motivation. In many student machine learning projects, most effort is concentrated on the model itself, while the operational lifecycle is treated as an afterthought. That approach is not sufficient for production-style machine learning. Sculley \textit{et al.} (2015) argued that machine learning systems accumulate technical debt through data dependencies, hidden feedback loops, configuration complexity, and fragile system boundaries. Kreuzberger, Kühl and Hirschl (2023) similarly described MLOps as an end-to-end discipline involving data, model, deployment, monitoring, feedback, and retraining. For that reason, this project was defined not only as a chatbot implementation but also as an MLOps-oriented system.
+
+\subsection{Problem Statement}
+
+It was identified that a general-purpose chatbot would not be appropriate for this laboratory-focused scenario for four main reasons. First, general chatbots do not guarantee intent-level control over specialist terminology and laboratory workflows. Second, their outputs are not naturally limited to a safe operational scope. Third, model behaviour cannot be improved systematically unless user queries, low-confidence predictions, and review outcomes are logged and analysed. Fourth, the absence of reproducible train-validation-test separation weakens the credibility of model evaluation.
+
+The project problem was therefore defined as follows: \textbf{how could a domain-specific haematology assistant be designed using sequential intent classification and retrieval-based response generation, while also supporting versioned data, fixed evaluation splits, deployment logging, model monitoring, and retraining from reviewed user queries?}
+
+\subsection{Aim and Objectives}
+
+The overall aim of the project was to design and develop a hybrid chatbot for medical haematology that used sequential models for intent classification and retrieval-based response generation, supported by a practical MLOps workflow.
+
+To achieve that aim, the following objectives were pursued:
+
+\begin{enumerate}
+
+\item A labelled dataset of haematology and operational utterances was to be created and extended iteratively.
+
+\item Sequential intent classifiers based on BiLSTM were to be trained for at least two task scopes.
+
+\item A retrieval-based response layer was to be implemented using curated haematology knowledge rather than unrestricted generation.
+
+\item Safety rules, model switching, and entity-based routing were to be introduced so that the assistant remained within an appropriate scope.
+
+\item A deployable application stack was to be built with API, browser UI, PostgreSQL logging, and Docker support.
+
+\item The machine learning lifecycle was to be formalised through fixed dataset splits, reproducible evaluation, automated testing, monitoring, and retraining support.
+
+\end{enumerate}
+
+\subsection{Research Relevance and Contribution}
+
+The project was relevant to the programme outcomes in three ways. First, it required critical understanding of medical chatbots, sequential neural architectures, retrieval methods, and MLOps principles. Second, it resulted in a substantial technical artefact rather than a purely theoretical study. Third, it demanded evaluation, iteration, and critical reflection on model boundaries, data quality, and operational maintainability.
+
+The specific contribution of the project was not a novel neural architecture. Instead, the contribution lay in the integration of multiple layers into a coherent and auditable system: domain-specific data collection, BiLSTM intent classification, TF-IDF retrieval, model-aware routing, traceable admin diagnostics, retraining from reviewed logs, and split-aware evaluation. In that respect, the work addressed both machine learning and software engineering concerns.
+
+\subsection{Scope and Delimitations}
+
+The scope was intentionally limited. The assistant supported English-language text input only. It was designed to answer laboratory-oriented and report-support questions, not to diagnose disease, prescribe medication, or interpret full patient cases. The system did not attempt multimodal vision analysis of uploaded blood reports, even though report-oriented textual support was provided. Furthermore, the retrieval layer was curated and bounded by a knowledge base, which meant the system could not answer arbitrary medical questions outside the modelled domain.
+
+These delimitations were not weaknesses of planning; they were design decisions taken to maintain a safe and defensible project boundary.

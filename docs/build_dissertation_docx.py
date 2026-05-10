@@ -136,7 +136,7 @@ def add_metrics_table(doc: Document):
         cell.text = header
     rows = [
         ["General", "0.8928", "0.8649", "0.8914", "0.8822", "0.8617"],
-        ["Report", "0.9040", "0.8604", "0.8991", "0.8660", "0.8592"],
+        ["Report", "0.9358", "0.8965", "0.9360", "0.8968", "0.9040"],
     ]
     for row in rows:
         cells = table.add_row().cells

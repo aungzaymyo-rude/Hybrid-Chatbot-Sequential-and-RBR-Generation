@@ -1,0 +1,59 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[top=2.5cm,bottom=2.5cm,left=3cm,right=2cm,marginparwidth=1.75cm]{geometry}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage[backend=biber,style=authoryear]{biblatex}
+\addbibresource{references.bib}
+
+\onehalfspacing
+\setlength{\parskip}{0.4em}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.5em}
+\setlist[enumerate]{leftmargin=1.7em}
+
+\title{Design and Development of a Hybrid Chatbot for Medical Haematology using Sequential Models for Intent Classification and Retrieval-Based Response Generation}
+\author{Student Name: [Insert Name] \\ Student ID: [Insert ID] \\ Programme: [Insert Degree Title] \\ Supervisor: [Insert Supervisor Name]}
+\date{May 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\input{sections/abstract.tex}
+\end{abstract}
+
+\section{Introduction}
+\label{sec:introduction}
+\input{sections/01_introduction.tex}
+
+\section{Literature Review}
+\label{sec:literature-review}
+\input{sections/02_literature_review.tex}
+
+\section{Design and Development}
+\label{sec:design-development}
+\input{sections/03_design_and_development.tex}
+
+\section{Result Analysis and Evaluation}
+\label{sec:results-evaluation}
+\input{sections/04_result_analysis_and_evaluation.tex}
+
+\section{Conclusions and Further Work}
+\label{sec:conclusion}
+\input{sections/05_conclusions_and_future_work.tex}
+
+\nocite{denecke2022,graves2005,hochreiter1997,kreuzberger2023,milneives2020,salton1988,sculley2015,tudorcar2020}
+\printbibliography[title={References}]
+
+\end{document}
