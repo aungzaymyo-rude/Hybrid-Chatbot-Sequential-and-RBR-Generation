@@ -96,7 +96,7 @@ Labeled file format (CSV/JSONL):
 - `lang` (optional, defaults to `en`)
 
 Master dataset snapshot (`chatbot/data/train/intent_dataset.jsonl`):
-- Total samples: `5211`
+- Total samples: `5391`
 - Total intents: `29`
 - Largest classes: `cbc_info=312`, `coag_test=300`, `sample_collection=214`, `wbc_term=140`, `rbc_term=140`
 - Report-analysis classes now include:
@@ -112,12 +112,12 @@ Master dataset snapshot (`chatbot/data/train/intent_dataset.jsonl`):
 
 Derived model datasets:
 - `chatbot/data/train/intent_dataset_general.jsonl`: `2670` samples across `21` intents
-- `chatbot/data/train/intent_dataset_report.jsonl`: `4597` samples across `26` intents
+- `chatbot/data/train/intent_dataset_report.jsonl`: `4777` samples across `26` intents
 
 Fixed split policy:
 - Train / validation / test = `70 / 15 / 15`
 - `chatbot/data/splits/general/`: train `1868`, validation `401`, test `401`
-- `chatbot/data/splits/report/`: train `3217`, validation `690`, test `690`
+- `chatbot/data/splits/report/`: train `3343`, validation `717`, test `717`
 
 Two-model dataset count summary:
 - `general`: includes workflow and assistant intents such as `sample_collection`, `coag_test`, `quality_control`, `cbc_info`, `rbc_term`, `wbc_term`, `blood_smear`, plus communication/safety intents
@@ -141,6 +141,8 @@ Focused report-analysis expansion:
 - Added child and pediatric phrasing for `WBC`, `RBC`, `HGB`, `HCT`, `MCV`, and `PLT`
 - `chatbot/data/labeled/report_analysis_age_context_expansion_360.csv`: `360` additional age-context report rows
 - Added phrases such as `WBC is 13.37 age is 51` and `WBC is 13 age is 10` so the report model learns age-aware report analysis language
+- `chatbot/data/labeled/report_analysis_multivalue_expansion_180.csv`: `180` additional multi-value report rows
+- Added phrases such as `Age is 50 WBC is 13 MCV is 73 PLT is 1` so the report model learns multi-analyte report support
 
 ## Build Training Dataset
 Training uses one master file first:
@@ -256,10 +258,19 @@ Latest evaluation snapshots:
 - `report_model_eval_report_analysis_sex_20260503_posttrain`: test samples `600`, accuracy `0.9417`, macro F1 `0.8875`
 - `report_model_eval_report_analysis_pediatric_20260503_posttrain`: test samples `636`, accuracy `0.9387`, macro F1 `0.9133`
 - `report_model_eval_age_context_20260503_posttrain`: test samples `690`, accuracy `0.9333`, macro F1 `0.8805`
+- `report_model_eval_multivalue_20260503`: test samples `717`, accuracy `0.9358`, macro F1 `0.8965`
 
 The split-aware scores are lower than the older single-holdout numbers. That is expected. They are the stronger paper metrics because the models are now selected on validation and reported on an untouched test set.
 
 ## Admin Review And Next Retraining Cycle
+The admin portal now requires authentication.
+
+Default first-login credentials:
+- username: `admin`
+- password: `admin`
+
+After first login, use the `Change password` button in the admin sidebar and replace the default password.
+
 Admin exports now include:
 - `/admin/api/export-logs`: recent production logs
 - `/admin/api/export-reviewed`: accepted reviewed queries for retraining
@@ -275,11 +286,35 @@ The report-analysis error export is intended for the next retraining cycle. It h
 
 so they can be corrected, reviewed, and merged back into `chatbot/data/labeled/`.
 
+Admin authentication endpoints:
+- `/admin/api/login`
+- `/admin/api/session`
+- `/admin/api/logout`
+- `/admin/api/change-password`
+
 ## Inference (CLI)
 ```bash
 python chatbot/inference/run_inference.py --text "What is a CBC?" --config chatbot/config.yaml --model-key general
 python chatbot/inference/run_inference.py --text "How do I read this CBC report?" --config chatbot/config.yaml --model-key report
 ```
+
+## Long-Input Inference Notes
+Current input constraints:
+- chat UI text area: `400` characters
+- API request text: minimum `1` character
+- BiLSTM inference window: first `64` tokens after normalization and tokenization
+
+This means very long prompts are truncated at the token level before sequence inference. In practice, results are strongest when the medically relevant terms appear early in the utterance.
+
+Long-input regression artifacts:
+- `docs/long_input_inference_tests.csv`
+- `docs/long_input_inference_tests.md`
+
+Current long-input regression summary:
+- total cases: `30`
+- truncated cases: `7`
+- fallback cases: `4`
+- low-confidence cases: `6`
 
 ## Run The Application Directly
 Recommended direct-install startup now uses the deployment runner instead of calling `uvicorn` manually:
@@ -416,6 +451,10 @@ The provided `docker-compose.yml` is now configured for an HTTPS deployment scen
 - HTTPS is enabled by default in the container
 - certificate files are stored under `./certs`
 - if those files do not exist, the container generates a self-signed certificate automatically
+- PostgreSQL schema is mounted from `chatbot/deployment/sql/postgres_schema.sql`
+- the default admin account is seeded at runtime from:
+  - `CHATBOT_ADMIN_DEFAULT_USERNAME`
+  - `CHATBOT_ADMIN_DEFAULT_PASSWORD`
 
 Start:
 ```bash
@@ -427,6 +466,10 @@ Access:
 - `https://localhost:8443/`
 - `https://localhost:8443/admin`
 - `https://localhost:8443/docs`
+
+Default admin login after startup:
+- username: `admin`
+- password: `admin`
 
 Self-signed certificate notes:
 - browsers will warn because the certificate is not issued by a trusted CA
@@ -456,6 +499,7 @@ The current knowledge base now includes more operational coverage for:
 
 ## Chatbot Features
 - Hematology-focused assistant UI with scope and safety panels
+- Direct `Admin` button in the main chat header for operator navigation
 - Quick prompt shortcuts for common hematology questions
 - Model selector for switching between the `general` and `report` local intent models
 - Local browser conversation persistence
@@ -465,10 +509,11 @@ The current knowledge base now includes more operational coverage for:
 - Per-message intent, confidence, and category display
 - Controlled guardrail responses for unsafe or out-of-scope requests
 - Query logging to PostgreSQL for future tuning and monitoring
-- Admin monitoring panel for fallback, guardrail, confidence, review workflow, and multi-model monitoring
+- Admin monitoring panel for fallback, guardrail, confidence, review workflow, multi-model monitoring, and protected admin login
 - Sidebar-based admin layout organized by MLOps stage: overview, ingestion, versioning, splits, monitoring, and review queue
 - Admin pipeline paths are displayed as project-relative paths so the UI stays portable across Windows hosts and Docker/Linux deployments
 - Inference Trace section visualizes one phrase across normalization, tokenization, BiLSTM classification, entity detection, TF-IDF retrieval candidates, and final route selection
+- Report assistant supports bounded numeric-result analysis, printed report flags, age-aware and pediatric handling, sex-specific `HGB` / `HCT`, and multi-value phrases such as `Age is 50 WBC is 13 MCV is 73 PLT is 1`
 
 ## API
 ```bash
@@ -487,7 +532,7 @@ Open the admin monitoring panel:
 http://localhost:8000/admin
 ```
 
-User questions, fallback traffic, review status, and model metadata are logged in PostgreSQL.
+User questions, fallback traffic, review status, model metadata, and admin session state are backed by the configured database schema.
 
 The admin panel now supports multi-model monitoring for the current two-model setup and future additional models:
 - model filter dropdown populated from `/models`
@@ -541,6 +586,26 @@ Use this after any change to:
 - model artifacts in `chatbot/models/intent_report/`
 - Python application code
 - admin/review workflow code
+
+## Deployable Database Schemas
+Ready-to-use schema files are provided for both deployment styles:
+
+- PostgreSQL: `chatbot/deployment/sql/postgres_schema.sql`
+- SQLite: `chatbot/deployment/sql/sqlite_schema.sql`
+
+The PostgreSQL schema is mounted automatically by `docker-compose.yml` into `/docker-entrypoint-initdb.d/`.
+
+For a direct PostgreSQL deployment, initialize the schema manually:
+```bash
+psql -U postgres -d chatbot -f chatbot/deployment/sql/postgres_schema.sql
+```
+
+For a direct SQLite deployment, create the database manually:
+```bash
+sqlite3 chatbot/data/reports/chat_history.db < chatbot/deployment/sql/sqlite_schema.sql
+```
+
+The application also bootstraps the default admin account at runtime if it does not already exist.
 
 ## Model Selection
 Configure models in `chatbot/config.yaml` and choose at runtime:
