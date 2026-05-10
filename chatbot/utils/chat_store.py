@@ -9,15 +9,25 @@ from typing import Any
 from psycopg import connect
 from psycopg.rows import dict_row
 
+from chatbot.utils.admin_auth import (
+    AuthenticatedAdmin,
+    generate_session_token,
+    hash_password,
+    hash_session_token,
+    session_expiry,
+    utc_now,
+    verify_password,
+)
 from chatbot.utils.report_analysis import analyze_report_input
 
 
 class ChatHistoryStore:
-    def __init__(self, postgres_cfg: dict[str, Any] | str) -> None:
+    def __init__(self, postgres_cfg: dict[str, Any] | str, admin_auth_cfg: dict[str, Any] | None = None) -> None:
         self.backend = 'postgresql' if isinstance(postgres_cfg, dict) else 'sqlite'
         self.postgres_cfg = postgres_cfg if isinstance(postgres_cfg, dict) else None
         self.sqlite_path = Path(postgres_cfg).resolve() if isinstance(postgres_cfg, str) else None
         self.conninfo = self._build_conninfo(postgres_cfg) if isinstance(postgres_cfg, dict) else None
+        self.admin_auth_cfg = admin_auth_cfg or {}
         if self.sqlite_path is not None:
             self.sqlite_path.parent.mkdir(parents=True, exist_ok=True)
         self._initialize()
@@ -58,10 +68,40 @@ class ChatHistoryStore:
                     auto_switched INTEGER NOT NULL DEFAULT 0,
                     model_path TEXT,
                     model_version TEXT,
-                    corrected_intent TEXT
+                        corrected_intent TEXT
                     )
                     '''
                 )
+                conn.execute(
+                    '''
+                    CREATE TABLE IF NOT EXISTS admin_users (
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        username TEXT NOT NULL UNIQUE,
+                        password_salt TEXT NOT NULL,
+                        password_hash TEXT NOT NULL,
+                        must_change_password INTEGER NOT NULL DEFAULT 1,
+                        is_active INTEGER NOT NULL DEFAULT 1,
+                        created_at TEXT NOT NULL,
+                        updated_at TEXT NOT NULL,
+                        last_login_at TEXT
+                    )
+                    '''
+                )
+                conn.execute(
+                    '''
+                    CREATE TABLE IF NOT EXISTS admin_sessions (
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        user_id INTEGER NOT NULL,
+                        token_hash TEXT NOT NULL UNIQUE,
+                        created_at TEXT NOT NULL,
+                        expires_at TEXT NOT NULL,
+                        FOREIGN KEY (user_id) REFERENCES admin_users(id) ON DELETE CASCADE
+                    )
+                    '''
+                )
+                conn.execute('CREATE INDEX IF NOT EXISTS idx_admin_sessions_token_hash ON admin_sessions (token_hash)')
+                conn.execute('CREATE INDEX IF NOT EXISTS idx_admin_sessions_expires_at ON admin_sessions (expires_at)')
+                self._ensure_default_admin_sqlite(conn)
             return
 
         with self._connect() as conn, conn.cursor() as cur:
@@ -100,7 +140,74 @@ class ChatHistoryStore:
             cur.execute('CREATE INDEX IF NOT EXISTS idx_chat_logs_intent ON chat_logs (intent)')
             cur.execute('CREATE INDEX IF NOT EXISTS idx_chat_logs_model_key ON chat_logs (model_key)')
             cur.execute('CREATE INDEX IF NOT EXISTS idx_chat_logs_review_status ON chat_logs (review_status)')
+            cur.execute(
+                '''
+                CREATE TABLE IF NOT EXISTS admin_users (
+                    id BIGSERIAL PRIMARY KEY,
+                    username VARCHAR(80) NOT NULL UNIQUE,
+                    password_salt VARCHAR(128) NOT NULL,
+                    password_hash VARCHAR(256) NOT NULL,
+                    must_change_password BOOLEAN NOT NULL DEFAULT TRUE,
+                    is_active BOOLEAN NOT NULL DEFAULT TRUE,
+                    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+                    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+                    last_login_at TIMESTAMPTZ
+                )
+                '''
+            )
+            cur.execute(
+                '''
+                CREATE TABLE IF NOT EXISTS admin_sessions (
+                    id BIGSERIAL PRIMARY KEY,
+                    user_id BIGINT NOT NULL REFERENCES admin_users(id) ON DELETE CASCADE,
+                    token_hash VARCHAR(128) NOT NULL UNIQUE,
+                    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+                    expires_at TIMESTAMPTZ NOT NULL
+                )
+                '''
+            )
+            cur.execute('CREATE INDEX IF NOT EXISTS idx_admin_users_username ON admin_users (username)')
+            cur.execute('CREATE INDEX IF NOT EXISTS idx_admin_sessions_token_hash ON admin_sessions (token_hash)')
+            cur.execute('CREATE INDEX IF NOT EXISTS idx_admin_sessions_expires_at ON admin_sessions (expires_at)')
+            self._ensure_default_admin_postgres(cur)
             conn.commit()
+
+    def _default_admin_credentials(self) -> tuple[str, str]:
+        return (
+            str(self.admin_auth_cfg.get('default_username', 'admin')),
+            str(self.admin_auth_cfg.get('default_password', 'admin')),
+        )
+
+    def _ensure_default_admin_sqlite(self, conn: sqlite3.Connection) -> None:
+        username, password = self._default_admin_credentials()
+        existing = conn.execute('SELECT id FROM admin_users WHERE username = ?', (username,)).fetchone()
+        if existing:
+            return
+        salt, digest = hash_password(password)
+        now = utc_now().isoformat()
+        conn.execute(
+            '''
+            INSERT INTO admin_users (
+                username, password_salt, password_hash, must_change_password, is_active, created_at, updated_at
+            ) VALUES (?, ?, ?, ?, ?, ?, ?)
+            ''',
+            (username, salt, digest, 1, 1, now, now),
+        )
+
+    def _ensure_default_admin_postgres(self, cur) -> None:
+        username, password = self._default_admin_credentials()
+        cur.execute('SELECT id FROM admin_users WHERE username = %(username)s', {'username': username})
+        if cur.fetchone():
+            return
+        salt, digest = hash_password(password)
+        cur.execute(
+            '''
+            INSERT INTO admin_users (
+                username, password_salt, password_hash, must_change_password, is_active
+            ) VALUES (%(username)s, %(salt)s, %(digest)s, TRUE, TRUE)
+            ''',
+            {'username': username, 'salt': salt, 'digest': digest},
+        )
 
     def log_chat(
         self,
@@ -517,3 +624,184 @@ class ChatHistoryStore:
         low_confidence_threshold: float = 0.55,
     ) -> list[dict[str, Any]]:
         return self.fetch_report_analysis_error_rows(limit=limit, low_confidence_threshold=low_confidence_threshold)
+
+    def authenticate_admin(self, username: str, password: str, *, session_ttl_hours: int = 12) -> dict[str, Any] | None:
+        if self.backend == 'sqlite':
+            with self._connect() as conn:
+                conn.row_factory = sqlite3.Row
+                self._cleanup_expired_sessions_sqlite(conn)
+                row = conn.execute(
+                    '''
+                    SELECT id, username, password_salt, password_hash, must_change_password, is_active
+                    FROM admin_users
+                    WHERE username = ?
+                    ''',
+                    (username,),
+                ).fetchone()
+                if not row or not row['is_active']:
+                    return None
+                if not verify_password(password, str(row['password_salt']), str(row['password_hash'])):
+                    return None
+                token = generate_session_token()
+                token_hash = hash_session_token(token)
+                now = utc_now().isoformat()
+                expires_at = session_expiry(session_ttl_hours).isoformat()
+                conn.execute('DELETE FROM admin_sessions WHERE user_id = ?', (row['id'],))
+                conn.execute(
+                    '''
+                    INSERT INTO admin_sessions (user_id, token_hash, created_at, expires_at)
+                    VALUES (?, ?, ?, ?)
+                    ''',
+                    (row['id'], token_hash, now, expires_at),
+                )
+                conn.execute(
+                    'UPDATE admin_users SET last_login_at = ?, updated_at = ? WHERE id = ?',
+                    (now, now, row['id']),
+                )
+                return {
+                    'token': token,
+                    'username': str(row['username']),
+                    'must_change_password': bool(row['must_change_password']),
+                    'user_id': int(row['id']),
+                }
+
+        with self._connect() as conn, conn.cursor() as cur:
+            self._cleanup_expired_sessions_postgres(cur)
+            cur.execute(
+                '''
+                SELECT id, username, password_salt, password_hash, must_change_password, is_active
+                FROM admin_users
+                WHERE username = %(username)s
+                ''',
+                {'username': username},
+            )
+            row = cur.fetchone()
+            if not row or not row.get('is_active'):
+                return None
+            if not verify_password(password, str(row['password_salt']), str(row['password_hash'])):
+                return None
+            token = generate_session_token()
+            token_hash = hash_session_token(token)
+            expires_at = session_expiry(session_ttl_hours)
+            cur.execute('DELETE FROM admin_sessions WHERE user_id = %(user_id)s', {'user_id': row['id']})
+            cur.execute(
+                '''
+                INSERT INTO admin_sessions (user_id, token_hash, expires_at)
+                VALUES (%(user_id)s, %(token_hash)s, %(expires_at)s)
+                ''',
+                {'user_id': row['id'], 'token_hash': token_hash, 'expires_at': expires_at},
+            )
+            cur.execute(
+                'UPDATE admin_users SET last_login_at = NOW(), updated_at = NOW() WHERE id = %(user_id)s',
+                {'user_id': row['id']},
+            )
+            conn.commit()
+            return {
+                'token': token,
+                'username': str(row['username']),
+                'must_change_password': bool(row['must_change_password']),
+                'user_id': int(row['id']),
+            }
+
+    def get_admin_by_session(self, token: str) -> AuthenticatedAdmin | None:
+        token_hash = hash_session_token(token)
+        if self.backend == 'sqlite':
+            with self._connect() as conn:
+                conn.row_factory = sqlite3.Row
+                self._cleanup_expired_sessions_sqlite(conn)
+                row = conn.execute(
+                    '''
+                    SELECT u.id, u.username, u.must_change_password
+                    FROM admin_sessions s
+                    JOIN admin_users u ON u.id = s.user_id
+                    WHERE s.token_hash = ? AND u.is_active = 1
+                    ''',
+                    (token_hash,),
+                ).fetchone()
+                if not row:
+                    return None
+                return AuthenticatedAdmin(
+                    user_id=int(row['id']),
+                    username=str(row['username']),
+                    must_change_password=bool(row['must_change_password']),
+                )
+
+        with self._connect() as conn, conn.cursor() as cur:
+            self._cleanup_expired_sessions_postgres(cur)
+            cur.execute(
+                '''
+                SELECT u.id, u.username, u.must_change_password
+                FROM admin_sessions s
+                JOIN admin_users u ON u.id = s.user_id
+                WHERE s.token_hash = %(token_hash)s AND u.is_active = TRUE
+                ''',
+                {'token_hash': token_hash},
+            )
+            row = cur.fetchone()
+            if not row:
+                return None
+            return AuthenticatedAdmin(
+                user_id=int(row['id']),
+                username=str(row['username']),
+                must_change_password=bool(row['must_change_password']),
+            )
+
+    def revoke_admin_session(self, token: str) -> None:
+        token_hash = hash_session_token(token)
+        if self.backend == 'sqlite':
+            with self._connect() as conn:
+                conn.execute('DELETE FROM admin_sessions WHERE token_hash = ?', (token_hash,))
+            return
+        with self._connect() as conn, conn.cursor() as cur:
+            cur.execute('DELETE FROM admin_sessions WHERE token_hash = %(token_hash)s', {'token_hash': token_hash})
+            conn.commit()
+
+    def change_admin_password(self, user_id: int, current_password: str, new_password: str) -> bool:
+        salt, digest = hash_password(new_password)
+        if self.backend == 'sqlite':
+            with self._connect() as conn:
+                conn.row_factory = sqlite3.Row
+                row = conn.execute(
+                    'SELECT password_salt, password_hash FROM admin_users WHERE id = ? AND is_active = 1',
+                    (user_id,),
+                ).fetchone()
+                if not row or not verify_password(current_password, str(row['password_salt']), str(row['password_hash'])):
+                    return False
+                now = utc_now().isoformat()
+                conn.execute(
+                    '''
+                    UPDATE admin_users
+                    SET password_salt = ?, password_hash = ?, must_change_password = 0, updated_at = ?
+                    WHERE id = ?
+                    ''',
+                    (salt, digest, now, user_id),
+                )
+                return True
+
+        with self._connect() as conn, conn.cursor() as cur:
+            cur.execute(
+                'SELECT password_salt, password_hash FROM admin_users WHERE id = %(user_id)s AND is_active = TRUE',
+                {'user_id': user_id},
+            )
+            row = cur.fetchone()
+            if not row or not verify_password(current_password, str(row['password_salt']), str(row['password_hash'])):
+                return False
+            cur.execute(
+                '''
+                UPDATE admin_users
+                SET password_salt = %(salt)s,
+                    password_hash = %(digest)s,
+                    must_change_password = FALSE,
+                    updated_at = NOW()
+                WHERE id = %(user_id)s
+                ''',
+                {'salt': salt, 'digest': digest, 'user_id': user_id},
+            )
+            conn.commit()
+            return True
+
+    def _cleanup_expired_sessions_sqlite(self, conn: sqlite3.Connection) -> None:
+        conn.execute('DELETE FROM admin_sessions WHERE expires_at <= ?', (utc_now().isoformat(),))
+
+    def _cleanup_expired_sessions_postgres(self, cur) -> None:
+        cur.execute('DELETE FROM admin_sessions WHERE expires_at <= NOW()')

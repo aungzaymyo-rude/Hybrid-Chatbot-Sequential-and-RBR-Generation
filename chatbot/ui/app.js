@@ -11,6 +11,7 @@ const MODEL_HINTS = {
   general: "Best for workflow, sample handling, coagulation, smear, QC, and general hematology questions.",
   report: "Best for CBC report sections, parameter meanings, abnormal flags, and report-reading questions.",
 };
+const MAX_STORED_MESSAGES = 80;
 
 const SUGGESTED_QUESTIONS = {
   cbc_info: [
@@ -174,15 +175,32 @@ function getSuggestedQuestions(intent) {
   return SUGGESTED_QUESTIONS[intent] || SUGGESTED_QUESTIONS.fallback;
 }
 
-function saveConversation() {
-  const payload = Array.from(messagesEl.querySelectorAll(".message")).map((node) => ({
+function buildConversationPayload() {
+  return Array.from(messagesEl.querySelectorAll(".message")).map((node) => ({
     role: node.dataset.role,
     text: node.querySelector(".bubble").textContent,
     meta: node.querySelector(".meta").hidden ? "" : node.querySelector(".meta").textContent,
     intent: node.dataset.intent || "",
     category: node.dataset.category || "",
   }));
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+}
+
+function saveConversation() {
+  const payload = buildConversationPayload();
+  try {
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+    return true;
+  } catch (error) {
+    try {
+      const trimmedPayload = payload.slice(-MAX_STORED_MESSAGES);
+      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(trimmedPayload));
+      console.warn("Conversation history exceeded localStorage quota; older messages were trimmed.");
+      return true;
+    } catch (innerError) {
+      console.warn("Conversation history could not be saved locally.", innerError);
+      return false;
+    }
+  }
 }
 
 function populateSuggestions(node, intent) {
@@ -354,6 +372,7 @@ async function sendMessage(text) {
     }
     saveConversation();
   } catch (error) {
+    console.error("Chat request handling failed.", error);
     pendingNode.querySelector(".bubble").textContent = "The assistant is unavailable right now.";
     pendingNode.dataset.intent = "network_error";
     pendingNode.dataset.category = "system";

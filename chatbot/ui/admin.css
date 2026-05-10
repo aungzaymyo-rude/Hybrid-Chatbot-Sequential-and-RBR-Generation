@@ -19,6 +19,58 @@ body {
   background: linear-gradient(135deg, #f5f8f1 0%, #ecf3ec 100%);
 }
 
+.admin-auth-shell {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(12, 25, 20, 0.42);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.admin-auth-shell.active {
+  display: flex;
+}
+
+.admin-login-panel {
+  width: min(460px, 100%);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  padding: 28px;
+}
+
+.admin-login-panel h1 {
+  margin: 0;
+}
+
+.admin-login-form {
+  display: grid;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.admin-login-form label {
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+}
+
+.admin-login-form input {
+  border-radius: 16px;
+  padding: 12px 14px;
+}
+
+.login-error {
+  margin: 0;
+  color: #9b1c1c;
+  font-size: 14px;
+}
+
 .admin-layout {
   width: min(1460px, calc(100% - 24px));
   margin: 12px auto;

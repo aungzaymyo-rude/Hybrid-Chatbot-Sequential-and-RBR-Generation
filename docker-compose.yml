@@ -10,6 +10,7 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+      - ./chatbot/deployment/sql/postgres_schema.sql:/docker-entrypoint-initdb.d/01_postgres_schema.sql:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres -d chatbot"]
       interval: 10s
@@ -34,6 +35,8 @@ services:
       POSTGRES_DB: chatbot
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: P@ssw0rd
+      CHATBOT_ADMIN_DEFAULT_USERNAME: admin
+      CHATBOT_ADMIN_DEFAULT_PASSWORD: admin
       CHATBOT_PORT: 8443
       CHATBOT_HTTPS_ENABLED: "true"
       CHATBOT_SSL_AUTO_GENERATE: "true"

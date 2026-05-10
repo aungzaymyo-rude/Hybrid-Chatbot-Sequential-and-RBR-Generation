@@ -3,12 +3,21 @@ from __future__ import annotations
 from functools import lru_cache
 from pathlib import Path
 
-from fastapi import Depends, FastAPI, HTTPException, Query
+from fastapi import Depends, FastAPI, HTTPException, Query, Request, Response, status
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
-from chatbot.api.schemas import AdminReviewRequest, ChatRequest, ChatResponse, TraceRequest
+from chatbot.api.schemas import (
+    AdminChangePasswordRequest,
+    AdminLoginRequest,
+    AdminReviewRequest,
+    AdminSessionResponse,
+    ChatRequest,
+    ChatResponse,
+    TraceRequest,
+)
 from chatbot.inference.registry import ModelRegistry
+from chatbot.utils.admin_auth import AuthenticatedAdmin
 from chatbot.utils.admin_pipeline import build_pipeline_snapshot
 from chatbot.utils.chat_store import ChatHistoryStore
 from chatbot.utils.config import load_config
@@ -39,7 +48,31 @@ def get_registry() -> ModelRegistry:
 @lru_cache
 def get_chat_store() -> ChatHistoryStore:
     cfg = get_config()
-    return ChatHistoryStore(cfg['storage']['postgres'])
+    return ChatHistoryStore(cfg['storage']['postgres'], cfg.get('admin', {}).get('auth', {}))
+
+
+def _admin_auth_settings() -> dict:
+    return get_config().get('admin', {}).get('auth', {})
+
+
+def _admin_cookie_name() -> str:
+    return str(_admin_auth_settings().get('cookie_name', 'chatbot_admin_session'))
+
+
+def require_admin(
+    request: Request,
+    chat_store: ChatHistoryStore = Depends(get_chat_store),
+) -> AuthenticatedAdmin:
+    auth_cfg = _admin_auth_settings()
+    if not auth_cfg.get('enabled', True):
+        return AuthenticatedAdmin(user_id=0, username='admin', must_change_password=False)
+    token = request.cookies.get(_admin_cookie_name())
+    if not token:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail='Admin authentication required')
+    admin = chat_store.get_admin_by_session(token)
+    if not admin:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail='Invalid or expired admin session')
+    return admin
 
 
 @app.get('/health')
@@ -58,6 +91,71 @@ def admin_index() -> FileResponse:
     return FileResponse(UI_DIR / 'admin.html')
 
 
+@app.get('/favicon.ico')
+def favicon() -> Response:
+    return Response(status_code=204)
+
+
+@app.get('/admin/api/session', response_model=AdminSessionResponse)
+def admin_session(admin: AuthenticatedAdmin = Depends(require_admin)) -> AdminSessionResponse:
+    return AdminSessionResponse(authenticated=True, username=admin.username, must_change_password=admin.must_change_password)
+
+
+@app.post('/admin/api/login', response_model=AdminSessionResponse)
+def admin_login(
+    request: AdminLoginRequest,
+    response: Response,
+    chat_store: ChatHistoryStore = Depends(get_chat_store),
+) -> AdminSessionResponse:
+    auth_cfg = _admin_auth_settings()
+    session = chat_store.authenticate_admin(
+        request.username,
+        request.password,
+        session_ttl_hours=int(auth_cfg.get('session_ttl_hours', 12)),
+    )
+    if not session:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail='Invalid admin credentials')
+    response.set_cookie(
+        key=_admin_cookie_name(),
+        value=session['token'],
+        httponly=True,
+        secure=bool(auth_cfg.get('secure_cookie', False)),
+        samesite=str(auth_cfg.get('same_site', 'lax')).lower(),
+        max_age=int(auth_cfg.get('session_ttl_hours', 12)) * 3600,
+        path='/',
+    )
+    return AdminSessionResponse(
+        authenticated=True,
+        username=str(session['username']),
+        must_change_password=bool(session['must_change_password']),
+    )
+
+
+@app.post('/admin/api/logout')
+def admin_logout(
+    request: Request,
+    response: Response,
+    chat_store: ChatHistoryStore = Depends(get_chat_store),
+) -> dict:
+    token = request.cookies.get(_admin_cookie_name())
+    if token:
+        chat_store.revoke_admin_session(token)
+    response.delete_cookie(key=_admin_cookie_name(), path='/')
+    return {'status': 'logged_out'}
+
+
+@app.post('/admin/api/change-password')
+def admin_change_password(
+    payload: AdminChangePasswordRequest,
+    admin: AuthenticatedAdmin = Depends(require_admin),
+    chat_store: ChatHistoryStore = Depends(get_chat_store),
+) -> dict:
+    changed = chat_store.change_admin_password(admin.user_id, payload.current_password, payload.new_password)
+    if not changed:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail='Current password is incorrect')
+    return {'status': 'password_updated'}
+
+
 @app.get('/models')
 def list_models(registry: ModelRegistry = Depends(get_registry)) -> dict:
     return {
@@ -67,13 +165,16 @@ def list_models(registry: ModelRegistry = Depends(get_registry)) -> dict:
 
 
 @app.get('/admin/api/pipeline')
-def admin_pipeline(registry: ModelRegistry = Depends(get_registry)) -> dict:
+def admin_pipeline(
+    registry: ModelRegistry = Depends(get_registry),
+    admin: AuthenticatedAdmin = Depends(require_admin),
+) -> dict:
     cfg = get_config()
     return build_pipeline_snapshot(cfg, registry.list_models())
 
 
 @app.post('/admin/api/trace')
-def admin_trace(request: TraceRequest) -> dict:
+def admin_trace(request: TraceRequest, admin: AuthenticatedAdmin = Depends(require_admin)) -> dict:
     try:
         return build_trace(request.text, model_key=request.model_key, config_path=CONFIG_PATH)
     except ValueError as exc:
@@ -84,6 +185,7 @@ def admin_trace(request: TraceRequest) -> dict:
 def admin_summary(
     model_key: str | None = Query(default=None),
     chat_store: ChatHistoryStore = Depends(get_chat_store),
+    admin: AuthenticatedAdmin = Depends(require_admin),
 ) -> dict:
     cfg = get_config()
     threshold = float(cfg['admin'].get('low_confidence_threshold', 0.55))
@@ -102,6 +204,7 @@ def admin_logs(
     review_status: str | None = Query(default=None),
     model_key: str | None = Query(default=None),
     chat_store: ChatHistoryStore = Depends(get_chat_store),
+    admin: AuthenticatedAdmin = Depends(require_admin),
 ) -> dict:
     cfg = get_config()
     threshold = float(cfg['admin'].get('low_confidence_threshold', 0.55))
@@ -121,6 +224,7 @@ def admin_review_log(
     log_id: int,
     request: AdminReviewRequest,
     chat_store: ChatHistoryStore = Depends(get_chat_store),
+    admin: AuthenticatedAdmin = Depends(require_admin),
 ) -> dict:
     chat_store.update_review(
         log_id=log_id,
@@ -132,21 +236,30 @@ def admin_review_log(
 
 
 @app.get('/admin/api/export-reviewed')
-def admin_export_reviewed(chat_store: ChatHistoryStore = Depends(get_chat_store)) -> FileResponse:
+def admin_export_reviewed(
+    chat_store: ChatHistoryStore = Depends(get_chat_store),
+    admin: AuthenticatedAdmin = Depends(require_admin),
+) -> FileResponse:
     export_path = Path(get_config()['logging']['log_file']).resolve().parents[1] / 'review_exports' / 'reviewed_queries.csv'
     written = chat_store.export_reviewed_to_csv(export_path)
     return FileResponse(written, media_type='text/csv', filename=written.name)
 
 
 @app.get('/admin/api/export-logs')
-def admin_export_logs(chat_store: ChatHistoryStore = Depends(get_chat_store)) -> FileResponse:
+def admin_export_logs(
+    chat_store: ChatHistoryStore = Depends(get_chat_store),
+    admin: AuthenticatedAdmin = Depends(require_admin),
+) -> FileResponse:
     export_path = Path(get_config()['logging']['log_file']).resolve().parents[1] / 'review_exports' / 'recent_logs.csv'
     written = chat_store.export_logs_to_csv(export_path)
     return FileResponse(written, media_type='text/csv', filename=written.name)
 
 
 @app.get('/admin/api/export-report-analysis-errors')
-def admin_export_report_analysis_errors(chat_store: ChatHistoryStore = Depends(get_chat_store)) -> FileResponse:
+def admin_export_report_analysis_errors(
+    chat_store: ChatHistoryStore = Depends(get_chat_store),
+    admin: AuthenticatedAdmin = Depends(require_admin),
+) -> FileResponse:
     cfg = get_config()
     export_path = Path(cfg['logging']['log_file']).resolve().parents[1] / 'review_exports' / 'report_analysis_errors.csv'
     written = chat_store.export_report_analysis_errors_to_csv(
@@ -158,7 +271,10 @@ def admin_export_report_analysis_errors(chat_store: ChatHistoryStore = Depends(g
 
 
 @app.get('/admin/api/report-analysis-preview')
-def admin_report_analysis_preview(chat_store: ChatHistoryStore = Depends(get_chat_store)) -> dict:
+def admin_report_analysis_preview(
+    chat_store: ChatHistoryStore = Depends(get_chat_store),
+    admin: AuthenticatedAdmin = Depends(require_admin),
+) -> dict:
     cfg = get_config()
     rows = chat_store.fetch_report_analysis_error_preview(
         limit=25,

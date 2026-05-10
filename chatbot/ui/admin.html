@@ -7,9 +7,29 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/ui/admin.css?v=20260503a">
+  <link rel="stylesheet" href="/ui/admin.css?v=20260510a">
 </head>
 <body>
+  <div id="admin-auth-shell" class="admin-auth-shell">
+    <section id="admin-login-panel" class="admin-login-panel">
+      <p class="eyebrow">Admin Access</p>
+      <h1>Sign in to the MLOps Console</h1>
+      <p class="sidebar-copy">Default deployment credentials are <code>admin</code> / <code>admin</code>. Change them after first login.</p>
+      <form id="admin-login-form" class="admin-login-form">
+        <label>
+          <span>Username</span>
+          <input id="admin-username" type="text" value="admin" autocomplete="username" required>
+        </label>
+        <label>
+          <span>Password</span>
+          <input id="admin-password" type="password" value="admin" autocomplete="current-password" required>
+        </label>
+        <p id="admin-login-error" class="login-error" hidden></p>
+        <button id="admin-login-button" class="primary-button" type="submit">Sign in</button>
+      </form>
+    </section>
+  </div>
+
   <div class="admin-layout">
     <aside class="admin-sidebar">
       <div class="sidebar-brand">
@@ -24,6 +44,15 @@
         <button class="sidebar-link" data-section="data-preprocessing-section" type="button">Data Preprocessing</button>
         <button class="sidebar-link" data-section="review-section" type="button">Review Queue</button>
       </nav>
+
+      <section class="sidebar-block">
+        <h2>Admin</h2>
+        <div class="sidebar-actions">
+          <p id="admin-session-label" class="sidebar-copy">Not signed in</p>
+          <button id="change-password-button" class="secondary-button" type="button">Change password</button>
+          <button id="admin-logout-button" class="secondary-button" type="button">Logout</button>
+        </div>
+      </section>
 
       <section class="sidebar-block">
         <h2>Exports</h2>
@@ -386,6 +415,6 @@
     </main>
   </div>
 
-  <script src="/ui/admin.js?v=20260503a"></script>
+  <script src="/ui/admin.js?v=20260510a"></script>
 </body>
 </html>

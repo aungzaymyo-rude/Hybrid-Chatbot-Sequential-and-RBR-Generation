@@ -118,6 +118,14 @@ storage:
 admin:
   default_recent_limit: 50
   low_confidence_threshold: 0.55
+  auth:
+    enabled: true
+    cookie_name: chatbot_admin_session
+    session_ttl_hours: 12
+    secure_cookie: false
+    same_site: lax
+    default_username: admin
+    default_password: admin
 
 deployment:
   host: 0.0.0.0

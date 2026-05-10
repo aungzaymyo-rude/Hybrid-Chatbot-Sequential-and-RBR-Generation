@@ -19,6 +19,15 @@ const splitPolicyMetrics = document.getElementById('split-policy-metrics');
 const splitChart = document.getElementById('split-chart');
 const artifactTable = document.getElementById('artifact-table');
 const reportAnalysisPreviewTable = document.getElementById('report-analysis-preview-table');
+const authShell = document.getElementById('admin-auth-shell');
+const loginForm = document.getElementById('admin-login-form');
+const loginButton = document.getElementById('admin-login-button');
+const loginError = document.getElementById('admin-login-error');
+const usernameInput = document.getElementById('admin-username');
+const passwordInput = document.getElementById('admin-password');
+const adminSessionLabel = document.getElementById('admin-session-label');
+const logoutButton = document.getElementById('admin-logout-button');
+const changePasswordButton = document.getElementById('change-password-button');
 const refreshDashboardButton = document.getElementById('refresh-dashboard');
 const reloadLogsButton = document.getElementById('reload-logs');
 const flaggedOnlyInput = document.getElementById('flagged-only');
@@ -39,6 +48,7 @@ const traceEntityRetrieval = document.getElementById('trace-entity-retrieval');
 const traceRoute = document.getElementById('trace-route');
 const sidebarLinks = Array.from(document.querySelectorAll('.sidebar-link'));
 const adminViews = Array.from(document.querySelectorAll('.admin-view'));
+let adminSession = null;
 
 const MODEL_LABELS = {
   general: 'General Hematology',
@@ -61,6 +71,46 @@ function fmtDate(value) {
 
 function fmtPath(value) {
   return value || '-';
+}
+
+function setAdminSession(session) {
+  adminSession = session;
+  adminSessionLabel.textContent = session?.authenticated
+    ? `Signed in as ${session.username}${session.must_change_password ? ' | change password required' : ''}`
+    : 'Not signed in';
+}
+
+function showLogin(message = '') {
+  if (message) {
+    loginError.hidden = false;
+    loginError.textContent = message;
+  } else {
+    loginError.hidden = true;
+    loginError.textContent = '';
+  }
+  authShell.classList.add('active');
+}
+
+function hideLogin() {
+  authShell.classList.remove('active');
+  loginError.hidden = true;
+  loginError.textContent = '';
+}
+
+async function apiFetch(url, options = {}) {
+  const response = await fetch(url, {
+    credentials: 'same-origin',
+    ...options,
+    headers: {
+      ...(options.headers || {}),
+    },
+  });
+  if (response.status === 401) {
+    setAdminSession(null);
+    showLogin('Your admin session expired. Sign in again.');
+    throw new Error('Unauthorized');
+  }
+  return response;
 }
 
 function friendlyModelLabel(modelKey) {
@@ -386,7 +436,7 @@ function renderSplits(pipeline) {
 }
 
 async function updateReview(logId, reviewStatus, correctedIntent, adminNotes) {
-  await fetch(`/admin/api/logs/${logId}/review`, {
+  const response = await apiFetch(`/admin/api/logs/${logId}/review`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
@@ -395,6 +445,9 @@ async function updateReview(logId, reviewStatus, correctedIntent, adminNotes) {
       admin_notes: adminNotes || '',
     }),
   });
+  if (!response.ok) {
+    throw new Error(`Review update failed: HTTP ${response.status}`);
+  }
 }
 
 function buildQuery(params = {}) {
@@ -452,7 +505,7 @@ async function loadModels() {
 }
 
 async function loadPipeline() {
-  const response = await fetch('/admin/api/pipeline');
+  const response = await apiFetch('/admin/api/pipeline');
   const payload = await response.json();
   renderIngestion(payload);
   renderVersioning(payload);
@@ -593,7 +646,7 @@ async function runTrace() {
     window.alert('Enter a phrase to trace.');
     return;
   }
-  const response = await fetch('/admin/api/trace', {
+  const response = await apiFetch('/admin/api/trace', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
@@ -606,7 +659,7 @@ async function runTrace() {
 }
 
 async function loadSummary() {
-  const response = await fetch(`/admin/api/summary?${buildQuery({ model_key: activeModelKey() })}`);
+  const response = await apiFetch(`/admin/api/summary?${buildQuery({ model_key: activeModelKey() })}`);
   const payload = await response.json();
   renderMetrics(payload.summary);
   renderRateChart(payload.summary);
@@ -621,7 +674,7 @@ async function loadSummary() {
 }
 
 async function loadLogs() {
-  const response = await fetch(`/admin/api/logs?${buildQuery({
+  const response = await apiFetch(`/admin/api/logs?${buildQuery({
     limit: '60',
     flagged_only: flaggedOnlyInput.checked ? 'true' : '',
     review_status: reviewStatusSelect.value,
@@ -632,9 +685,96 @@ async function loadLogs() {
 }
 
 async function loadReportAnalysisPreview() {
-  const response = await fetch('/admin/api/report-analysis-preview');
+  const response = await apiFetch('/admin/api/report-analysis-preview');
   const payload = await response.json();
   renderReportAnalysisPreview(payload.rows || []);
+}
+
+async function checkAdminSession() {
+  const response = await fetch('/admin/api/session', { credentials: 'same-origin' });
+  if (response.status === 401) {
+    setAdminSession(null);
+    showLogin();
+    return false;
+  }
+  if (!response.ok) {
+    throw new Error(`Session check failed: HTTP ${response.status}`);
+  }
+  const payload = await response.json();
+  setAdminSession(payload);
+  hideLogin();
+  return true;
+}
+
+async function handleAdminLogin(event) {
+  event.preventDefault();
+  loginButton.disabled = true;
+  loginButton.textContent = 'Signing in...';
+  try {
+    const response = await fetch('/admin/api/login', {
+      method: 'POST',
+      credentials: 'same-origin',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        username: usernameInput.value.trim(),
+        password: passwordInput.value,
+      }),
+    });
+    if (response.status === 401) {
+      showLogin('Invalid username or password.');
+      return;
+    }
+    if (!response.ok) {
+      showLogin(`Login failed with HTTP ${response.status}.`);
+      return;
+    }
+    const payload = await response.json();
+    setAdminSession(payload);
+    hideLogin();
+    await refreshAll();
+  } finally {
+    loginButton.disabled = false;
+    loginButton.textContent = 'Sign in';
+  }
+}
+
+async function handleLogout() {
+  try {
+    await fetch('/admin/api/logout', {
+      method: 'POST',
+      credentials: 'same-origin',
+    });
+  } finally {
+    setAdminSession(null);
+    showLogin('Signed out.');
+  }
+}
+
+async function handleChangePassword() {
+  const currentPassword = window.prompt('Enter current admin password:');
+  if (!currentPassword) return;
+  const newPassword = window.prompt('Enter new admin password (minimum 8 characters):');
+  if (!newPassword) return;
+  if (newPassword.length < 8) {
+    window.alert('New password must be at least 8 characters.');
+    return;
+  }
+  const response = await apiFetch('/admin/api/change-password', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      current_password: currentPassword,
+      new_password: newPassword,
+    }),
+  });
+  if (!response.ok) {
+    const payload = await response.json().catch(() => ({}));
+    window.alert(payload.detail || `Password change failed: HTTP ${response.status}`);
+    return;
+  }
+  const payload = await fetch('/admin/api/session', { credentials: 'same-origin' }).then((resp) => resp.json());
+  setAdminSession(payload);
+  window.alert('Admin password updated.');
 }
 
 async function refreshAll() {
@@ -654,10 +794,17 @@ retrainHelpButton.addEventListener('click', () => {
 ./chatbot/.venv/Scripts/python.exe chatbot/training/retrain_from_reviews.py --config chatbot/config.yaml`);
 });
 runTraceButton.addEventListener('click', runTrace);
+loginForm.addEventListener('submit', handleAdminLogin);
+logoutButton.addEventListener('click', handleLogout);
+changePasswordButton.addEventListener('click', handleChangePassword);
 
 (async function init() {
   bindSidebarNavigation();
   await loadModels();
+  const authenticated = await checkAdminSession();
+  if (!authenticated) {
+    return;
+  }
   await refreshAll();
   traceTextInput.value = 'What is aPTT?';
   await runTrace();

@@ -119,6 +119,15 @@ def load_config(path: str | Path) -> Dict[str, Any]:
     admin_cfg = cfg.get('admin', {})
     admin_cfg['default_recent_limit'] = int(_env_override(admin_cfg.get('default_recent_limit', 50), 'ADMIN_RECENT_LIMIT'))
     admin_cfg['low_confidence_threshold'] = float(_env_override(admin_cfg.get('low_confidence_threshold', 0.55), 'ADMIN_LOW_CONFIDENCE_THRESHOLD'))
+    auth_cfg = dict(admin_cfg.get('auth', {}))
+    auth_cfg['enabled'] = str(_env_override(auth_cfg.get('enabled', True), 'CHATBOT_ADMIN_AUTH_ENABLED')).lower() in {'1', 'true', 'yes', 'on'}
+    auth_cfg['cookie_name'] = _env_override(auth_cfg.get('cookie_name', 'chatbot_admin_session'), 'CHATBOT_ADMIN_COOKIE_NAME')
+    auth_cfg['session_ttl_hours'] = int(_env_override(auth_cfg.get('session_ttl_hours', 12), 'CHATBOT_ADMIN_SESSION_TTL_HOURS'))
+    auth_cfg['secure_cookie'] = str(_env_override(auth_cfg.get('secure_cookie', False), 'CHATBOT_ADMIN_SECURE_COOKIE')).lower() in {'1', 'true', 'yes', 'on'}
+    auth_cfg['same_site'] = str(_env_override(auth_cfg.get('same_site', 'lax'), 'CHATBOT_ADMIN_SAMESITE')).lower()
+    auth_cfg['default_username'] = _env_override(auth_cfg.get('default_username', 'admin'), 'CHATBOT_ADMIN_DEFAULT_USERNAME')
+    auth_cfg['default_password'] = _env_override(auth_cfg.get('default_password', 'admin'), 'CHATBOT_ADMIN_DEFAULT_PASSWORD')
+    admin_cfg['auth'] = auth_cfg
 
     deployment_cfg = dict(cfg.get('deployment', {}))
     deployment_cfg['host'] = _env_override(deployment_cfg.get('host', '0.0.0.0'), 'CHATBOT_HOST')

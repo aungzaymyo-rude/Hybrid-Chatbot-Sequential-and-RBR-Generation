@@ -35,3 +35,19 @@ class AdminReviewRequest(BaseModel):
 class TraceRequest(BaseModel):
     text: str = Field(..., min_length=1, examples=['What is aPTT?'])
     model_key: str | None = Field(default=None, examples=['general'])
+
+
+class AdminLoginRequest(BaseModel):
+    username: str = Field(..., min_length=1, max_length=80)
+    password: str = Field(..., min_length=1, max_length=256)
+
+
+class AdminSessionResponse(BaseModel):
+    authenticated: bool
+    username: str | None = None
+    must_change_password: bool = False
+
+
+class AdminChangePasswordRequest(BaseModel):
+    current_password: str = Field(..., min_length=1, max_length=256)
+    new_password: str = Field(..., min_length=8, max_length=256)

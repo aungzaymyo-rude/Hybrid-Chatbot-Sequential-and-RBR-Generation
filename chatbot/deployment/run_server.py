@@ -31,6 +31,28 @@ def configure_event_loop_policy() -> None:
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
 
+def suppress_windows_connection_reset_noise() -> None:
+    if sys.platform != 'win32':
+        return
+    try:
+        from asyncio import proactor_events
+    except Exception:
+        return
+
+    original = proactor_events._ProactorBasePipeTransport._call_connection_lost
+    if getattr(original, '_chatbot_patched', False):
+        return
+
+    def _wrapped(self, exc=None):
+        try:
+            return original(self, exc)
+        except ConnectionResetError:
+            return None
+
+    _wrapped._chatbot_patched = True
+    proactor_events._ProactorBasePipeTransport._call_connection_lost = _wrapped
+
+
 def preflight_import_app() -> None:
     try:
         importlib.import_module('chatbot.api.main')
@@ -75,6 +97,7 @@ def start_http_redirect_server(host: str, port: int, https_port: int) -> Thread:
 
 def main() -> None:
     configure_event_loop_policy()
+    suppress_windows_connection_reset_noise()
     preflight_import_app()
     cfg = load_config(CONFIG_PATH)
     deploy_cfg = cfg.get('deployment', {})
